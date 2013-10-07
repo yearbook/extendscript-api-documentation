@@ -3,20 +3,40 @@ body {
 }
 
 article {
-  h1 {
-    margin-top: 0em;
+  header {
+    position: fixed;
+    background-color: white;
+
+    top: 51px;
+
+    width: 60.55em;
+    height: 6.5em;
+
+    padding-top: 1em;
+
+    border-bottom: 1px solid lighten(black, 80%);
+
+    h1 {
+      margin-top: 0em;
+    }
+
+    div#articleSearch {
+      float: right;
+      width: 20em;
+    }
+
+    div.info {
+      margin-bottom: 1em;
+    }
   }
 
-  div.info {
-    margin-bottom: 1em;
-  }
-
-  div#articleSearch {
-    float: right;
-    width: 20em;
+  section {
+    margin-top: 6.5em;
   }
 
   div.panel-heading {
+    overflow: hidden;
+
     span.label {
       float: right;
       margin-left: 1em;
