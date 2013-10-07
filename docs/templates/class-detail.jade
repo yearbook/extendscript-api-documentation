@@ -32,7 +32,8 @@ div(ng-repeat='type in class.elements')
 
         span &#40;
         span(ng-repeat='param in method.parameters.parameter')
-          code {{ param.datatype.type }}
+          a(href='#/{{ param.datatype.type }}')
+            code {{ param.datatype.type }}
           b {{ param.name }}
           &#44;
         span &#41;

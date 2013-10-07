@@ -10,7 +10,11 @@ html(lang='en', ng-app='ybmDocApp')
       header
         nav(class='navbar navbar-inverse navbar-fixed-top', role='navigation')
           div.container
-            a.navbar-brand(href='#/') InDesign - Object Model Viewer
+            a.navbar-brand(href='#/') InDesign API
+
+            form.navbar-form
+              div.form-group
+                input(type='text', class='form-control', placeholder='Filter all', ng-model='classFilter', ng-change='elementFilter=classFilter')
 
       div.row
         div(class='col-md-3', ng-controller='ContentsListCtrl')
