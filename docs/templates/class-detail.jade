@@ -1,0 +1,45 @@
+h1 {{ class.name }}
+span(class='label label-primary', ng-show='class.dynamic') Dynamic
+
+p {{ class.shortdesc }}
+
+hr
+
+div(ng-repeat='type in class.elements')
+  h2 {{ type.type | titleCase }}
+
+  div(ng-show='(type.property | filter:elementFilter).length')
+    div(class='panel panel-default', ng-repeat='property in type.property | orderBy:"name" | filter:elementFilter')
+      div.panel-heading 
+        a(href='#/{{ property.datatype.type }}')
+          code {{ property.datatype.type }}
+        b {{ property.name }}
+
+        span(class='label label-danger', ng-show='property.rwaccess =="readonly"') Read only
+        span(class='label label-primary') Property
+
+      div.panel-body
+        {{ property.shortdesc }}
+
+
+  div(ng-show='(type.method | filter:elementFilter).length')
+    h3 Methods
+    div(class='panel panel-default', ng-repeat='method in type.method | orderBy:"name" | filter:elementFilter')
+      div.panel-heading
+        a(href='#/{{ method.datatype.type }}')
+          code {{ method.datatype.type }}
+        b {{ method.name }}
+
+        span &#40;
+        span(ng-repeat='param in method.parameters.parameter')
+          code {{ param.datatype.type }}
+          b {{ param.name }}
+          &#44;
+        span &#41;
+
+        span(class='label label-success') Method
+
+      div.panel-body
+        {{ method.shortdesc }}
+
+  hr

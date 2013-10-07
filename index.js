@@ -32,20 +32,35 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
 
     // get all classes
     var classdefs = xmlDoc.find('//package/classdef');
-    var progressBar = new progress(':bar', { 
+    var progressBar = new progress(':bar', {
       total: classdefs.length,
       width: 30
     });
-    
+
     classdefs.forEach(function(classdef) {
       var className = classdef.attr('name').value();
       var classObject = xml2json.toJson(classdef.toString(), {
         object: true,
         coerce: true,
         trim: true
+      }).classdef;
+
+      // make sure classObject.elements is always an array
+      classObject.elements = [].concat( classObject.elements );
+
+      // make sure parameters is always an array too
+      classObject.elements.forEach(function(element) {
+        if ('method' in element) {
+          element.method.forEach(function(method) {
+            if ('parameters' in method) {
+              method.parameters.parameter = [].concat( method.parameters.parameter );
+            }
+          });
+        }
       });
 
-      var prettyClass = JSON.stringify(classObject.classdef, null, 2);
+      // render as text
+      var prettyClass = JSON.stringify(classObject, null, 2);
 
       // write to file
       fs.writeFileSync(outdir + 'classes/' + className + '.json', prettyClass, {encoding: 'utf-8'});
