@@ -1,0 +1,31 @@
+{
+  "name": "ybm-indesign-api-docs",
+  "version": "0.0.1",
+  "description": "Generates API docs in various formats",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yearbookmachine/indesign-api-documentation.git"
+  },
+  "keywords": [
+    "indesign",
+    "extendscript",
+    "xml",
+    "docs",
+    "documentation",
+    "api"
+  ],
+  "author": "Yearbook Machine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yearbookmachine/indesign-api-documentation/issues"
+  },
+  "dependencies": {
+    "libxmljs": "~0.8.1",
+    "xml2json": "~0.3.2",
+    "progress": "~1.1.0"
+  }
+}

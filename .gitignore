@@ -1,0 +1,10 @@
+# node modules and vim swap files
+node_modules/
+*.swp
+
+# sorry, we probably shouldn't have the source XML here,
+# you'll need to copy that here yourself
+xml/*.xml
+
+# don't include any built docs either because it'll make the repo messy
+docs/source/*

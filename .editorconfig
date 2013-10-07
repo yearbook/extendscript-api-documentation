@@ -1,0 +1,21 @@
+# this is the root
+root = true
+
+# universal settings
+[*]
+
+# tabs
+indent_style = space
+indent_size = 2
+
+# charset
+charset = utf-8
+
+# line settings
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
