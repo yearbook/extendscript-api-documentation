@@ -45,17 +45,33 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
         trim: true
       }).classdef;
 
+      // TODO: it would actually be much smarter to 'preprocess' the XML file
+
       // make sure classObject.elements is always an array
       classObject.elements = [].concat( classObject.elements );
 
       // make sure parameters is always an array too
       classObject.elements.forEach(function(element) {
         if ('method' in element) {
+          // TODO: parameters.parameter? This is dumb.
+          // * Will scowls at Adobe
           element.method.forEach(function(method) {
             if ('parameters' in method) {
+              // force it to be an array
               method.parameters.parameter = [].concat( method.parameters.parameter );
+
+              // varies=any -> mixed
+              method.parameters.parameter.forEach(function(param) {
+                if (param.datatype.type == 'varies=any')
+                  param.datatype.type = 'mixed';
+              });
             }
           });
+        }
+
+        // TODO: finish this. train is about to pull in
+        if ('property' in element) {
+
         }
       });
 

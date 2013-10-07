@@ -7,7 +7,9 @@
 
 var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
   config(['$routeProvider', function($routeProvider) {
-    $routeProvider.when('/:className', {templateUrl: './templates/class-detail.jade', controller: ClassDetailCtrl});
+    $routeProvider
+      .when('/', {templateUrl: './templates/index.jade'})
+      .when('/:className', {templateUrl: './templates/class-detail.jade', controller: ClassDetailCtrl});
 }]);
 
 ybmDocApp.filter('titleCase', function () {
@@ -17,7 +19,7 @@ ybmDocApp.filter('titleCase', function () {
       words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
     }
     return words.join(' ');
-  }
+  };
 });
 
 // ybmDocApp.controller('ContentsListCtrl', ContentsListCtrl);

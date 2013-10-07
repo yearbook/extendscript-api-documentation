@@ -1,5 +1,11 @@
+div#articleSearch.input-group
+  span.input-group-addon Filter
+  input(id='elementFilter', class='form-control', ng-model='elementFilter')
+
 h1 {{ class.name }}
-span(class='label label-primary', ng-show='class.dynamic') Dynamic
+
+div.info
+  span(class='label label-primary', ng-show='class.dynamic') Dynamic
 
 p {{ class.shortdesc }}
 
@@ -10,17 +16,16 @@ div(ng-repeat='type in class.elements')
 
   div(ng-show='(type.property | filter:elementFilter).length')
     div(class='panel panel-default', ng-repeat='property in type.property | orderBy:"name" | filter:elementFilter')
-      div.panel-heading 
+      div.panel-heading
         a(href='#/{{ property.datatype.type }}')
           code {{ property.datatype.type }}
         b {{ property.name }}
 
-        span(class='label label-danger', ng-show='property.rwaccess =="readonly"') Read only
+        span(class='label label-danger', ng-show='property.rwaccess == "readonly"') Read only
         span(class='label label-primary') Property
 
       div.panel-body
         {{ property.shortdesc }}
-
 
   div(ng-show='(type.method | filter:elementFilter).length')
     h3 Methods
@@ -42,5 +47,26 @@ div(ng-repeat='type in class.elements')
 
       div.panel-body
         {{ method.shortdesc }}
+
+        div(ng-show='(method.parameters.parameter).length')
+          hr
+
+          h4 Parameters
+
+          table(class='table table-striped')
+            thead
+              tr
+                td Type
+                td Name
+                td Description
+            tbody
+              tr(ng-repeat='param in method.parameters.parameter')
+                td
+                  a(href='#/{{ param.datatype.type }}')
+                    code {{ param.datatype.type }}
+                td {{ param.name }}
+                td
+                  span(class='label label-info', ng-show='param.optional') Optional
+                  {{ param.shortdesc }}
 
   hr
