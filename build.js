@@ -2,7 +2,6 @@
 var libxmljs = require('libxmljs');
 var progress = require('progress');
 var xml2json = require('xml2json');
-var _        = require('underscore');
 
 // node libs
 var fs = require('fs');
