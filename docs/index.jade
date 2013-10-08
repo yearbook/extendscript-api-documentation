@@ -30,9 +30,9 @@ html(lang='en', ng-app='ybmDocApp')
 
           hr
 
-          section(ng-repeat='category in classes.topicref')
+          section(ng-repeat='category in classes')
             div(ng-show='(category.topicref | filter:classFilter).length')
-              h3 {{ category.navtitle }}
+              h4 {{ category.navtitle }}
               ul.list-unstyled
                 li(ng-repeat='class in category.topicref | orderBy:"navtitle" | filter:classFilter')
                   a(href='#/{{ class.navtitle }}') {{ class.navtitle }}

@@ -2,6 +2,7 @@
 var libxmljs = require('libxmljs');
 var progress = require('progress');
 var xml2json = require('xml2json');
+var _        = require('underscore');
 
 // node libs
 var fs = require('fs');
@@ -10,38 +11,47 @@ var util = require('util');
 // configuration
 var outdir = './docs/source/';
 
-// index variable
-var index = {};
+// read the XML data
+var indesignData    = fs.readFileSync('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'});
+var javascriptData  = fs.readFileSync('./xml/javascript.xml', {encoding: 'utf-8'});
+var scriptuiData    = fs.readFileSync('./xml/scriptui.xml', {encoding: 'utf-8'});
 
-// read the xml file
-fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, data) {
-  if (err) {
-    throw err;
-  } else {
-    // parse XML
-    var xmlDoc = libxmljs.parseXmlString(data);
+// parse the xml files
+var indesignXml   = libxmljs.parseXmlString(indesignData);
+var javascriptXml = libxmljs.parseXmlString(javascriptData);
+var scriptuiXml   = libxmljs.parseXmlString(scriptuiData);
 
-    // map node
-    var map = xmlDoc.get('//map');
-    var mapObject = xml2json.toJson(map.toString(), {
+// process the XML files
+buildHTMLDocsSource([indesignXml, javascriptXml, scriptuiXml]);
+
+function buildHTMLDocsSource(xmlDocs) {
+  var docIndex    = {};
+  var docContents = [];
+
+  // map nodes, for contents
+  xmlDocs.forEach(function(xmlDoc) {
+    var mapXML = xmlDoc.get('//map');
+    var mapObject = xml2json.toJson(mapXML.toString(), {
       object: true,
       coerce: true,
       trim: true
+    }).map;
+
+    // coerce to an array
+    mapObject.topicref = [].concat( mapObject.topicref );
+    mapObject.topicref.forEach(function(topicref) {
+      docContents.push(topicref);
     });
+  });
 
-    // add all the classes to the index
-    mapObject.map.topicref.forEach(function(suite) {
-      suite.topicref.forEach(function(topic) {
-        var className = topic.navtitle;
-        index[className] = [];
-      });
-    });
+  // save the contents file
+  var prettyContents = JSON.stringify(docContents, null, 2);
+  fs.writeFileSync(outdir + 'contents.json', prettyContents, {encoding: 'utf-8'});
 
-    // save the map file
-    var prettyMap = JSON.stringify(mapObject.map, null, 2);
-    fs.writeFileSync(outdir + 'contents.json', prettyMap, {encoding: 'utf-8'});
+  // get all classes
+  xmlDocs.forEach(function(xmlDoc) {
 
-    // get all classes
+    // get all classdefs
     var classdefs = xmlDoc.find('//package/classdef');
     var progressBar = new progress(':bar', {
       total: classdefs.length,
@@ -56,52 +66,63 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
         trim: true
       }).classdef;
 
-      // TODO: it would actually be much smarter to 'preprocess' the XML file
-      // instead of the object
+      console.log(className);
+
+      // add to index
+      if (!docIndex[className])
+        docIndex[className] = [];
 
       // make sure classObject.elements is always an array
       classObject.elements = [].concat( classObject.elements );
 
-      // make sure parameters is always an array too
-      classObject.elements.forEach(function(element) {
-        if ('method' in element) {
-          // TODO: parameters.parameter? This is dumb.
-          // * Will scowls at Adobe
-          element.method.forEach(function(method) {
-            // add to index
-            index[className].push(method.name);
+      // some classes are weird
+      if ('elements' in classObject) {
+        // make sure parameters is always an array too
+        classObject.elements.forEach(function(element) {
+          if (element) {
+            if ('method' in element) {
+              element.method = [].concat( element.method );
 
-            if ('parameters' in method) {
-              // force it to be an array
-              method.parameters.parameter = [].concat( method.parameters.parameter );
+              // TODO: parameters.parameter? This is dumb.
+              // * Will scowls at Adobe
+              element.method.forEach(function(method) {
+                // add to index
 
-              // varies=any -> mixed
-              method.parameters.parameter.forEach(function(param) {
-                if (param.datatype.type == 'varies=any')
-                  param.datatype.type = 'mixed';
+                docIndex[className].push(method.name);
 
-                if (param.datatype.array == {})
-                  param.datatype.array = true;
+                if ('parameters' in method) {
+                  // force it to be an array
+                  method.parameters.parameter = [].concat( method.parameters.parameter );
+
+                  // varies=any -> mixed
+                  method.parameters.parameter.forEach(function(param) {
+                    if (param.datatype.type == 'varies=any')
+                      param.datatype.type = 'mixed';
+
+                    if (param.datatype.array == {})
+                      param.datatype.array = true;
+                  });
+                }
               });
             }
-          });
-        }
 
-        if ('property' in element) {
-          element.property = [].concat( element.property );
+            if ('property' in element) {
+              element.property = [].concat( element.property );
 
-          element.property.forEach(function(property) {
-            // add to index
-            index[className].push(property.name);
+              element.property.forEach(function(property) {
+                // add to index
+                docIndex[className].push(property.name);
 
-            if (property.datatype.type == 'varies=any')
-              property.datatype.type = 'mixed';
+                if (property.datatype.type == 'varies=any')
+                  property.datatype.type = 'mixed';
 
-            if ('array' in property.datatype)
-              property.datatype.array = true;
-          });
-        }
-      });
+                if ('array' in property.datatype)
+                  property.datatype.array = true;
+              });
+            }
+          }
+        });
+      }
 
       // render as text
       var prettyClass = JSON.stringify(classObject, null, 2);
@@ -112,10 +133,10 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
       // update the awesome progress bar
       progressBar.tick();
     });
+  });
 
-    // done!
-    var prettyIndex = JSON.stringify(index, null, 2);
-    fs.writeFileSync(outdir + 'index.json', prettyIndex, {encoding: 'utf-8'});
-  }
-});
+  // done!
+  var prettyIndex = JSON.stringify(docIndex, null, 2);
+  fs.writeFileSync(outdir + 'index.json', prettyIndex, {encoding: 'utf-8'});
+}
 
