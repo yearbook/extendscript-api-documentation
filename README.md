@@ -15,8 +15,8 @@ system. If you're only interested in viewing the documentation then please look
 The XML source files can be found in the following locations on Mac OS X. Other
 OSs are unknown, although the files are likely to have similar names.
 
-  - /Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles
-  - ~/Library/Preferences/ExtendScript Toolkit/4.0/omv$indesign-9.064$9.0.xml
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
+  - `~/Library/Preferences/ExtendScript Toolkit/4.0/omv$indesign-9.064$9.0.xml`
 
 ### XML caveats
 
@@ -40,9 +40,9 @@ Install Node.JS
 
 Copy the source XML files into ./xml
 
-  $ cp omv$indesign-9.064$9.0.xml ./xml/omv-indesign-9.0-cc.xml
-  $ cp javascript.xml ./xml/javascript.xml
-  $ cp scriptui.xml ./xml/scriptui.xml
+    $ cp omv$indesign-9.064$9.0.xml ./xml/omv-indesign-9.0-cc.xml
+    $ cp javascript.xml ./xml/javascript.xml
+    $ cp scriptui.xml ./xml/scriptui.xml
 
 Install the required NodeJS modules.
 
