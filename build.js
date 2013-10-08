@@ -10,6 +10,9 @@ var util = require('util');
 // configuration
 var outdir = './docs/source/';
 
+// index variable
+var index = {};
+
 // read the xml file
 fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, data) {
   if (err) {
@@ -26,9 +29,17 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
       trim: true
     });
 
+    // add all the classes to the index
+    mapObject.map.topicref.forEach(function(suite) {
+      suite.topicref.forEach(function(topic) {
+        var className = topic.navtitle;
+        index[className] = [];
+      });
+    });
+
     // save the map file
     var prettyMap = JSON.stringify(mapObject.map, null, 2);
-    fs.writeFileSync(outdir + 'index.json', prettyMap, {encoding: 'utf-8'});
+    fs.writeFileSync(outdir + 'contents.json', prettyMap, {encoding: 'utf-8'});
 
     // get all classes
     var classdefs = xmlDoc.find('//package/classdef');
@@ -46,6 +57,7 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
       }).classdef;
 
       // TODO: it would actually be much smarter to 'preprocess' the XML file
+      // instead of the object
 
       // make sure classObject.elements is always an array
       classObject.elements = [].concat( classObject.elements );
@@ -56,6 +68,9 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
           // TODO: parameters.parameter? This is dumb.
           // * Will scowls at Adobe
           element.method.forEach(function(method) {
+            // add to index
+            index[className].push(method.name);
+
             if ('parameters' in method) {
               // force it to be an array
               method.parameters.parameter = [].concat( method.parameters.parameter );
@@ -76,6 +91,9 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
           element.property = [].concat( element.property );
 
           element.property.forEach(function(property) {
+            // add to index
+            index[className].push(property.name);
+
             if (property.datatype.type == 'varies=any')
               property.datatype.type = 'mixed';
 
@@ -94,6 +112,10 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
       // update the awesome progress bar
       progressBar.tick();
     });
+
+    // done!
+    var prettyIndex = JSON.stringify(index, null, 2);
+    fs.writeFileSync(outdir + 'index.json', prettyIndex, {encoding: 'utf-8'});
   }
 });
 

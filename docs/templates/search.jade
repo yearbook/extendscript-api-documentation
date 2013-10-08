@@ -1,0 +1,24 @@
+header
+  div#articleSearch.input-group
+    span.input-group-addon Filter
+    input(id='elementFilter', class='form-control', ng-model='elementFilter')
+
+  h1 Search index
+
+  div.info
+    span.left Index of all properties and methods.
+    span.right
+      span(class='label label-danger') SLOW
+
+
+section
+  article(ng-repeat='(class, elements) in (filteredIndex = (index | limitTo:4))')
+    div(ng-show='(elements | filter:elementFilter).length')
+      h6
+        a(href='#/{{ class }}')
+          {{ class }}
+
+      a(href='#/{{ class }}', ng-repeat='element in (filteredElements = (elements | filter:elementFilter | limitTo: 5))')
+        code
+          {{ element }}
+

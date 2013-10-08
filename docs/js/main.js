@@ -3,13 +3,22 @@
 //= require vendor/angular-resource.js
 
 //= require controllers/ContentsListCtrl.js
+//= require controllers/IndexListCtrl.js
 //= require controllers/ClassDetailCtrl.js
 
 var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
-  config(['$routeProvider', function($routeProvider) {
+  config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {templateUrl: './templates/index.jade'})
-      .when('/:className', {templateUrl: './templates/class-detail.jade', controller: ClassDetailCtrl});
+      .when('/about', {templateUrl: './templates/about.jade'})
+      .when('/search', {templateUrl: './templates/search.jade', controller: IndexListCtrl})
+      .when('/:className', {templateUrl: './templates/class-detail.jade', controller: ClassDetailCtrl})
+      .otherwise({
+        redirectTo: '/'
+      });
+
+      // can't use HTML5 mode on GitHub. Boo!
+      $locationProvider.html5Mode(false);
 }]);
 
 ybmDocApp.filter('titleCase', function () {
@@ -21,5 +30,3 @@ ybmDocApp.filter('titleCase', function () {
     return words.join(' ');
   };
 });
-
-// ybmDocApp.controller('ContentsListCtrl', ContentsListCtrl);
