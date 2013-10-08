@@ -18,7 +18,7 @@ OSs are unknown, although the files are likely to have similar names.
   - /Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles
   - ~/Library/Preferences/ExtendScript Toolkit/4.0/omv$indesign-9.064$9.0.xml
 
-### XML caveates
+### XML caveats
 
 The XML files are not consistent. Currently two lines of manual pruning are
 required. Both `javascript.xml` and `scriptui.xml` must be changed from:
