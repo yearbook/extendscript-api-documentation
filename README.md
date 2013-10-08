@@ -30,9 +30,9 @@ to
 
     <dictionary engine="">
 
-(as per omv-indesign-9.0-cc.xml)
+(as per indesign.xml)
 
-## Generating the docs from XML source files
+## Generating the docs from XML source files for development
 
 Install Node.JS
 
@@ -40,7 +40,7 @@ Install Node.JS
 
 Copy the source XML files into ./xml
 
-    $ cp omv$indesign-9.064$9.0.xml ./xml/omv-indesign-9.0-cc.xml
+    $ cp omv$indesign-9.064$9.0.xml ./xml/indesign.xml
     $ cp javascript.xml ./xml/javascript.xml
     $ cp scriptui.xml ./xml/scriptui.xml
 
@@ -65,7 +65,13 @@ Now open your browser [here](http://localhost:8080).
 
 ## Baking the HTML docs
 
-This section is WIP.
+To bake the docs you can simply run the include `generate` script. There are a few
+required tools, and `generate` will warn you if they are missing.
+
+    $ npm install -g jade markdown snockets-cli less
+    $ ./generate
+
+The docs will be compiled to the `html` directory.
 
 # License
 
