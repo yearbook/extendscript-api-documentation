@@ -10,10 +10,11 @@ node_modules/
 xml/*.xml
 
 # don't include any built docs either because it'll make the repo messy
-docs/source/*
+docs/source/
 
 # compiled docs
 docs/**/*.html
 docs/**/*.css
 docs/js/compiled.js
+html/
 

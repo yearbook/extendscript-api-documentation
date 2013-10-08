@@ -11,7 +11,7 @@ var util = require('util');
 var outdir = './docs/source/';
 
 // read the XML data
-var indesignData    = fs.readFileSync('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'});
+var indesignData    = fs.readFileSync('./xml/indesign.xml', {encoding: 'utf-8'});
 var javascriptData  = fs.readFileSync('./xml/javascript.xml', {encoding: 'utf-8'});
 var scriptuiData    = fs.readFileSync('./xml/scriptui.xml', {encoding: 'utf-8'});
 
@@ -47,12 +47,15 @@ function buildHTMLDocsSource(xmlDocs) {
   var prettyContents = JSON.stringify(docContents, null, 2);
   fs.writeFileSync(outdir + 'contents.json', prettyContents, {encoding: 'utf-8'});
 
+  var currentDoc = 1;
+  var totalDocs = xmlDocs.length;
+
   // get all classes
   xmlDocs.forEach(function(xmlDoc) {
 
     // get all classdefs
     var classdefs = xmlDoc.find('//package/classdef');
-    var progressBar = new progress(':bar', {
+    var progressBar = new progress('(' + currentDoc + '/' + totalDocs + ') :bar', {
       total: classdefs.length,
       width: 30
     });
@@ -64,8 +67,6 @@ function buildHTMLDocsSource(xmlDocs) {
         coerce: true,
         trim: true
       }).classdef;
-
-      console.log(className);
 
       // add to index
       if (!docIndex[className])
@@ -132,6 +133,8 @@ function buildHTMLDocsSource(xmlDocs) {
       // update the awesome progress bar
       progressBar.tick();
     });
+
+    currentDoc++;
   });
 
   // done!
