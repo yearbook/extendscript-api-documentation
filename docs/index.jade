@@ -14,13 +14,13 @@ html(lang='en', ng-app='ybmDocApp')
 
             ul(class='nav navbar-nav')
               li
-                a(href='#/about') About
-              li
                 a(href='#/search') Search
               li
                 a(href='https://github.com/yearbookmachine/indesign-api-documentation') GitHub
-              li
-                a(href='http://www.yearbookmachine.com') Yearbook Machine
+
+            span(class='nav navbar-right')
+              a(href='http://www.yearbookmachine.com')
+                img(src='http://i.imgur.com/X0EZATG.png')
 
       div.row
         div(class='col-md-3', ng-controller='ContentsListCtrl')

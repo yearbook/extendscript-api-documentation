@@ -1,3 +1,6 @@
+# annoying Mac files
+*.DS_Store
+
 # node modules and vim swap files
 node_modules/
 *.swp
@@ -8,3 +11,9 @@ xml/*.xml
 
 # don't include any built docs either because it'll make the repo messy
 docs/source/*
+
+# compiled docs
+docs/**/*.html
+docs/**/*.css
+docs/js/compiled.js
+
