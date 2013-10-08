@@ -6,7 +6,11 @@ header
   h1 {{ class.name }}
 
   div.info
-    span(class='label label-primary', ng-show='class.dynamic') Dynamic
+    span(class='left label label-primary', ng-show='class.dynamic') Dynamic
+    span.right(ng-show='class.superclass')
+      span Superclass:
+      a(href='{{ class.superclass.href }}')
+        code {{ class.superclass.$t }}
 
 section
   p {{ class.shortdesc }}
