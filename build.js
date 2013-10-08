@@ -64,14 +64,24 @@ fs.readFile('./xml/omv-indesign-9.0-cc.xml', {encoding: 'utf-8'}, function(err, 
               method.parameters.parameter.forEach(function(param) {
                 if (param.datatype.type == 'varies=any')
                   param.datatype.type = 'mixed';
+
+                if (param.datatype.array == {})
+                  param.datatype.array = true;
               });
             }
           });
         }
 
-        // TODO: finish this. train is about to pull in
         if ('property' in element) {
+          element.property = [].concat( element.property );
 
+          element.property.forEach(function(property) {
+            if (property.datatype.type == 'varies=any')
+              property.datatype.type = 'mixed';
+
+            if ('array' in property.datatype)
+              property.datatype.array = true;
+          });
         }
       });
 

@@ -17,6 +17,9 @@ section
     div(ng-show='(type.property | filter:elementFilter).length')
       div(class='panel panel-default', ng-repeat='property in type.property | orderBy:"name" | filter:elementFilter')
         div.panel-heading
+          span(ng-show='property.datatype.array')
+            code Array
+
           a(href='#/{{ property.datatype.type }}')
             code {{ property.datatype.type }}
           b {{ property.name }}
