@@ -10,6 +10,7 @@ var util = require('util');
 
 // configuration
 var outdir = './docs/source/';
+var libdir = './lib/';
 
 // read the XML data
 var indesignData    = fs.readFileSync('./xml/indesign.xml', {encoding: 'utf-8'});
@@ -74,6 +75,8 @@ function buildHTMLDocsSource(xmlDocs) {
       if (!docIndex[className])
         docIndex[className] = [];
 
+      classObject.description  = fixDescription(classObject.description);
+
       // make sure classObject.elements is always an array
       classObject.elements = [].concat( classObject.elements );
 
@@ -131,13 +134,178 @@ function buildHTMLDocsSource(xmlDocs) {
         });
       }
 
-      // TODO: now we have a clean JS object, write the annotated .jsx files
-
       // render as text
       var prettyClass = JSON.stringify(classObject, null, 2);
 
       // write to file
       fs.writeFileSync(outdir + 'classes/' + className + '.json', prettyClass, {encoding: 'utf-8'});
+
+      // TODO: now we have a clean JS object, write the annotated .jsx files
+      var jsxFile = className + '.jsx';
+      var jsxSrc = '';
+
+      console.log(className);
+
+      // find constructor, method list, property list
+
+      var constructor;
+      var properties = [];
+      var methods = [];
+
+      classObject.elements.forEach(function(element) {
+        if (element !== null && element !== undefined) {
+          if (element.type === 'constructor') {
+            constructor = element.method[0];
+          } else {
+            if ('property' in element)
+              properties = properties.concat(element.property);
+
+            if ('method' in element)
+              methods = methods.concat(element.method);
+          }
+        }
+      });
+
+      if (constructor === undefined) {
+
+        jsxSrc += '/*\n';
+        jsxSrc += ' * ' + classObject.shortdesc + '\n';
+        jsxSrc += ' */\n';
+        jsxSrc += 'var ' + className + ' = {\n';
+
+        properties.forEach(function(property) {
+          jsxSrc += '  /*\n';
+          jsxSrc += '   * ' + property.shortdesc + '\n';
+
+          if (property.datatype !== undefined)
+            jsxSrc += '   * @type {' + property.datatype.type + '}\n';
+
+          jsxSrc += '   */\n';
+          jsxSrc += '  ' + property.name + ': undefined,\n';
+          jsxSrc += '  \n';
+        });
+
+        methods.forEach(function(method) {
+          jsxSrc += '  /*\n';
+          jsxSrc += '   * ' + method.shortdesc + '\n';
+
+          var signature = '';
+
+          if ('parameters' in method) {
+            jsxSrc += ' *\n';
+
+            method.parameters.forEach(function(param) {
+              var type = param.datatype.type;
+              var name = param.name;
+              var desc = param.shortdesc;
+
+              signature += name + ', ';
+
+              if (param.optional)
+                name = '[' + name + ']';
+
+              jsxSrc += '   * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+            });
+          }
+
+          // remove the last ', '
+          signature = signature.slice(0, -2);
+
+          if (method.datatype !== undefined)
+            jsxSrc += '   * @returns {' + method.datatype.type + '}\n';
+
+          jsxSrc += '   */\n';
+          jsxSrc += '  ' + method.name + ': function(' + signature + ') {\n';
+          jsxSrc += '  \n';
+          jsxSrc += '  },\n';
+          jsxSrc += '  \n';
+        });
+
+        jsxSrc += '};\n';
+
+      } else {
+        jsxSrc += '/*\n';
+        jsxSrc += ' * ' + constructor.shortdesc + '\n';
+        jsxSrc += ' * @constructor\n';
+
+        var signature = '';
+
+        if ('parameters' in constructor) {
+          jsxSrc += '   *\n';
+
+          constructor.parameters.forEach(function(param) {
+            var type = param.datatype.type;
+            var name = param.name;
+            var desc = param.shortdesc;
+
+            signature += name + ', ';
+
+            if (param.optional)
+              name = '[' + name + ']';
+
+            jsxSrc += ' * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+          });
+        }
+
+        // remove the last ', '
+        signature = signature.slice(0, -2);
+
+        jsxSrc += ' */\n';
+        jsxSrc += 'function ' + className + '(' + signature + ') {\n';
+
+        properties.forEach(function(property) {
+          jsxSrc += '  /*\n';
+          jsxSrc += '   * ' + property.shortdesc + '\n';
+
+          if (property.datatype !== undefined)
+            jsxSrc += '   * @type {' + property.datatype.type + '}\n';
+
+          jsxSrc += '   */\n';
+          jsxSrc += '  this.' + property.name + ' = undefined;\n';
+          jsxSrc += '  \n';
+        });
+
+        methods.forEach(function(method) {
+          jsxSrc += '  /*\n';
+          jsxSrc += '   * ' + method.shortdesc + '\n';
+
+          var signature = '';
+
+          if ('parameters' in method) {
+            jsxSrc += '   *\n';
+
+            method.parameters.forEach(function(param) {
+              var type = param.datatype.type;
+              var name = param.name;
+              var desc = param.shortdesc;
+
+              signature += name + ', ';
+
+              if (param.optional)
+                name = '[' + name + ']';
+
+              jsxSrc += '   * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+            });
+          }
+
+          // remove the last ', '
+          signature = signature.slice(0, -2);
+
+          if (method.datatype !== undefined)
+            jsxSrc += '   * @returns {' + method.datatype.type + '}\n';
+
+          jsxSrc += '   */\n';
+          jsxSrc += '  this.' + method.name + ' = function(' + signature + ') {\n';
+          jsxSrc += '  \n';
+          jsxSrc += '  }\n';
+          jsxSrc += '  \n';
+        });
+
+        jsxSrc += '}\n';
+      }
+
+      // save 
+      fs.writeFileSync(libdir + jsxFile, jsxSrc, {encoding: 'utf-8'});
 
       // update the awesome progress bar
       progressBar.tick();
@@ -177,6 +345,10 @@ function fixDataType(datatype) {
 
     case 'string':
       datatype.type = 'String';
+      break;
+
+    case 'number':
+      datatype.type = 'Number';
       break;
   }
 
