@@ -92,9 +92,10 @@ function buildHTMLDocsSource(xmlDocs) {
                 // add to index
                 docIndex[className].push(method.name);
 
-                // fix descriptions
+                // fix things
                 method.shortdesc    = fixDescription(method.shortdesc);
                 method.description  = fixDescription(method.description);
+                method.datatype     = fixDataType(method.datatype);
 
                 if ('parameters' in method) {
                   // force it to be an array
