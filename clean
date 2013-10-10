@@ -1,4 +1,7 @@
 #!/bin/bash
 
-rm -rf ./docs/source
+rm -rf ./docs/source/*.json
+rm -rf ./docs/source/classes/*.json
 rm -rf ./html
+rm -rf ./lib/*.jsx
+
