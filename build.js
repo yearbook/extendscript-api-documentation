@@ -144,10 +144,7 @@ function buildHTMLDocsSource(xmlDocs) {
       var jsxFile = className + '.jsx';
       var jsxSrc = '';
 
-      console.log(className);
-
       // find constructor, method list, property list
-
       var constructor;
       var properties = [];
       var methods = [];
