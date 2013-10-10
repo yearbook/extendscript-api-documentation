@@ -45,7 +45,7 @@ section
           b {{ method.name }}
 
           span &#40;
-          span(ng-repeat='param in method.parameters.parameter')
+          span(ng-repeat='param in method.parameters')
             a(href='#/{{ param.datatype.type }}')
               code {{ param.datatype.type }}
             b {{ param.name }}
@@ -57,7 +57,7 @@ section
         div.panel-body
           {{ method.shortdesc }}
 
-          div(ng-show='(method.parameters.parameter).length')
+          div(ng-show='(method.parameters).length')
             hr
 
             h4 Parameters
@@ -69,7 +69,7 @@ section
                   td Name
                   td Description
               tbody
-                tr(ng-repeat='param in method.parameters.parameter')
+                tr(ng-repeat='param in method.parameters')
                   td
                     a(href='#/{{ param.datatype.type }}')
                       code {{ param.datatype.type }}

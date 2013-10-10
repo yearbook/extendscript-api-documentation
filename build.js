@@ -1,7 +1,8 @@
 // modules
-var libxmljs = require('libxmljs');
-var progress = require('progress');
-var xml2json = require('xml2json');
+var libxmljs  = require('libxmljs');
+var progress  = require('progress');
+var xml2json  = require('xml2json');
+var ent       = require('ent');
 
 // node libs
 var fs = require('fs');
@@ -50,7 +51,7 @@ function buildHTMLDocsSource(xmlDocs) {
   var currentDoc = 1;
   var totalDocs = xmlDocs.length;
 
-  // get all classes
+  // for each XML file
   xmlDocs.forEach(function(xmlDoc) {
 
     // get all classdefs
@@ -60,6 +61,7 @@ function buildHTMLDocsSource(xmlDocs) {
       width: 30
     });
 
+    // for each class
     classdefs.forEach(function(classdef) {
       var className = classdef.attr('name').value();
       var classObject = xml2json.toJson(classdef.toString(), {
@@ -77,30 +79,34 @@ function buildHTMLDocsSource(xmlDocs) {
 
       // some classes are weird
       if ('elements' in classObject) {
+
         // make sure parameters is always an array too
         classObject.elements.forEach(function(element) {
           if (element) {
             if ('method' in element) {
+
+              // coerce to a list of methods and then loop over them
               element.method = [].concat( element.method );
-
-              // TODO: parameters.parameter? This is dumb.
-              // * Will scowls at Adobe
               element.method.forEach(function(method) {
-                // add to index
 
+                // add to index
                 docIndex[className].push(method.name);
+
+                // fix descriptions
+                method.shortdesc    = fixDescription(method.shortdesc);
+                method.description  = fixDescription(method.description);
 
                 if ('parameters' in method) {
                   // force it to be an array
-                  method.parameters.parameter = [].concat( method.parameters.parameter );
+                  method.parameters = [].concat( method.parameters.parameter );
+                  method.parameters.forEach(function(param) {
 
-                  // varies=any -> mixed
-                  method.parameters.parameter.forEach(function(param) {
-                    if (param.datatype.type == 'varies=any')
-                      param.datatype.type = 'mixed';
+                    // fix short description
+                    param.shortdesc   = fixDescription(param.shortdesc);
+                    param.description = fixDescription(param.description);
 
-                    if (param.datatype.array == {})
-                      param.datatype.array = true;
+                    // apply fixes
+                    param.datatype = fixDataType( param.datatype );
                   });
                 }
               });
@@ -108,21 +114,23 @@ function buildHTMLDocsSource(xmlDocs) {
 
             if ('property' in element) {
               element.property = [].concat( element.property );
-
               element.property.forEach(function(property) {
                 // add to index
                 docIndex[className].push(property.name);
 
-                if (property.datatype.type == 'varies=any')
-                  property.datatype.type = 'mixed';
+                // fix descriptions
+                property.shortdesc    = fixDescription(property.shortdesc);
+                property.description  = fixDescription(property.description);
 
-                if ('array' in property.datatype)
-                  property.datatype.array = true;
+                // apply fixes
+                property.datatype = fixDataType( property.datatype );
               });
             }
           }
         });
       }
+
+      // TODO: now we have a clean JS object, write the annotated .jsx files
 
       // render as text
       var prettyClass = JSON.stringify(classObject, null, 2);
@@ -142,3 +150,50 @@ function buildHTMLDocsSource(xmlDocs) {
   fs.writeFileSync(outdir + 'index.json', prettyIndex, {encoding: 'utf-8'});
 }
 
+function fixDataType(datatype) {
+  if (datatype === undefined)
+    return undefined;
+
+  if (typeof datatype.type !== 'string') {
+    if (datatype.type !== undefined) {
+      if ('$t' in datatype.type)
+        datatype.type = datatype.type.$t;
+    }
+  }
+
+  switch(datatype.type) {
+    case 'varies=any':
+      datatype.type = 'Mixed';
+      break;
+
+    case 'Any':
+      datatype.type = 'Mixed';
+      break;
+
+    case 'bool':
+      datatype.type = 'Boolean';
+      break;
+
+    case 'string':
+      datatype.type = 'String';
+      break;
+  }
+
+  if ('array' in datatype)
+    datatype.array = true;
+
+  return datatype;
+}
+
+function fixDescription(description) {
+  if (description === undefined)
+    return undefined;
+
+  if (typeof description !== 'string')
+    return undefined;
+
+  // decode ents
+  description = ent.decode(description);
+
+  return description;
+}

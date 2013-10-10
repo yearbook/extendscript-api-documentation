@@ -18,3 +18,5 @@ docs/**/*.css
 docs/js/compiled.js
 html/
 
+# compiled library
+lib/
