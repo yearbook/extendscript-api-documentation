@@ -15,25 +15,26 @@ var libdir = './lib/';
 var docIndex = {};
 
 // main estk
-generate('indesign');
-generate('illustrator');
-generate('photoshop');
+generate('InDesign');
+generate('Illustrator');
+generate('Photoshop');
 
 // javascript + scriptui
-generate('javascript');
-generate('scriptui');
+generate('Javascript');
+generate('ScriptUI');
 
 // done!
-var prettyIndex = JSON.stringify(docIndex, null, 2);
-fs.writeFileSync(outdir + 'index.json', prettyIndex, {encoding: 'utf-8'});
+var prettySearch = JSON.stringify(docIndex, null, 2);
+fs.writeFileSync(outdir + 'search.json', prettySearch, {encoding: 'utf-8'});
 
 function generate(namespace) {
   // get XML document
-  var fileData = fs.readFileSync('./xml/' + namespace + '.xml', {encoding: 'utf-8'});
+  var fileData = fs.readFileSync('./xml/' + namespace.toLowerCase() + '.xml', {encoding: 'utf-8'});
   var xmlDoc = libxmljs.parseXmlString(fileData);
 
   // stores
   var docContents = [];
+  docIndex[namespace] = {};
 
   // get the contents
   var mapXML = xmlDoc.get('//map');
@@ -70,8 +71,8 @@ function generate(namespace) {
     }).classdef;
 
     // add to index
-    if (!docIndex[className])
-      docIndex[className] = [];
+    if (!docIndex[namespace][className])
+      docIndex[namespace][className] = [];
 
     // fix description
     classObject.description = fixDescription(classObject.description);
@@ -91,7 +92,7 @@ function generate(namespace) {
             element.method.forEach(function(method) {
 
               // add to index
-              docIndex[className].push(method.name);
+              docIndex[namespace][className].push(method.name);
 
               // fix things
               method.shortdesc    = fixDescription(method.shortdesc);
@@ -118,7 +119,7 @@ function generate(namespace) {
             element.property = [].concat( element.property );
             element.property.forEach(function(property) {
               // add to index
-              docIndex[className].push(property.name);
+              docIndex[namespace][className].push(property.name);
 
               // fix descriptions
               property.shortdesc    = fixDescription(property.shortdesc);

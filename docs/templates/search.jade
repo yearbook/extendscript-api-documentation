@@ -12,13 +12,13 @@ header
 
 
 section
-  article(ng-repeat='(class, elements) in (filteredIndex = (index | limitTo:4))')
+  article(ng-repeat='(class, elements) in (filteredIndex = (search | limitTo:4))')
     div(ng-show='(elements | filter:elementFilter).length')
       h6
         a(href='#/{{ class }}')
           {{ class }}
 
-      a(href='#/{{ class }}', ng-repeat='element in (filteredElements = (elements | filter:elementFilter | limitTo: 5))')
+      a.tag(href='#/{{ class }}', ng-repeat='element in (filteredElements = (elements | filter:elementFilter | limitTo: 5))')
         code
           {{ element }}
 

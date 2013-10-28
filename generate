@@ -11,6 +11,16 @@ if [ ! -f ./xml/indesign.xml ]; then
   exit 1
 fi
 
+if [ ! -f ./xml/illustrator.xml ]; then
+  echo './xml/illustrator.xml does not exist'
+  exit 1
+fi
+
+if [ ! -f ./xml/photoshop.xml ]; then
+  echo './xml/photoshop.xml does not exist'
+  exit 1
+fi
+
 if [ ! -f ./xml/javascript.xml ]; then
   echo './xml/javascript.xml does not exist'
   exit 1
@@ -30,16 +40,16 @@ echo 'Removing stale baked goods...'
 ./clean
 
 echo 'Generating documentation source files...'
-mkdir -p ./docs/source/indesign/classes
-mkdir -p ./docs/source/illustrator/classes
-mkdir -p ./docs/source/photoshop/classes
-mkdir -p ./docs/source/javascript/classes
-mkdir -p ./docs/source/scriptui/classes
-mkdir -p ./lib/indesign
-mkdir -p ./lib/illustrator
-mkdir -p ./lib/photoshop
-mkdir -p ./lib/javascript
-mkdir -p ./lib/scriptui
+mkdir -p ./docs/source/InDesign/classes
+mkdir -p ./docs/source/Illustrator/classes
+mkdir -p ./docs/source/Photoshop/classes
+mkdir -p ./docs/source/Javascript/classes
+mkdir -p ./docs/source/ScriptUI/classes
+mkdir -p ./lib/InDesign
+mkdir -p ./lib/Illustrator
+mkdir -p ./lib/Photoshop
+mkdir -p ./lib/Javascript
+mkdir -p ./lib/ScriptUI
 
 # bake
 node bake.js

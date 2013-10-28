@@ -3,7 +3,7 @@
 //= require vendor/angular-resource.js
 
 //= require controllers/ContentsListCtrl.js
-//= require controllers/IndexListCtrl.js
+//= require controllers/SearchCtrl.js
 //= require controllers/ClassDetailCtrl.js
 
 var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
@@ -11,7 +11,7 @@ var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
     $routeProvider
       .when('/', {templateUrl: './templates/index.jade'})
       .when('/about', {templateUrl: './templates/about.jade'})
-      .when('/search', {templateUrl: './templates/search.jade', controller: IndexListCtrl})
+      .when('/search', {templateUrl: './templates/search.jade', controller: SearchCtrl})
       .when('/:namespace/:className', {templateUrl: './templates/class-detail.jade', controller: ClassDetailCtrl})
       .otherwise({
         redirectTo: '/'
