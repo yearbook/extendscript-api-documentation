@@ -1,6 +1,13 @@
 function ContentsListCtrl($scope, $http) {
-  // XHR to get the map data
-  $http.get('./source/contents.json').success(function(data) {
-    $scope.classes = data;
-  });
+  $scope.namespace = 'indesign';
+
+
+  $scope.update = function() {
+    // XHR to get the map data
+    $http.get('./source/' + $scope.namespace + '/contents.json').success(function(data) {
+      $scope.classes = data;
+    });
+  };
+
+  $scope.update();
 }

@@ -30,8 +30,19 @@ echo 'Removing stale baked goods...'
 ./clean
 
 echo 'Generating documentation source files...'
-mkdir -p ./docs/source/classes
-node build.js
+mkdir -p ./docs/source/indesign/classes
+mkdir -p ./docs/source/illustrator/classes
+mkdir -p ./docs/source/photoshop/classes
+mkdir -p ./docs/source/javascript/classes
+mkdir -p ./docs/source/scriptui/classes
+mkdir -p ./lib/indesign
+mkdir -p ./lib/illustrator
+mkdir -p ./lib/photoshop
+mkdir -p ./lib/javascript
+mkdir -p ./lib/scriptui
+
+# bake
+node bake.js
 
 echo 'Baking docs/ folder into html/...'
 mkdir -p ./html/js

@@ -24,9 +24,18 @@ html(lang='en', ng-app='ybmDocApp')
 
       div.row
         div(class='col-md-3', ng-controller='ContentsListCtrl')
-          div.input-group
-            span.input-group-addon Filter
-            input(id='classFilter', class='form-control', ng-model='classFilter')
+          div.form-group
+            div.input-group
+              span.input-group-addon Filter
+              input(id='classFilter', class='form-control', ng-model='classFilter')
+
+          div.form-group
+            select.form-control(ng-model='namespace', ng-change='update()')
+              option(value='indesign', selected=true) InDesign
+              option(value='illustrator') Illustrator
+              option(value='photoshop') Photoshop
+              option(value='javascript') Javascript
+              option(value='scriptui') ScriptUI
 
           hr
 
@@ -35,7 +44,7 @@ html(lang='en', ng-app='ybmDocApp')
               h4 {{ category.navtitle }}
               ul.list-unstyled
                 li(ng-repeat='class in category.topicref | orderBy:"navtitle" | filter:classFilter')
-                  a(href='#/{{ class.navtitle }}') {{ class.navtitle }}
+                  a(href='#/{{ namespace }}/{{ class.navtitle }}') {{ class.navtitle }}
 
         div(class='col-md-9', role='main')
 
