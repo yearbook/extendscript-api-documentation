@@ -1,4 +1,4 @@
-# Documentation builder for InDesign API
+# Documentation builder for ExtendScript API
 
 Documentation for the InDesign API in more pleasant formats than the Object
 Model Viewer. This repo contains the source code for building the documentation
@@ -32,7 +32,7 @@ to
 
 (as per indesign.xml)
 
-## Generating the docs from XML source files for development
+## Generating the docs
 
 Install Node.JS
 
