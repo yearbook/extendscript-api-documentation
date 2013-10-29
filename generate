@@ -82,6 +82,7 @@ cp -R ./docs/source ./html
 
 echo 'Compressing docs into zip file...'
 zip -q -r ./html/ybm-esapi-docs.zip html
+zip -q -r ./html/ybm-estk-lib.zip lib
 
 echo 'Done. Enjoy some freshly baked docs. :)'
 exit 0;

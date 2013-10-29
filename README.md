@@ -44,34 +44,51 @@ Copy the source XML files into ./xml
     $ cp javascript.xml ./xml/javascript.xml
     $ cp scriptui.xml ./xml/scriptui.xml
 
-Install the required NodeJS modules.
+Bake
 
-    $ npm install
+    $ ./generate
 
-Build
+The docs will be compiled to the `html` directory, and the development
+build will be located in the `docs` directory.
 
-    $ node build.js
-
-## Serving the HTML docs locally
+## Developing the HTML docs locally
 
 The docs are built using various templating and stylesheet languages. The easiest way
 to view the docs is to use [zapp](https://www.github.com/wridgers/zapp).
 
     $ npm install -g zapp
+    $ ./generate
     $ cd docs
     $ zapp
 
 Now open your browser [here](http://localhost:8080).
 
-## Baking the HTML docs
+## Documentation and autocomplete in IDEs
 
-To bake the docs you can simply run the include `generate` script. There are a few
-required tools, and `generate` will warn you if they are missing.
+The `./generate` script will automatically build some jsdoc style annotated jsx files
+which you can use with many editors for autocompletion and inline documentation. It
+is known to work well with vim, Sublime Text, and WebStorm.
 
-    $ npm install -g jade markdown snockets-cli less
-    $ ./generate
+You can download precompiled libraries [here](http://yearbookmachine.github.io/esdocs/ybm-estk-lib.zip).
 
-The docs will be compiled to the `html` directory.
+### WebStorm
+
+  - First, add `*.jsx` to the registered patterns of JavaScript files.
+    * WebStorm -> Preferences -> IDE Settings -> File Types
+  - Add the ./libs/ folder to your project as an external library.
+    * WebStorm -> Preferences -> Project Settings -> JavaScript -> Libraries
+    * Add...
+
+You should now have autocompletion and inline documentation available in the
+normal WebStorm fashion.
+
+### Sublime Text
+
+Using [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel).
+
+### vim
+
+Using [YCM](https://github.com/Valloric/YouCompleteMe).
 
 # License
 

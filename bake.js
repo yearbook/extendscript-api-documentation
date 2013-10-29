@@ -227,7 +227,7 @@ function writeJSX(namespace, className, classObject) {
           if (param.optional)
             name = '[' + name + ']';
 
-          jsxSrc += '   * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+          jsxSrc += '   * @param {' + type + '} ' + name + ' ' + desc + '\n';
         });
       }
 
@@ -239,7 +239,10 @@ function writeJSX(namespace, className, classObject) {
 
       jsxSrc += '   */\n';
       jsxSrc += '  ' + method.name + ': function(' + signature + ') {\n';
-      jsxSrc += '  \n';
+
+      if (method.datatype && method.datatype.type)
+        jsxSrc += '    return new ' + method.datatype.type + '();\n';
+
       jsxSrc += '  },\n';
       jsxSrc += '  \n';
     });
@@ -266,7 +269,7 @@ function writeJSX(namespace, className, classObject) {
         if (param.optional)
           name = '[' + name + ']';
 
-        jsxSrc += ' * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+        jsxSrc += ' * @param {' + type + '} ' + name + ' ' + desc + '\n';
       });
     }
 
@@ -307,7 +310,7 @@ function writeJSX(namespace, className, classObject) {
           if (param.optional)
             name = '[' + name + ']';
 
-          jsxSrc += '   * @param {' + type + '} ' + name + ' - ' + desc + '\n';
+          jsxSrc += '   * @param {' + type + '} ' + name + ' ' + desc + '\n';
         });
       }
 
@@ -319,7 +322,10 @@ function writeJSX(namespace, className, classObject) {
 
       jsxSrc += '   */\n';
       jsxSrc += '  this.' + method.name + ' = function(' + signature + ') {\n';
-      jsxSrc += '  \n';
+
+      if (method.datatype && method.datatype.type)
+        jsxSrc += '    return new ' + method.datatype.type + '();\n';
+
       jsxSrc += '  }\n';
       jsxSrc += '  \n';
     });
