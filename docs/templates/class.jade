@@ -4,12 +4,13 @@ header
     input(id='elementFilter', class='form-control', ng-model='elementFilter')
 
   h1 {{ class.name }}
+    small  {{ namespace }}
 
   div.info
     span(class='left label label-primary', ng-show='class.dynamic') Dynamic
     span.right(ng-show='class.superclass')
       span Superclass:
-      a(href='#/{{ class.superclass.$t }}')
+      a(href='#/{{ namespace }}/{{ class.superclass.$t }}')
         code {{ class.superclass.$t }}
 
 section
@@ -22,12 +23,15 @@ section
       div(class='panel panel-default', ng-repeat='property in type.property | orderBy:"name" | filter:elementFilter')
         a(name='{{ property.name }}')
         div.panel-heading
+
           span(ng-show='property.datatype.array')
             code Array
 
-          a(href='#/{{ property.datatype.type }}')
+          a(href='#/{{ namespace }}/{{ property.datatype.type }}', ng-show='property.datatype.type')
             code {{ property.datatype.type }}
-          b {{ property.name }}
+
+          a(href='#/{{ namespace }}/{{ class.name }}/{{ property.name }}')
+            b {{ property.name }}
 
           span(class='label label-danger', ng-show='property.rwaccess == "readonly"') Read only
           span(class='label label-primary') Property
@@ -40,13 +44,15 @@ section
       div(class='panel panel-default', ng-repeat='method in type.method | orderBy:"name" | filter:elementFilter')
         a(name='{{ method.name }}')
         div.panel-heading
-          a(href='#/{{ method.datatype.type }}')
+          a(href='#/{{ namespace }}/{{ method.datatype.type }}', ng-show='method.datatype.type')
             code {{ method.datatype.type }}
-          b {{ method.name }}
+
+          a(href='#/{{ namespace }}/{{ class.name }}/{{ method.name }}')
+            b {{ method.name }}
 
           span &#40;
           span(ng-repeat='param in method.parameters')
-            a(href='#/{{ param.datatype.type }}')
+            a(href='#/{{ namespace }}/{{ param.datatype.type }}')
               code {{ param.datatype.type }}
             b {{ param.name }}
             span(ng-show='$first && !$last || $middle') &#44;
@@ -71,7 +77,7 @@ section
               tbody
                 tr(ng-repeat='param in method.parameters')
                   td
-                    a(href='#/{{ param.datatype.type }}')
+                    a(href='#/{{ namespace }}/{{ param.datatype.type }}')
                       code {{ param.datatype.type }}
                   td {{ param.name }}
                   td

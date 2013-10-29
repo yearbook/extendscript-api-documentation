@@ -108,6 +108,22 @@ function generate(namespace) {
                   param.shortdesc   = fixDescription(param.shortdesc);
                   param.description = fixDescription(param.description);
 
+                  if (param.shortdesc) {
+                    // does description say it's optional?
+                    if ( param.shortdesc.match(/\(optional\)/i) !== null ) {
+                      param.optional = true;
+                    }
+                  }
+
+                  // remove traces of optional stuff
+                  if (param.shortdesc) {
+                    param.shortdesc   = param.shortdesc.replace(/\(optional\)/i, '');
+                  }
+
+                  if (param.description) {
+                    param.description = param.description.replace(/\(optional\)/i, '');
+                  }
+
                   // apply fixes
                   param.datatype = fixDataType( param.datatype );
                 });
@@ -324,6 +340,13 @@ function fixDataType(datatype) {
       if ('$t' in datatype.type)
         datatype.type = datatype.type.$t;
     }
+  } else {
+    // entites
+    datatype.type = ent.decode(datatype.type);
+
+    if (datatype.type.match(/=any/) !== null) {
+      datatype.type = 'Mixed';
+    }
   }
 
   switch(datatype.type) {
@@ -363,6 +386,10 @@ function fixDescription(description) {
 
   // decode ents
   description = ent.decode(description);
+
+  // TODO: why is this missed?
+  description = description.replace('&#40;', '(');
+  description = description.replace('&#41;', ')');
 
   return description;
 }

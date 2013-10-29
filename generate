@@ -81,7 +81,7 @@ rm ./html/js/preprocessed.js
 cp -R ./docs/source ./html
 
 echo 'Compressing docs into zip file...'
-zip -q -r ./html/ybm-indesign-docs.zip html
+zip -q -r ./html/ybm-esapi-docs.zip html
 
 echo 'Done. Enjoy some freshly baked docs. :)'
 exit 0;

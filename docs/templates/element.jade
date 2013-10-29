@@ -1,0 +1,76 @@
+header
+  div#articleSearch.input-group
+    span.input-group-addon Filter
+    input(id='elementFilter', class='form-control', ng-model='elementFilter')
+
+  h1 {{ class.name }}
+    small  {{ namespace }}
+
+  div.info
+    span(class='left label label-primary', ng-show='class.dynamic') Dynamic
+    span.right(ng-show='class.superclass')
+      span Superclass:
+      a(href='#/{{ namespace }}/{{ class.superclass.$t }}')
+        code {{ class.superclass.$t }}
+
+section
+
+    div(class='panel panel-default', ng-show='property')
+      a(name='{{ property.name }}')
+      div.panel-heading
+        span(ng-show='property.datatype.array')
+          code Array
+
+        a(href='#/{{ namespace }}/{{ property.datatype.type }}', ng-show='property.datatype.type')
+          code {{ property.datatype.type }}
+        b {{ property.name }}
+
+        span(class='label label-danger', ng-show='property.rwaccess == "readonly"') Read only
+        span(class='label label-primary') Property
+
+      div.panel-body
+        {{ property.shortdesc }}
+
+    div(class='panel panel-default', ng-show='method')
+      a(name='{{ method.name }}')
+      div.panel-heading
+        a(href='#/{{ namespace }}/{{ method.datatype.type }}', ng-show='method.datatype.type')
+          code {{ method.datatype.type }}
+        b {{ method.name }}
+
+        span &#40;
+        span(ng-repeat='param in method.parameters')
+          a(href='#/{{ namespace }}/{{ param.datatype.type }}')
+            code {{ param.datatype.type }}
+          b {{ param.name }}
+          span(ng-show='$first && !$last || $middle') &#44;
+        span &#41;
+
+        span(class='label label-success') Method
+
+      div.panel-body
+        {{ method.shortdesc }}
+
+        div(ng-show='(method.parameters).length')
+          hr
+
+          h4 Parameters
+
+          table(class='table table-striped')
+            thead
+              tr
+                td Type
+                td Name
+                td Description
+            tbody
+              tr(ng-repeat='param in method.parameters')
+                td
+                  a(href='#/{{ namespace }}/{{ param.datatype.type }}')
+                    code {{ param.datatype.type }}
+                td {{ param.name }}
+                td
+                  span(class='label label-info', ng-show='param.optional') Optional
+                  {{ param.shortdesc }}
+
+  hr
+
