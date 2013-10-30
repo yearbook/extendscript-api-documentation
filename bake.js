@@ -375,6 +375,10 @@ function fixDataType(datatype) {
     case 'number':
       datatype.type = 'Number';
       break;
+
+    case 'Rect':
+      datatype.type = 'Rectangle';
+      break;
   }
 
   if ('array' in datatype)
