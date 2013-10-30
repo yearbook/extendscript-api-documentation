@@ -2,6 +2,7 @@ function ContentsListCtrl($scope, $http) {
   $scope.namespace = 'InDesign';
 
   $scope.update = function() {
+    $scope.classFilter = '';
     $scope.classes = [];
 
     // XHR to get the map data
