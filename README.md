@@ -90,6 +90,11 @@ Using [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel).
 
 Using [YCM](https://github.com/Valloric/YouCompleteMe).
 
+# Tools
+
+See [here](https://github.com/yearbookmachine/extendscript-api-documentation/blob/master/tools/TOOLS.md) for
+some useful tools to help you develop ExtendScript.
+
 # License
 
 All source code for generating the documentation is under the MIT license. The
