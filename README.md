@@ -3,7 +3,7 @@
 Documentation for the InDesign API in more pleasant formats than the Object
 Model Viewer. This repo contains the source code for building the documentation
 system. If you're only interested in viewing the documentation then please look
-[here](http://yearbookmachine.github.com).
+[here](http://yearbook.github.com).
 
 ## Prerequisites
 
