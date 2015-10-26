@@ -3,7 +3,7 @@
 Documentation for the InDesign API in more pleasant formats than the Object
 Model Viewer. This repo contains the source code for building the documentation
 system. If you're only interested in viewing the documentation then please look
-[here](http://yearbookmachine.github.com).
+[here](http://yearbook.github.com).
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ The `./generate` script will automatically build some jsdoc style annotated jsx 
 which you can use with many editors for autocompletion and inline documentation. It
 is known to work well with vim, Sublime Text, and WebStorm.
 
-You can download precompiled libraries [here](http://yearbookmachine.github.io/esdocs/ybm-estk-lib.zip).
+You can download precompiled libraries [here](http://yearbook.github.io/esdocs/ybm-estk-lib.zip).
 
 ### WebStorm
 
@@ -92,7 +92,7 @@ Using [YCM](https://github.com/Valloric/YouCompleteMe).
 
 # Tools
 
-See [here](https://github.com/yearbookmachine/extendscript-api-documentation/blob/master/tools/TOOLS.md) for
+See [here](https://github.com/yearbook/extendscript-api-documentation/blob/master/tools/TOOLS.md) for
 some useful tools to help you develop ExtendScript.
 
 # License
