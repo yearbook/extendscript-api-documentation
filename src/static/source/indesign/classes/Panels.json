@@ -1,0 +1,169 @@
+{
+    "description": "A collection of panels.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the Panel.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panel with the specified index or name.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panel with the specified name.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panels within the specified range.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The Panel, index, or name at the beginning of the range. Can accept: Panel, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The Panel, index, or name at the end of the range. Can accept: Panel, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panel with the index previous to the specified index.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The index of the Panel that follows the desired Panel.",
+                            "type": "Panel",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panel whose index follows the specified Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The Panel whose index comes before the desired Panel.",
+                            "type": "Panel",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every Panel in the collection.",
+                    "type": "Panel",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Panel.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Panel with the specified index.",
+                    "type": "Panel",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Panels"
+}

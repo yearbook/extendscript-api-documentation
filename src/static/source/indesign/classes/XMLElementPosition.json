@@ -1,0 +1,47 @@
+{
+    "description": "Options for specifying position relative to the reference XML element or withing the XML element.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1482843494",
+                    "array": false,
+                    "description": "Specifies the position before the XML element.",
+                    "readonly": true,
+                    "name": "BEFORE_ELEMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1482778228",
+                    "array": false,
+                    "description": "Specifies the position after the XML element.",
+                    "readonly": true,
+                    "name": "AFTER_ELEMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1482844014",
+                    "array": false,
+                    "description": "Specifies the position at the beginning of the XML element.",
+                    "readonly": true,
+                    "name": "ELEMENT_START"
+                },
+                {
+                    "type": "number",
+                    "value": "1483042404",
+                    "array": false,
+                    "description": "Specifies the position at the end of the XML element.",
+                    "readonly": true,
+                    "name": "ELEMENT_END"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "XMLElementPosition"
+}

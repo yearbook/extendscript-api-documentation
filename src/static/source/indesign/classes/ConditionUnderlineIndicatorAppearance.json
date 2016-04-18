@@ -1,0 +1,39 @@
+{
+    "description": "Options for the condition underline indicator appearance.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1937208953",
+                    "array": false,
+                    "description": "Wavy underline.",
+                    "readonly": true,
+                    "name": "WAVY"
+                },
+                {
+                    "type": "number",
+                    "value": "1936682084",
+                    "array": false,
+                    "description": "Solid underline.",
+                    "readonly": true,
+                    "name": "SOLID"
+                },
+                {
+                    "type": "number",
+                    "value": "1684108136",
+                    "array": false,
+                    "description": "Dashed underline.",
+                    "readonly": true,
+                    "name": "DASHED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ConditionUnderlineIndicatorAppearance"
+}

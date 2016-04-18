@@ -1,0 +1,39 @@
+{
+    "description": "Tool tip behavior options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852797549",
+                    "array": false,
+                    "description": "Displays tool tips.",
+                    "readonly": true,
+                    "name": "NORMAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Turns off tool tips.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1180791668",
+                    "array": false,
+                    "description": "Displays tool tips more quickly than normal.",
+                    "readonly": true,
+                    "name": "FAST"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ToolTipOptions"
+}

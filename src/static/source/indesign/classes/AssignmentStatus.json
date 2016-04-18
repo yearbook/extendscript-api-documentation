@@ -1,0 +1,39 @@
+{
+    "description": "The status of the assigment.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1096119364",
+                    "array": false,
+                    "description": "The assignment has not been modified.",
+                    "readonly": true,
+                    "name": "ASSIGNMENT_UP_TO_DATE"
+                },
+                {
+                    "type": "number",
+                    "value": "1095724868",
+                    "array": false,
+                    "description": "The assignment has been modified and needs to be updated.",
+                    "readonly": true,
+                    "name": "ASSIGNMENT_OUT_OF_DATE"
+                },
+                {
+                    "type": "number",
+                    "value": "1095126387",
+                    "array": false,
+                    "description": "The assignment file is missing.",
+                    "readonly": true,
+                    "name": "ASSIGNMENT_FILE_MISSING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AssignmentStatus"
+}

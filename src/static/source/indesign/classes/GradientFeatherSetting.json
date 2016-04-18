@@ -1,0 +1,188 @@
+{
+    "description": "Gradient feather effect settings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the GradientFeatherSetting (a TransparencySetting, StrokeTransparencySetting, FillTransparencySetting or ContentTransparencySetting).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of opacity gradient stops.",
+                    "type": "OpacityGradientStops",
+                    "array": false,
+                    "name": "opacityGradientStops",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the gradient feather effect is applied.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "applied",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of gradient.",
+                    "type": "GradientType",
+                    "array": false,
+                    "name": "type",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of the gradient feather.",
+                    "type": "number",
+                    "array": false,
+                    "name": "angle",
+                    "readonly": false
+                },
+                {
+                    "description": "The length of the axial gradient, or radius of the radial gradient.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "length",
+                    "readonly": false
+                },
+                {
+                    "description": "The center point (for a radial gradient) or starting point (for a linear gradient) applied to the fill, as page coordinates in the format [x, y].",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "gradientStart",
+                    "readonly": false
+                },
+                {
+                    "description": "The hilite angle of the radial gradient feather.",
+                    "type": "number",
+                    "array": false,
+                    "name": "hiliteAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The hilite length of the radial gradient feather.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "hiliteLength",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the GradientFeatherSetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "GradientFeatherSetting",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "GradientFeatherSetting"
+}

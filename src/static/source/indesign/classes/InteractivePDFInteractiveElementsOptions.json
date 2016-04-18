@@ -1,0 +1,31 @@
+{
+    "description": "Options for how to draw interactive elements.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1231241580",
+                    "array": false,
+                    "description": "Include all interactive elements.",
+                    "readonly": true,
+                    "name": "INCLUDE_ALL_MEDIA"
+                },
+                {
+                    "type": "number",
+                    "value": "1097887823",
+                    "array": false,
+                    "description": "Draw interactive elements appearance only.",
+                    "readonly": true,
+                    "name": "APPEARANCE_ONLY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "InteractivePDFInteractiveElementsOptions"
+}

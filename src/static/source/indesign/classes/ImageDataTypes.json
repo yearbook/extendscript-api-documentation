@@ -1,0 +1,47 @@
+{
+    "description": "Options for sending image data to the printer or file.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1853058416",
+                    "array": false,
+                    "description": "Sends full-resolution data.",
+                    "readonly": true,
+                    "name": "ALL_IMAGE_DATA"
+                },
+                {
+                    "type": "number",
+                    "value": "1869640563",
+                    "array": false,
+                    "description": "Sends just enough data to print graphics at the best possible resolution for the output device.",
+                    "readonly": true,
+                    "name": "OPTIMIZED_SUBSAMPLING"
+                },
+                {
+                    "type": "number",
+                    "value": "1819243130",
+                    "array": false,
+                    "description": "Sends screen-resolution versions (72 dpi) of placed bitmap images.",
+                    "readonly": true,
+                    "name": "PROXY_IMAGE_DATA"
+                },
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Prints graphics frames with crossbars in place of graphics.",
+                    "readonly": true,
+                    "name": "NONE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImageDataTypes"
+}

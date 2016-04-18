@@ -1,0 +1,23 @@
+{
+    "description": "Nothing.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1851876449",
+                    "array": false,
+                    "description": "Nothing",
+                    "readonly": true,
+                    "name": "NOTHING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "NothingEnum"
+}

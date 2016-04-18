@@ -1,0 +1,154 @@
+{
+    "description": "A collection of paragraphs.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the Paragraph.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Paragraph with the specified index or name.",
+                    "type": "Paragraph",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Paragraphs within the specified range.",
+                    "type": "Paragraph",
+                    "parameters": [
+                        {
+                            "description": "The Paragraph, index, or name at the beginning of the range. Can accept: Paragraph, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The Paragraph, index, or name at the end of the range. Can accept: Paragraph, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Paragraph with the index previous to the specified index.",
+                    "type": "Paragraph",
+                    "parameters": [
+                        {
+                            "description": "The index of the Paragraph that follows the desired Paragraph.",
+                            "type": "Paragraph",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Paragraph whose index follows the specified Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [
+                        {
+                            "description": "The Paragraph whose index comes before the desired Paragraph.",
+                            "type": "Paragraph",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every Paragraph in the collection.",
+                    "type": "Paragraph",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Paragraph.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Paragraph with the specified index.",
+                    "type": "Paragraph",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Paragraphs"
+}

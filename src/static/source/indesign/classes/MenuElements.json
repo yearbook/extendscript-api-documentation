@@ -1,0 +1,154 @@
+{
+    "description": "A collection of menu elements.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the MenuElement.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MenuElement with the specified index or name.",
+                    "type": "MenuElement",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MenuElements within the specified range.",
+                    "type": "MenuElement",
+                    "parameters": [
+                        {
+                            "description": "The MenuElement, index, or name at the beginning of the range. Can accept: MenuElement, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The MenuElement, index, or name at the end of the range. Can accept: MenuElement, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MenuElement with the index previous to the specified index.",
+                    "type": "MenuElement",
+                    "parameters": [
+                        {
+                            "description": "The index of the MenuElement that follows the desired MenuElement.",
+                            "type": "MenuElement",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MenuElement whose index follows the specified MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [
+                        {
+                            "description": "The MenuElement whose index comes before the desired MenuElement.",
+                            "type": "MenuElement",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every MenuElement in the collection.",
+                    "type": "MenuElement",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the MenuElement.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MenuElement with the specified index.",
+                    "type": "MenuElement",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "MenuElements"
+}

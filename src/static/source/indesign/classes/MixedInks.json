@@ -1,0 +1,213 @@
+{
+    "description": "A collection of mixed inks.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the MixedInk.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new mixed ink swatch.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The inks to mix. Note: Must contain at least two process inks and one spot ink. Can accept: Array of Inks or MixedInkGroup.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "inkList",
+                            "array": false
+                        },
+                        {
+                            "description": "The percent to use of each ink in the ink list. (Range: 0 to 100 for each ink)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "inkPercentages",
+                            "array": true
+                        },
+                        {
+                            "description": "Initial values for properties of the new MixedInk (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk with the specified index or name.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk with the specified name.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk with the specified ID.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInks within the specified range.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The MixedInk, index, or name at the beginning of the range. Can accept: MixedInk, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The MixedInk, index, or name at the end of the range. Can accept: MixedInk, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk with the index previous to the specified index.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The index of the MixedInk that follows the desired MixedInk.",
+                            "type": "MixedInk",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk whose index follows the specified MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The MixedInk whose index comes before the desired MixedInk.",
+                            "type": "MixedInk",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every MixedInk in the collection.",
+                    "type": "MixedInk",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the MixedInk.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInk with the specified index.",
+                    "type": "MixedInk",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "MixedInks"
+}

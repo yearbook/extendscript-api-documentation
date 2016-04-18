@@ -1,0 +1,368 @@
+{
+    "description": "Represents the place gun.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Whether the place gun is currently loaded with content for placing.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "loaded",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the PlaceGun (a Document).",
+                    "type": "Document",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The page items collection, which can be used to process all page items in a container (such as a document, page, or group), regardless of type.",
+                    "type": "PageItems",
+                    "array": false,
+                    "name": "pageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text frames.",
+                    "type": "TextFrames",
+                    "array": false,
+                    "name": "textFrames",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of rectangles.",
+                    "type": "Rectangles",
+                    "array": false,
+                    "name": "rectangles",
+                    "readonly": true
+                },
+                {
+                    "description": "The spline items collection.",
+                    "type": "SplineItems",
+                    "array": false,
+                    "name": "splineItems",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of ellipses.",
+                    "type": "Ovals",
+                    "array": false,
+                    "name": "ovals",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of graphic lines.",
+                    "type": "GraphicLines",
+                    "array": false,
+                    "name": "graphicLines",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of polygons.",
+                    "type": "Polygons",
+                    "array": false,
+                    "name": "polygons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of groups.",
+                    "type": "Groups",
+                    "array": false,
+                    "name": "groups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of buttons.",
+                    "type": "Buttons",
+                    "array": false,
+                    "name": "buttons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of form fields.",
+                    "type": "FormFields",
+                    "array": false,
+                    "name": "formFields",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of multi-state objects.",
+                    "type": "MultiStateObjects",
+                    "array": false,
+                    "name": "multiStateObjects",
+                    "readonly": true
+                },
+                {
+                    "description": "EPSTexts",
+                    "type": "EPSTexts",
+                    "array": false,
+                    "name": "epstexts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of bitmap images in any bitmap file format (including TIFF, JPEG, or GIF).",
+                    "type": "Images",
+                    "array": false,
+                    "name": "images",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of imported graphics in any graphic file format (vector, metafile, or bitmap).",
+                    "type": "Graphics",
+                    "array": false,
+                    "name": "graphics",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of EPS files.",
+                    "type": "EPSs",
+                    "array": false,
+                    "name": "epss",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of WMF graphics.",
+                    "type": "WMFs",
+                    "array": false,
+                    "name": "wmfs",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PICT graphics.",
+                    "type": "PICTs",
+                    "array": false,
+                    "name": "picts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PDF files.",
+                    "type": "PDFs",
+                    "array": false,
+                    "name": "pdfs",
+                    "readonly": true
+                },
+                {
+                    "description": "Imported InDesign pages.",
+                    "type": "ImportedPages",
+                    "array": false,
+                    "name": "importedPages",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of checkboxes.",
+                    "type": "CheckBoxes",
+                    "array": false,
+                    "name": "checkBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of comboboxes.",
+                    "type": "ComboBoxes",
+                    "array": false,
+                    "name": "comboBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of listboxes.",
+                    "type": "ListBoxes",
+                    "array": false,
+                    "name": "listBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of radio buttons.",
+                    "type": "RadioButtons",
+                    "array": false,
+                    "name": "radioButtons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text boxes.",
+                    "type": "TextBoxes",
+                    "array": false,
+                    "name": "textBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of signature fields.",
+                    "type": "SignatureFields",
+                    "array": false,
+                    "name": "signatureFields",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of IDML snippets.",
+                    "type": "Snippets",
+                    "array": false,
+                    "name": "snippets",
+                    "readonly": true
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Delete the contents of the place gun.",
+                    "parameters": [],
+                    "name": "abortPlaceGun"
+                },
+                {
+                    "description": "Rotate the contents of the place gun.",
+                    "parameters": [
+                        {
+                            "type": "RotationDirection",
+                            "value": "RotationDirection.FORWARD",
+                            "name": "direction",
+                            "optional": true,
+                            "description": "Which direction to rotate the contents (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "rotate"
+                },
+                {
+                    "description": "Load the place gun with one or more files.",
+                    "parameters": [
+                        {
+                            "description": "One or more files to place. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "fileName",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the import options dialog (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the placed object(s) (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadPlaceGun"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PlaceGun.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "PlaceGun",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PlaceGun"
+}

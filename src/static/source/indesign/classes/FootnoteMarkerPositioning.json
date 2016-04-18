@@ -1,0 +1,47 @@
+{
+    "description": "Options for positioning footnote reference numbers relative to characters the main text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1181576816",
+                    "array": false,
+                    "description": "Uses the position defined in the character style applied to footnote reference numbers. For information, see footnote marker style.",
+                    "readonly": true,
+                    "name": "NORMAL_MARKER"
+                },
+                {
+                    "type": "number",
+                    "value": "1181569904",
+                    "array": false,
+                    "description": "Superscripts footnote reference numbers.",
+                    "readonly": true,
+                    "name": "SUPERSCRIPT_MARKER"
+                },
+                {
+                    "type": "number",
+                    "value": "1181578096",
+                    "array": false,
+                    "description": "Subscripts footnote reference numbers.",
+                    "readonly": true,
+                    "name": "SUBSCRIPT_MARKER"
+                },
+                {
+                    "type": "number",
+                    "value": "1181577840",
+                    "array": false,
+                    "description": "Gives the marker ruby style positioning.",
+                    "readonly": true,
+                    "name": "RUBY_MARKER"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FootnoteMarkerPositioning"
+}

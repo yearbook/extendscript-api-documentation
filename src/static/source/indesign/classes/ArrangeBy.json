@@ -1,0 +1,31 @@
+{
+    "description": "The order in which to arrange records in the target document.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1684886118",
+                    "array": false,
+                    "description": "Arranges records by row.",
+                    "readonly": true,
+                    "name": "ROWS_FIRST"
+                },
+                {
+                    "type": "number",
+                    "value": "1684882278",
+                    "array": false,
+                    "description": "Arranges records by column.",
+                    "readonly": true,
+                    "name": "COLUMNS_FIRST"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ArrangeBy"
+}

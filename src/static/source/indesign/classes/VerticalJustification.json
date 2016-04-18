@@ -1,0 +1,47 @@
+{
+    "description": "Vertical alignment options for text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1953460256",
+                    "array": false,
+                    "description": "Text is aligned at the top of the object.",
+                    "readonly": true,
+                    "name": "TOP_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1667591796",
+                    "array": false,
+                    "description": "Text is center aligned vertically in the object.",
+                    "readonly": true,
+                    "name": "CENTER_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1651471469",
+                    "array": false,
+                    "description": "Text is aligned at the bottom of the object.",
+                    "readonly": true,
+                    "name": "BOTTOM_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1785951334",
+                    "array": false,
+                    "description": "Lines of text are evenly distributed vertically between the top and bottom of the object.",
+                    "readonly": true,
+                    "name": "JUSTIFY_ALIGN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "VerticalJustification"
+}

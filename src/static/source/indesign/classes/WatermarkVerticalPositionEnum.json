@@ -1,0 +1,39 @@
+{
+    "description": "Watermark vertical position enum type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1884704884",
+                    "array": false,
+                    "description": "Place watermark vertical top.",
+                    "readonly": true,
+                    "name": "WATERMARK_V_TOP"
+                },
+                {
+                    "type": "number",
+                    "value": "1884704867",
+                    "array": false,
+                    "description": "Place watermark vertical center.",
+                    "readonly": true,
+                    "name": "WATERMARK_V_CENTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1884704866",
+                    "array": false,
+                    "description": "Place watermark vertical bottom.",
+                    "readonly": true,
+                    "name": "WATERMARK_V_BOTTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "WatermarkVerticalPositionEnum"
+}

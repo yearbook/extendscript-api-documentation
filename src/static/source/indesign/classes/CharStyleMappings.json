@@ -1,0 +1,190 @@
+{
+    "description": "A collection of char style mappings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Adds a style mapping.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The source style name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "sourceStyleName",
+                            "array": false
+                        },
+                        {
+                            "description": "The destination style name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "destinationStyleName",
+                            "array": false
+                        },
+                        {
+                            "description": "The mapping type",
+                            "type": "MapType",
+                            "optional": false,
+                            "name": "mappingRuleType",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new CharStyleMapping (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the CharStyleMapping.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharStyleMapping with the specified index or name.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharStyleMappings within the specified range.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The CharStyleMapping, index, or name at the beginning of the range. Can accept: CharStyleMapping, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The CharStyleMapping, index, or name at the end of the range. Can accept: CharStyleMapping, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharStyleMapping with the index previous to the specified index.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The index of the CharStyleMapping that follows the desired CharStyleMapping.",
+                            "type": "CharStyleMapping",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharStyleMapping whose index follows the specified CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The CharStyleMapping whose index comes before the desired CharStyleMapping.",
+                            "type": "CharStyleMapping",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every CharStyleMapping in the collection.",
+                    "type": "CharStyleMapping",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the CharStyleMapping.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharStyleMapping with the specified index.",
+                    "type": "CharStyleMapping",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "CharStyleMappings"
+}

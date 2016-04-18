@@ -1,0 +1,23 @@
+{
+    "description": "File used for XML transformation.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1483961208",
+                    "array": false,
+                    "description": "Use stylesheet specified in XML",
+                    "readonly": true,
+                    "name": "STYLESHEET_IN_XML"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "XMLTransformFile"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Preflight Profile options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1885619533",
+                    "array": false,
+                    "description": "Preflight using the embedded profile.",
+                    "readonly": true,
+                    "name": "USE_EMBEDDED_PROFILE"
+                },
+                {
+                    "type": "number",
+                    "value": "1885622342",
+                    "array": false,
+                    "description": "Preflight using working profile.",
+                    "readonly": true,
+                    "name": "USE_WORKING_PROFILE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PreflightProfileOptions"
+}

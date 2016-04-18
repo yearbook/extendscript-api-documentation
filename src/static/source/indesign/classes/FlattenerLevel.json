@@ -1,0 +1,55 @@
+{
+    "description": "Rasterization options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1701727351",
+                    "array": false,
+                    "description": "Rasterizes all artwork.",
+                    "readonly": true,
+                    "name": "LOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1718373708",
+                    "array": false,
+                    "description": "Rasterizes almost all artwork.",
+                    "readonly": true,
+                    "name": "MEDIUM_LOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727588",
+                    "array": false,
+                    "description": "Rasterizes a medium amount of artwork.",
+                    "readonly": true,
+                    "name": "MEDIUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1718373704",
+                    "array": false,
+                    "description": "Rasterizes more than a medium amount of artwork.",
+                    "readonly": true,
+                    "name": "MEDIUM_HIGH"
+                },
+                {
+                    "type": "number",
+                    "value": "1701726313",
+                    "array": false,
+                    "description": "Keeps as much artwork as possible vector data.",
+                    "readonly": true,
+                    "name": "HIGH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FlattenerLevel"
+}

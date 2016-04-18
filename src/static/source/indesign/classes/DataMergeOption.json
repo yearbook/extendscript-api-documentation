@@ -1,0 +1,174 @@
+{
+    "description": "Data merge options.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the DataMergeOption (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "Instructions for fitting content in a frame.",
+                    "type": "Fitting",
+                    "array": false,
+                    "name": "fittingOption",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, centers the image in the frame; preserves the frame size as well as content size and proportions. Note: If the content is larger than the frame, content around the edges is obscured by the bounding box of the frame.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "centerImage",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, links images to the target document. If false, embeds images in the target document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "linkImages",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, removes blank lines caused by empty fields.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "removeBlankLines",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, creates a new document when records are merged.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "createNewDocument",
+                    "readonly": false
+                },
+                {
+                    "description": "The maximum number of pages per document.",
+                    "type": "number",
+                    "array": false,
+                    "name": "documentSize",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the DataMergeOption.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "DataMergeOption",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "DataMergeOption"
+}

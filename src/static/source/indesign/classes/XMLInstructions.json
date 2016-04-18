@@ -1,0 +1,206 @@
+{
+    "description": "A collection of XML instructions.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the XMLInstruction.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new XML processing instruction.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "A name that identifies the processing instruction to an application reading the exported XML file.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "target",
+                            "array": false
+                        },
+                        {
+                            "type": "string",
+                            "value": null,
+                            "name": "data",
+                            "optional": true,
+                            "description": "A value that tells the application what to do with the processing instruction identified in the target. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The location within the story, specified as an insertion point. Can accept: InsertionPoint or Long Integer. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "storyOffset",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new XMLInstruction (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstruction with the specified index or name.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstruction with the specified ID.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstructions within the specified range.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The XMLInstruction, index, or name at the beginning of the range. Can accept: XMLInstruction, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The XMLInstruction, index, or name at the end of the range. Can accept: XMLInstruction, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstruction with the index previous to the specified index.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The index of the XMLInstruction that follows the desired XMLInstruction.",
+                            "type": "XMLInstruction",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstruction whose index follows the specified XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The XMLInstruction whose index comes before the desired XMLInstruction.",
+                            "type": "XMLInstruction",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every XMLInstruction in the collection.",
+                    "type": "XMLInstruction",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the XMLInstruction.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLInstruction with the specified index.",
+                    "type": "XMLInstruction",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "XMLInstructions"
+}

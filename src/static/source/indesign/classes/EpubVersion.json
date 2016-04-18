@@ -1,0 +1,31 @@
+{
+    "description": "EPub export option for epub version.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1702257970",
+                    "array": false,
+                    "description": "EPUB 2.0.1.",
+                    "readonly": true,
+                    "name": "EPUB2"
+                },
+                {
+                    "type": "number",
+                    "value": "1702257971",
+                    "array": false,
+                    "description": "EPUB 3.0.",
+                    "readonly": true,
+                    "name": "EPUB3"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "EpubVersion"
+}

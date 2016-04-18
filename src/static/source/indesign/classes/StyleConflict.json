@@ -1,0 +1,31 @@
+{
+    "description": "Options for resolving style conflicts when importing tagged text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1414819940",
+                    "array": false,
+                    "description": "Uses the publication style.",
+                    "readonly": true,
+                    "name": "PUBLICATION_DEFINITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1413903460",
+                    "array": false,
+                    "description": "Uses the tag file style.",
+                    "readonly": true,
+                    "name": "TAG_FILE_DEFINITION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "StyleConflict"
+}

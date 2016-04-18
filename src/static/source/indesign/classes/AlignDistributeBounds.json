@@ -1,0 +1,55 @@
+{
+    "description": "Options for aligning or distributing objects.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1416587604",
+                    "array": false,
+                    "description": "Align or distribute to the bounds of the objects.",
+                    "readonly": true,
+                    "name": "ITEM_BOUNDS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416589377",
+                    "array": false,
+                    "description": "Align or distribute to the bounds of the page.",
+                    "readonly": true,
+                    "name": "PAGE_BOUNDS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416588609",
+                    "array": false,
+                    "description": "Align or distribute to the margins of the page.",
+                    "readonly": true,
+                    "name": "MARGIN_BOUNDS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416590160",
+                    "array": false,
+                    "description": "Align or distribute to the bounds of the spread.",
+                    "readonly": true,
+                    "name": "SPREAD_BOUNDS"
+                },
+                {
+                    "type": "number",
+                    "value": "1699439993",
+                    "array": false,
+                    "description": "Align or distribute to a key object.",
+                    "readonly": true,
+                    "name": "KEY_OBJECT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AlignDistributeBounds"
+}

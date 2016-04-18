@@ -1,0 +1,39 @@
+{
+    "description": "Story direction options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1278366308",
+                    "array": false,
+                    "description": "Left to right direction.",
+                    "readonly": true,
+                    "name": "LEFT_TO_RIGHT_DIRECTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1379028068",
+                    "array": false,
+                    "description": "Right to left direction.",
+                    "readonly": true,
+                    "name": "RIGHT_TO_LEFT_DIRECTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1433299812",
+                    "array": false,
+                    "description": "Unknown direction.",
+                    "readonly": true,
+                    "name": "UNKNOWN_DIRECTION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "StoryDirectionOptions"
+}

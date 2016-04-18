@@ -1,0 +1,228 @@
+{
+    "description": "The page reference for an index topic.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The hyperlinked text or insertion point.",
+                    "type": "Text",
+                    "array": false,
+                    "name": "sourceText",
+                    "readonly": true
+                },
+                {
+                    "description": "The unique ID of the PageReference.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the PageReference (a Topic).",
+                    "type": "Topic",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the PageReference within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "Options for index page references.",
+                    "type": "PageReferenceType",
+                    "array": false,
+                    "name": "pageReferenceType",
+                    "readonly": false
+                },
+                {
+                    "description": "The paragraph style or number of paragraphs or pages that defines the last page in a page range. Note: Valid only when page reference type specifies the next use of a paragraph style or a number of paragraphs or pages. . Can return: ParagraphStyle or Long Integer.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pageReferenceLimit",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style applied to page numbers.",
+                    "type": "CharacterStyle",
+                    "array": false,
+                    "name": "pageNumberStyleOverride",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the PageReference; this is an alias to the PageReference's label property.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes the PageReference.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PageReference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "PageReference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PageReference"
+}

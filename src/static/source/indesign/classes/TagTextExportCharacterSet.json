@@ -1,0 +1,111 @@
+{
+    "description": "Character set options exporting tagged text files.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1095975753",
+                    "array": false,
+                    "description": "ASCII.",
+                    "readonly": true,
+                    "name": "ASCII"
+                },
+                {
+                    "type": "number",
+                    "value": "1095652169",
+                    "array": false,
+                    "description": "ANSI.",
+                    "readonly": true,
+                    "name": "ANSI"
+                },
+                {
+                    "type": "number",
+                    "value": "1249209961",
+                    "array": false,
+                    "description": "Unicode.",
+                    "readonly": true,
+                    "name": "UNICODE"
+                },
+                {
+                    "type": "number",
+                    "value": "1249077875",
+                    "array": false,
+                    "description": "Shift_JIS.",
+                    "readonly": true,
+                    "name": "SHIFT_JIS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416061491",
+                    "array": false,
+                    "description": "Uses GB18030 encoding.",
+                    "readonly": true,
+                    "name": "GB18030"
+                },
+                {
+                    "type": "number",
+                    "value": "1414230883",
+                    "array": false,
+                    "description": "Uses KSC5601 encoding.",
+                    "readonly": true,
+                    "name": "KSC5601"
+                },
+                {
+                    "type": "number",
+                    "value": "1415799349",
+                    "array": false,
+                    "description": "Chinese Big 5",
+                    "readonly": true,
+                    "name": "CHINESE_BIG_5"
+                },
+                {
+                    "type": "number",
+                    "value": "1416184645",
+                    "array": false,
+                    "description": "The Central European (ISO) character set.",
+                    "readonly": true,
+                    "name": "CENTRALEUROPEAN_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416184697",
+                    "array": false,
+                    "description": "The Cyrillic (ISO) character set.",
+                    "readonly": true,
+                    "name": "CYRILLIC_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416185707",
+                    "array": false,
+                    "description": "The Greek (ISO) character set.",
+                    "readonly": true,
+                    "name": "GREEK_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1417101682",
+                    "array": false,
+                    "description": "The Windows Arabic character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_ARABIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1417103458",
+                    "array": false,
+                    "description": "The Windows Hebrew character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_HEBREW"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TagTextExportCharacterSet"
+}

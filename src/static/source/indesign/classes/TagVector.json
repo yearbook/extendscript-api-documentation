@@ -1,0 +1,47 @@
+{
+    "description": "The display method for vector images.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1917284985",
+                    "array": false,
+                    "description": "Grays out the image.",
+                    "readonly": true,
+                    "name": "GRAY_OUT"
+                },
+                {
+                    "type": "number",
+                    "value": "1917874808",
+                    "array": false,
+                    "description": "Displays a low-resolution proxy version of the image.",
+                    "readonly": true,
+                    "name": "PROXY"
+                },
+                {
+                    "type": "number",
+                    "value": "1917348177",
+                    "array": false,
+                    "description": "Displays a high-resolution version of the image.",
+                    "readonly": true,
+                    "name": "HIGH_RESOLUTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses the default setting. For information, see display performance preferences.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TagVector"
+}

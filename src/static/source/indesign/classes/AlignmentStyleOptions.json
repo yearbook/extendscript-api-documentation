@@ -1,0 +1,47 @@
+{
+    "description": "Alignment options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1936749171",
+                    "array": false,
+                    "description": "Preserves the spreadsheet's alignment.",
+                    "readonly": true,
+                    "name": "SPREADSHEET"
+                },
+                {
+                    "type": "number",
+                    "value": "1818584692",
+                    "array": false,
+                    "description": "Left aligns cells.",
+                    "readonly": true,
+                    "name": "LEFT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1919379572",
+                    "array": false,
+                    "description": "Right aligns cells.",
+                    "readonly": true,
+                    "name": "RIGHT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1667591796",
+                    "array": false,
+                    "description": "Center aligns cells.",
+                    "readonly": true,
+                    "name": "CENTER_ALIGN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AlignmentStyleOptions"
+}

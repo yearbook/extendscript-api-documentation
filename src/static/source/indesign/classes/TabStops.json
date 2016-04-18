@@ -1,0 +1,169 @@
+{
+    "description": "A collection of tab stops.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new TabStop.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new TabStop (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the TabStop.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TabStop with the specified index or name.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TabStops within the specified range.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "The TabStop, index, or name at the beginning of the range. Can accept: TabStop, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TabStop, index, or name at the end of the range. Can accept: TabStop, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TabStop with the index previous to the specified index.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "The index of the TabStop that follows the desired TabStop.",
+                            "type": "TabStop",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TabStop whose index follows the specified TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "The TabStop whose index comes before the desired TabStop.",
+                            "type": "TabStop",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TabStop in the collection.",
+                    "type": "TabStop",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TabStop.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TabStop with the specified index.",
+                    "type": "TabStop",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TabStops"
+}

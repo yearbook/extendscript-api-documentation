@@ -1,0 +1,39 @@
+{
+    "description": "Restart numbering options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1701732720",
+                    "array": false,
+                    "description": "Restart numbering after any previous (higher) numbering level.",
+                    "readonly": true,
+                    "name": "ANY_PREVIOUS_LEVEL"
+                },
+                {
+                    "type": "number",
+                    "value": "1701737324",
+                    "array": false,
+                    "description": "Restart numbering after a specific numbering level.",
+                    "readonly": true,
+                    "name": "AFTER_SPECIFIC_LEVEL"
+                },
+                {
+                    "type": "number",
+                    "value": "1701737068",
+                    "array": false,
+                    "description": "Restart numbering after any of a range of numbering levels.",
+                    "readonly": true,
+                    "name": "RANGE_OF_LEVELS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RestartPolicy"
+}

@@ -1,0 +1,221 @@
+{
+    "description": "A collection of text boxes.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the TextBox.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new TextBox",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The layer on which to create the TextBox. (Optional)",
+                            "type": "Layer",
+                            "optional": false,
+                            "name": "layer",
+                            "array": false
+                        },
+                        {
+                            "type": "LocationOptions",
+                            "value": "LocationOptions.UNKNOWN",
+                            "name": "at",
+                            "optional": true,
+                            "description": "The location at which to insert the TextBox relative to the reference object or within the container object. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The reference object. Note: Required when the at parameter is before or after. Can accept: Document, Spread, MasterSpread, Page, Layer or PageItem. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new TextBox (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox with the specified index or name.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox with the specified name.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox with the specified ID.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBoxes within the specified range.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The TextBox, index, or name at the beginning of the range. Can accept: TextBox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TextBox, index, or name at the end of the range. Can accept: TextBox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox with the index previous to the specified index.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The index of the TextBox that follows the desired TextBox.",
+                            "type": "TextBox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox whose index follows the specified TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The TextBox whose index comes before the desired TextBox.",
+                            "type": "TextBox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TextBox in the collection.",
+                    "type": "TextBox",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TextBox.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextBox with the specified index.",
+                    "type": "TextBox",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TextBoxes"
+}

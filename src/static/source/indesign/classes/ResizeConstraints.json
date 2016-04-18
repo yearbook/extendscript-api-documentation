@@ -1,0 +1,55 @@
+{
+    "description": "Resize constraints.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1264939094",
+                    "array": false,
+                    "description": "Keep current value",
+                    "readonly": true,
+                    "name": "KEEP_CURRENT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1264939088",
+                    "array": false,
+                    "description": "Keep current proportions",
+                    "readonly": true,
+                    "name": "KEEP_CURRENT_PROPORTIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1415670864",
+                    "array": false,
+                    "description": "Tall proportions",
+                    "readonly": true,
+                    "name": "TALL_PROPORTIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1466524752",
+                    "array": false,
+                    "description": "Wide proportions",
+                    "readonly": true,
+                    "name": "WIDE_PROPORTIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1231976016",
+                    "array": false,
+                    "description": "Inverse proportions",
+                    "readonly": true,
+                    "name": "INVERSE_PROPORTIONS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ResizeConstraints"
+}

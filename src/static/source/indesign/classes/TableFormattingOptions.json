@@ -1,0 +1,47 @@
+{
+    "description": "Formatting options for imported spreadsheets.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "2020361812",
+                    "array": false,
+                    "description": "Use formatting from the original spreadsheet.",
+                    "readonly": true,
+                    "name": "EXCEL_FORMATTED_TABLE"
+                },
+                {
+                    "type": "number",
+                    "value": "2020365652",
+                    "array": false,
+                    "description": "Convert the spreadsheet to an unformatted table.",
+                    "readonly": true,
+                    "name": "EXCEL_UNFORMATTED_TABLE"
+                },
+                {
+                    "type": "number",
+                    "value": "2018858068",
+                    "array": false,
+                    "description": "Convert the spreadsheet to unformatted, tab-delimited text.",
+                    "readonly": true,
+                    "name": "EXCEL_UNFORMATTED_TABBED_TEXT"
+                },
+                {
+                    "type": "number",
+                    "value": "2017873748",
+                    "array": false,
+                    "description": "Converts the spreadsheet to a table that is formatted only on initial import but not on update.",
+                    "readonly": true,
+                    "name": "EXCEL_FORMAT_ONLY_ONCE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TableFormattingOptions"
+}

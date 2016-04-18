@@ -1,0 +1,31 @@
+{
+    "description": "Import platform options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1296130931",
+                    "array": false,
+                    "description": "Macintosh.",
+                    "readonly": true,
+                    "name": "MACINTOSH"
+                },
+                {
+                    "type": "number",
+                    "value": "1466852474",
+                    "array": false,
+                    "description": "Windows.",
+                    "readonly": true,
+                    "name": "PC"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImportPlatform"
+}

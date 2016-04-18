@@ -1,0 +1,31 @@
+{
+    "description": "Scaling options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1934192243",
+                    "array": false,
+                    "description": "Apply scaling to the item's content",
+                    "readonly": true,
+                    "name": "APPLY_TO_CONTENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1934587252",
+                    "array": false,
+                    "description": "Adjust the scaling percentage of the item's transform",
+                    "readonly": true,
+                    "name": "ADJUST_SCALING_PERCENTAGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "WhenScalingOptions"
+}

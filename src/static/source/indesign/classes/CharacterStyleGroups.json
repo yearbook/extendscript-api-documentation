@@ -1,0 +1,199 @@
+{
+    "description": "A collection of character style groups.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new CharacterStyleGroup.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new CharacterStyleGroup (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the CharacterStyleGroup.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup with the specified index or name.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup with the specified name.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup with the specified ID.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroups within the specified range.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The CharacterStyleGroup, index, or name at the beginning of the range. Can accept: CharacterStyleGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The CharacterStyleGroup, index, or name at the end of the range. Can accept: CharacterStyleGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup with the index previous to the specified index.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The index of the CharacterStyleGroup that follows the desired CharacterStyleGroup.",
+                            "type": "CharacterStyleGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup whose index follows the specified CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The CharacterStyleGroup whose index comes before the desired CharacterStyleGroup.",
+                            "type": "CharacterStyleGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every CharacterStyleGroup in the collection.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the CharacterStyleGroup.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CharacterStyleGroup with the specified index.",
+                    "type": "CharacterStyleGroup",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "CharacterStyleGroups"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Printer PostScript level options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1347636274",
+                    "array": false,
+                    "description": "Level 2 PostScript.",
+                    "readonly": true,
+                    "name": "LEVEL_2"
+                },
+                {
+                    "type": "number",
+                    "value": "1347636275",
+                    "array": false,
+                    "description": "Level 3 PostScript.",
+                    "readonly": true,
+                    "name": "LEVEL_3"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PostScriptLevels"
+}

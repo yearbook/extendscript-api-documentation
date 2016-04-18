@@ -1,0 +1,71 @@
+{
+    "description": "Hyperlink destination page display options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1212437350",
+                    "array": false,
+                    "description": "Fits the destination page within the specified rectangle. For information on specifying the rectangle size and position, see the entry for view bounds.",
+                    "readonly": true,
+                    "name": "FIXED"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437366",
+                    "array": false,
+                    "description": "Displays the visible portion of the destination page as the destination.",
+                    "readonly": true,
+                    "name": "FIT_VIEW"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437367",
+                    "array": false,
+                    "description": "Fits the entire destination page in the document window. Note: The magnification changes automatically when the window is resized.",
+                    "readonly": true,
+                    "name": "FIT_WINDOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437335",
+                    "array": false,
+                    "description": "Fits the destination page to the width of the window; may obscure the lower portion of the page. Note: The magnification changes automatically when the window is resized horizontally.",
+                    "readonly": true,
+                    "name": "FIT_WIDTH"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437352",
+                    "array": false,
+                    "description": "Fits the destination page to the window height; may obscure the right side the page. Note: The magnification changes automatically when the window is resized vertically.",
+                    "readonly": true,
+                    "name": "FIT_HEIGHT"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437334",
+                    "array": false,
+                    "description": "Fits the the text area of the destination page to the window width; obscures page margins and may obscure the lower portion of the page. Note: The magnification changes automatically when the window is resized horizontally.",
+                    "readonly": true,
+                    "name": "FIT_VISIBLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437370",
+                    "array": false,
+                    "description": "The destination page is displayed at the same zoom percent as the previously displayed page. Note: The magnification changes automatically when the window is resized.",
+                    "readonly": true,
+                    "name": "INHERIT_ZOOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HyperlinkDestinationPageSetting"
+}

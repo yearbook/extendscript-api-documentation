@@ -1,0 +1,195 @@
+{
+    "description": "A submenu.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "string",
+                    "value": "beforeDisplay",
+                    "array": false,
+                    "description": "Dispatched before the Submenu is displayed. This event does not bubble. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_DISPLAY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The name of the Submenu.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the Submenu for display in the user interface. The title includes any ampersand characters (&), which are used to tell the Windows OS to underline the following character in the name for use with the Alt key to navigate to a menu item. Double ampersands are used to display an actual ampersand character in the name. The Mac OS ignores and removes the extra ampersand characters.",
+                    "type": "string",
+                    "array": false,
+                    "name": "title",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the Submenu (a Menu or Submenu).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the Submenu within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of menu elements.",
+                    "type": "MenuElements",
+                    "array": false,
+                    "name": "menuElements",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of submenus.",
+                    "type": "Submenus",
+                    "array": false,
+                    "name": "submenus",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of menu items.",
+                    "type": "MenuItems",
+                    "array": false,
+                    "name": "menuItems",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of menu separators.",
+                    "type": "MenuSeparators",
+                    "array": false,
+                    "name": "menuSeparators",
+                    "readonly": true
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes the Submenu.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Submenu.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "Submenu",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Submenu"
+}

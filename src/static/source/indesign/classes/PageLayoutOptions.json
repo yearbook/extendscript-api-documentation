@@ -1,0 +1,71 @@
+{
+    "description": "PDF export page layout options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses default page layout.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1987736432",
+                    "array": false,
+                    "description": "Single page layout.",
+                    "readonly": true,
+                    "name": "SINGLE_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1884508259",
+                    "array": false,
+                    "description": "Single page continuous layout.",
+                    "readonly": true,
+                    "name": "SINGLE_PAGE_CONTINUOUS"
+                },
+                {
+                    "type": "number",
+                    "value": "1884575046",
+                    "array": false,
+                    "description": "Two up facing page layout.",
+                    "readonly": true,
+                    "name": "TWO_UP_FACING"
+                },
+                {
+                    "type": "number",
+                    "value": "1884571235",
+                    "array": false,
+                    "description": "Two up facing continuous page layout.",
+                    "readonly": true,
+                    "name": "TWO_UP_FACING_CONTINUOUS"
+                },
+                {
+                    "type": "number",
+                    "value": "1884570448",
+                    "array": false,
+                    "description": "Two up cover page page layout.",
+                    "readonly": true,
+                    "name": "TWO_UP_COVER_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1884570467",
+                    "array": false,
+                    "description": "Two up cover page continuous page layout.",
+                    "readonly": true,
+                    "name": "TWO_UP_COVER_PAGE_CONTINUOUS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageLayoutOptions"
+}

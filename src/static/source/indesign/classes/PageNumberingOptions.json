@@ -1,0 +1,31 @@
+{
+    "description": "Options for page numbering.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1935897710",
+                    "array": false,
+                    "description": "Numbers pages according to page numbering specifications of the section.",
+                    "readonly": true,
+                    "name": "SECTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1096971116",
+                    "array": false,
+                    "description": "Numbers all pages in the document sequentially.",
+                    "readonly": true,
+                    "name": "ABSOLUTE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageNumberingOptions"
+}

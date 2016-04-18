@@ -1,0 +1,47 @@
+{
+    "description": "Color palette options for GIF conversion.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1886151024",
+                    "array": false,
+                    "description": "Uses the adaptive (no dither) palette.",
+                    "readonly": true,
+                    "name": "ADAPTIVE_PALETTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1886154096",
+                    "array": false,
+                    "description": "Uses the Macintosh palette.",
+                    "readonly": true,
+                    "name": "MACINTOSH_PALETTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1886156656",
+                    "array": false,
+                    "description": "Uses the Web palette.",
+                    "readonly": true,
+                    "name": "WEB_PALETTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1886156644",
+                    "array": false,
+                    "description": "Uses the Windows palette.",
+                    "readonly": true,
+                    "name": "WINDOWS_PALETTE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GIFOptionsPalette"
+}

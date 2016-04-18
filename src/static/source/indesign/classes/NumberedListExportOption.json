@@ -1,0 +1,39 @@
+{
+    "description": "Options for export order list.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700949359",
+                    "array": false,
+                    "description": "map to html ordered list.",
+                    "readonly": true,
+                    "name": "ORDERED_LIST"
+                },
+                {
+                    "type": "number",
+                    "value": "1700949363",
+                    "array": false,
+                    "description": "map to html static ordered list.",
+                    "readonly": true,
+                    "name": "STATIC_ORDERED_LIST"
+                },
+                {
+                    "type": "number",
+                    "value": "1700946804",
+                    "array": false,
+                    "description": "convert to text.",
+                    "readonly": true,
+                    "name": "AS_TEXT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "NumberedListExportOption"
+}

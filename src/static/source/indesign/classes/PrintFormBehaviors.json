@@ -1,0 +1,199 @@
+{
+    "description": "A collection of print form behavior objects.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the PrintFormBehavior.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new PrintFormBehavior.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new PrintFormBehavior (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior with the specified index or name.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior with the specified name.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior with the specified ID.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehaviors within the specified range.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The PrintFormBehavior, index, or name at the beginning of the range. Can accept: PrintFormBehavior, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The PrintFormBehavior, index, or name at the end of the range. Can accept: PrintFormBehavior, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior with the index previous to the specified index.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index of the PrintFormBehavior that follows the desired PrintFormBehavior.",
+                            "type": "PrintFormBehavior",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior whose index follows the specified PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The PrintFormBehavior whose index comes before the desired PrintFormBehavior.",
+                            "type": "PrintFormBehavior",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every PrintFormBehavior in the collection.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PrintFormBehavior.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PrintFormBehavior with the specified index.",
+                    "type": "PrintFormBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PrintFormBehaviors"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "Booklet type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1110594387",
+                    "array": false,
+                    "description": "Two up saddle stitch imposition.",
+                    "readonly": true,
+                    "name": "TWO_UP_SADDLE_STITCH"
+                },
+                {
+                    "type": "number",
+                    "value": "1110593602",
+                    "array": false,
+                    "description": "Two up perfect bound imposition.",
+                    "readonly": true,
+                    "name": "TWO_UP_PERFECT_BOUND"
+                },
+                {
+                    "type": "number",
+                    "value": "1110590291",
+                    "array": false,
+                    "description": "Two up consecutive imposition.",
+                    "readonly": true,
+                    "name": "TWO_UP_CONSECUTIVE"
+                },
+                {
+                    "type": "number",
+                    "value": "1110655827",
+                    "array": false,
+                    "description": "Three up consecutive imposition.",
+                    "readonly": true,
+                    "name": "THREE_UP_CONSECUTIVE"
+                },
+                {
+                    "type": "number",
+                    "value": "1110721363",
+                    "array": false,
+                    "description": "Four up consecutive imposition.",
+                    "readonly": true,
+                    "name": "FOUR_UP_CONSECUTIVE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BookletTypeOptions"
+}

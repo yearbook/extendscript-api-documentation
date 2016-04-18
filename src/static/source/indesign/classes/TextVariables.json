@@ -1,0 +1,184 @@
+{
+    "description": "A collection of text variables.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new TextVariable.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new TextVariable (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the TextVariable.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariable with the specified index or name.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariable with the specified name.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariables within the specified range.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The TextVariable, index, or name at the beginning of the range. Can accept: TextVariable, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TextVariable, index, or name at the end of the range. Can accept: TextVariable, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariable with the index previous to the specified index.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The index of the TextVariable that follows the desired TextVariable.",
+                            "type": "TextVariable",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariable whose index follows the specified TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The TextVariable whose index comes before the desired TextVariable.",
+                            "type": "TextVariable",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TextVariable in the collection.",
+                    "type": "TextVariable",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TextVariable.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextVariable with the specified index.",
+                    "type": "TextVariable",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TextVariables"
+}

@@ -1,0 +1,169 @@
+{
+    "description": "A collection of gradient stops.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new GradientStop.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new GradientStop (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the GradientStop.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GradientStop with the specified index or name.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GradientStops within the specified range.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "The GradientStop, index, or name at the beginning of the range. Can accept: GradientStop, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The GradientStop, index, or name at the end of the range. Can accept: GradientStop, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GradientStop with the index previous to the specified index.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "The index of the GradientStop that follows the desired GradientStop.",
+                            "type": "GradientStop",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GradientStop whose index follows the specified GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "The GradientStop whose index comes before the desired GradientStop.",
+                            "type": "GradientStop",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every GradientStop in the collection.",
+                    "type": "GradientStop",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the GradientStop.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GradientStop with the specified index.",
+                    "type": "GradientStop",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "GradientStops"
+}

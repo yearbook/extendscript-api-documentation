@@ -1,0 +1,23 @@
+{
+    "description": "Leading type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1635019116",
+                    "array": false,
+                    "description": "Apply auto leading.",
+                    "readonly": true,
+                    "name": "AUTO"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Leading"
+}

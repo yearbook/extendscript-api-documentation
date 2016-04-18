@@ -1,0 +1,39 @@
+{
+    "description": "Options for aligning text to the path's stroke.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1885434975",
+                    "array": false,
+                    "description": "The text is aligned to the top of the path stroke.",
+                    "readonly": true,
+                    "name": "TOP_PATH_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1885430367",
+                    "array": false,
+                    "description": "The text is aligned to the bottom of the path stroke.",
+                    "readonly": true,
+                    "name": "BOTTOM_PATH_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1885430623",
+                    "array": false,
+                    "description": "The text is aligned to the center of the path stroke.",
+                    "readonly": true,
+                    "name": "CENTER_PATH_ALIGNMENT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PathTypeAlignments"
+}

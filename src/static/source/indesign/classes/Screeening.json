@@ -1,0 +1,31 @@
+{
+    "description": "Options for ink screening for composite gray output in PostScript or PDF format.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses the default screening settings.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639917",
+                    "array": false,
+                    "description": "Uses custom screening settings for ink angle and frequency. For information, see composite angle and composite frequency.",
+                    "readonly": true,
+                    "name": "CUSTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Screeening"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "Options for ruby spacing relative to the parent text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1249013345",
+                    "array": false,
+                    "description": "Does not base ruby spacing on parent text.",
+                    "readonly": true,
+                    "name": "RUBY_PARENT_NO_ADJUSTMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1249010291",
+                    "array": false,
+                    "description": "Ruby parent both sides.",
+                    "readonly": true,
+                    "name": "RUBY_PARENT_BOTH_SIDES"
+                },
+                {
+                    "type": "number",
+                    "value": "1248997682",
+                    "array": false,
+                    "description": "Ruby parent 121 aki.",
+                    "readonly": true,
+                    "name": "RUBY_PARENT_121_AKI"
+                },
+                {
+                    "type": "number",
+                    "value": "1249014113",
+                    "array": false,
+                    "description": "Applies the parent text aki to the ruby characters.",
+                    "readonly": true,
+                    "name": "RUBY_PARENT_EQUAL_AKI"
+                },
+                {
+                    "type": "number",
+                    "value": "1249014634",
+                    "array": false,
+                    "description": "Justifies ruby characters to both edges of the parent text.",
+                    "readonly": true,
+                    "name": "RUBY_PARENT_FULL_JUSTIFY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RubyParentSpacing"
+}

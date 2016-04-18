@@ -1,0 +1,39 @@
+{
+    "description": "Custom Layout Type Options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1181502565",
+                    "array": false,
+                    "description": "Float Left.",
+                    "readonly": true,
+                    "name": "FLOAT_LEFT"
+                },
+                {
+                    "type": "number",
+                    "value": "1181504105",
+                    "array": false,
+                    "description": "Float Right.",
+                    "readonly": true,
+                    "name": "FLOAT_RIGHT"
+                },
+                {
+                    "type": "number",
+                    "value": "1097618288",
+                    "array": false,
+                    "description": "Alignment And Spacing.",
+                    "readonly": true,
+                    "name": "ALIGNMENT_AND_SPACING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CustomLayoutTypeEnum"
+}

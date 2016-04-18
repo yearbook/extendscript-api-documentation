@@ -1,0 +1,31 @@
+{
+    "description": "The folio binding direction option.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1835102828",
+                    "array": false,
+                    "description": "left-edge binding.",
+                    "readonly": true,
+                    "name": "LEFT"
+                },
+                {
+                    "type": "number",
+                    "value": "1835102834",
+                    "array": false,
+                    "description": "right-edge binding.",
+                    "readonly": true,
+                    "name": "RIGHT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FolioBindingDirectionOptions"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "The tag type of page item",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1952928613",
+                    "array": false,
+                    "description": "Determine the tag from XML structure, or fallback to standard tag",
+                    "readonly": true,
+                    "name": "TAG_FROM_STRUCTURE"
+                },
+                {
+                    "type": "number",
+                    "value": "1952924006",
+                    "array": false,
+                    "description": "Tag as artifact",
+                    "readonly": true,
+                    "name": "TAG_ARTIFACT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952924271",
+                    "array": false,
+                    "description": "Tag as Story or Figure based on object type",
+                    "readonly": true,
+                    "name": "TAG_BASED_ON_OBJECT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TagType"
+}

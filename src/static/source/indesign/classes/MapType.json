@@ -1,0 +1,47 @@
+{
+    "description": "Mapping type for style mappings.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1937011570",
+                    "array": false,
+                    "description": "style to style mapping rule.",
+                    "readonly": true,
+                    "name": "STYLE_MAPPING_RULE"
+                },
+                {
+                    "type": "number",
+                    "value": "1735681906",
+                    "array": false,
+                    "description": "group to group mapping rule.",
+                    "readonly": true,
+                    "name": "GROUP_MAPPING_RULE"
+                },
+                {
+                    "type": "number",
+                    "value": "1937008498",
+                    "array": false,
+                    "description": "style to group mapping rule.",
+                    "readonly": true,
+                    "name": "STYLE_TO_GROUP_MAPPING_RULE"
+                },
+                {
+                    "type": "number",
+                    "value": "1735684978",
+                    "array": false,
+                    "description": "group to style mapping rule.",
+                    "readonly": true,
+                    "name": "GROUP_TO_STYLE_MAPPING_RULE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "MapType"
+}

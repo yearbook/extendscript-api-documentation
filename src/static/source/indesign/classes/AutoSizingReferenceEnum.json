@@ -1,0 +1,87 @@
+{
+    "description": "Auto sizing reference points for text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1953459301",
+                    "array": false,
+                    "description": "Top left point of bounding box",
+                    "readonly": true,
+                    "name": "TOP_LEFT_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1953456997",
+                    "array": false,
+                    "description": "Center point on the top edge of bounding box",
+                    "readonly": true,
+                    "name": "TOP_CENTER_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1953460841",
+                    "array": false,
+                    "description": "Top right point of bounding box",
+                    "readonly": true,
+                    "name": "TOP_RIGHT_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1818583909",
+                    "array": false,
+                    "description": "Center point on the left edge of bounding box",
+                    "readonly": true,
+                    "name": "LEFT_CENTER_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1668183154",
+                    "array": false,
+                    "description": "Center point of bounding box",
+                    "readonly": true,
+                    "name": "CENTER_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1919509349",
+                    "array": false,
+                    "description": "Center point on the right edge of bounding box",
+                    "readonly": true,
+                    "name": "RIGHT_CENTER_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1651469413",
+                    "array": false,
+                    "description": "Bottom left point of bounding box",
+                    "readonly": true,
+                    "name": "BOTTOM_LEFT_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1651467109",
+                    "array": false,
+                    "description": "Center point on the botom edge of bounding box",
+                    "readonly": true,
+                    "name": "BOTTOM_CENTER_POINT"
+                },
+                {
+                    "type": "number",
+                    "value": "1651470953",
+                    "array": false,
+                    "description": "Bottom right point of bounding box",
+                    "readonly": true,
+                    "name": "BOTTOM_RIGHT_POINT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AutoSizingReferenceEnum"
+}

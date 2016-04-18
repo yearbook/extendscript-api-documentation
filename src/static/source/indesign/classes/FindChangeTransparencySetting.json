@@ -1,0 +1,209 @@
+{
+    "description": "Transparency settings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Blending mode settings.",
+                    "type": "FindChangeBlendingSetting",
+                    "array": false,
+                    "name": "blendingSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the drop shadow effect.",
+                    "type": "FindChangeDropShadowSetting",
+                    "array": false,
+                    "name": "dropShadowSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the feather effect.",
+                    "type": "FindChangeFeatherSetting",
+                    "array": false,
+                    "name": "featherSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the inner shadow effect.",
+                    "type": "FindChangeInnerShadowSetting",
+                    "array": false,
+                    "name": "innerShadowSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the outer glow effect.",
+                    "type": "FindChangeOuterGlowSetting",
+                    "array": false,
+                    "name": "outerGlowSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the inner glow effect.",
+                    "type": "FindChangeInnerGlowSetting",
+                    "array": false,
+                    "name": "innerGlowSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the bevel and emboss effect.",
+                    "type": "FindChangeBevelAndEmbossSetting",
+                    "array": false,
+                    "name": "bevelAndEmbossSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the satin effect",
+                    "type": "FindChangeSatinSetting",
+                    "array": false,
+                    "name": "satinSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the directional feather effect.",
+                    "type": "FindChangeDirectionalFeatherSetting",
+                    "array": false,
+                    "name": "directionalFeatherSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Settings related to the gradient feather effect.",
+                    "type": "FindChangeGradientFeatherSetting",
+                    "array": false,
+                    "name": "gradientFeatherSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the FindChangeTransparencySetting (a FindObjectPreference or ChangeObjectPreference).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the FindChangeTransparencySetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "FindChangeTransparencySetting",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "FindChangeTransparencySetting"
+}

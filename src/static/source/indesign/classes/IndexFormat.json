@@ -1,0 +1,31 @@
+{
+    "description": "Options for formatting level 2 and lower index topics.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1382631782",
+                    "array": false,
+                    "description": "Places nested topics on the same line as their parent topic, separated by the specified separator.",
+                    "readonly": true,
+                    "name": "RUNIN_FORMAT"
+                },
+                {
+                    "type": "number",
+                    "value": "1316243814",
+                    "array": false,
+                    "description": "Places nested topics on the line below and indented from the parent topic.",
+                    "readonly": true,
+                    "name": "NESTED_FORMAT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "IndexFormat"
+}

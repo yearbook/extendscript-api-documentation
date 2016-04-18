@@ -1,0 +1,31 @@
+{
+    "description": "Options for page color label.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1851876449",
+                    "array": false,
+                    "description": "No color.",
+                    "readonly": true,
+                    "name": "NOTHING"
+                },
+                {
+                    "type": "number",
+                    "value": "1346594413",
+                    "array": false,
+                    "description": "Uses the color label of the page's master page.",
+                    "readonly": true,
+                    "name": "USE_MASTER_COLOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageColorOptions"
+}

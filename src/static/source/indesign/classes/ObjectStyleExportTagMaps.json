@@ -1,0 +1,197 @@
+{
+    "description": "A collection of object style export tag maps.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Create a new mapping",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The type of export.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "exportType",
+                            "array": false
+                        },
+                        {
+                            "description": "The tag to map.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "exportTag",
+                            "array": false
+                        },
+                        {
+                            "description": "The class to map.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "exportClass",
+                            "array": false
+                        },
+                        {
+                            "description": "The attributes to map.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "exportAttributes",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ObjectStyleExportTagMap (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the ObjectStyleExportTagMap.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the ObjectStyleExportTagMap with the specified index or name.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the ObjectStyleExportTagMaps within the specified range.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The ObjectStyleExportTagMap, index, or name at the beginning of the range. Can accept: ObjectStyleExportTagMap, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The ObjectStyleExportTagMap, index, or name at the end of the range. Can accept: ObjectStyleExportTagMap, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the ObjectStyleExportTagMap with the index previous to the specified index.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The index of the ObjectStyleExportTagMap that follows the desired ObjectStyleExportTagMap.",
+                            "type": "ObjectStyleExportTagMap",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the ObjectStyleExportTagMap whose index follows the specified ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The ObjectStyleExportTagMap whose index comes before the desired ObjectStyleExportTagMap.",
+                            "type": "ObjectStyleExportTagMap",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every ObjectStyleExportTagMap in the collection.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the ObjectStyleExportTagMap.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the ObjectStyleExportTagMap with the specified index.",
+                    "type": "ObjectStyleExportTagMap",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "ObjectStyleExportTagMaps"
+}

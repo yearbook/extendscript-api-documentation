@@ -1,0 +1,184 @@
+{
+    "description": "A collection of angle editboxes.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new AngleEditbox.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new AngleEditbox (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the AngleEditbox.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditbox with the specified index or name.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditbox with the specified ID.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditboxes within the specified range.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The AngleEditbox, index, or name at the beginning of the range. Can accept: AngleEditbox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The AngleEditbox, index, or name at the end of the range. Can accept: AngleEditbox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditbox with the index previous to the specified index.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index of the AngleEditbox that follows the desired AngleEditbox.",
+                            "type": "AngleEditbox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditbox whose index follows the specified AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The AngleEditbox whose index comes before the desired AngleEditbox.",
+                            "type": "AngleEditbox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every AngleEditbox in the collection.",
+                    "type": "AngleEditbox",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the AngleEditbox.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AngleEditbox with the specified index.",
+                    "type": "AngleEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "AngleEditboxes"
+}

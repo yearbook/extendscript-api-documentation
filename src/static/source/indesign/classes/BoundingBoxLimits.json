@@ -1,0 +1,31 @@
+{
+    "description": "Bounding box limits.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1768844081",
+                    "array": false,
+                    "description": "Outer stroke bounds",
+                    "readonly": true,
+                    "name": "OUTER_STROKE_BOUNDS"
+                },
+                {
+                    "type": "number",
+                    "value": "1768844080",
+                    "array": false,
+                    "description": "Geometric path bounds",
+                    "readonly": true,
+                    "name": "GEOMETRIC_PATH_BOUNDS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BoundingBoxLimits"
+}

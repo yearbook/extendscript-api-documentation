@@ -1,0 +1,47 @@
+{
+    "description": "Options for selection status in relation to previously selected objects.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1633969202",
+                    "array": false,
+                    "description": "Adds the object to the existing selection; if no object was previously selected, makes the object the only selected object.",
+                    "readonly": true,
+                    "name": "ADD_TO"
+                },
+                {
+                    "type": "number",
+                    "value": "1919249734",
+                    "array": false,
+                    "description": "Deselects the object.",
+                    "readonly": true,
+                    "name": "REMOVE_FROM"
+                },
+                {
+                    "type": "number",
+                    "value": "1919250519",
+                    "array": false,
+                    "description": "Selects the object and deselects any previously selected objects.",
+                    "readonly": true,
+                    "name": "REPLACE_WITH"
+                },
+                {
+                    "type": "number",
+                    "value": "1936028779",
+                    "array": false,
+                    "description": "Sets the key object. At least 2 objects must be selected, and the key object specified must be one of them.",
+                    "readonly": true,
+                    "name": "SET_KEY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SelectionOptions"
+}

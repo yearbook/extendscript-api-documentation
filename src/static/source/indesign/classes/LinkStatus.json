@@ -1,0 +1,55 @@
+{
+    "description": "Link status options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852797549",
+                    "array": false,
+                    "description": "The link is a normal link.",
+                    "readonly": true,
+                    "name": "NORMAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1819242340",
+                    "array": false,
+                    "description": "A more recent version of the file exists on the disk.",
+                    "readonly": true,
+                    "name": "LINK_OUT_OF_DATE"
+                },
+                {
+                    "type": "number",
+                    "value": "1819109747",
+                    "array": false,
+                    "description": "The linked file has been moved, renamed, or deleted.",
+                    "readonly": true,
+                    "name": "LINK_MISSING"
+                },
+                {
+                    "type": "number",
+                    "value": "1282237028",
+                    "array": false,
+                    "description": "The file is embedded in the document.",
+                    "readonly": true,
+                    "name": "LINK_EMBEDDED"
+                },
+                {
+                    "type": "number",
+                    "value": "1818848865",
+                    "array": false,
+                    "description": "The url link is inaccessible.",
+                    "readonly": true,
+                    "name": "LINK_INACCESSIBLE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "LinkStatus"
+}

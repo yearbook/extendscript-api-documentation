@@ -1,0 +1,31 @@
+{
+    "description": "Hyperlink border style options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1936682084",
+                    "array": false,
+                    "description": "Uses a solid stroke.",
+                    "readonly": true,
+                    "name": "SOLID"
+                },
+                {
+                    "type": "number",
+                    "value": "1684108136",
+                    "array": false,
+                    "description": "Uses a dashed stroke.",
+                    "readonly": true,
+                    "name": "DASHED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HyperlinkAppearanceStyle"
+}

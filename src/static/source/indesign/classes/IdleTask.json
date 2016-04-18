@@ -1,0 +1,216 @@
+{
+    "description": "An attachable idle task.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "string",
+                    "value": "onIdle",
+                    "array": false,
+                    "description": "Dispatched at idle time for this IdleTask. This event does not bubble. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "ON_IDLE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The unique ID of the IdleTask.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the IdleTask (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the IdleTask within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the IdleTask.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "Amount of time to sleep (in milliseconds) before calling this task again. Setting this to zero will cause task to be deleted.",
+                    "type": "number",
+                    "array": false,
+                    "name": "sleep",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes the IdleTask.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the IdleTask.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "IdleTask",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "IdleTask"
+}

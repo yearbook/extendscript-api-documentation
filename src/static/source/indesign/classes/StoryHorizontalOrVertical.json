@@ -1,0 +1,39 @@
+{
+    "description": "Text orientation options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1752134266",
+                    "array": false,
+                    "description": "Orients the text horizontally.",
+                    "readonly": true,
+                    "name": "HORIZONTAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1986359924",
+                    "array": false,
+                    "description": "Orients the text vertically.",
+                    "readonly": true,
+                    "name": "VERTICAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1433299822",
+                    "array": false,
+                    "description": "The text direction is unknown.",
+                    "readonly": true,
+                    "name": "UNKNOWN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "StoryHorizontalOrVertical"
+}

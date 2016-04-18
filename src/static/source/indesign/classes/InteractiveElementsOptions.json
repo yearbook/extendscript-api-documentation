@@ -1,0 +1,31 @@
+{
+    "description": "Options for how to draw interactive elements.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1145981283",
+                    "array": false,
+                    "description": "Do not include interactive elements.",
+                    "readonly": true,
+                    "name": "DO_NOT_INCLUDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1097887823",
+                    "array": false,
+                    "description": "Draw interactive elements appearance only.",
+                    "readonly": true,
+                    "name": "APPEARANCE_ONLY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "InteractiveElementsOptions"
+}

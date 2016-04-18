@@ -1,0 +1,63 @@
+{
+    "description": "Behavior trigger event options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1836410230",
+                    "array": false,
+                    "description": "Triggers the behavior when the mouse is released after a click.",
+                    "readonly": true,
+                    "name": "MOUSE_UP"
+                },
+                {
+                    "type": "number",
+                    "value": "1835296118",
+                    "array": false,
+                    "description": "Triggers the behavior when the mouse button is clicked (without being released).",
+                    "readonly": true,
+                    "name": "MOUSE_DOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "1835361654",
+                    "array": false,
+                    "description": "Triggers the behavior when the mouse pointer enters the area defined by the bounding box of the object.",
+                    "readonly": true,
+                    "name": "MOUSE_ENTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1836606838",
+                    "array": false,
+                    "description": "Triggers the behavior when the mouse pointer exits the area defined by the bounding box of the object.",
+                    "readonly": true,
+                    "name": "MOUSE_EXIT"
+                },
+                {
+                    "type": "number",
+                    "value": "1868981622",
+                    "array": false,
+                    "description": "Triggers the behavior when the object receives focus, either through a mouse action or by pressing the Tab key.",
+                    "readonly": true,
+                    "name": "ON_FOCUS"
+                },
+                {
+                    "type": "number",
+                    "value": "1868719478",
+                    "array": false,
+                    "description": "Triggers the behavior when the focus moves to a different interactive object.",
+                    "readonly": true,
+                    "name": "ON_BLUR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BehaviorEvents"
+}

@@ -1,0 +1,213 @@
+{
+    "description": "A collection of XML rule processors.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Create a new XMLRuleProcessor",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The XPath condition paths of the rules in the rule set.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "rulePaths",
+                            "array": true
+                        },
+                        {
+                            "description": "The namespace mapping table. Can accept: Array of Arrays of 2 Strings. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "prefixMappingTable",
+                            "array": true
+                        },
+                        {
+                            "description": "Initial values for properties of the new XMLRuleProcessor (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the XMLRuleProcessor.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor with the specified index or name.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor with the specified name.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor with the specified ID.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessors within the specified range.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The XMLRuleProcessor, index, or name at the beginning of the range. Can accept: XMLRuleProcessor, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The XMLRuleProcessor, index, or name at the end of the range. Can accept: XMLRuleProcessor, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor with the index previous to the specified index.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The index of the XMLRuleProcessor that follows the desired XMLRuleProcessor.",
+                            "type": "XMLRuleProcessor",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor whose index follows the specified XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The XMLRuleProcessor whose index comes before the desired XMLRuleProcessor.",
+                            "type": "XMLRuleProcessor",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every XMLRuleProcessor in the collection.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the XMLRuleProcessor.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLRuleProcessor with the specified index.",
+                    "type": "XMLRuleProcessor",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "XMLRuleProcessors"
+}

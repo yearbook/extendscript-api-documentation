@@ -1,0 +1,31 @@
+{
+    "description": "Tag form options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1414821474",
+                    "array": false,
+                    "description": "Displays tags in long form; creates larger text files.",
+                    "readonly": true,
+                    "name": "VERBOSE"
+                },
+                {
+                    "type": "number",
+                    "value": "1414816098",
+                    "array": false,
+                    "description": "Abbreviates tags; creates smaller text files.",
+                    "readonly": true,
+                    "name": "ABBREVIATED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TagTextForm"
+}

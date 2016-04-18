@@ -1,0 +1,39 @@
+{
+    "description": "Bullet character type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1111717231",
+                    "array": false,
+                    "description": "Unicode only.",
+                    "readonly": true,
+                    "name": "UNICODE_ONLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1111717222",
+                    "array": false,
+                    "description": "Unicode with font.",
+                    "readonly": true,
+                    "name": "UNICODE_WITH_FONT"
+                },
+                {
+                    "type": "number",
+                    "value": "1111713638",
+                    "array": false,
+                    "description": "Glyph with font.",
+                    "readonly": true,
+                    "name": "GLYPH_WITH_FONT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BulletCharacterType"
+}

@@ -1,0 +1,23 @@
+{
+    "description": "Paper size options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1635019116",
+                    "array": false,
+                    "description": "Automatic",
+                    "readonly": true,
+                    "name": "AUTO"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PaperSize"
+}

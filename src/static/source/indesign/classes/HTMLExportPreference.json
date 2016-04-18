@@ -1,0 +1,314 @@
+{
+    "description": "HTML export preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the HTMLExportPreference (a Document).",
+                    "type": "Document",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true and have selection, export selected content to HTML.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportSelection",
+                    "readonly": false
+                },
+                {
+                    "description": "The export order.",
+                    "type": "ExportOrder",
+                    "array": false,
+                    "name": "exportOrder",
+                    "readonly": false
+                },
+                {
+                    "description": "The bullet export option.",
+                    "type": "BulletListExportOption",
+                    "array": false,
+                    "name": "bulletExportOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The numbered list export option.",
+                    "type": "NumberedListExportOption",
+                    "array": false,
+                    "name": "numberedListExportOption",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, open docuemnt in viewer after export.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "viewDocumentAfterExport",
+                    "readonly": false
+                },
+                {
+                    "description": "The export order.",
+                    "type": "ImageExportOption",
+                    "array": false,
+                    "name": "imageExportOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The export resolution",
+                    "type": "ImageResolution",
+                    "array": false,
+                    "name": "imageExportResolution",
+                    "readonly": false
+                },
+                {
+                    "description": "Allows user to select the image size option for conversion",
+                    "type": "ImageSizeOption",
+                    "array": false,
+                    "name": "customImageSizeOption",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, format image based on layout appearence.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveLayoutAppearence",
+                    "readonly": false
+                },
+                {
+                    "description": "Alignment applied to images",
+                    "type": "ImageAlignmentType",
+                    "array": false,
+                    "name": "imageAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "Space Before applied to images",
+                    "type": "number",
+                    "array": false,
+                    "name": "imageSpaceBefore",
+                    "readonly": false
+                },
+                {
+                    "description": "Space After applied to images",
+                    "type": "number",
+                    "array": false,
+                    "name": "imageSpaceAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "apply image alignment to anchored object settings.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "applyImageAlignmentToAnchoredObjectSettings",
+                    "readonly": false
+                },
+                {
+                    "description": "The file format to use for converted images. Note: Valid only when copy optimized images and/or copy formatted images is true.",
+                    "type": "ImageConversion",
+                    "array": false,
+                    "name": "imageConversion",
+                    "readonly": false
+                },
+                {
+                    "description": "The color palette for GIF conversion. Note: Not valid when image conversion is JPEG.",
+                    "type": "GIFOptionsPalette",
+                    "array": false,
+                    "name": "gifOptionsPalette",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, generates interlaced GIFs. Note: Not valid  when image conversion is JPEG.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "gifOptionsInterlaced",
+                    "readonly": false
+                },
+                {
+                    "description": "The quality of converted JPEG images. Note: Not valid when image conversion is GIF.",
+                    "type": "JPEGOptionsQuality",
+                    "array": false,
+                    "name": "jpegOptionsQuality",
+                    "readonly": false
+                },
+                {
+                    "description": "The formatting method for converted JPEG images. Note: Not valid  when image conversion is GIF.",
+                    "type": "JPEGOptionsFormat",
+                    "array": false,
+                    "name": "jpegOptionsFormat",
+                    "readonly": false
+                },
+                {
+                    "description": "The PNG compression level.",
+                    "type": "number",
+                    "array": false,
+                    "name": "level",
+                    "readonly": false
+                },
+                {
+                    "description": "ignore object level image conversion settings.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ignoreObjectConversionSettings",
+                    "readonly": false
+                },
+                {
+                    "description": "The server path for image .",
+                    "type": "string",
+                    "array": false,
+                    "name": "serverPath",
+                    "readonly": false
+                },
+                {
+                    "description": "The image extension on server.",
+                    "type": "string",
+                    "array": false,
+                    "name": "imageExtension",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, output local style override.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveLocalOverride",
+                    "readonly": false
+                },
+                {
+                    "description": "The file path of external cascading style sheets.",
+                    "type": "string",
+                    "array": true,
+                    "name": "externalStyleSheets",
+                    "readonly": false
+                },
+                {
+                    "description": "The file path of external javascripts.",
+                    "type": "string",
+                    "array": true,
+                    "name": "javascripts",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, InDesign will generate cascade style sheet.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "generateCascadeStyleSheet",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the HTMLExportPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "HTMLExportPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HTMLExportPreference"
+}

@@ -1,0 +1,2941 @@
+{
+    "description": "The application.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "string",
+                    "value": "beforeNew",
+                    "array": false,
+                    "description": "Dispatched before a Document is created. This event bubbles. This event is cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_NEW"
+                },
+                {
+                    "type": "string",
+                    "value": "beforeOpen",
+                    "array": false,
+                    "description": "Dispatched before a Document is opened. This event bubbles. This event is cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_OPEN"
+                },
+                {
+                    "type": "string",
+                    "value": "afterClose",
+                    "array": false,
+                    "description": "Dispatched after a Document is closed. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_CLOSE"
+                },
+                {
+                    "type": "string",
+                    "value": "afterContextChanged",
+                    "array": false,
+                    "description": "Dispatched after the active context changes. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_CONTEXT_CHANGED"
+                },
+                {
+                    "type": "string",
+                    "value": "afterSelectionChanged",
+                    "array": false,
+                    "description": "Dispatched after the active selection changes. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_SELECTION_CHANGED"
+                },
+                {
+                    "type": "string",
+                    "value": "afterSelectionAttributeChanged",
+                    "array": false,
+                    "description": "Dispatched after an attribute on the active selection changes. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_SELECTION_ATTRIBUTE_CHANGED"
+                },
+                {
+                    "type": "string",
+                    "value": "beforeDeactivate",
+                    "array": false,
+                    "description": "Dispatched before the Application becomes inactive. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_DEACTIVATE"
+                },
+                {
+                    "type": "string",
+                    "value": "afterActivate",
+                    "array": false,
+                    "description": "Dispatched after the Application becomes active. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_ACTIVATE"
+                },
+                {
+                    "type": "string",
+                    "value": "beforeQuit",
+                    "array": false,
+                    "description": "Dispatched before the Application is quit. Allows the quit to be canceled. This event bubbles. This event is cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_QUIT"
+                },
+                {
+                    "type": "string",
+                    "value": "afterQuit",
+                    "array": false,
+                    "description": "Dispatched when the Application is quitting. Since the quit has been committed, it can not be canceled. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_QUIT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The XML preference settings.",
+                    "type": "XMLPreference",
+                    "array": false,
+                    "name": "xmlPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "XML import preference settings.",
+                    "type": "XMLImportPreference",
+                    "array": false,
+                    "name": "xmlImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "XML export preference settings.",
+                    "type": "XMLExportPreference",
+                    "array": false,
+                    "name": "xmlExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The default export for web preferences.",
+                    "type": "ExportForWebPreference",
+                    "array": false,
+                    "name": "exportForWebPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency preference settings.",
+                    "type": "TransparencyPreference",
+                    "array": false,
+                    "name": "transparencyPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text frame preference settings.",
+                    "type": "TextFramePreference",
+                    "array": false,
+                    "name": "textFramePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text preference settings.",
+                    "type": "TextPreference",
+                    "array": false,
+                    "name": "textPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text default settings.",
+                    "type": "TextDefault",
+                    "array": false,
+                    "name": "textDefaults",
+                    "readonly": true
+                },
+                {
+                    "description": "User dictionary preference settings.",
+                    "type": "DictionaryPreference",
+                    "array": false,
+                    "name": "dictionaryPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Story preference settings.",
+                    "type": "StoryPreference",
+                    "array": false,
+                    "name": "storyPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Anchored object default settings.",
+                    "type": "AnchoredObjectDefault",
+                    "array": false,
+                    "name": "anchoredObjectDefaults",
+                    "readonly": true
+                },
+                {
+                    "description": "Anchored object settings.",
+                    "type": "AnchoredObjectSetting",
+                    "array": false,
+                    "name": "anchoredObjectSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Baseline frame grid option settings.",
+                    "type": "BaselineFrameGridOption",
+                    "array": false,
+                    "name": "baselineFrameGridOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Footnote option settings.",
+                    "type": "FootnoteOption",
+                    "array": false,
+                    "name": "footnoteOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all paragraph styles (regardless of their group).",
+                    "type": "ParagraphStyle",
+                    "array": true,
+                    "name": "allParagraphStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all character styles (regardless of their group).",
+                    "type": "CharacterStyle",
+                    "array": true,
+                    "name": "allCharacterStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "The text wrap preference properties that define the default formatting for wrapping text around objects.",
+                    "type": "TextWrapPreference",
+                    "array": false,
+                    "name": "textWrapPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "All Table styles",
+                    "type": "TableStyle",
+                    "array": true,
+                    "name": "allTableStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "All Cell styles",
+                    "type": "CellStyle",
+                    "array": true,
+                    "name": "allCellStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "Document preference settings.",
+                    "type": "DocumentPreference",
+                    "array": false,
+                    "name": "documentPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Grid preference settings.",
+                    "type": "GridPreference",
+                    "array": false,
+                    "name": "gridPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Guide preference settings.",
+                    "type": "GuidePreference",
+                    "array": false,
+                    "name": "guidePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Margin preference settings.",
+                    "type": "MarginPreference",
+                    "array": false,
+                    "name": "marginPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Pasteboard preference settings.",
+                    "type": "PasteboardPreference",
+                    "array": false,
+                    "name": "pasteboardPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "View preference settings.",
+                    "type": "ViewPreference",
+                    "array": false,
+                    "name": "viewPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Smart Guide preference properties.",
+                    "type": "SmartGuidePreference",
+                    "array": false,
+                    "name": "smartGuidePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Spell-check preferences.",
+                    "type": "SpellPreference",
+                    "array": false,
+                    "name": "spellPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Auto-correct preferences.",
+                    "type": "AutoCorrectPreference",
+                    "array": false,
+                    "name": "autoCorrectPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Linked story options",
+                    "type": "LinkedStoryOption",
+                    "array": false,
+                    "name": "linkedStoryOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Linked Page Item options",
+                    "type": "LinkedPageItemOption",
+                    "array": false,
+                    "name": "linkedPageItemOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Script preferences.",
+                    "type": "ScriptPreference",
+                    "array": false,
+                    "name": "scriptPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Arguments to pass to a script.",
+                    "type": "ScriptArg",
+                    "array": false,
+                    "name": "scriptArgs",
+                    "readonly": true
+                },
+                {
+                    "description": "EPS export preferences.",
+                    "type": "EPSExportPreference",
+                    "array": false,
+                    "name": "epsExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "PNG export preferences.",
+                    "type": "PNGExportPreference",
+                    "array": false,
+                    "name": "pngExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PDF export preferences.",
+                    "type": "PDFExportPreference",
+                    "array": false,
+                    "name": "pdfExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Interactive PDF export preferences.",
+                    "type": "InteractivePDFExportPreference",
+                    "array": false,
+                    "name": "interactivePDFExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The PDF place preference properties that define how PDF files are placed in the current document.",
+                    "type": "PDFPlacePreference",
+                    "array": false,
+                    "name": "pdfPlacePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Tagged PDF preferences.",
+                    "type": "TaggedPDFPreference",
+                    "array": false,
+                    "name": "taggedPDFPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists the extensions of file types that can be placed.",
+                    "type": "string",
+                    "array": true,
+                    "name": "placeableFileExtensions",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists the types of files that can be placed.",
+                    "type": "string",
+                    "array": true,
+                    "name": "placeableFileTypes",
+                    "readonly": true
+                },
+                {
+                    "description": "The links preference properties that define preferences for links.",
+                    "type": "LinkingPreference",
+                    "array": false,
+                    "name": "linkingPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Grabber preference properties that define display performance quality during scrolling.",
+                    "type": "GrabberPreference",
+                    "array": false,
+                    "name": "grabberPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The index options properties that define how an index is formatted.",
+                    "type": "IndexOptions",
+                    "array": false,
+                    "name": "indexGenerationOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Track changes preference settings.",
+                    "type": "TrackChangesPreference",
+                    "array": false,
+                    "name": "trackChangesPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Export options for InCopy INCX document format.",
+                    "type": "InCopyExportOption",
+                    "array": false,
+                    "name": "incopyExportOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "IME preference settings.",
+                    "type": "IMEPreference",
+                    "array": false,
+                    "name": "imePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The image I/O preference properties that define preferences for importing images.",
+                    "type": "ImageIOPreference",
+                    "array": false,
+                    "name": "imageIOPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Image preferences.",
+                    "type": "ImagePreference",
+                    "array": false,
+                    "name": "imagePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Stroke/fill proxy settings.",
+                    "type": "StrokeFillProxySetting",
+                    "array": false,
+                    "name": "strokeFillProxySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Polygon preference properties to use to define default settings for creating a polygon.",
+                    "type": "PolygonPreference",
+                    "array": false,
+                    "name": "polygonPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "All object styles contained by the Application.",
+                    "type": "ObjectStyle",
+                    "array": true,
+                    "name": "allObjectStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "The default page item formatting for the Application.",
+                    "type": "PageItemDefault",
+                    "array": false,
+                    "name": "pageItemDefaults",
+                    "readonly": true
+                },
+                {
+                    "description": "Preferences for alignment and distribution.",
+                    "type": "AlignDistributePreference",
+                    "array": false,
+                    "name": "alignDistributePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The frame fitting option to apply to placed or pasted content. Can be applied to a frame, object style, or document or to the application.",
+                    "type": "FrameFittingOption",
+                    "array": false,
+                    "name": "frameFittingOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Button preference settings.",
+                    "type": "ButtonPreference",
+                    "array": false,
+                    "name": "buttonPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "EPS import preferences.",
+                    "type": "EPSImportPreference",
+                    "array": false,
+                    "name": "epsImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Placed InDesign page attributes.",
+                    "type": "ImportedPageAttribute",
+                    "array": false,
+                    "name": "importedPageAttributes",
+                    "readonly": true
+                },
+                {
+                    "description": "SWF export preferences.",
+                    "type": "SWFExportPreference",
+                    "array": false,
+                    "name": "swfExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "XFL export preferences.",
+                    "type": "XFLExportPreference",
+                    "array": false,
+                    "name": "xflExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The swatches that are not being used.",
+                    "type": "Swatch",
+                    "array": true,
+                    "name": "unusedSwatches",
+                    "readonly": true
+                },
+                {
+                    "description": "Watermark preferences",
+                    "type": "WatermarkPreference",
+                    "array": false,
+                    "name": "watermarkPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The Content Placer. Used to get a reference to the content placer object.",
+                    "type": "ContentPlacerObject",
+                    "array": false,
+                    "name": "contentPlacer",
+                    "readonly": true
+                },
+                {
+                    "description": "Conditional text preferences.",
+                    "type": "ConditionalTextPreference",
+                    "array": false,
+                    "name": "conditionalTextPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Color setting properties that define color management defaults.",
+                    "type": "ColorSetting",
+                    "array": false,
+                    "name": "colorSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Default properties specific to layout grids.",
+                    "type": "LayoutGridDataInformation",
+                    "array": false,
+                    "name": "layoutGridData",
+                    "readonly": true
+                },
+                {
+                    "description": "Default properties specific to frame grids.",
+                    "type": "StoryGridDataInformation",
+                    "array": false,
+                    "name": "storyGridData",
+                    "readonly": true
+                },
+                {
+                    "description": "CJK grid preference settings.",
+                    "type": "CjkGridPreference",
+                    "array": false,
+                    "name": "cjkGridPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Grid printing preference and export settings.",
+                    "type": "GridPrintingPreference",
+                    "array": false,
+                    "name": "gridPrintingPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Font locking preference settings.",
+                    "type": "FontLockingPreference",
+                    "array": false,
+                    "name": "fontLockingPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Mojikumi user interface preference settings.",
+                    "type": "MojikumiUiPreference",
+                    "array": false,
+                    "name": "mojikumiUIPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the Application.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": true
+                },
+                {
+                    "description": "The full path to the Application, including the name of the Application.",
+                    "type": "File",
+                    "array": false,
+                    "name": "fullName",
+                    "readonly": true
+                },
+                {
+                    "description": "The full path to the file.",
+                    "type": "File",
+                    "array": false,
+                    "name": "filePath",
+                    "readonly": true
+                },
+                {
+                    "description": "The application version.",
+                    "type": "string",
+                    "array": false,
+                    "name": "version",
+                    "readonly": true
+                },
+                {
+                    "description": "The locale of the application.",
+                    "type": "Locale",
+                    "array": false,
+                    "name": "locale",
+                    "readonly": true
+                },
+                {
+                    "description": "The current script running from the Scripts panel.",
+                    "type": "File",
+                    "array": false,
+                    "name": "activeScript",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the Application is visible.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "visible",
+                    "readonly": true
+                },
+                {
+                    "description": "General preference settings.",
+                    "type": "GeneralPreference",
+                    "array": false,
+                    "name": "generalPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Clipboard preference properties that define the way that the application interacts with the system clipboard.",
+                    "type": "ClipboardPreference",
+                    "array": false,
+                    "name": "clipboardPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Transform preference properties that define default behaviors when transforming objects. Note: Transforming includes rotation, scaling, flipping, and shearing.",
+                    "type": "TransformPreference",
+                    "array": false,
+                    "name": "transformPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, a modal dialog or alert is active.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "modalState",
+                    "readonly": true
+                },
+                {
+                    "description": "The feature set.",
+                    "type": "FeatureSetOptions",
+                    "array": false,
+                    "name": "featureSet",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the action on the top of the undo stack.",
+                    "type": "string",
+                    "array": false,
+                    "name": "undoName",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the action on the top of the redo stack.",
+                    "type": "string",
+                    "array": false,
+                    "name": "redoName",
+                    "readonly": true
+                },
+                {
+                    "description": "The names of the items in the undo stack.",
+                    "type": "string",
+                    "array": true,
+                    "name": "undoHistory",
+                    "readonly": true
+                },
+                {
+                    "description": "The names of the items in the redo stack.",
+                    "type": "string",
+                    "array": true,
+                    "name": "redoHistory",
+                    "readonly": true
+                },
+                {
+                    "description": "The undo mode for the current script execution.",
+                    "type": "UndoModes",
+                    "array": false,
+                    "name": "activeScriptUndoMode",
+                    "readonly": true
+                },
+                {
+                    "description": "The user's serial number.",
+                    "type": "string",
+                    "array": false,
+                    "name": "serialNumber",
+                    "readonly": true
+                },
+                {
+                    "description": "The current user's adobe id",
+                    "type": "string",
+                    "array": false,
+                    "name": "userAdobeId",
+                    "readonly": true
+                },
+                {
+                    "description": "The current user's GUID",
+                    "type": "string",
+                    "array": false,
+                    "name": "userGuid",
+                    "readonly": true
+                },
+                {
+                    "description": "XML view preference settings.",
+                    "type": "XMLViewPreference",
+                    "array": false,
+                    "name": "xmlViewPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The available performance metrics.",
+                    "type": "number",
+                    "array": true,
+                    "name": "performanceMetrics",
+                    "readonly": true
+                },
+                {
+                    "description": "The current tool box states",
+                    "type": "ToolBox",
+                    "array": false,
+                    "name": "toolBoxTools",
+                    "readonly": true
+                },
+                {
+                    "description": "Display performance settings.",
+                    "type": "DisplayPerformancePreference",
+                    "array": false,
+                    "name": "displayPerformancePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Galley preference settings.",
+                    "type": "GalleyPreference",
+                    "array": false,
+                    "name": "galleyPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text editing preference settings.",
+                    "type": "TextEditingPreference",
+                    "array": false,
+                    "name": "textEditingPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Sync preference settings.",
+                    "type": "SyncPreference",
+                    "array": false,
+                    "name": "syncPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Preflight option settings.",
+                    "type": "PreflightOption",
+                    "array": false,
+                    "name": "preflightOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Preflight book option settings.",
+                    "type": "PreflightBookOption",
+                    "array": false,
+                    "name": "preflightBookOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "The list of all object types (strings) a preflight rule can operate on.",
+                    "type": "string",
+                    "array": true,
+                    "name": "allPreflightObjectTypes",
+                    "readonly": true
+                },
+                {
+                    "description": "The list of all categories that have been declared by rules.",
+                    "type": "string",
+                    "array": true,
+                    "name": "allPreflightRuleCategories",
+                    "readonly": true
+                },
+                {
+                    "description": "The list of all known (declared) rule IDs.",
+                    "type": "string",
+                    "array": true,
+                    "name": "allPreflightRuleIDs",
+                    "readonly": true
+                },
+                {
+                    "description": "The data merge option properties that define the data merge.",
+                    "type": "DataMergeOption",
+                    "array": false,
+                    "name": "dataMergeOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "Layout sdjustment preference settings.",
+                    "type": "LayoutAdjustmentPreference",
+                    "array": false,
+                    "name": "layoutAdjustmentPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Note preference settings.",
+                    "type": "NotePreference",
+                    "array": false,
+                    "name": "notePreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "JPEG export preferences.",
+                    "type": "JPEGExportPreference",
+                    "array": false,
+                    "name": "jpegExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text import preferences.",
+                    "type": "TextImportPreference",
+                    "array": false,
+                    "name": "textImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Text export preferences.",
+                    "type": "TextExportPreference",
+                    "array": false,
+                    "name": "textExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Tagged text export preferences.",
+                    "type": "TaggedTextExportPreference",
+                    "array": false,
+                    "name": "taggedTextExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Tagged text import preferences.",
+                    "type": "TaggedTextImportPreference",
+                    "array": false,
+                    "name": "taggedTextImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Word and RTF import preferences.",
+                    "type": "WordRTFImportPreference",
+                    "array": false,
+                    "name": "wordRTFImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Excel import preferences.",
+                    "type": "ExcelImportPreference",
+                    "array": false,
+                    "name": "excelImportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the Application (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of XML export maps.",
+                    "type": "XMLExportMaps",
+                    "array": false,
+                    "name": "xmlExportMaps",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of XML import maps.",
+                    "type": "XMLImportMaps",
+                    "array": false,
+                    "name": "xmlImportMaps",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of XML rule processors.",
+                    "type": "XMLRuleProcessors",
+                    "array": false,
+                    "name": "xmlRuleProcessors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of XML tags.",
+                    "type": "XMLTags",
+                    "array": false,
+                    "name": "xmlTags",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of transparency flattener presets.",
+                    "type": "FlattenerPresets",
+                    "array": false,
+                    "name": "flattenerPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of user dictionaries.",
+                    "type": "UserDictionaries",
+                    "array": false,
+                    "name": "userDictionaries",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of paragraph style groups.",
+                    "type": "ParagraphStyleGroups",
+                    "array": false,
+                    "name": "paragraphStyleGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of character style groups.",
+                    "type": "CharacterStyleGroups",
+                    "array": false,
+                    "name": "characterStyleGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of character styles.",
+                    "type": "CharacterStyles",
+                    "array": false,
+                    "name": "characterStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of paragraph styles.",
+                    "type": "ParagraphStyles",
+                    "array": false,
+                    "name": "paragraphStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text variables.",
+                    "type": "TextVariables",
+                    "array": false,
+                    "name": "textVariables",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of table styles.",
+                    "type": "TableStyles",
+                    "array": false,
+                    "name": "tableStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of table style groups.",
+                    "type": "TableStyleGroups",
+                    "array": false,
+                    "name": "tableStyleGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of cell styles.",
+                    "type": "CellStyles",
+                    "array": false,
+                    "name": "cellStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of cell style groups.",
+                    "type": "CellStyleGroups",
+                    "array": false,
+                    "name": "cellStyleGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of stroke styles.",
+                    "type": "StrokeStyles",
+                    "array": false,
+                    "name": "strokeStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of dashed stroke styles.",
+                    "type": "DashedStrokeStyles",
+                    "array": false,
+                    "name": "dashedStrokeStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of dotted stroke styles.",
+                    "type": "DottedStrokeStyles",
+                    "array": false,
+                    "name": "dottedStrokeStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of striped stroke styles.",
+                    "type": "StripedStrokeStyles",
+                    "array": false,
+                    "name": "stripedStrokeStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of document presets.",
+                    "type": "DocumentPresets",
+                    "array": false,
+                    "name": "documentPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of auto-correct tables.",
+                    "type": "AutoCorrectTables",
+                    "array": false,
+                    "name": "autoCorrectTables",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of para style mappings.",
+                    "type": "ParaStyleMappings",
+                    "array": false,
+                    "name": "paraStyleMappings",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of char style mappings.",
+                    "type": "CharStyleMappings",
+                    "array": false,
+                    "name": "charStyleMappings",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of table style mappings.",
+                    "type": "TableStyleMappings",
+                    "array": false,
+                    "name": "tableStyleMappings",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of cell style mappings.",
+                    "type": "CellStyleMappings",
+                    "array": false,
+                    "name": "cellStyleMappings",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "All attachable idle tasks.",
+                    "type": "IdleTasks",
+                    "array": false,
+                    "name": "idleTasks",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of inks.",
+                    "type": "Inks",
+                    "array": false,
+                    "name": "inks",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of trap presets.",
+                    "type": "TrapPresets",
+                    "array": false,
+                    "name": "trapPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PDF export presets.",
+                    "type": "PDFExportPresets",
+                    "array": false,
+                    "name": "pdfExportPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of languages with vendors.",
+                    "type": "LanguagesWithVendors",
+                    "array": false,
+                    "name": "languagesWithVendors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of indexing sort options.",
+                    "type": "IndexingSortOptions",
+                    "array": false,
+                    "name": "indexingSortOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of object style groups.",
+                    "type": "ObjectStyleGroups",
+                    "array": false,
+                    "name": "objectStyleGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of object styles.",
+                    "type": "ObjectStyles",
+                    "array": false,
+                    "name": "objectStyles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of transformation matrices.",
+                    "type": "TransformationMatrices",
+                    "array": false,
+                    "name": "transformationMatrices",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of fonts.",
+                    "type": "Fonts",
+                    "array": false,
+                    "name": "fonts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of Motion presets.",
+                    "type": "MotionPresets",
+                    "array": false,
+                    "name": "motionPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of documents.",
+                    "type": "Documents",
+                    "array": false,
+                    "name": "documents",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of swatches.",
+                    "type": "Swatches",
+                    "array": false,
+                    "name": "swatches",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of colors.",
+                    "type": "Colors",
+                    "array": false,
+                    "name": "colors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of tints.",
+                    "type": "Tints",
+                    "array": false,
+                    "name": "tints",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of gradients.",
+                    "type": "Gradients",
+                    "array": false,
+                    "name": "gradients",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of mixed inks.",
+                    "type": "MixedInks",
+                    "array": false,
+                    "name": "mixedInks",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of mixed ink groups.",
+                    "type": "MixedInkGroups",
+                    "array": false,
+                    "name": "mixedInkGroups",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of dialogs.",
+                    "type": "Dialogs",
+                    "array": false,
+                    "name": "dialogs",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of conditions for conditional text.",
+                    "type": "Conditions",
+                    "array": false,
+                    "name": "conditions",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of condition sets for conditional text.",
+                    "type": "ConditionSets",
+                    "array": false,
+                    "name": "conditionSets",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of composite fonts.",
+                    "type": "CompositeFonts",
+                    "array": false,
+                    "name": "compositeFonts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of named grids.",
+                    "type": "NamedGrids",
+                    "array": false,
+                    "name": "namedGrids",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of kinsoku tables.",
+                    "type": "KinsokuTables",
+                    "array": false,
+                    "name": "kinsokuTables",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of mojikumi tables.",
+                    "type": "MojikumiTables",
+                    "array": false,
+                    "name": "mojikumiTables",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of books.",
+                    "type": "Books",
+                    "array": false,
+                    "name": "books",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of numbered lists.",
+                    "type": "NumberingLists",
+                    "array": false,
+                    "name": "numberingLists",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of windows.",
+                    "type": "Windows",
+                    "array": false,
+                    "name": "windows",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of layout windows.",
+                    "type": "LayoutWindows",
+                    "array": false,
+                    "name": "layoutWindows",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of story windows.",
+                    "type": "StoryWindows",
+                    "array": false,
+                    "name": "storyWindows",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of panels.",
+                    "type": "Panels",
+                    "array": false,
+                    "name": "panels",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of background task objects.",
+                    "type": "BackgroundTasks",
+                    "array": false,
+                    "name": "backgroundTasks",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of menu actions.",
+                    "type": "MenuActions",
+                    "array": false,
+                    "name": "menuActions",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of script menu actions.",
+                    "type": "ScriptMenuActions",
+                    "array": false,
+                    "name": "scriptMenuActions",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of menus.",
+                    "type": "Menus",
+                    "array": false,
+                    "name": "menus",
+                    "readonly": true
+                },
+                {
+                    "description": "Display setting properties.",
+                    "type": "DisplaySettings",
+                    "array": false,
+                    "name": "displaySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preflight profiles.",
+                    "type": "PreflightProfiles",
+                    "array": false,
+                    "name": "preflightProfiles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preflight rules.",
+                    "type": "PreflightRules",
+                    "array": false,
+                    "name": "preflightRules",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preflight processes.",
+                    "type": "PreflightProcesses",
+                    "array": false,
+                    "name": "preflightProcesses",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of object libraries.",
+                    "type": "Libraries",
+                    "array": false,
+                    "name": "libraries",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of printer presets.",
+                    "type": "PrinterPresets",
+                    "array": false,
+                    "name": "printerPresets",
+                    "readonly": true
+                },
+                {
+                    "description": "Find/change text options. Can also accept: NothingEnum enumerator.",
+                    "type": "FindChangeTextOption",
+                    "array": false,
+                    "name": "findChangeTextOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "Find/change grep options. Can also accept: NothingEnum enumerator.",
+                    "type": "FindChangeGrepOption",
+                    "array": false,
+                    "name": "findChangeGrepOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "Find/change glyph options. Can also accept: NothingEnum enumerator.",
+                    "type": "FindChangeGlyphOption",
+                    "array": false,
+                    "name": "findChangeGlyphOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "Find/change object options. Can also accept: NothingEnum enumerator.",
+                    "type": "FindChangeObjectOption",
+                    "array": false,
+                    "name": "findChangeObjectOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "Find text preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "FindTextPreference",
+                    "array": false,
+                    "name": "findTextPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Change text preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "ChangeTextPreference",
+                    "array": false,
+                    "name": "changeTextPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Find grep preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "FindGrepPreference",
+                    "array": false,
+                    "name": "findGrepPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Change grep preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "ChangeGrepPreference",
+                    "array": false,
+                    "name": "changeGrepPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Find glyph preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "FindGlyphPreference",
+                    "array": false,
+                    "name": "findGlyphPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Change glyph preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "ChangeGlyphPreference",
+                    "array": false,
+                    "name": "changeGlyphPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Find object preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "FindObjectPreference",
+                    "array": false,
+                    "name": "findObjectPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Change object preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "ChangeObjectPreference",
+                    "array": false,
+                    "name": "changeObjectPreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Find/change transliterate options. Can also accept: NothingEnum enumerator.",
+                    "type": "FindChangeTransliterateOption",
+                    "array": false,
+                    "name": "findChangeTransliterateOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "Find transliterate preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "FindTransliteratePreference",
+                    "array": false,
+                    "name": "findTransliteratePreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "Change transliterate preferences. Can also accept: NothingEnum enumerator.",
+                    "type": "ChangeTransliteratePreference",
+                    "array": false,
+                    "name": "changeTransliteratePreferences",
+                    "readonly": false
+                },
+                {
+                    "description": "The color assigned to the tracked changes and notes created by the user, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as an InCopy UI color. Can return: Array of 3 Reals (0 - 255) or InCopyUIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "userColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The user associated with the tracked changes and notes.",
+                    "type": "string",
+                    "array": false,
+                    "name": "userName",
+                    "readonly": false
+                },
+                {
+                    "description": "Clear overrides first before applying object style",
+                    "type": "bool",
+                    "array": false,
+                    "name": "clearOverridesWhenApplyingStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The active book.",
+                    "type": "Book",
+                    "array": false,
+                    "name": "activeBook",
+                    "readonly": false
+                },
+                {
+                    "description": "The selected object(s). Can also accept: Object or NothingEnum enumerator.",
+                    "type": "Object",
+                    "array": true,
+                    "name": "selection",
+                    "readonly": false
+                },
+                {
+                    "description": "The front-most window. Can return: Window, LayoutWindow or StoryWindow.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "activeWindow",
+                    "readonly": false
+                },
+                {
+                    "description": "Delay before mouse operations trigger live screen drawing of page items.",
+                    "type": "LiveDrawingOptions",
+                    "array": false,
+                    "name": "liveScreenDrawing",
+                    "readonly": false
+                },
+                {
+                    "description": "The key object of the selection. Can also accept: NothingEnum enumerator.",
+                    "type": "PageItem",
+                    "array": false,
+                    "name": "selectionKeyObject",
+                    "readonly": false
+                },
+                {
+                    "description": "The front-most document.",
+                    "type": "Document",
+                    "array": false,
+                    "name": "activeDocument",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes unused XML markup tags.",
+                    "parameters": [],
+                    "name": "deleteUnusedTags"
+                },
+                {
+                    "description": "Loads a set of XML markup tags from the specified file.",
+                    "parameters": [
+                        {
+                            "description": "The path to the file that contains the tags.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadXMLTags"
+                },
+                {
+                    "description": "Saves a set of tags to an external file.",
+                    "parameters": [
+                        {
+                            "description": "The full path to the file in which to save the tags.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "saveXMLTags"
+                },
+                {
+                    "description": "Mount a Version Cue project.",
+                    "parameters": [
+                        {
+                            "description": "The URL of the Version Cue server containing the project",
+                            "type": "string",
+                            "optional": false,
+                            "name": "serverURL",
+                            "array": false
+                        },
+                        {
+                            "description": "The name of the Version Cue project to mount",
+                            "type": "string",
+                            "optional": false,
+                            "name": "projectName",
+                            "array": false
+                        }
+                    ],
+                    "name": "mountProject"
+                },
+                {
+                    "description": "Imports the specified styles.",
+                    "parameters": [
+                        {
+                            "description": "The types of styles to import.",
+                            "type": "ImportFormat",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The file containing the styles you want to import.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "type": "GlobalClashResolutionStrategy",
+                            "value": "GlobalClashResolutionStrategy.LOAD_ALL_WITH_OVERWRITE",
+                            "name": "globalStrategy",
+                            "optional": true,
+                            "description": "The resolution strategy to employ for imported styles that have the same names as existing styles. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "importStyles"
+                },
+                {
+                    "description": "Exports stroke styles or presets.",
+                    "parameters": [
+                        {
+                            "description": "The file to save to",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The list of stroke styles to save",
+                            "type": "StrokeStyle",
+                            "optional": false,
+                            "name": "strokeStyleList",
+                            "array": true
+                        },
+                        {
+                            "description": "The comment for this version (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "Forcibly save a version (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "exportStrokeStyles"
+                },
+                {
+                    "description": "Finds text that matches the find what value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findText",
+                    "array": true
+                },
+                {
+                    "description": "Finds text that matches the find what value and replaces the text with the change to value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeText",
+                    "array": true
+                },
+                {
+                    "description": "Finds text that matches the find what value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findGrep",
+                    "array": true
+                },
+                {
+                    "description": "Finds text that matches the find what value and replaces the text with the change to value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeGrep",
+                    "array": true
+                },
+                {
+                    "description": "Finds glyphs that match the find what value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findGlyph",
+                    "array": true
+                },
+                {
+                    "description": "Finds glyphs that match the find what value and replaces the glyphs with the change to value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeGlyph",
+                    "array": true
+                },
+                {
+                    "description": "Finds objects that match the find what value.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findObject",
+                    "array": true
+                },
+                {
+                    "description": "Finds objects that match the find what value and replace the objects with the change to value.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeObject",
+                    "array": true
+                },
+                {
+                    "description": "Saves the specified find/change query.",
+                    "parameters": [
+                        {
+                            "description": "The query to save.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "queryName",
+                            "array": false
+                        },
+                        {
+                            "description": "The search mode.",
+                            "type": "SearchModes",
+                            "optional": false,
+                            "name": "searchMode",
+                            "array": false
+                        }
+                    ],
+                    "name": "saveFindChangeQuery"
+                },
+                {
+                    "description": "Loads the specified find/change query.",
+                    "parameters": [
+                        {
+                            "description": "The query to load.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "queryName",
+                            "array": false
+                        },
+                        {
+                            "description": "The search mode.",
+                            "type": "SearchModes",
+                            "optional": false,
+                            "name": "searchMode",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadFindChangeQuery"
+                },
+                {
+                    "description": "Deletes the specified find/change query.",
+                    "parameters": [
+                        {
+                            "description": "The query to delete.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "queryName",
+                            "array": false
+                        },
+                        {
+                            "description": "The search mode.",
+                            "type": "SearchModes",
+                            "optional": false,
+                            "name": "searchMode",
+                            "array": false
+                        }
+                    ],
+                    "name": "deleteFindChangeQuery"
+                },
+                {
+                    "description": "Finds text that matches the find character type value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findTransliterate",
+                    "array": true
+                },
+                {
+                    "description": "Finds text that matches the find character type value and replaces the text with the change character type value.",
+                    "type": "Text",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeTransliterate",
+                    "array": true
+                },
+                {
+                    "description": "Prints the specified file(s).",
+                    "parameters": [
+                        {
+                            "description": "One or more file paths. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "Whether to invoke the print dialog (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "printDialog",
+                            "array": false
+                        },
+                        {
+                            "description": "Printer preset to use. Can accept: PrinterPresetTypes enumerator or PrinterPreset. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        }
+                    ],
+                    "name": "print"
+                },
+                {
+                    "description": "Export the presets to a file.",
+                    "parameters": [
+                        {
+                            "description": "The preset format.",
+                            "type": "ExportPresetFormat",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The file to export to.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The comments for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "Forcibly save a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "exportPresets"
+                },
+                {
+                    "description": "Imports presets from the specified file.",
+                    "parameters": [
+                        {
+                            "description": "The type of preset to import.",
+                            "type": "ExportPresetFormat",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The file to import presets from.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        }
+                    ],
+                    "name": "importFile"
+                },
+                {
+                    "description": "Place one or more files following the behavior of the place menu item. This may load the place gun or replace the selected object, depending on current preferences.",
+                    "parameters": [
+                        {
+                            "description": "One or more files to place. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "fileName",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the import options dialog (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the placed object(s) (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "place"
+                },
+                {
+                    "description": "Removes the frame fittings options and resets it to the initial state.",
+                    "parameters": [],
+                    "name": "clearFrameFittingOptions"
+                },
+                {
+                    "description": "Forces a check for new fonts in the various Fonts folders.",
+                    "parameters": [],
+                    "name": "updateFonts"
+                },
+                {
+                    "description": "Load motion preset from the specified file.",
+                    "type": "MotionPreset",
+                    "parameters": [
+                        {
+                            "description": "The Flash motion preset file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadMotionPreset",
+                    "array": false
+                },
+                {
+                    "description": "Cuts the selection in the active document window and stores it in the clipboard.",
+                    "parameters": [],
+                    "name": "cut"
+                },
+                {
+                    "description": "Copies the selection in the active document window to the clipboard.",
+                    "parameters": [],
+                    "name": "copy"
+                },
+                {
+                    "description": "Pastes data from the clipboard into the active document window.",
+                    "parameters": [],
+                    "name": "paste"
+                },
+                {
+                    "description": "Pastes data from the clipboard into the selected object in the active document window.",
+                    "parameters": [],
+                    "name": "pasteInto"
+                },
+                {
+                    "description": "Pastes data from the clipboard into the active document window at the same position that the data held in its original document.",
+                    "parameters": [],
+                    "name": "pasteInPlace"
+                },
+                {
+                    "description": "Pastes data (minus formatting) from the clipboard into the active document window.",
+                    "parameters": [],
+                    "name": "pasteWithoutFormatting"
+                },
+                {
+                    "description": "Load swatches from the specified file.",
+                    "parameters": [
+                        {
+                            "description": "The swatch file or InDesign document.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadSwatches"
+                },
+                {
+                    "description": "Saves the specified swatch(es) to a swatchbook file.",
+                    "parameters": [
+                        {
+                            "description": "The swatchbook file to save to.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The swatch(es) to save.",
+                            "type": "Swatch",
+                            "optional": false,
+                            "name": "swatchList",
+                            "array": true
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "saveSwatches"
+                },
+                {
+                    "description": "Imports a spot color swatch from an Adobe color book.",
+                    "type": "Color",
+                    "parameters": [
+                        {
+                            "description": "The spot color to load.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "importAdobeSwatchbookSpotColor",
+                    "array": false
+                },
+                {
+                    "description": "Imports a process color swatch from a preloaded Adobe color book.",
+                    "type": "Color",
+                    "parameters": [
+                        {
+                            "description": "The process color to load.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "importAdobeSwatchbookProcessColor",
+                    "array": false
+                },
+                {
+                    "description": "Load conditions from the specified file.",
+                    "parameters": [
+                        {
+                            "description": "The path to the file that contains the conditions.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, load the condition sets as well. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "loadConditionSets",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadConditions"
+                },
+                {
+                    "description": "Selects the specified object(s).",
+                    "parameters": [
+                        {
+                            "description": "The objects to select. Can accept: Object, Array of Objects, NothingEnum enumerator or SelectAll enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "selectableItems",
+                            "array": false
+                        },
+                        {
+                            "type": "SelectionOptions",
+                            "value": "SelectionOptions.REPLACE_WITH",
+                            "name": "existingSelection",
+                            "optional": true,
+                            "description": "The selection status of the Application in relation to previously selected objects. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "select"
+                },
+                {
+                    "description": "Applies the specified shortcut set file. No string will apply the default shortcut set.",
+                    "parameters": [
+                        {
+                            "description": "The shortcut set. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "applyShortcutSet"
+                },
+                {
+                    "description": "Applies the specified workspace.",
+                    "parameters": [
+                        {
+                            "description": "The workspace. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "applyWorkspace"
+                },
+                {
+                    "description": "Applies the specified menu customization set. An empty string will reset all menus and colorization (Show Full Menus). No string will apply the default menu set.",
+                    "parameters": [
+                        {
+                            "description": "The menu customization set. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "applyMenuCustomization"
+                },
+                {
+                    "description": "Toggles the visibility of the entire panel system.",
+                    "parameters": [],
+                    "name": "togglePanelSystemVisibility"
+                },
+                {
+                    "description": "Opens the specified document, book, or library.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The file path(s) to the document, book, or library. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "showingWindow",
+                            "optional": true,
+                            "description": "If true, opens the document in a window. If false, the document is opened but is not displayed in a window. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "OpenOptions",
+                            "value": "OpenOptions.DEFAULT_VALUE",
+                            "name": "openOption",
+                            "optional": true,
+                            "description": "How to open the document. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "open",
+                    "array": false
+                },
+                {
+                    "description": "Quits the application.",
+                    "parameters": [
+                        {
+                            "type": "SaveOptions",
+                            "value": "SaveOptions.ASK",
+                            "name": "saving",
+                            "optional": true,
+                            "description": "The option to use for saving changes to open documents before quitting. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "quit"
+                },
+                {
+                    "description": "Executes the script in the specified language as a single transaction.",
+                    "type": "any",
+                    "parameters": [
+                        {
+                            "description": "The script to execute. Can accept: File, String or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "script",
+                            "array": false
+                        },
+                        {
+                            "type": "ScriptLanguage",
+                            "value": "ScriptLanguage.UNKNOWN",
+                            "name": "language",
+                            "optional": true,
+                            "description": "The language of the script to execute. If not specified, uses the language used to call this method. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "An array of arguments passed to the script. (Optional)",
+                            "type": "any",
+                            "optional": false,
+                            "name": "withArguments",
+                            "array": true
+                        },
+                        {
+                            "type": "UndoModes",
+                            "value": "UndoModes.SCRIPT_REQUEST",
+                            "name": "undoMode",
+                            "optional": true,
+                            "description": "How to undo this script. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "string",
+                            "value": "Script",
+                            "name": "undoName",
+                            "optional": true,
+                            "description": "The name of the undo step for entire script undo mode. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "doScript",
+                    "array": false
+                },
+                {
+                    "description": "Makes the application the front-most or active window.",
+                    "parameters": [],
+                    "name": "activate"
+                },
+                {
+                    "description": "Cascades all document windows.",
+                    "parameters": [],
+                    "name": "cascadeWindows"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Returns the locale-independent string(s) from the internal string localization database that correspond to the specified string (in the current locale).",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The string to search for.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "for",
+                            "array": false
+                        }
+                    ],
+                    "name": "findKeyStrings",
+                    "array": true
+                },
+                {
+                    "description": "Translates a key string into localized form based on current application locale.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key string to translate",
+                            "type": "string",
+                            "optional": false,
+                            "name": "for",
+                            "array": false
+                        }
+                    ],
+                    "name": "translateKeyString",
+                    "array": false
+                },
+                {
+                    "description": "Undoes the last action.",
+                    "parameters": [],
+                    "name": "undo"
+                },
+                {
+                    "description": "Redoes the last action.",
+                    "parameters": [],
+                    "name": "redo"
+                },
+                {
+                    "description": "Tile all document windows",
+                    "parameters": [],
+                    "name": "tileWindows"
+                },
+                {
+                    "description": "Generate schema for IDML.",
+                    "parameters": [
+                        {
+                            "description": "The folder path of the schema.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, generate schema for package format (multiple files). Default value is false. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "packageFormat",
+                            "array": false
+                        }
+                    ],
+                    "name": "generateIDMLSchema"
+                },
+                {
+                    "description": "Cancels all the background tasks.",
+                    "parameters": [],
+                    "name": "cancelAllTasks"
+                },
+                {
+                    "description": "Waits for all the background tasks to finish.",
+                    "type": "TaskState",
+                    "parameters": [],
+                    "name": "waitForAllTasks",
+                    "array": true
+                },
+                {
+                    "description": "Sets the application's preferences.",
+                    "parameters": [
+                        {
+                            "description": "The IDML defaults file or enumeration. Can accept: File or LanguageAndRegion enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "applicationPreferences",
+                            "array": false
+                        }
+                    ],
+                    "name": "setApplicationPreferences"
+                },
+                {
+                    "description": "Gets the current value of the specified performance metric.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The status to get from InDesign. Can accept: Long Integer or PerformanceMetricOptions enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "for",
+                            "array": false
+                        }
+                    ],
+                    "name": "performanceMetric",
+                    "array": false
+                },
+                {
+                    "description": "Dumps memory allocations from the specified mark.",
+                    "parameters": [
+                        {
+                            "description": "The mark from which to dump memory.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "from",
+                            "array": true
+                        }
+                    ],
+                    "name": "dumpFromMemoryMark"
+                },
+                {
+                    "description": "Dumps memory allocations from all marks in the specified range.",
+                    "parameters": [
+                        {
+                            "description": "The first mark in the range.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "from",
+                            "array": true
+                        },
+                        {
+                            "description": "The last mark in the range.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "to",
+                            "array": true
+                        }
+                    ],
+                    "name": "dumpBetweenMemoryMarks"
+                },
+                {
+                    "description": "Gets the memory statistics from the server.",
+                    "type": "varies=any",
+                    "parameters": [],
+                    "name": "memoryStatistics",
+                    "array": true
+                },
+                {
+                    "description": "Gets the short name of the specified performance metric.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The status to get from InDesign. Can accept: Long Integer or PerformanceMetricOptions enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "for",
+                            "array": false
+                        }
+                    ],
+                    "name": "performanceMetricShortName",
+                    "array": false
+                },
+                {
+                    "description": "Gets the long name of the specified performance metric.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The status to get from InDesign. Can accept: Long Integer or PerformanceMetricOptions enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "for",
+                            "array": false
+                        }
+                    ],
+                    "name": "performanceMetricLongName",
+                    "array": false
+                },
+                {
+                    "description": "Unpackage a UCF file into a folder structure.",
+                    "parameters": [
+                        {
+                            "description": "The UCF file to be unpackaged.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "ucfFile",
+                            "array": false
+                        },
+                        {
+                            "description": "The folder where you would like the UCF file unpackaged to. Will be created if it does not exist.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destinationFolder",
+                            "array": false
+                        }
+                    ],
+                    "name": "unpackageUCF"
+                },
+                {
+                    "description": "Package a folder into a UCF file.",
+                    "parameters": [
+                        {
+                            "description": "The folder to be packaged into an IDML file. Does not validate structure of the folder pursuant to the IDML spec. Caller is responsible for making sure the files in the folder are correctly organized.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "sourceFolder",
+                            "array": false
+                        },
+                        {
+                            "description": "The destination UCF file. Will be overwritten if it already exists.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "ucfFile",
+                            "array": false
+                        },
+                        {
+                            "type": "string",
+                            "value": "application/vnd.adobe.indesign-idml-package",
+                            "name": "mimeMediaType",
+                            "optional": true,
+                            "description": "The MIME media type, default value identifies package as IDML. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "packageUCF"
+                },
+                {
+                    "description": "Load preflight profile from the specified file.",
+                    "type": "PreflightProfile",
+                    "parameters": [
+                        {
+                            "description": "The InDesign preflight profile file or InDesign document.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        }
+                    ],
+                    "name": "loadPreflightProfile",
+                    "array": false
+                },
+                {
+                    "description": "Export the specified documents to an article folio.\n\nNote: This method behaves identically to @method(exportMiniFolio), but differs in its return value. @method(exportMiniFolio) returns an array of warning strings whereas this method returns an XML structure.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The location to write the file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "The InDesign document for the stack's portrait orientation.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "portraitDocument",
+                            "array": false
+                        },
+                        {
+                            "description": "The InDesign document for the stack's landscape orientation.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "landscapeDocument",
+                            "array": false
+                        },
+                        {
+                            "description": "Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "folioMetadata",
+                            "array": true
+                        },
+                        {
+                            "description": "Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "exportArticleFolio",
+                    "array": false
+                },
+                {
+                    "description": "Get the current digital publishing version number for the given parameter.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "Version string(s) to retrieve.",
+                            "type": "DigpubVersion",
+                            "optional": false,
+                            "name": "digpubVersion",
+                            "array": false
+                        }
+                    ],
+                    "name": "getDigpubVersion",
+                    "array": true
+                },
+                {
+                    "description": "Get the list of viewer versions the digital publishing plugin supports.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "getSupportedViewerVersions",
+                    "array": true
+                },
+                {
+                    "description": "Export the specified documents to a mini-folio.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The location to write the file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "The InDesign document for the stack's portrait orientation.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "portraitDocument",
+                            "array": false
+                        },
+                        {
+                            "description": "The InDesign document for the stack's landscape orientation.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "landscapeDocument",
+                            "array": false
+                        },
+                        {
+                            "description": "Optional meta data for the mini folio. Can accept: Ordered array containing key:String, value:String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "folioMetadata",
+                            "array": true
+                        },
+                        {
+                            "description": "Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "exportMiniFolio",
+                    "array": true
+                },
+                {
+                    "description": "Export the selected documents to a compressed folio file that contains compressed mini folios.",
+                    "parameters": [
+                        {
+                            "description": "The location to write the package.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "The mini folio(es) to add to the folio. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioList",
+                            "array": false
+                        },
+                        {
+                            "description": "Meta data for the folio. Can accept: Ordered array containing key:String, value:String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "folioMetadata",
+                            "array": true
+                        },
+                        {
+                            "description": "Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "exportFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "exportFolioToPackage"
+                },
+                {
+                    "description": "Export the selected documents to a directory.",
+                    "parameters": [
+                        {
+                            "description": "The directory to write the folio.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "The mini folio(es) to add to the folio. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioList",
+                            "array": false
+                        },
+                        {
+                            "description": "Meta data for the folio. Can accept: Ordered array containing key:String, value:String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "folioMetadata",
+                            "array": true
+                        },
+                        {
+                            "description": "Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "exportFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "exportFolioToDirectory"
+                },
+                {
+                    "description": "Export the selected documents to a compressed folio file that contains non-compressed mini folios.",
+                    "parameters": [
+                        {
+                            "description": "The location to write the package.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "The mini folio(es) to add to the folio. Can accept: File or Array of Files.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioList",
+                            "array": false
+                        },
+                        {
+                            "description": "Meta data for the folio. Can accept: Ordered array containing key:String, value:String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "folioMetadata",
+                            "array": true
+                        },
+                        {
+                            "description": "Additional options for export folios. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "exportFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "exportFolioToDirectoryPackage"
+                },
+                {
+                    "description": "Get all overlays.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The portrait document for checking overlays.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "portraitDocumentForCheckingOverlays",
+                            "array": false
+                        },
+                        {
+                            "description": "The landscape document for checking overlays.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "landscapeDocumentForCheckingOverlays",
+                            "array": false
+                        },
+                        {
+                            "description": "Options for exporting a mini folio. Can accept: Ordered array containing dataField:String, dataValue:Any Type. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioParams",
+                            "array": true
+                        }
+                    ],
+                    "name": "getAllOverlays",
+                    "array": true
+                },
+                {
+                    "description": "Create a mini-folio out of asset and overlay descriptions.\n\nSchema for the mini folio description:\n|| Key || Type || Required? || Description ||\n| contentstackid | string | yes | The explicit ID to be used for this stack |\n| tocImage | file | no | The TOC image for the mini-folio |\n| narrowdimension | int | no | Targetted export size, measured along narrow dimension |\n| widedimension | int | no | Targetted export size, measured along wide dimension |\n| smoothscrolling | @enum(SmoothScrollingOptions) | no | The smooth scrolling behavior for this stack (default is noSmoothScroll) |\n| locationforgeneratedassets | file | no | If included, this is an existing directory where the generated assets should be created. |\n| overlays | array | no | see the SDK Overlay Builder APIs |\n| assets | array | yes | The assets for the mini - folio, described below. |\n| assetDependencies | array | no | Files that are needed by the asset, that will be included in the package but not the manifest. |\n| metadata | array | no | The metadata for the mini-folio described below. |\n| showprogressbar | boolean | no | Either true or false to indicate whether we should show a progress bar (default is false) |\n| targetviewerversion | string | no | If provided (in the form \"major.minor.revision\") a folio compatible with the viewer version is produced. If omitted, the latest folio format is produced. | CS5 |\n\nThe following are fields in the array for \"assets\":\n|| Key || Type || Required? || Description ||\n| file | file | yes | The asset file |\n| type | string | yes | The asset file type, either \"web\" for HTML or \"image\" for a raster |\n| width | int | yes | The asset width |\n| height | int | yes | The asset height |\n| orientation | string | yes | The asset orientation, either \"portrait\" or \"landscape\" |\n| thumbnail | file | no | A thumbnail of the asset to be used in browse mode |\n| scrubber | file | no | A thumbnail of the asset to be used in scrubber mode |\n\nThe following are fields in the array for \"assetDependencies\":\n|| Key || Type || Required? || Description ||\n| file | file | no | The dependent file |\n| relativePath | string | no | The relative path to the file, for use in the package |\n\nThe following are fields in the array for \"metadata\":\n|| Key || Type || Required? || Description ||\n| any string | string or boolean | no | any key/value where the key is a string, and the value is either a string or a boolean, such as those described in \"export folio meta data\" |",
+                    "parameters": [
+                        {
+                            "description": "A dictionary describing the custom mini folio to create. Can accept: Ordered array containing key:String, value:Boolean, Long Integer, Long Long Integer, String, File or Array of Any Types.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "miniFolioDescription",
+                            "array": true
+                        },
+                        {
+                            "description": "The location to write the file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        }
+                    ],
+                    "name": "createCustomMiniFolio"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Application.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "Application",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Application"
+}

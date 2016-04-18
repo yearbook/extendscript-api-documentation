@@ -1,0 +1,79 @@
+{
+    "description": "Find/change transliterate character type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1179154251",
+                    "array": false,
+                    "description": "Half-width katakana.",
+                    "readonly": true,
+                    "name": "HALF_WIDTH_KATAKANA"
+                },
+                {
+                    "type": "number",
+                    "value": "1179154258",
+                    "array": false,
+                    "description": "Half-width Roman symbols.",
+                    "readonly": true,
+                    "name": "HALF_WIDTH_ROMAN_SYMBOLS"
+                },
+                {
+                    "type": "number",
+                    "value": "1179023176",
+                    "array": false,
+                    "description": "Full-width hiragana.",
+                    "readonly": true,
+                    "name": "FULL_WIDTH_HIRAGANA"
+                },
+                {
+                    "type": "number",
+                    "value": "1179023179",
+                    "array": false,
+                    "description": "Full-width katakana.",
+                    "readonly": true,
+                    "name": "FULL_WIDTH_KATAKANA"
+                },
+                {
+                    "type": "number",
+                    "value": "1179023186",
+                    "array": false,
+                    "description": "Full-width Roman symbols.",
+                    "readonly": true,
+                    "name": "FULL_WIDTH_ROMAN_SYMBOLS"
+                },
+                {
+                    "type": "number",
+                    "value": "1463903337",
+                    "array": false,
+                    "description": "Western Arabic digits (0, 1, 2, 3, ...).",
+                    "readonly": true,
+                    "name": "WESTERN_ARABIC_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1095328873",
+                    "array": false,
+                    "description": "Arabic Indic(hindi) digits.",
+                    "readonly": true,
+                    "name": "ARABIC_INDIC_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629089",
+                    "array": false,
+                    "description": "Farsi digits.",
+                    "readonly": true,
+                    "name": "FARSI_DIGITS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FindChangeTransliterateCharacterTypes"
+}

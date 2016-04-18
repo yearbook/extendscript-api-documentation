@@ -1,0 +1,184 @@
+{
+    "description": "A collection of timing data objects.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Adds a new timing group.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "A page item target that is an animation, media, or mso. Can accept: PageItem, Graphic, Behavior or MediaItem.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "dynamicTarget",
+                            "array": false
+                        },
+                        {
+                            "type": "number",
+                            "value": "0",
+                            "name": "delaySeconds",
+                            "optional": true,
+                            "description": "The time delay in seconds for a target. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new TimingGroup (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the TimingGroup.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingGroup with the specified index or name.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingGroups within the specified range.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "The TimingGroup, index, or name at the beginning of the range. Can accept: TimingGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TimingGroup, index, or name at the end of the range. Can accept: TimingGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingGroup with the index previous to the specified index.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "The index of the TimingGroup that follows the desired TimingGroup.",
+                            "type": "TimingGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingGroup whose index follows the specified TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "The TimingGroup whose index comes before the desired TimingGroup.",
+                            "type": "TimingGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TimingGroup in the collection.",
+                    "type": "TimingGroup",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TimingGroup.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingGroup with the specified index.",
+                    "type": "TimingGroup",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TimingGroups"
+}

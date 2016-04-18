@@ -1,0 +1,55 @@
+{
+    "description": "Zoom options for the goto destination page.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1212437370",
+                    "array": false,
+                    "description": "Inherits the zoom setting from the previously displayed page.",
+                    "readonly": true,
+                    "name": "INHERIT_ZOOM"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437367",
+                    "array": false,
+                    "description": "Fits the page in the display window.",
+                    "readonly": true,
+                    "name": "FIT_WINDOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437335",
+                    "array": false,
+                    "description": "Fits the page to the width of the window; may obscure the lower portion of the page.",
+                    "readonly": true,
+                    "name": "FIT_WIDTH"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437334",
+                    "array": false,
+                    "description": "Fits the text area of the page to the window width; obscures page margins and may obscure the lower portion of the page.",
+                    "readonly": true,
+                    "name": "FIT_VISIBLE"
+                },
+                {
+                    "type": "number",
+                    "value": "2053206906",
+                    "array": false,
+                    "description": "Displays the page at 100% magnification.",
+                    "readonly": true,
+                    "name": "ACTUAL_SIZE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GoToZoomOptions"
+}

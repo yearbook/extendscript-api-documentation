@@ -1,0 +1,47 @@
+{
+    "description": "Color space options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1666336578",
+                    "array": false,
+                    "description": "RGB.",
+                    "readonly": true,
+                    "name": "RGB"
+                },
+                {
+                    "type": "number",
+                    "value": "1129142603",
+                    "array": false,
+                    "description": "CMYK.",
+                    "readonly": true,
+                    "name": "CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1665941826",
+                    "array": false,
+                    "description": "LAB.",
+                    "readonly": true,
+                    "name": "LAB"
+                },
+                {
+                    "type": "number",
+                    "value": "1666009432",
+                    "array": false,
+                    "description": "Mixed ink.",
+                    "readonly": true,
+                    "name": "MIXEDINK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ColorSpace"
+}

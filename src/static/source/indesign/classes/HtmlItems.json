@@ -1,0 +1,221 @@
+{
+    "description": "A collection of embedded HTML page items.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new HtmlItem",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The layer on which to create the HtmlItem. (Optional)",
+                            "type": "Layer",
+                            "optional": false,
+                            "name": "layer",
+                            "array": false
+                        },
+                        {
+                            "type": "LocationOptions",
+                            "value": "LocationOptions.UNKNOWN",
+                            "name": "at",
+                            "optional": true,
+                            "description": "The location at which to insert the HtmlItem relative to the reference object or within the container object. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The reference object. Note: Required when the at parameter is before or after. Can accept: Document, Spread, MasterSpread, Page, Layer or PageItem. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new HtmlItem (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the HtmlItem.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem with the specified index or name.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem with the specified name.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem with the specified ID.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItems within the specified range.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The HtmlItem, index, or name at the beginning of the range. Can accept: HtmlItem, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The HtmlItem, index, or name at the end of the range. Can accept: HtmlItem, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem with the index previous to the specified index.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The index of the HtmlItem that follows the desired HtmlItem.",
+                            "type": "HtmlItem",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem whose index follows the specified HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The HtmlItem whose index comes before the desired HtmlItem.",
+                            "type": "HtmlItem",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every HtmlItem in the collection.",
+                    "type": "HtmlItem",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the HtmlItem.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HtmlItem with the specified index.",
+                    "type": "HtmlItem",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HtmlItems"
+}

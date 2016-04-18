@@ -1,0 +1,223 @@
+{
+    "description": "Default properties specific to frame grids.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the StoryGridDataInformation (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The font applied to the StoryGridDataInformation, specified as either a font object or the name of font family. Can return: Font or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedFont",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the font style.",
+                    "type": "string",
+                    "array": false,
+                    "name": "fontStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The text size.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "pointSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of white space between characters.",
+                    "type": "number",
+                    "array": false,
+                    "name": "characterAki",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of white space between lines.",
+                    "type": "number",
+                    "array": false,
+                    "name": "lineAki",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal scaling applied to the StoryGridDataInformation.",
+                    "type": "number",
+                    "array": false,
+                    "name": "horizontalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical scaling applied to the StoryGridDataInformation.",
+                    "type": "number",
+                    "array": false,
+                    "name": "verticalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The line justification.",
+                    "type": "LineAlignment",
+                    "array": false,
+                    "name": "lineAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment to the frame grid or baseline grid.",
+                    "type": "GridAlignment",
+                    "array": false,
+                    "name": "gridAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment of small characters to the largest character in the line.",
+                    "type": "CharacterAlignment",
+                    "array": false,
+                    "name": "characterAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The grid view setting.",
+                    "type": "GridViewSettings",
+                    "array": false,
+                    "name": "gridView",
+                    "readonly": false
+                },
+                {
+                    "description": "The character count location. Note: Valid when show character count is true.",
+                    "type": "CharacterCountLocation",
+                    "array": false,
+                    "name": "characterCountLocation",
+                    "readonly": false
+                },
+                {
+                    "description": "The character size for the character count display.",
+                    "type": "number",
+                    "array": false,
+                    "name": "characterCountSize",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the StoryGridDataInformation.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "StoryGridDataInformation",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "StoryGridDataInformation"
+}

@@ -1,0 +1,47 @@
+{
+    "description": "Options for highlighting the hyperlink when selected.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Does not highlight the hyperlink.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1853256308",
+                    "array": false,
+                    "description": "Highlights the hyperlink fill color.",
+                    "readonly": true,
+                    "name": "INVERT"
+                },
+                {
+                    "type": "number",
+                    "value": "1869900910",
+                    "array": false,
+                    "description": "Highlights the hyperlink border.",
+                    "readonly": true,
+                    "name": "OUTLINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1853056372",
+                    "array": false,
+                    "description": "Highlights the hyperlink border inset.",
+                    "readonly": true,
+                    "name": "INSET"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HyperlinkAppearanceHighlight"
+}

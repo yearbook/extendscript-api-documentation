@@ -1,0 +1,55 @@
+{
+    "description": "The amount and type of compression to apply to monochrome bitmap images.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Uses no compression.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1128879155",
+                    "array": false,
+                    "description": "Uses CCITT Group 3 compression.",
+                    "readonly": true,
+                    "name": "CCIT3"
+                },
+                {
+                    "type": "number",
+                    "value": "1128879156",
+                    "array": false,
+                    "description": "Uses CCITT Group 4 compression.",
+                    "readonly": true,
+                    "name": "CCIT4"
+                },
+                {
+                    "type": "number",
+                    "value": "2053730371",
+                    "array": false,
+                    "description": "Uses ZIP compression.",
+                    "readonly": true,
+                    "name": "ZIP"
+                },
+                {
+                    "type": "number",
+                    "value": "1919839299",
+                    "array": false,
+                    "description": "Uses Run Length compression.",
+                    "readonly": true,
+                    "name": "RUN_LENGTH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "MonoBitmapCompression"
+}

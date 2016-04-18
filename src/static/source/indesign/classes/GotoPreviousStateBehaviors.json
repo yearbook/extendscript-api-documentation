@@ -1,0 +1,199 @@
+{
+    "description": "A collection of goto previous state behaviors.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the GotoPreviousStateBehavior.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new GotoPreviousStateBehavior.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new GotoPreviousStateBehavior (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior with the specified index or name.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior with the specified name.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior with the specified ID.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehaviors within the specified range.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The GotoPreviousStateBehavior, index, or name at the beginning of the range. Can accept: GotoPreviousStateBehavior, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The GotoPreviousStateBehavior, index, or name at the end of the range. Can accept: GotoPreviousStateBehavior, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior with the index previous to the specified index.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index of the GotoPreviousStateBehavior that follows the desired GotoPreviousStateBehavior.",
+                            "type": "GotoPreviousStateBehavior",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior whose index follows the specified GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The GotoPreviousStateBehavior whose index comes before the desired GotoPreviousStateBehavior.",
+                            "type": "GotoPreviousStateBehavior",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every GotoPreviousStateBehavior in the collection.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the GotoPreviousStateBehavior.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the GotoPreviousStateBehavior with the specified index.",
+                    "type": "GotoPreviousStateBehavior",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "GotoPreviousStateBehaviors"
+}

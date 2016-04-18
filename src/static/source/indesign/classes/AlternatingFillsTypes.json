@@ -1,0 +1,39 @@
+{
+    "description": "Pattern options for alternating fills.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1097617007",
+                    "array": false,
+                    "description": "No alternating pattern.",
+                    "readonly": true,
+                    "name": "NO_ALTERNATING_PATTERN"
+                },
+                {
+                    "type": "number",
+                    "value": "1097618039",
+                    "array": false,
+                    "description": "Alternates row fills.",
+                    "readonly": true,
+                    "name": "ALTERNATING_ROWS"
+                },
+                {
+                    "type": "number",
+                    "value": "1097614188",
+                    "array": false,
+                    "description": "Alternates column fills.",
+                    "readonly": true,
+                    "name": "ALTERNATING_COLUMNS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AlternatingFillsTypes"
+}

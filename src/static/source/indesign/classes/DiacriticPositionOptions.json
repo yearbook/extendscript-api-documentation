@@ -1,0 +1,63 @@
+{
+    "description": "Diacritic position.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1685090150",
+                    "array": false,
+                    "description": "Default position",
+                    "readonly": true,
+                    "name": "DEFAULT_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1685089391",
+                    "array": false,
+                    "description": "Loose position",
+                    "readonly": true,
+                    "name": "LOOSE_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1685089637",
+                    "array": false,
+                    "description": "Medium position",
+                    "readonly": true,
+                    "name": "MEDIUM_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1685091433",
+                    "array": false,
+                    "description": "Tight position",
+                    "readonly": true,
+                    "name": "TIGHT_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1685090164",
+                    "array": false,
+                    "description": "OpenType position",
+                    "readonly": true,
+                    "name": "OPENTYPE_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1685090146",
+                    "array": false,
+                    "description": "OpenType position from baseline",
+                    "readonly": true,
+                    "name": "OPENTYPE_POSITION_FROM_BASELINE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "DiacriticPositionOptions"
+}

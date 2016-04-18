@@ -1,0 +1,79 @@
+{
+    "description": "The text alignment relative to the path.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1952538995",
+                    "array": false,
+                    "description": "Aligns the ascender to the path (not the path's stroke).",
+                    "readonly": true,
+                    "name": "ASCENDER_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952539763",
+                    "array": false,
+                    "description": "Aligns descender to the path (not the path's stroke).",
+                    "readonly": true,
+                    "name": "DESCENDER_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952539508",
+                    "array": false,
+                    "description": "Aligns the midpoint between the ascender and the descender to the path (not the path's stroke).",
+                    "readonly": true,
+                    "name": "CENTER_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952539244",
+                    "array": false,
+                    "description": "The text baseline is aligned to the path (not the path's stroke).",
+                    "readonly": true,
+                    "name": "BASELINE_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952543333",
+                    "array": false,
+                    "description": "The top-edge or right-edge baseline of the em box is aligned to the path.",
+                    "readonly": true,
+                    "name": "ABOVE_RIGHT_EM_BOX_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952607333",
+                    "array": false,
+                    "description": "The bottom-edge or left-edge baseline of the em box is aligned to the path.",
+                    "readonly": true,
+                    "name": "BELOW_LEFT_EM_BOX_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952543337",
+                    "array": false,
+                    "description": "The ideographic character face box top-edge or right-edge baseline is aligned to the path.",
+                    "readonly": true,
+                    "name": "ABOVE_RIGHT_ICF_BOX_TEXT_ALIGNMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1952607337",
+                    "array": false,
+                    "description": "The ideographic character face box bottom-edge or left-edge baseline is aligned to the path.",
+                    "readonly": true,
+                    "name": "BELOW_LEFT_ICF_BOX_TEXT_ALIGNMENT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextTypeAlignments"
+}

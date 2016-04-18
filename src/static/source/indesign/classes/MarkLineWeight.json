@@ -1,0 +1,87 @@
+{
+    "description": "Stroke weight options for printer marks.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "825374064",
+                    "array": false,
+                    "description": "125 pt.",
+                    "readonly": true,
+                    "name": "P125PT"
+                },
+                {
+                    "type": "number",
+                    "value": "842346608",
+                    "array": false,
+                    "description": "25 pt.",
+                    "readonly": true,
+                    "name": "P25PT"
+                },
+                {
+                    "type": "number",
+                    "value": "892350576",
+                    "array": false,
+                    "description": "50 pt.",
+                    "readonly": true,
+                    "name": "P50PT"
+                },
+                {
+                    "type": "number",
+                    "value": "808807789",
+                    "array": false,
+                    "description": "05 mm.",
+                    "readonly": true,
+                    "name": "P05MM"
+                },
+                {
+                    "type": "number",
+                    "value": "808938861",
+                    "array": false,
+                    "description": "07 mm.",
+                    "readonly": true,
+                    "name": "P07MM"
+                },
+                {
+                    "type": "number",
+                    "value": "825257325",
+                    "array": false,
+                    "description": "10 mm.",
+                    "readonly": true,
+                    "name": "P10MM"
+                },
+                {
+                    "type": "number",
+                    "value": "825585005",
+                    "array": false,
+                    "description": "15 mm.",
+                    "readonly": true,
+                    "name": "P15MM"
+                },
+                {
+                    "type": "number",
+                    "value": "842034541",
+                    "array": false,
+                    "description": "20 mm.",
+                    "readonly": true,
+                    "name": "P20MM"
+                },
+                {
+                    "type": "number",
+                    "value": "858811757",
+                    "array": false,
+                    "description": "30 mm.",
+                    "readonly": true,
+                    "name": "P30MM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "MarkLineWeight"
+}

@@ -1,0 +1,87 @@
+{
+    "description": "Options for specifying the events (user actions) that change a button's state.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1181971566",
+                    "array": false,
+                    "description": "The default appearance, used when there is no user activity on the button's area.",
+                    "readonly": true,
+                    "name": "UP"
+                },
+                {
+                    "type": "number",
+                    "value": "1181971574",
+                    "array": false,
+                    "description": "The mouse pointer moves into the button's area.",
+                    "readonly": true,
+                    "name": "ROLLOVER"
+                },
+                {
+                    "type": "number",
+                    "value": "1181971556",
+                    "array": false,
+                    "description": "The mouse pointer is clicked on the button's area.",
+                    "readonly": true,
+                    "name": "DOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "1181970031",
+                    "array": false,
+                    "description": "Up on state.",
+                    "readonly": true,
+                    "name": "UP_ON"
+                },
+                {
+                    "type": "number",
+                    "value": "1181972079",
+                    "array": false,
+                    "description": "Rollover on state.",
+                    "readonly": true,
+                    "name": "ROLLOVER_ON"
+                },
+                {
+                    "type": "number",
+                    "value": "1181967471",
+                    "array": false,
+                    "description": "Down on state.",
+                    "readonly": true,
+                    "name": "DOWN_ON"
+                },
+                {
+                    "type": "number",
+                    "value": "1181970022",
+                    "array": false,
+                    "description": "Up off state.",
+                    "readonly": true,
+                    "name": "UP_OFF"
+                },
+                {
+                    "type": "number",
+                    "value": "1181972070",
+                    "array": false,
+                    "description": "Rollover off state.",
+                    "readonly": true,
+                    "name": "ROLLOVER_OFF"
+                },
+                {
+                    "type": "number",
+                    "value": "1181967462",
+                    "array": false,
+                    "description": "Down off state.",
+                    "readonly": true,
+                    "name": "DOWN_OFF"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "StateTypes"
+}

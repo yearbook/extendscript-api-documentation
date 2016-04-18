@@ -1,0 +1,55 @@
+{
+    "description": "Options for preview pages.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700947536",
+                    "array": false,
+                    "description": "First page.",
+                    "readonly": true,
+                    "name": "FIRST_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1177702503",
+                    "array": false,
+                    "description": "First two pages.",
+                    "readonly": true,
+                    "name": "FIRST_2_PAGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1177899111",
+                    "array": false,
+                    "description": "First five pages.",
+                    "readonly": true,
+                    "name": "FIRST_5_PAGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1180192871",
+                    "array": false,
+                    "description": "First ten pages.",
+                    "readonly": true,
+                    "name": "FIRST_10_PAGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1886547553",
+                    "array": false,
+                    "description": "All pages.",
+                    "readonly": true,
+                    "name": "ALL_PAGES"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PreviewPagesOptions"
+}

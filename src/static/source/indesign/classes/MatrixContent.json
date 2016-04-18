@@ -1,0 +1,47 @@
+{
+    "description": "Matrix content.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1735552887",
+                    "array": false,
+                    "description": "Scale values",
+                    "readonly": true,
+                    "name": "SCALE_VALUES"
+                },
+                {
+                    "type": "number",
+                    "value": "1936486004",
+                    "array": false,
+                    "description": "Shear value",
+                    "readonly": true,
+                    "name": "SHEAR_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1936746862",
+                    "array": false,
+                    "description": "Rotation value",
+                    "readonly": true,
+                    "name": "ROTATION_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1936484720",
+                    "array": false,
+                    "description": "Translation values",
+                    "readonly": true,
+                    "name": "TRANSLATION_VALUES"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "MatrixContent"
+}

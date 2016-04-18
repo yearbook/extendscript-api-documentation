@@ -1,0 +1,39 @@
+{
+    "description": "Character set options for exported text files.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1415865972",
+                    "array": false,
+                    "description": "The default character set for the platform.",
+                    "readonly": true,
+                    "name": "DEFAULT_PLATFORM"
+                },
+                {
+                    "type": "number",
+                    "value": "1937125686",
+                    "array": false,
+                    "description": "The Unicode UTF16 character set.",
+                    "readonly": true,
+                    "name": "UTF16"
+                },
+                {
+                    "type": "number",
+                    "value": "1937134904",
+                    "array": false,
+                    "description": "The Unicode UTF8 character set.",
+                    "readonly": true,
+                    "name": "UTF8"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextExportCharacterSet"
+}

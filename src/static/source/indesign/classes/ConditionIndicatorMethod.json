@@ -1,0 +1,31 @@
+{
+    "description": "Options for the condition indicator method.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700097644",
+                    "array": false,
+                    "description": "Underlines conditional text.",
+                    "readonly": true,
+                    "name": "USE_UNDERLINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1699244391",
+                    "array": false,
+                    "description": "Highlights conditional text.",
+                    "readonly": true,
+                    "name": "USE_HIGHLIGHT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ConditionIndicatorMethod"
+}

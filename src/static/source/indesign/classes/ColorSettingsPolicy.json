@@ -1,0 +1,47 @@
+{
+    "description": "The policy for handling mismatched CMYK configurations.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1129344870",
+                    "array": false,
+                    "description": "Turns off color management for documents whose profiles do not match the working space. For imported colors, numeric values override color appearance.",
+                    "readonly": true,
+                    "name": "COLOR_POLICY_OFF"
+                },
+                {
+                    "type": "number",
+                    "value": "1129345136",
+                    "array": false,
+                    "description": "Preserves embedded color profiles in newly opened documents.",
+                    "readonly": true,
+                    "name": "PRESERVE_EMBEDDED_PROFILES"
+                },
+                {
+                    "type": "number",
+                    "value": "1129346931",
+                    "array": false,
+                    "description": "Converts newly opened documents to the current working space. For imported colors, color appearance overrides numeric values.",
+                    "readonly": true,
+                    "name": "CONVERT_TO_WORKING_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1129345124",
+                    "array": false,
+                    "description": "Preserves raw color numbers and ignores embedded color profiles.",
+                    "readonly": true,
+                    "name": "COMBINATION_OF_PRESERVE_AND_SAFE_CMYK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ColorSettingsPolicy"
+}

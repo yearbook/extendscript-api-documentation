@@ -1,0 +1,39 @@
+{
+    "description": "End join types.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1835691886",
+                    "array": false,
+                    "description": "Miter end join.",
+                    "readonly": true,
+                    "name": "MITER_END_JOIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1919577966",
+                    "array": false,
+                    "description": "Rounded end join.",
+                    "readonly": true,
+                    "name": "ROUND_END_JOIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1651142510",
+                    "array": false,
+                    "description": "Beveled end join.",
+                    "readonly": true,
+                    "name": "BEVEL_END_JOIN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "EndJoin"
+}

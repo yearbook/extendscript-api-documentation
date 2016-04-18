@@ -1,0 +1,47 @@
+{
+    "description": "Phase options for event propagation.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1701727812",
+                    "array": false,
+                    "description": "Not yet propagating.",
+                    "readonly": true,
+                    "name": "NOT_DISPATCHING"
+                },
+                {
+                    "type": "number",
+                    "value": "1701724500",
+                    "array": false,
+                    "description": "The at-target phase of propagation.",
+                    "readonly": true,
+                    "name": "AT_TARGET"
+                },
+                {
+                    "type": "number",
+                    "value": "1701724789",
+                    "array": false,
+                    "description": "The bubbling phase of propagation.",
+                    "readonly": true,
+                    "name": "BUBBLING_PHASE"
+                },
+                {
+                    "type": "number",
+                    "value": "1701725252",
+                    "array": false,
+                    "description": "The propagation is complete.",
+                    "readonly": true,
+                    "name": "DONE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "EventPhases"
+}

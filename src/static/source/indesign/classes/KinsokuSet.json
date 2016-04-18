@@ -1,0 +1,63 @@
+{
+    "description": "Predefined kinsoku set options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1851876449",
+                    "array": false,
+                    "description": "Does not use a kinsoku set.",
+                    "readonly": true,
+                    "name": "NOTHING"
+                },
+                {
+                    "type": "number",
+                    "value": "1248357235",
+                    "array": false,
+                    "description": "Uses the hard or maximum kinsoku set, which includes all Japanese characters that should not begin or end a line.",
+                    "readonly": true,
+                    "name": "HARD_KINSOKU"
+                },
+                {
+                    "type": "number",
+                    "value": "1249078131",
+                    "array": false,
+                    "description": "Uses the soft or weak kinsoku set, which omits from the hard kinsoku set long vowel symbols and small hiragana and katakana characters.",
+                    "readonly": true,
+                    "name": "SOFT_KINSOKU"
+                },
+                {
+                    "type": "number",
+                    "value": "1263692659",
+                    "array": false,
+                    "description": "Uses the Korean kinsoku set.",
+                    "readonly": true,
+                    "name": "KOREAN_KINSOKU"
+                },
+                {
+                    "type": "number",
+                    "value": "1396927347",
+                    "array": false,
+                    "description": "Uses the simplified Chinese kinsoku set.",
+                    "readonly": true,
+                    "name": "SIMPLIFIED_CHINESE_KINSOKU"
+                },
+                {
+                    "type": "number",
+                    "value": "1413704563",
+                    "array": false,
+                    "description": "Uses the traditional Chinese kinsoku set.",
+                    "readonly": true,
+                    "name": "TRADITIONAL_CHINESE_KINSOKU"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "KinsokuSet"
+}

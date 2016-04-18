@@ -1,0 +1,47 @@
+{
+    "description": "Options for trap placement between vector objects and bitmap images.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1953522542",
+                    "array": false,
+                    "description": "Creates a trap that straddles the edge between vector objects and bitmap images.",
+                    "readonly": true,
+                    "name": "CENTER_EDGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1953522536",
+                    "array": false,
+                    "description": "Causes vector objects to overlap abutting images.",
+                    "readonly": true,
+                    "name": "CHOKE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953525348",
+                    "array": false,
+                    "description": "Applies the same trapping rules as used elsewhere in the document. Note: When used to trap an object to a photograph, can result in noticeably uneven edges as the trap moves from one side of the edge to another.",
+                    "readonly": true,
+                    "name": "IMAGE_NEUTRAL_DENSITY"
+                },
+                {
+                    "type": "number",
+                    "value": "1953526640",
+                    "array": false,
+                    "description": "Causes bitmap images to overlap the abutting objects.",
+                    "readonly": true,
+                    "name": "IMAGES_OVER_SPREAD"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TrapImagePlacementTypes"
+}

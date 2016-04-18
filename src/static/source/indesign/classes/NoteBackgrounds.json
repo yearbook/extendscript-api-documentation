@@ -1,0 +1,31 @@
+{
+    "description": "Note background color options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699168839",
+                    "array": false,
+                    "description": "Uses the galley background color.",
+                    "readonly": true,
+                    "name": "GALLEY_BACKGROUND_COLOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1700020807",
+                    "array": false,
+                    "description": "Uses the note color.",
+                    "readonly": true,
+                    "name": "USE_NOTE_COLOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "NoteBackgrounds"
+}

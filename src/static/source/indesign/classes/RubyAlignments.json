@@ -1,0 +1,71 @@
+{
+    "description": "Ruby alignment options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1249012838",
+                    "array": false,
+                    "description": "Aligns ruby with the left-most character in the parent text.",
+                    "readonly": true,
+                    "name": "RUBY_LEFT"
+                },
+                {
+                    "type": "number",
+                    "value": "1249010548",
+                    "array": false,
+                    "description": "Centers ruby relative to the parent text.",
+                    "readonly": true,
+                    "name": "RUBY_CENTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1249014388",
+                    "array": false,
+                    "description": "Aligns ruby with the right-most character in the parent text.",
+                    "readonly": true,
+                    "name": "RUBY_RIGHT"
+                },
+                {
+                    "type": "number",
+                    "value": "1249011306",
+                    "array": false,
+                    "description": "Justifies ruby across the parent text.",
+                    "readonly": true,
+                    "name": "RUBY_FULL_JUSTIFY"
+                },
+                {
+                    "type": "number",
+                    "value": "1249012339",
+                    "array": false,
+                    "description": "Ruby JIS.",
+                    "readonly": true,
+                    "name": "RUBY_JIS"
+                },
+                {
+                    "type": "number",
+                    "value": "1249011041",
+                    "array": false,
+                    "description": "Ruby equal aki.",
+                    "readonly": true,
+                    "name": "RUBY_EQUAL_AKI"
+                },
+                {
+                    "type": "number",
+                    "value": "1248997729",
+                    "array": false,
+                    "description": "Ruby 1 aki.",
+                    "readonly": true,
+                    "name": "RUBY_1_AKI"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RubyAlignments"
+}

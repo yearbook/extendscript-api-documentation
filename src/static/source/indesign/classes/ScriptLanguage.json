@@ -1,0 +1,39 @@
+{
+    "description": "The language of the script to execute.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1433299822",
+                    "array": false,
+                    "description": "Language not specified.",
+                    "readonly": true,
+                    "name": "UNKNOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "1246973031",
+                    "array": false,
+                    "description": "The JavaScript language.",
+                    "readonly": true,
+                    "name": "JAVASCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1095978087",
+                    "array": false,
+                    "description": "The AppleScript language.",
+                    "readonly": true,
+                    "name": "APPLESCRIPT_LANGUAGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ScriptLanguage"
+}

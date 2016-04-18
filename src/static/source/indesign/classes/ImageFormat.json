@@ -1,0 +1,39 @@
+{
+    "description": "File format options for converted images",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1785751398",
+                    "array": false,
+                    "description": "Uses JPEG format for selected object.",
+                    "readonly": true,
+                    "name": "JPEG"
+                },
+                {
+                    "type": "number",
+                    "value": "1734960742",
+                    "array": false,
+                    "description": "Uses GIF format for selected object.",
+                    "readonly": true,
+                    "name": "GIF"
+                },
+                {
+                    "type": "number",
+                    "value": "1397059687",
+                    "array": false,
+                    "description": "Uses PNG format, for selected object.",
+                    "readonly": true,
+                    "name": "PNG"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImageFormat"
+}

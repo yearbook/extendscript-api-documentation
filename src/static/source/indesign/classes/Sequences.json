@@ -1,0 +1,39 @@
+{
+    "description": "Options for printing page sequences.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1634495520",
+                    "array": false,
+                    "description": "Prints all pages.",
+                    "readonly": true,
+                    "name": "ALL"
+                },
+                {
+                    "type": "number",
+                    "value": "1868850208",
+                    "array": false,
+                    "description": "Prints only odd-numbered pages.",
+                    "readonly": true,
+                    "name": "ODD"
+                },
+                {
+                    "type": "number",
+                    "value": "1702258030",
+                    "array": false,
+                    "description": "Prints only even-numbered pages.",
+                    "readonly": true,
+                    "name": "EVEN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Sequences"
+}

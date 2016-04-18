@@ -1,0 +1,55 @@
+{
+    "description": "SWF curve quality values.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1701727598",
+                    "array": false,
+                    "description": "Minimum curve quality.",
+                    "readonly": true,
+                    "name": "MINIMUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727351",
+                    "array": false,
+                    "description": "Low curve quality.",
+                    "readonly": true,
+                    "name": "LOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727588",
+                    "array": false,
+                    "description": "Medium curve quality.",
+                    "readonly": true,
+                    "name": "MEDIUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1701726313",
+                    "array": false,
+                    "description": "High curve quality.",
+                    "readonly": true,
+                    "name": "HIGH"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727608",
+                    "array": false,
+                    "description": "Maximum curve quality.",
+                    "readonly": true,
+                    "name": "MAXIMUM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SWFCurveQualityValue"
+}

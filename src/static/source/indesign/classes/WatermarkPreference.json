@@ -1,0 +1,230 @@
+{
+    "description": "Watermark preference",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the WatermarkPreference (a Document or Application).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "Watermark visibility for a document",
+                    "type": "bool",
+                    "array": false,
+                    "name": "watermarkVisibility",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark do print for a document",
+                    "type": "bool",
+                    "array": false,
+                    "name": "watermarkDoPrint",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark draw in back for a document",
+                    "type": "bool",
+                    "array": false,
+                    "name": "watermarkDrawInBack",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark text for a document",
+                    "type": "string",
+                    "array": false,
+                    "name": "watermarkText",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark font family display name",
+                    "type": "string",
+                    "array": false,
+                    "name": "watermarkFontFamily",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark font style name",
+                    "type": "string",
+                    "array": false,
+                    "name": "watermarkFontStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark font point size for a document",
+                    "type": "number",
+                    "array": false,
+                    "name": "watermarkFontPointSize",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark font color for a document. Can return: Array of 3 Reals (0 - 255) or UIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "watermarkFontColor",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark opacity (as a percentage). (Range: 0 to 100)",
+                    "type": "number",
+                    "array": false,
+                    "name": "watermarkOpacity",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark rotation for a document",
+                    "type": "number",
+                    "array": false,
+                    "name": "watermarkRotation",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark horizontal position enum for a document",
+                    "type": "WatermarkHorizontalPositionEnum",
+                    "array": false,
+                    "name": "watermarkHorizontalPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark horizontal offset for a document",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "watermarkHorizontalOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark vertical position enum for a document",
+                    "type": "WatermarkVerticalPositionEnum",
+                    "array": false,
+                    "name": "watermarkVerticalPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "Watermark vertical offset for a document",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "watermarkVerticalOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the WatermarkPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "WatermarkPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "WatermarkPreference"
+}

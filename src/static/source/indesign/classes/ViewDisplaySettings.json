@@ -1,0 +1,39 @@
+{
+    "description": "Options for display performance settings, which influence the speed and quality with which an object draws and redraws.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1346922866",
+                    "array": false,
+                    "description": "Slower performance; displays high-resolution graphics and high-quality transparencies and turns on anti-aliasing.",
+                    "readonly": true,
+                    "name": "HIGH_QUALITY"
+                },
+                {
+                    "type": "number",
+                    "value": "1349810544",
+                    "array": false,
+                    "description": "Moderate performance speed; displays proxy graphics and low-quality transparencies and turns on anti-aliasing.",
+                    "readonly": true,
+                    "name": "TYPICAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1349480564",
+                    "array": false,
+                    "description": "Best performance; grays out graphics and turns off transparency and anti-aliasing.",
+                    "readonly": true,
+                    "name": "OPTIMIZED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ViewDisplaySettings"
+}

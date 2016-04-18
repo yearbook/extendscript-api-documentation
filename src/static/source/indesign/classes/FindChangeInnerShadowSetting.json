@@ -1,0 +1,216 @@
+{
+    "description": "Inner shadow effect settings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the FindChangeInnerShadowSetting (a FindChangeTransparencySetting, FindChangeStrokeTransparencySetting, FindChangeFillTransparencySetting or FindChangeContentTransparencySetting).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The horizontal offset of the shadow. Can return: Unit (-1000 - 1000 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "xOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical offset of the shadow. Can return: Unit (-1000 - 1000 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "yOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the inner shadow effect is applied. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "applied",
+                    "readonly": false
+                },
+                {
+                    "description": "The color applied to the inner shadow, specified as a swatch (color, gradient, tint, or mixed ink), or as an array of color values. The color mode dictates the array values: for RGB, specify three values, each in the range 0 to 255, in the format [R,G,B]; for CMYK, specify four values, each as a percentage and each in the range 0 to 100, in the format [C,M,Y,K]; for LAB, specify three values in the format [L,A,B], with L in the range 0 to 100 and A and B in the range -128 to 127. . Can return: Swatch or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "effectColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The blending mode for the inner shadow effect. Can return: BlendMode enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "blendMode",
+                    "readonly": false
+                },
+                {
+                    "description": "The opacity (as a percentage) of the inner shadow. (Range: 0 to 100). Can return: Real (0 - 100) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "opacity",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle at which the inner shadow is thrown. (Range: -360 to 360). Can return: Real (-180 - 180) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "angle",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance between the FindChangeInnerShadowSetting and the shadow. . Can return: Unit (0 - 1000 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "distance",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the global light angle is used. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useGlobalLight",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to choke the inner shadow (as a percentage of shadow size). (Range: 0 to 100). Can return: Real (0 - 100) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "chokeAmount",
+                    "readonly": false
+                },
+                {
+                    "description": "The size of the inner shadow. Can return: Unit (0 - 144 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "size",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount (as a percentage) of noise to add to the shadow. (Range: 0 to 100). Can return: Real (0 - 100) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "noise",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the FindChangeInnerShadowSetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "FindChangeInnerShadowSetting",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "FindChangeInnerShadowSetting"
+}

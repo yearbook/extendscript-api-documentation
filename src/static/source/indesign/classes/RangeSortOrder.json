@@ -1,0 +1,39 @@
+{
+    "description": "Sort order for hyperlink ranges.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852797812",
+                    "array": false,
+                    "description": "Do not sort the ranges.",
+                    "readonly": true,
+                    "name": "NO_SORT"
+                },
+                {
+                    "type": "number",
+                    "value": "1634952307",
+                    "array": false,
+                    "description": "Sort the ranges in ascending order.",
+                    "readonly": true,
+                    "name": "ASCENDING_SORT"
+                },
+                {
+                    "type": "number",
+                    "value": "1685287796",
+                    "array": false,
+                    "description": "Sort the ranges in descending order.",
+                    "readonly": true,
+                    "name": "DESCENDING_SORT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RangeSortOrder"
+}

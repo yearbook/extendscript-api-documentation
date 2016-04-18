@@ -1,0 +1,39 @@
+{
+    "description": "Type of Image alignment for objects",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1097616486",
+                    "array": false,
+                    "description": "image will be aligned left",
+                    "readonly": true,
+                    "name": "ALIGN_LEFT"
+                },
+                {
+                    "type": "number",
+                    "value": "1097614194",
+                    "array": false,
+                    "description": "image will be aligned center",
+                    "readonly": true,
+                    "name": "ALIGN_CENTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1097618036",
+                    "array": false,
+                    "description": "image will be aligned right",
+                    "readonly": true,
+                    "name": "ALIGN_RIGHT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImageAlignmentType"
+}

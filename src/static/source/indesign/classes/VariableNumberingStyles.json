@@ -1,0 +1,95 @@
+{
+    "description": "Number variable numbering styles.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1298363762",
+                    "array": false,
+                    "description": "Current",
+                    "readonly": true,
+                    "name": "CURRENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1298231906",
+                    "array": false,
+                    "description": "Arabic numerals.",
+                    "readonly": true,
+                    "name": "ARABIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1297247605",
+                    "array": false,
+                    "description": "Uppercase Roman numerals.",
+                    "readonly": true,
+                    "name": "UPPER_ROMAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1297247596",
+                    "array": false,
+                    "description": "Lowercase Roman numerals.",
+                    "readonly": true,
+                    "name": "LOWER_ROMAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1296855669",
+                    "array": false,
+                    "description": "Uppercase letters.",
+                    "readonly": true,
+                    "name": "UPPER_LETTERS"
+                },
+                {
+                    "type": "number",
+                    "value": "1296855660",
+                    "array": false,
+                    "description": "Lowercase letters.",
+                    "readonly": true,
+                    "name": "LOWER_LETTERS"
+                },
+                {
+                    "type": "number",
+                    "value": "1297312890",
+                    "array": false,
+                    "description": "Single leading zero.",
+                    "readonly": true,
+                    "name": "SINGLE_LEADING_ZEROS"
+                },
+                {
+                    "type": "number",
+                    "value": "1296329850",
+                    "array": false,
+                    "description": "Double leading zeros.",
+                    "readonly": true,
+                    "name": "DOUBLE_LEADING_ZEROS"
+                },
+                {
+                    "type": "number",
+                    "value": "1296788073",
+                    "array": false,
+                    "description": "Kanji.",
+                    "readonly": true,
+                    "name": "KANJI"
+                },
+                {
+                    "type": "number",
+                    "value": "1296455521",
+                    "array": false,
+                    "description": "Full-width Arabic numerals.",
+                    "readonly": true,
+                    "name": "FULL_WIDTH_ARABIC"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "VariableNumberingStyles"
+}

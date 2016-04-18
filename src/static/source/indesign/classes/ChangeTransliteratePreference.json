@@ -1,0 +1,1469 @@
+{
+    "description": "Change transliterate preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Bullet character. Can return: Bullet or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bulletChar",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the ChangeTransliteratePreference (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The character type to which to change the found character type. Can return: FindChangeTransliterateCharacterTypes enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "changeCharacterType",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style to search for or change to. Can return: String or NothingEnum enumerator. Can also accept: CharacterStyle.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedCharacterStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The paragraph style to search for or change to. Can return: String or NothingEnum enumerator. Can also accept: ParagraphStyle.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedParagraphStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The XML tag applied to the element. Can return: String or NothingEnum enumerator. Can also accept: XMLTag.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "markupTag",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to indent the first line. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "firstLineIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "The width of the left indent. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leftIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "The width of the right indent. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rightIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "The height of the paragraph space above. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "spaceBefore",
+                    "readonly": false
+                },
+                {
+                    "description": "The height of the paragraph space below. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "spaceAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "If true or set to an enumeration value, balances ragged lines. Note: Not valid with a single-line text composer. Can return: Boolean, BalanceLinesStyle enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "balanceRaggedLines",
+                    "readonly": false
+                },
+                {
+                    "description": "The paragraph alignment. Can return: Justification enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "justification",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment to use for lines that contain a single word. Can return: SingleWordJustification enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "singleWordJustification",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of the type size to use for auto leading. (Range: 0 to 500). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "autoLeading",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of lines to drop cap. Can return: Short Integer (0 - 25) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "dropCapLines",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of characters to drop cap. Can return: Short Integer (0 - 150) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "dropCapCharacters",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, keeps a specified number of lines together when the paragraph breaks across columns or text frames. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepLinesTogether",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, keeps all lines of the paragraph together. If false, allows paragraphs to break across pages or columns. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepAllLinesTogether",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum number of lines to keep with the next paragraph. Can return: Short Integer (0 - 5) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepWithNext",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum number of lines to keep together in a paragraph before allowing a page break. Can return: Short Integer (1 - 50) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepFirstLines",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum number of lines to keep together in a paragraph after a page break. Can return: Short Integer (1 - 50) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepLastLines",
+                    "readonly": false
+                },
+                {
+                    "description": "The location at which to start the paragraph. Can return: StartParagraph enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "startParagraph",
+                    "readonly": false
+                },
+                {
+                    "description": "The text composer to use to compose the text. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "composer",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to indent the last line in the paragraph. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "lastLineIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, allows hyphenation in the last word in a paragraph. Note: Valid only when hyphenation is true. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "hyphenateLastWord",
+                    "readonly": false
+                },
+                {
+                    "description": "Details about the drop cap based on the glyph outlines. 1 = left side bearing. 2 = descenders. 0x100,0x200,0x400 are used for Japanese frame grid. Can return: Long Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "dropcapDetail",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, allows the last word in a text column to be hyphenated. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "hyphenateAcrossColumns",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, forces the rule above the paragraph to remain in the frame bounds. Note: Valid only when rule above is true. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "keepRuleAboveInFrame",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, ignores optical edge alignment for the paragraph. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ignoreEdgeAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The font applied to the ChangeTransliteratePreference, specified as either a font object or the name of font family. Can return: Font, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedFont",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the font style. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fontStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The text size. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pointSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The leading applied to the text. Can return: Unit, Leading enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leading",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of pair kerning. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kerningMethod",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount by which to loosen or tighten a block of text, specified in thousands of an em. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "tracking",
+                    "readonly": false
+                },
+                {
+                    "description": "The capitalization scheme. Can return: Capitalization enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "capitalization",
+                    "readonly": false
+                },
+                {
+                    "description": "The text position relative to the baseline. Can return: Position enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "position",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, underlines the text. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underline",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, draws a strikethrough line through the text. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThru",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, replaces specific character combinations (e.g., fl, fi) with ligature characters. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ligatures",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, keeps the text on the same line. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "noBreak",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal scaling applied to the ChangeTransliteratePreference. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "horizontalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical scaling applied to the ChangeTransliteratePreference. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "verticalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The baseline shift applied to the text. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "baselineShift",
+                    "readonly": false
+                },
+                {
+                    "description": "The skew angle of the ChangeTransliteratePreference. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "skew",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the fill color of the ChangeTransliteratePreference. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fillTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the stroke color of the ChangeTransliteratePreference. (To specify a tint percentage, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight applied to the characters of the text. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the stroke of the characters will overprint. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the fill color of the characters will overprint. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The figure style in OpenType fonts. Can return: OTFFigureStyle enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfFigureStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses ordinals in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfOrdinal",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses fractions in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfFraction",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses discretionary ligatures in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfDiscretionaryLigature",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses titling forms in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfTitling",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses contextual alternate forms in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfContextualAlternate",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses swash forms in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfSwash",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the underline stroke. . Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the gap of the underline stroke. Note: Valid when underline type is not solid. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineGapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The underline stroke tint (as a percentage). (Range: 0 to 100). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the gap color of the underline stroke. (Range: 0 to 100) Note: Valid when underline type is not solid. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineGapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the underline stroke color will overprint. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gap color of the underline stroke will overprint. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineGapOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke type of the underline stroke. Can return: StrokeStyle, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineType",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount by which to offset the underline from the text baseline. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight of the underline stroke. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "underlineWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the strikethrough stroke. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the gap of the strikethrough stroke. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughGapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the strikethrough stroke. (Range: 0 to 100). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the strikethrough stroke gap color. (Range: 0 to 100) Note: Valid when strike through type is not solid. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughGapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the strikethrough stroke will overprint. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gap color of the strikethrough stroke will overprint. Note: Valid when strike through type is not solid. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughGapOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke type of the strikethrough stroke. Can return: StrokeStyle, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughType",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount by which to offset the strikethrough stroke from the text baseline. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight of the strikethrough stroke. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strikeThroughWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, use a slashed zeroes in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfSlashedZero",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, use historical forms in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfHistorical",
+                    "readonly": false
+                },
+                {
+                    "description": "The stylistic sets to use in OpenType fonts. Can return: Long Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfStylisticSets",
+                    "readonly": false
+                },
+                {
+                    "description": "The length (for a linear gradient) or radius (for a radial gradient) applied to the fill of the text. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientFillLength",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the fill of the text. (Range: -180 to 180). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientFillAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The length (for a linear gradient) or radius (for a radial gradient) applied to the stroke of the text. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientStrokeLength",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the stroke of the text. (Range: -180 to 180). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientStrokeAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The starting point (in page coordinates) of a gradient applied to the fill of the text, in the format [x, y]. Can return: Array of 2 Units or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientFillStart",
+                    "readonly": false
+                },
+                {
+                    "description": "The starting point (in page coordinates) of a gradient applied to the stroke of the text, in the format [x, y]. Can return: Array of 2 Units or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientStrokeStart",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses mark positioning in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfMark",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses localized forms in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfLocale",
+                    "readonly": false
+                },
+                {
+                    "description": "The OpenType positional form. Can return: PositionalForms enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "positionalForm",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink), applied as a fill color, to search for or change to. Can return: String or NothingEnum enumerator. Can also accept: Swatch.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fillColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink), applied as a stroke color, to search for or change to. Can return: String or NothingEnum enumerator. Can also accept: Swatch.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The language to search for or change to. Can return: String or NothingEnum enumerator. Can also accept: Language or LanguageWithVendors.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedLanguage",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space to add or remove between characters, specified in thousands of an em. . Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kerningValue",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment of small characters to the largest character in the line. Can return: CharacterAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "characterAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of horizontal character compression. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "tsume",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space before each character. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leadingAki",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space after each character. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "trailingAki",
+                    "readonly": false
+                },
+                {
+                    "description": "The rotation angle (in degrees) of individual characters. Note: The rotation is counterclockwise. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "characterRotation",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of grid squares in which to arrange the text. . Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "jidori",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount (as a percentage) of shatai obliquing to apply. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "shataiMagnification",
+                    "readonly": false
+                },
+                {
+                    "description": "The shatai lens angle (in degrees). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "shataiDegreeAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, applies shatai rotation. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "shataiAdjustRotation",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, adjusts shatai tsume. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "shataiAdjustTsume",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, makes the character horizontal in vertical text. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "tatechuyoko",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal offset for horizontal characters in vertical text. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "tatechuyokoXOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical offset for horizontal characters in vertical text. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "tatechuyokoYOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the fill of kenten characters. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenFillColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of kenten characters. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenStrokeColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The fill tint (as a percentage) of kenten characters. (Range: 0 to 100). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke tint (as a percentage) of kenten characters. (Range: 0 to 100). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenStrokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight (in points) of kenten characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The method of overprinting the kenten fill. Can return: AdornmentOverprint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenOverprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The method of overprinting the kenten stroke. Can return: AdornmentOverprint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenOverprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "The style of kenten characters. Can return: KentenCharacter enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenKind",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance between kenten characters and their parent characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenPlacement",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment of kenten characters relative to the parent characters. . Can return: KentenAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The kenten position relative to the parent character. Can return: RubyKentenPosition enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "The font to use for kenten characters. Can return: Font, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenFont",
+                    "readonly": false
+                },
+                {
+                    "description": "The font style of kenten characters. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenFontStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The size (in points) of kenten characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenFontSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal size of kenten characters as a percent of the original size. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenXScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical size of kenten charachers as a percent of the original size. . Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenYScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The character used for kenten. Note: Valid only when kenten kind is custom. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenCustomCharacter",
+                    "readonly": false
+                },
+                {
+                    "description": "The character set used for the custom kenten character. Note: Valid only when kenten kind is custom. . Can return: KentenCharacterSet enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kentenCharacterSet",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the fill of ruby characters. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of ruby characters. Can return: Swatch, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the ruby fill color. (Range: 0 to 100). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight (in points) of ruby characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The method of overprinting the ruby fill. Can return: AdornmentOverprint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyOverprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The method of overprinting the ruby stroke. Can return: AdornmentOverprint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyOverprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke tint (as a percentage) of ruby characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyStrokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The font applied to ruby characters. Can return: Font, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyFont",
+                    "readonly": false
+                },
+                {
+                    "description": "The font style of ruby characters. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyFontStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The size (in points) of ruby characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyFontSize",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses OpenType Pro fonts for ruby. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyOpenTypePro",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal size of ruby characters, specified as a percent of the original size. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyXScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical size of ruby characters, specified as a percent of the original size. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyYScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The ruby type. Can return: RubyTypes enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyType",
+                    "readonly": false
+                },
+                {
+                    "description": "The ruby alignment. Can return: RubyAlignments enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The position of ruby characters relative to the parent text. Can return: RubyKentenPosition enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of horizontal space between ruby and parent characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyXOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of vertical space between ruby and parent characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyYOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The ruby spacing relative to the parent text. . Can return: RubyParentSpacing enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyParentSpacing",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, auto aligns ruby. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAutoAlign",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, constrains ruby overhang to the specified amount. For information on specifying an amount, see ruby parent overhang amount. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyOverhang",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, automatically scales ruby to the specified percent of parent text size. For information on specifying a percent, see ruby parent scaling percent. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAutoScaling",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount (as a percentage) to scale the parent text size to determine the ruby text size. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyParentScalingPercent",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount by which ruby characters can overhang the parent text. Can return: RubyOverhang enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyParentOverhangAmount",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of digits included in auto tcy (tate-chuu-yoko) in ruby. Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAutoTcyDigits",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes Roman characters in auto tcy (tate-chuu-yoko) in ruby. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAutoTcyIncludeRoman",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, automatically scales glyphs in auto tcy (tate-chuu-yoko) in ruby to fit one em. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rubyAutoTcyAutoScale",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, turns on warichu. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichu",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount (as a percentage) to scale parent text size to determine warichu size. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of lines of warichu within a single normal line. Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuLines",
+                    "readonly": false
+                },
+                {
+                    "description": "The gap between lines of warichu characters. Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuLineSpacing",
+                    "readonly": false
+                },
+                {
+                    "description": "The warichu alignment. Can return: WarichuAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum number of characters allowed after a line break. . Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuCharsAfterBreak",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum number of characters allowed before a line break. Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "warichuCharsBeforeBreak",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, kerns according to proportional CJK metrics in OpenType fonts. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfProportionalMetrics",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, switches hiragana fonts, which have different glyphs for horizontal and vertical. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfHVKana",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, applies italics to half-width alphanumerics. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "otfRomanItalics",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the line changes size when characters are scaled. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "scaleAffectsLineHeight",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses grid tracking to track non-Roman characters in CJK grids. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "cjkGridTracking",
+                    "readonly": false
+                },
+                {
+                    "description": "The glyph variant to substitute for standard glyphs. Can return: AlternateGlyphForms enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "glyphForm",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gyoudori mode applies to the entire paragraph. If false, the gyoudori mode applies to each line in the paragraph. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "paragraphGyoudori",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment to the frame grid or baseline grid. Can return: GridAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gridAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The manual gyoudori setting. Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gridGyoudori",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of half-width characters at or below which the characters automatically run horizontally in vertical text. Can return: Short Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "autoTcy",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, auto tcy includes Roman characters. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "autoTcyIncludeRoman",
+                    "readonly": false
+                },
+                {
+                    "description": "The kinsoku set that determines legitimate line breaks. Can return: KinsokuTable, KinsokuSet enumerator, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kinsokuSet",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of kinsoku processing for preventing kinsoku characters from beginning or ending a line. Note: Valid only when a kinsoku set is defined. Can return: KinsokuType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kinsokuType",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of hanging punctuation to allow. Note: Valid only when a kinsoku set is in effect. Can return: KinsokuHangTypes enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "kinsokuHangType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, adds the double period (..), ellipse (...), and double hyphen (--) to the selected kinsoku set. Note: Valid only when a kinsoku set is in effect. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bunriKinshi",
+                    "readonly": false
+                },
+                {
+                    "description": "The mojikumi table. For information, see mojikumi table defaults. Can return: MojikumiTable, String, MojikumiTableDefaults enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "mojikumi",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, disallows line breaks in numbers. If false, lines can break between digits in multi-digit numbers. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rensuuji",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, rotates Roman characters in vertical text. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rotateSingleByteCharacters",
+                    "readonly": false
+                },
+                {
+                    "description": "The point from which leading is measured from line to line. Can return: LeadingModel enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leadingModel",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, ideographic spaces will not wrap to the next line like text characters. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "treatIdeographicSpaceAsSpace",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, words unassociated with a hyphenation dictionary can break to the next line on any character. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "allowArbitraryHyphenation",
+                    "readonly": false
+                },
+                {
+                    "description": "The text after string expression for bullets. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bulletsTextAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style to be used for the text after string. Can return: CharacterStyle, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bulletsCharacterStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment of the bullet character. Can return: ListAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bulletsAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The list to be part of. Can return: NumberingList, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedNumberingList",
+                    "readonly": false
+                },
+                {
+                    "description": "The level of the paragraph. Can return: Long Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingLevel",
+                    "readonly": false
+                },
+                {
+                    "description": "Numbering format options. Can return: NumberingStyle enumerator, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingFormat",
+                    "readonly": false
+                },
+                {
+                    "description": "The number string expression for numbering. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingExpression",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style to be used for the number string. Can return: CharacterStyle, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingCharacterStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "Continue the numbering at this level. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingContinue",
+                    "readonly": false
+                },
+                {
+                    "description": "Determines starting number in a numbered list. Can return: Long Integer or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingStartAt",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, apply the numbering restart policy. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingApplyRestartPolicy",
+                    "readonly": false
+                },
+                {
+                    "description": "The alignment of the number. Can return: ListAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "numberingAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "List type for bullets and numbering. Can return: ListType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bulletsAndNumberingListType",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the ChangeTransliteratePreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "ChangeTransliteratePreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "ChangeTransliteratePreference"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "PDF export raster resolution options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1937010800",
+                    "array": false,
+                    "description": "72 pixels per inch.",
+                    "readonly": true,
+                    "name": "SEVENTY_TWO_PPI"
+                },
+                {
+                    "type": "number",
+                    "value": "1853059184",
+                    "array": false,
+                    "description": "96 pixels per inch.",
+                    "readonly": true,
+                    "name": "NINETY_SIX_PPI"
+                },
+                {
+                    "type": "number",
+                    "value": "1868984432",
+                    "array": false,
+                    "description": "144 pixels per inch.",
+                    "readonly": true,
+                    "name": "ONE_HUNDRED_FORTY_FOUR_PPI"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RasterResolutionOptions"
+}

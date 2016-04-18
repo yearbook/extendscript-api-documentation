@@ -1,0 +1,31 @@
+{
+    "description": "Location options for XML elements.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1482844014",
+                    "array": false,
+                    "description": "Locates the element at the beginning of the containing object.",
+                    "readonly": true,
+                    "name": "ELEMENT_START"
+                },
+                {
+                    "type": "number",
+                    "value": "1483042404",
+                    "array": false,
+                    "description": "Locates the element at the end of the containing object.",
+                    "readonly": true,
+                    "name": "ELEMENT_END"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "XMLElementLocation"
+}

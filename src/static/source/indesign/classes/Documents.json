@@ -1,0 +1,214 @@
+{
+    "description": "A collection of documents.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new document.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "showingWindow",
+                            "optional": true,
+                            "description": "If true, displays the document. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The document preset to use. (Optional)",
+                            "type": "DocumentPreset",
+                            "optional": false,
+                            "name": "documentPreset",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new Document (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the Document.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document with the specified index or name.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document with the specified name.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document with the specified ID.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Documents within the specified range.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The Document, index, or name at the beginning of the range. Can accept: Document, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The Document, index, or name at the end of the range. Can accept: Document, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first Document in the collection.",
+                    "type": "Document",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last Document in the collection.",
+                    "type": "Document",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle Document in the collection.",
+                    "type": "Document",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document with the index previous to the specified index.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The index of the Document that follows the desired Document.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document whose index follows the specified Document in the collection.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The Document whose index comes before the desired Document.",
+                            "type": "Document",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any Document in the collection.",
+                    "type": "Document",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every Document in the collection.",
+                    "type": "Document",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Document.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Document with the specified index.",
+                    "type": "Document",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Documents"
+}

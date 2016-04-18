@@ -1,0 +1,39 @@
+{
+    "description": "Link updating options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1433299822",
+                    "array": false,
+                    "description": "Unspecified update option.",
+                    "readonly": true,
+                    "name": "UNKNOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "1819243873",
+                    "array": false,
+                    "description": "Changes the visiblity settings to match the modified file.",
+                    "readonly": true,
+                    "name": "APPLICATION_SETTINGS"
+                },
+                {
+                    "type": "number",
+                    "value": "1819241327",
+                    "array": false,
+                    "description": "Ignores the modified settings and maintains those specified in the current document.",
+                    "readonly": true,
+                    "name": "KEEP_OVERRIDES"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "UpdateLinkOptions"
+}

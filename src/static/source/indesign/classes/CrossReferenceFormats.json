@@ -1,0 +1,206 @@
+{
+    "description": "A collection of cross reference formats.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new cross reference format.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The format name. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new CrossReferenceFormat (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the CrossReferenceFormat.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat with the specified index or name.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat with the specified name.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat with the specified ID.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormats within the specified range.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The CrossReferenceFormat, index, or name at the beginning of the range. Can accept: CrossReferenceFormat, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The CrossReferenceFormat, index, or name at the end of the range. Can accept: CrossReferenceFormat, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat with the index previous to the specified index.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The index of the CrossReferenceFormat that follows the desired CrossReferenceFormat.",
+                            "type": "CrossReferenceFormat",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat whose index follows the specified CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The CrossReferenceFormat whose index comes before the desired CrossReferenceFormat.",
+                            "type": "CrossReferenceFormat",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every CrossReferenceFormat in the collection.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the CrossReferenceFormat.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferenceFormat with the specified index.",
+                    "type": "CrossReferenceFormat",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "CrossReferenceFormats"
+}

@@ -1,0 +1,206 @@
+{
+    "description": "A collection of hyperlink page item sources.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new hyperlink page item source.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The page item to hyperlink.",
+                            "type": "PageItem",
+                            "optional": false,
+                            "name": "source",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new HyperlinkPageItemSource (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the HyperlinkPageItemSource.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource with the specified index or name.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource with the specified name.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource with the specified ID.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSources within the specified range.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The HyperlinkPageItemSource, index, or name at the beginning of the range. Can accept: HyperlinkPageItemSource, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The HyperlinkPageItemSource, index, or name at the end of the range. Can accept: HyperlinkPageItemSource, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource with the index previous to the specified index.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The index of the HyperlinkPageItemSource that follows the desired HyperlinkPageItemSource.",
+                            "type": "HyperlinkPageItemSource",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource whose index follows the specified HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The HyperlinkPageItemSource whose index comes before the desired HyperlinkPageItemSource.",
+                            "type": "HyperlinkPageItemSource",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every HyperlinkPageItemSource in the collection.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the HyperlinkPageItemSource.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkPageItemSource with the specified index.",
+                    "type": "HyperlinkPageItemSource",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HyperlinkPageItemSources"
+}

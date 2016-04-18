@@ -1,0 +1,47 @@
+{
+    "description": "Cursor types.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699968100",
+                    "array": false,
+                    "description": "Uses a standard cursor.",
+                    "readonly": true,
+                    "name": "STANDARD_CURSOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1700029291",
+                    "array": false,
+                    "description": "Uses a thick cursor.",
+                    "readonly": true,
+                    "name": "THICK_CURSOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1698841196",
+                    "array": false,
+                    "description": "Uses a barbell cursor.",
+                    "readonly": true,
+                    "name": "BARBELL_CURSOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1698851951",
+                    "array": false,
+                    "description": "Uses a block cursor.",
+                    "readonly": true,
+                    "name": "BLOCK_CURSOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CursorTypes"
+}

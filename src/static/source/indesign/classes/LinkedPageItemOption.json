@@ -1,0 +1,181 @@
+{
+    "description": "The link options for a linked Page Item.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the LinkedPageItemOption (a Application, Document, PageItem, HtmlItem, FormField, SignatureField, TextBox, RadioButton, ListBox, ComboBox, CheckBox, MultiStateObject, Button, MediaItem, Sound, Movie, EPSText, SplineItem, Polygon, GraphicLine, Rectangle, Oval, Graphic, ImportedPage, PICT, WMF, PDF, EPS, Image, Group or TextFrame).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the linked Page Item will be updated while saving.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "updateLinkWhileSaving",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, a warning will be shown if the update link operation will override local edits.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "warnOnUpdateOfEditedPageItem",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, size and shape edits will be preserved during update.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveSizeAndShape",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, appearance edits will be preserved during update.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveAppearance",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, interactivity edits will be preserved during update.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveInteractivity",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, frame content edits will be preserved during update.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveFrameContent",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, text wrap, hyperLinks, text frame options, object export settings will be preserved during update.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveOthers",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the LinkedPageItemOption.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "LinkedPageItemOption",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "LinkedPageItemOption"
+}

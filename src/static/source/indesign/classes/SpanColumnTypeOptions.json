@@ -1,0 +1,39 @@
+{
+    "description": "Type of Paragraph span.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1163092844",
+                    "array": false,
+                    "description": "Paragraph is a single column",
+                    "readonly": true,
+                    "name": "SINGLE_COLUMN"
+                },
+                {
+                    "type": "number",
+                    "value": "1936745326",
+                    "array": false,
+                    "description": "Paragraph spans the columns",
+                    "readonly": true,
+                    "name": "SPAN_COLUMNS"
+                },
+                {
+                    "type": "number",
+                    "value": "1937007470",
+                    "array": false,
+                    "description": "Paragraph splits the columns",
+                    "readonly": true,
+                    "name": "SPLIT_COLUMNS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SpanColumnTypeOptions"
+}

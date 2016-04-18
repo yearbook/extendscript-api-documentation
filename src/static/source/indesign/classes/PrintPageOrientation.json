@@ -1,0 +1,47 @@
+{
+    "description": "Page orientation options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1751738216",
+                    "array": false,
+                    "description": "Portrait.",
+                    "readonly": true,
+                    "name": "PORTRAIT"
+                },
+                {
+                    "type": "number",
+                    "value": "2003395685",
+                    "array": false,
+                    "description": "Landscape.",
+                    "readonly": true,
+                    "name": "LANDSCAPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1869771376",
+                    "array": false,
+                    "description": "Reverse portrait.",
+                    "readonly": true,
+                    "name": "REVERSE_PORTRAIT"
+                },
+                {
+                    "type": "number",
+                    "value": "1869771372",
+                    "array": false,
+                    "description": "Reverse landscape.",
+                    "readonly": true,
+                    "name": "REVERSE_LANDSCAPE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PrintPageOrientation"
+}

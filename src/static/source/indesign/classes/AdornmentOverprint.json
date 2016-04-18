@@ -1,0 +1,39 @@
+{
+    "description": "Overprint options for kenten marks.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1635019116",
+                    "array": false,
+                    "description": "Uses auto overprint.",
+                    "readonly": true,
+                    "name": "AUTO"
+                },
+                {
+                    "type": "number",
+                    "value": "1701736302",
+                    "array": false,
+                    "description": "Turns on overprint.",
+                    "readonly": true,
+                    "name": "OVERPRINT_ON"
+                },
+                {
+                    "type": "number",
+                    "value": "1701736294",
+                    "array": false,
+                    "description": "Turns off overprint.",
+                    "readonly": true,
+                    "name": "OVERPRINT_OFF"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AdornmentOverprint"
+}

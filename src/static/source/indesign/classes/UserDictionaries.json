@@ -1,0 +1,169 @@
+{
+    "description": "A collection of user dictionaries.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the UserDictionary.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionary with the specified index or name.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionary with the specified name.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionaries within the specified range.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The UserDictionary, index, or name at the beginning of the range. Can accept: UserDictionary, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The UserDictionary, index, or name at the end of the range. Can accept: UserDictionary, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionary with the index previous to the specified index.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The index of the UserDictionary that follows the desired UserDictionary.",
+                            "type": "UserDictionary",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionary whose index follows the specified UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The UserDictionary whose index comes before the desired UserDictionary.",
+                            "type": "UserDictionary",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every UserDictionary in the collection.",
+                    "type": "UserDictionary",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the UserDictionary.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the UserDictionary with the specified index.",
+                    "type": "UserDictionary",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "UserDictionaries"
+}

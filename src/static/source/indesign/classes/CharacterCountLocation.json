@@ -1,0 +1,55 @@
+{
+    "description": "Character count location options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Hides the character count.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953460256",
+                    "array": false,
+                    "description": "Displays the character count at the top of the frame.",
+                    "readonly": true,
+                    "name": "TOP_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1818584692",
+                    "array": false,
+                    "description": "Displays the character count on the left side of the frame.",
+                    "readonly": true,
+                    "name": "LEFT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1651471469",
+                    "array": false,
+                    "description": "Displays the character count at the bottom of the frame.",
+                    "readonly": true,
+                    "name": "BOTTOM_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1919379572",
+                    "array": false,
+                    "description": "Displays the character count on the right side of the frame.",
+                    "readonly": true,
+                    "name": "RIGHT_ALIGN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CharacterCountLocation"
+}

@@ -1,0 +1,184 @@
+{
+    "description": "A collection of assigned stories.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the AssignedStory.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory with the specified index or name.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory with the specified name.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory with the specified ID.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStories within the specified range.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The AssignedStory, index, or name at the beginning of the range. Can accept: AssignedStory, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The AssignedStory, index, or name at the end of the range. Can accept: AssignedStory, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory with the index previous to the specified index.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The index of the AssignedStory that follows the desired AssignedStory.",
+                            "type": "AssignedStory",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory whose index follows the specified AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The AssignedStory whose index comes before the desired AssignedStory.",
+                            "type": "AssignedStory",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every AssignedStory in the collection.",
+                    "type": "AssignedStory",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the AssignedStory.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the AssignedStory with the specified index.",
+                    "type": "AssignedStory",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "AssignedStories"
+}

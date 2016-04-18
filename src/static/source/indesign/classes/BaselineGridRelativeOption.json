@@ -1,0 +1,31 @@
+{
+    "description": "The zero point for the baseline grid offset.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1162766196",
+                    "array": false,
+                    "description": "The baseline grid offset zero point is at the top of the page.",
+                    "readonly": true,
+                    "name": "TOP_OF_PAGE_OF_BASELINE_GRID_RELATIVE_OPTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1162766189",
+                    "array": false,
+                    "description": "The baseline grid offset zero point is at the top page margin.",
+                    "readonly": true,
+                    "name": "TOP_OF_MARGIN_OF_BASELINE_GRID_RELATIVE_OPTION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BaselineGridRelativeOption"
+}

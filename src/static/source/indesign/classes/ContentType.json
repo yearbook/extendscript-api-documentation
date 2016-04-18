@@ -1,0 +1,39 @@
+{
+    "description": "The content type of an object.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1970168179",
+                    "array": false,
+                    "description": "No content type assigned.",
+                    "readonly": true,
+                    "name": "UNASSIGNED"
+                },
+                {
+                    "type": "number",
+                    "value": "1735553140",
+                    "array": false,
+                    "description": "The frame is a graphics frame.",
+                    "readonly": true,
+                    "name": "GRAPHIC_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1952412773",
+                    "array": false,
+                    "description": "The frame is a text frame.",
+                    "readonly": true,
+                    "name": "TEXT_TYPE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ContentType"
+}

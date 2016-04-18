@@ -1,0 +1,39 @@
+{
+    "description": "Placement options for header or footer rows.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1231115363",
+                    "array": false,
+                    "description": "Places headers or footers in each text column.",
+                    "readonly": true,
+                    "name": "IN_ALL_TEXT_COLUMNS"
+                },
+                {
+                    "type": "number",
+                    "value": "1332761702",
+                    "array": false,
+                    "description": "Repeats headers or footers in each text frame.",
+                    "readonly": true,
+                    "name": "ONCE_PER_TEXT_FRAME"
+                },
+                {
+                    "type": "number",
+                    "value": "1332760673",
+                    "array": false,
+                    "description": "Places one instance of headers or footers per page.",
+                    "readonly": true,
+                    "name": "ONCE_PER_PAGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HeaderFooterBreakTypes"
+}

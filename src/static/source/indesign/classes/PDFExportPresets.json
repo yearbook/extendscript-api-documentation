@@ -1,0 +1,184 @@
+{
+    "description": "A collection of PDF export presets.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new PDFExportPreset.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new PDFExportPreset (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the PDFExportPreset.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPreset with the specified index or name.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPreset with the specified name.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPresets within the specified range.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The PDFExportPreset, index, or name at the beginning of the range. Can accept: PDFExportPreset, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The PDFExportPreset, index, or name at the end of the range. Can accept: PDFExportPreset, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPreset with the index previous to the specified index.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The index of the PDFExportPreset that follows the desired PDFExportPreset.",
+                            "type": "PDFExportPreset",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPreset whose index follows the specified PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The PDFExportPreset whose index comes before the desired PDFExportPreset.",
+                            "type": "PDFExportPreset",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every PDFExportPreset in the collection.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PDFExportPreset.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PDFExportPreset with the specified index.",
+                    "type": "PDFExportPreset",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PDFExportPresets"
+}

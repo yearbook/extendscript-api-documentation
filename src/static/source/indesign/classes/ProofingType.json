@@ -1,0 +1,47 @@
+{
+    "description": "Options for proofing colors.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1347710822",
+                    "array": false,
+                    "description": "Turns off soft proof display.",
+                    "readonly": true,
+                    "name": "PROOF_OFF"
+                },
+                {
+                    "type": "number",
+                    "value": "1347708003",
+                    "array": false,
+                    "description": "Creates a soft proof of colors using the document's CMYK profile.",
+                    "readonly": true,
+                    "name": "DOCUMENT_CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1347712867",
+                    "array": false,
+                    "description": "Creates a soft proof of colors using the current CMYK working space.",
+                    "readonly": true,
+                    "name": "WORKING_CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639917",
+                    "array": false,
+                    "description": "Allows creation of a custom proofing setup for a specific output condition.",
+                    "readonly": true,
+                    "name": "CUSTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ProofingType"
+}

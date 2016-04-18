@@ -1,0 +1,39 @@
+{
+    "description": "Library panel views",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699501673",
+                    "array": false,
+                    "description": "List view",
+                    "readonly": true,
+                    "name": "LIST_VIEW"
+                },
+                {
+                    "type": "number",
+                    "value": "1700030550",
+                    "array": false,
+                    "description": "Thumbnail view",
+                    "readonly": true,
+                    "name": "THUMBNAIL_VIEW"
+                },
+                {
+                    "type": "number",
+                    "value": "1699501142",
+                    "array": false,
+                    "description": "Large thumbnail view",
+                    "readonly": true,
+                    "name": "LARGE_THUMBNAIL_VIEW"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "LibraryPanelViews"
+}

@@ -1,0 +1,227 @@
+{
+    "description": "A collection of mixed ink groups.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the MixedInkGroup.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new mixed ink group.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The inks to include in the mix.",
+                            "type": "Ink",
+                            "optional": false,
+                            "name": "inkList",
+                            "array": true
+                        },
+                        {
+                            "description": "The percent of each ink in the ink list. (Range: 0 to 100 for each ink) (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "inkPercentages",
+                            "array": true
+                        },
+                        {
+                            "description": "The number of repetitions for each ink in the ink list. (Range: 0 to 100 for each ink) (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "repeatValues",
+                            "array": true
+                        },
+                        {
+                            "description": "The increment percent per repetition for each ink. (Range: 0 to 100) Note: The cumulative ink percentage per ink cannot exceed 100.) (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "incrementValues",
+                            "array": true
+                        },
+                        {
+                            "description": "Initial values for properties of the new MixedInkGroup (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup with the specified index or name.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup with the specified name.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup with the specified ID.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroups within the specified range.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The MixedInkGroup, index, or name at the beginning of the range. Can accept: MixedInkGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The MixedInkGroup, index, or name at the end of the range. Can accept: MixedInkGroup, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup with the index previous to the specified index.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The index of the MixedInkGroup that follows the desired MixedInkGroup.",
+                            "type": "MixedInkGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup whose index follows the specified MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The MixedInkGroup whose index comes before the desired MixedInkGroup.",
+                            "type": "MixedInkGroup",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every MixedInkGroup in the collection.",
+                    "type": "MixedInkGroup",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the MixedInkGroup.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MixedInkGroup with the specified index.",
+                    "type": "MixedInkGroup",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "MixedInkGroups"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "Corner type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "2020623201",
+                    "array": false,
+                    "description": "The gradient exactly follows the outer edge of the object, including sharp corners.",
+                    "readonly": true,
+                    "name": "SHARP"
+                },
+                {
+                    "type": "number",
+                    "value": "2020623202",
+                    "array": false,
+                    "description": "The corners are rounded by the feather radius.",
+                    "readonly": true,
+                    "name": "ROUNDED"
+                },
+                {
+                    "type": "number",
+                    "value": "2020623203",
+                    "array": false,
+                    "description": "The edges of the object fade from opaque to transparent.",
+                    "readonly": true,
+                    "name": "DIFFUSION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FeatherCornerType"
+}

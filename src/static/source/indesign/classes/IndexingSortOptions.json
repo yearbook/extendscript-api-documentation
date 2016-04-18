@@ -1,0 +1,169 @@
+{
+    "description": "A collection of indexing sort options.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the IndexingSortOption.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOption with the specified index or name.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOption with the specified name.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOptions within the specified range.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The IndexingSortOption, index, or name at the beginning of the range. Can accept: IndexingSortOption, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The IndexingSortOption, index, or name at the end of the range. Can accept: IndexingSortOption, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOption with the index previous to the specified index.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The index of the IndexingSortOption that follows the desired IndexingSortOption.",
+                            "type": "IndexingSortOption",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOption whose index follows the specified IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The IndexingSortOption whose index comes before the desired IndexingSortOption.",
+                            "type": "IndexingSortOption",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every IndexingSortOption in the collection.",
+                    "type": "IndexingSortOption",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the IndexingSortOption.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the IndexingSortOption with the specified index.",
+                    "type": "IndexingSortOption",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "IndexingSortOptions"
+}

@@ -1,0 +1,47 @@
+{
+    "description": "The type of conflict resolution to employ during Version Cue synchronization.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1986216787",
+                    "array": false,
+                    "description": "Skips conflicting files.",
+                    "readonly": true,
+                    "name": "SKIP_CONFLICTS"
+                },
+                {
+                    "type": "number",
+                    "value": "1986216769",
+                    "array": false,
+                    "description": "Asks the user how to resolve conflicts.",
+                    "readonly": true,
+                    "name": "ASK_ABOUT_CONFLICTS"
+                },
+                {
+                    "type": "number",
+                    "value": "1986216780",
+                    "array": false,
+                    "description": "Uses the local version.",
+                    "readonly": true,
+                    "name": "PREFER_LOCAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1986216784",
+                    "array": false,
+                    "description": "Uses the project version.",
+                    "readonly": true,
+                    "name": "PREFER_PROJECT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SyncConflictResolution"
+}

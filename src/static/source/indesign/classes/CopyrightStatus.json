@@ -1,0 +1,39 @@
+{
+    "description": "The copyright status of the document.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1433299822",
+                    "array": false,
+                    "description": "The copyright status is unknown.",
+                    "readonly": true,
+                    "name": "UNKNOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "2036691744",
+                    "array": false,
+                    "description": "The document is copyrighted.",
+                    "readonly": true,
+                    "name": "YES"
+                },
+                {
+                    "type": "number",
+                    "value": "1852776480",
+                    "array": false,
+                    "description": "The document is in the public domain.",
+                    "readonly": true,
+                    "name": "NO"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CopyrightStatus"
+}

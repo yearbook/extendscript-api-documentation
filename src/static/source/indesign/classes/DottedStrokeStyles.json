@@ -1,0 +1,199 @@
+{
+    "description": "A collection of dotted stroke styles.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new DottedStrokeStyle.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new DottedStrokeStyle (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the DottedStrokeStyle.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle with the specified index or name.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle with the specified name.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle with the specified ID.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyles within the specified range.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The DottedStrokeStyle, index, or name at the beginning of the range. Can accept: DottedStrokeStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The DottedStrokeStyle, index, or name at the end of the range. Can accept: DottedStrokeStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle with the index previous to the specified index.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The index of the DottedStrokeStyle that follows the desired DottedStrokeStyle.",
+                            "type": "DottedStrokeStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle whose index follows the specified DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The DottedStrokeStyle whose index comes before the desired DottedStrokeStyle.",
+                            "type": "DottedStrokeStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every DottedStrokeStyle in the collection.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the DottedStrokeStyle.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DottedStrokeStyle with the specified index.",
+                    "type": "DottedStrokeStyle",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "DottedStrokeStyles"
+}

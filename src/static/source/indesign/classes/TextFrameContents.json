@@ -1,0 +1,55 @@
+{
+    "description": "Text frame content type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1346925688",
+                    "array": false,
+                    "description": "Fills the text frame with placeholder text.",
+                    "readonly": true,
+                    "name": "PLACEHOLDER_TEXT"
+                },
+                {
+                    "type": "number",
+                    "value": "1346925665",
+                    "array": false,
+                    "description": "Fills the text frame with arabic placeholder text.",
+                    "readonly": true,
+                    "name": "PLACEHOLDER_TEXT_ARABIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1346925672",
+                    "array": false,
+                    "description": "Fills the text frame with hebrew placeholder text.",
+                    "readonly": true,
+                    "name": "PLACEHOLDER_TEXT_HEBREW"
+                },
+                {
+                    "type": "number",
+                    "value": "1346925667",
+                    "array": false,
+                    "description": "Fills the text frame with cyrillic placeholder text.",
+                    "readonly": true,
+                    "name": "PLACEHOLDER_TEXT_CYRILLIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1346925671",
+                    "array": false,
+                    "description": "Fills the text frame with greek placeholder text.",
+                    "readonly": true,
+                    "name": "PLACEHOLDER_TEXT_GREEK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextFrameContents"
+}

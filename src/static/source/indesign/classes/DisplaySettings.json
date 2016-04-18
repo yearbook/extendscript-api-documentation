@@ -1,0 +1,154 @@
+{
+    "description": "Display setting properties.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the DisplaySetting.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DisplaySetting with the specified index or name.",
+                    "type": "DisplaySetting",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DisplaySettings within the specified range.",
+                    "type": "DisplaySetting",
+                    "parameters": [
+                        {
+                            "description": "The DisplaySetting, index, or name at the beginning of the range. Can accept: DisplaySetting, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The DisplaySetting, index, or name at the end of the range. Can accept: DisplaySetting, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DisplaySetting with the index previous to the specified index.",
+                    "type": "DisplaySetting",
+                    "parameters": [
+                        {
+                            "description": "The index of the DisplaySetting that follows the desired DisplaySetting.",
+                            "type": "DisplaySetting",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DisplaySetting whose index follows the specified DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [
+                        {
+                            "description": "The DisplaySetting whose index comes before the desired DisplaySetting.",
+                            "type": "DisplaySetting",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every DisplaySetting in the collection.",
+                    "type": "DisplaySetting",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the DisplaySetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the DisplaySetting with the specified index.",
+                    "type": "DisplaySetting",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "DisplaySettings"
+}

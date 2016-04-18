@@ -1,0 +1,151 @@
+{
+    "description": "Delimiter options for marking the end of the application of the nested style.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1380541555",
+                    "array": false,
+                    "description": "Uses the first sentence or sentences in the paragraph as the nested style delimiter. The first sentence is considered all text preceding the first period, question mark, or exclamation mark in the paragraph.",
+                    "readonly": true,
+                    "name": "SENTENCE"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541559",
+                    "array": false,
+                    "description": "Uses the first word or words in the paragraph as the nested style delimiter. The first word is considered all characters preceding the first space or white space character in the paragraph.",
+                    "readonly": true,
+                    "name": "ANY_WORD"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541539",
+                    "array": false,
+                    "description": "Uses the first character or characters other than zero-width markers as the nested style delimiter. Zero-width markers include anchors, index markers, XML tags, and so on.",
+                    "readonly": true,
+                    "name": "ANY_CHARACTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541548",
+                    "array": false,
+                    "description": "Uses the first alpha character or characters as the nested style delimiter. Note: To specify the number of letters, see repetition.",
+                    "readonly": true,
+                    "name": "LETTERS"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541540",
+                    "array": false,
+                    "description": "Uses the first numeric character or characters as the nested style delimiter. Note: To specify the number of digits, see repetition.",
+                    "readonly": true,
+                    "name": "DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541556",
+                    "array": false,
+                    "description": "Uses the first tab character as the nested style delimiter. Note: Does not use the first tab stop. If no actual tab character has been inserted in the paragraph, the nested style is applied through the end of the paragraph.",
+                    "readonly": true,
+                    "name": "TABS"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541545",
+                    "array": false,
+                    "description": "Uses the first inline graphic as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "INLINE_GRAPHIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1380541507",
+                    "array": false,
+                    "description": "Uses the dropcap as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "DROPCAP"
+                },
+                {
+                    "type": "number",
+                    "value": "1397124194",
+                    "array": false,
+                    "description": "Uses the first forced line break as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "FORCED_LINE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1396855379",
+                    "array": false,
+                    "description": "Uses the inserted end nested style here character as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "END_NESTED_STYLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397319796",
+                    "array": false,
+                    "description": "Uses the first indent-to-here tab character as the nested style delimiter. Note: Does not use the first indent-to-here tab stop. If no actual indent-to-here tab character has been inserted in the paragraph, the nested style is applied through the end of the paragraph.",
+                    "readonly": true,
+                    "name": "INDENT_HERE_TAB"
+                },
+                {
+                    "type": "number",
+                    "value": "1397058899",
+                    "array": false,
+                    "description": "Uses the first em space as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "EM_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397059155",
+                    "array": false,
+                    "description": "Uses the first en space as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "EN_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397645907",
+                    "array": false,
+                    "description": "Uses the first nonbreaking space as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "NONBREAKING_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396797550",
+                    "array": false,
+                    "description": "Uses the first automatic page number as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "AUTO_PAGE_NUMBER"
+                },
+                {
+                    "type": "number",
+                    "value": "1400073805",
+                    "array": false,
+                    "description": "Uses the first section name marker as the nested style delimiter.",
+                    "readonly": true,
+                    "name": "SECTION_MARKER"
+                },
+                {
+                    "type": "number",
+                    "value": "1380545132",
+                    "array": false,
+                    "description": "Repeat",
+                    "readonly": true,
+                    "name": "REPEAT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "NestedStyleDelimiters"
+}

@@ -1,0 +1,259 @@
+{
+    "description": "XML export preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the XMLExportPreference (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, displays exported XML content in a specified viewer.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "viewAfterExport",
+                    "readonly": false
+                },
+                {
+                    "description": "The preferred browser for viewing XML. Can return: File or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "preferredBrowser",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, exports XML content from the selected XML element. If false, exports the entire document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportFromSelected",
+                    "readonly": false
+                },
+                {
+                    "description": "The file encoding type for exporting XML content.",
+                    "type": "XMLFileEncoding",
+                    "array": false,
+                    "name": "fileEncoding",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes Ruby text in the exported XML content.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ruby",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, excludes the DTD from the exported XML content.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "excludeDtd",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, copies original images to the images subfolder.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "copyOriginalImages",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, copies optimized images to the images subfolder.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "copyOptimizedImages",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, copies formatted images to the images subfolder.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "copyFormattedImages",
+                    "readonly": false
+                },
+                {
+                    "description": "The file format to use for converted images. Note: Valid only when copy optimized images and/or copy formatted images is true.",
+                    "type": "ImageConversion",
+                    "array": false,
+                    "name": "imageConversion",
+                    "readonly": false
+                },
+                {
+                    "description": "The color palette for GIF conversion. Note: Not valid when image conversion is JPEG.",
+                    "type": "GIFOptionsPalette",
+                    "array": false,
+                    "name": "gifOptionsPalette",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, generates interlaced GIFs. Note: Not valid  when image conversion is JPEG.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "gifOptionsInterlaced",
+                    "readonly": false
+                },
+                {
+                    "description": "The quality of converted JPEG images. Note: Not valid when image conversion is GIF.",
+                    "type": "JPEGOptionsQuality",
+                    "array": false,
+                    "name": "jpegOptionsQuality",
+                    "readonly": false
+                },
+                {
+                    "description": "The formatting method for converted JPEG images. Note: Not valid  when image conversion is GIF.",
+                    "type": "JPEGOptionsFormat",
+                    "array": false,
+                    "name": "jpegOptionsFormat",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, transforms the XML using an XSLT file.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "allowTransform",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the XSLT file. Note: Valid when allow transform is true. Can return: File or XMLTransformFile enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "transformFilename",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, replaces special characters with character references.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "characterReferences",
+                    "readonly": false
+                },
+                {
+                    "type": "XMLExportUntaggedTablesFormat",
+                    "value": "XMLExportUntaggedTablesFormat.CALS",
+                    "array": false,
+                    "description": "The export format for untagged tables in tagged stories.",
+                    "readonly": false,
+                    "name": "exportUntaggedTablesFormat"
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the XMLExportPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "XMLExportPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "XMLExportPreference"
+}

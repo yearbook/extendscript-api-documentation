@@ -1,0 +1,219 @@
+{
+    "description": "A hyperlink destination that is a URL.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "If true, the hyperlink is hidden.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "hidden",
+                    "readonly": true
+                },
+                {
+                    "description": "The unique ID of the HyperlinkURLDestination.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the HyperlinkURLDestination (a Document).",
+                    "type": "Document",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the HyperlinkURLDestination within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the HyperlinkURLDestination.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "The URL the hyperlink points to.",
+                    "type": "string",
+                    "array": false,
+                    "name": "destinationURL",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes the HyperlinkURLDestination.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Jumps to the hyperlink destination.",
+                    "parameters": [],
+                    "name": "showDestination"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the HyperlinkURLDestination.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "HyperlinkURLDestination",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HyperlinkURLDestination"
+}

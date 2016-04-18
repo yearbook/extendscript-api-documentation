@@ -1,0 +1,31 @@
+{
+    "description": "Change conditions modes.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1919250519",
+                    "array": false,
+                    "description": "Change replaces applied conditions.",
+                    "readonly": true,
+                    "name": "REPLACE_WITH"
+                },
+                {
+                    "type": "number",
+                    "value": "1633969202",
+                    "array": false,
+                    "description": "Change adds to applied conditions.",
+                    "readonly": true,
+                    "name": "ADD_TO"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ChangeConditionsModes"
+}

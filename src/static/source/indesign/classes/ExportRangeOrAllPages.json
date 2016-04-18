@@ -1,0 +1,31 @@
+{
+    "description": "Page export options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1785742674",
+                    "array": false,
+                    "description": "Exports the page range specified in the page string property.",
+                    "readonly": true,
+                    "name": "EXPORT_RANGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1785742657",
+                    "array": false,
+                    "description": "Exports all pages.",
+                    "readonly": true,
+                    "name": "EXPORT_ALL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ExportRangeOrAllPages"
+}

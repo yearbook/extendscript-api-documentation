@@ -1,0 +1,95 @@
+{
+    "description": "View zoom style options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1987733107",
+                    "array": false,
+                    "description": "Fills the screen with the page; hides the toolbar, command bar, menu bar, and window controls.",
+                    "readonly": true,
+                    "name": "FULL_SCREEN"
+                },
+                {
+                    "type": "number",
+                    "value": "2053990766",
+                    "array": false,
+                    "description": "Magnifies the view to the next preset percentage.",
+                    "readonly": true,
+                    "name": "ZOOM_IN"
+                },
+                {
+                    "type": "number",
+                    "value": "2054124916",
+                    "array": false,
+                    "description": "Reduces the view to the previous preset percentage.",
+                    "readonly": true,
+                    "name": "ZOOM_OUT"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534832",
+                    "array": false,
+                    "description": "Fits the entire page in the window.",
+                    "readonly": true,
+                    "name": "FIT_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "2053206906",
+                    "array": false,
+                    "description": "Displays the page at 100% magnification.",
+                    "readonly": true,
+                    "name": "ACTUAL_SIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437335",
+                    "array": false,
+                    "description": "Fits the page to the width of the window; may obscure the lower portion of the page.",
+                    "readonly": true,
+                    "name": "FIT_WIDTH"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437334",
+                    "array": false,
+                    "description": "Fits the the text area of the page to the window width; obscures page margins and may obscure the lower portion of the page.",
+                    "readonly": true,
+                    "name": "FIT_VISIBLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1987736432",
+                    "array": false,
+                    "description": "Displays one page in the document pane at a time.",
+                    "readonly": true,
+                    "name": "SINGLE_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1987735395",
+                    "array": false,
+                    "description": "Arranges the pages in a continuous vertical column that is one page wide.",
+                    "readonly": true,
+                    "name": "ONE_COLUMN"
+                },
+                {
+                    "type": "number",
+                    "value": "1987736675",
+                    "array": false,
+                    "description": "Arranges the pages side by side in a continuous vertical column that is two pages wide.",
+                    "readonly": true,
+                    "name": "TWO_COLUMN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ViewZoomStyle"
+}

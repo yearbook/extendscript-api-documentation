@@ -1,22 +1,14 @@
 # annoying Mac files
 *.DS_Store
 
-# node modules and vim swap files
-node_modules/
+# vim swap files
 *.swp
+*.swo
 
-# sorry, we probably shouldn't have the source XML here,
-# you'll need to copy that here yourself
-xml/*.xml
+/node_modules/
+/public/
+/xml/json/
 
-# don't include any built docs either because it'll make the repo messy
-docs/source/
+# sorry, we probably shouldn't have the source XML here
+/xml/source/*.xml
 
-# compiled docs
-docs/**/*.html
-docs/**/*.css
-docs/js/compiled.js
-html/
-
-# compiled library
-lib/

@@ -1,0 +1,39 @@
+{
+    "description": "The location of the binding spine in a spread.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1919379572",
+                    "array": false,
+                    "description": "Moves the page to the right side of the spread's binding spine.",
+                    "readonly": true,
+                    "name": "RIGHT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1818584692",
+                    "array": false,
+                    "description": "Moves the page to the left side of the spread's binding spine.",
+                    "readonly": true,
+                    "name": "LEFT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses the default binding side.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BindingOptions"
+}

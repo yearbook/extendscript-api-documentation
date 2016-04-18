@@ -1,0 +1,39 @@
+{
+    "description": "Condition indicator mode options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1698908531",
+                    "array": false,
+                    "description": "Condition indicators show only.",
+                    "readonly": true,
+                    "name": "SHOW_INDICATORS"
+                },
+                {
+                    "type": "number",
+                    "value": "1698908528",
+                    "array": false,
+                    "description": "Conditions indicators show and print.",
+                    "readonly": true,
+                    "name": "SHOW_AND_PRINT_INDICATORS"
+                },
+                {
+                    "type": "number",
+                    "value": "1698908520",
+                    "array": false,
+                    "description": "Conditions indicators hide.",
+                    "readonly": true,
+                    "name": "HIDE_INDICATORS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ConditionIndicatorMode"
+}

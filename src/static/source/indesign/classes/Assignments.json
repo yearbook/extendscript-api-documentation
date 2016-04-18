@@ -1,0 +1,221 @@
+{
+    "description": "A collection of assignments.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new assignment.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The full path name of the new assignment.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "filePath",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new Assignment (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the Assignment.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment with the specified index or name.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment with the specified name.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment with the specified ID.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignments within the specified range.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The Assignment, index, or name at the beginning of the range. Can accept: Assignment, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The Assignment, index, or name at the end of the range. Can accept: Assignment, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment with the index previous to the specified index.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The index of the Assignment that follows the desired Assignment.",
+                            "type": "Assignment",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment whose index follows the specified Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The Assignment whose index comes before the desired Assignment.",
+                            "type": "Assignment",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every Assignment in the collection.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Assignment.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Assignment with the specified index.",
+                    "type": "Assignment",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Assignments"
+}

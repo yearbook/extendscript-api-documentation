@@ -1,0 +1,87 @@
+{
+    "description": "Text alignment options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1818584692",
+                    "array": false,
+                    "description": "Left aligns the text.",
+                    "readonly": true,
+                    "name": "LEFT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1667591796",
+                    "array": false,
+                    "description": "Center aligns the text.",
+                    "readonly": true,
+                    "name": "CENTER_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1919379572",
+                    "array": false,
+                    "description": "Right aligns the text.",
+                    "readonly": true,
+                    "name": "RIGHT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1818915700",
+                    "array": false,
+                    "description": "Justifies the text and left aligns the last line in the paragraph.",
+                    "readonly": true,
+                    "name": "LEFT_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1919578996",
+                    "array": false,
+                    "description": "Justifies the text and right aligns the last line in the paragraph.",
+                    "readonly": true,
+                    "name": "RIGHT_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1667920756",
+                    "array": false,
+                    "description": "Justifies text text and center aligns the last line in the paragraph.",
+                    "readonly": true,
+                    "name": "CENTER_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1718971500",
+                    "array": false,
+                    "description": "Justifies the text, including the last line in the paragraph.",
+                    "readonly": true,
+                    "name": "FULLY_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1630691955",
+                    "array": false,
+                    "description": "Aligns text to the binding spine of the page or spread.",
+                    "readonly": true,
+                    "name": "TO_BINDING_SIDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1633772147",
+                    "array": false,
+                    "description": "Aligns text to the side opposite the binding spine of the page.",
+                    "readonly": true,
+                    "name": "AWAY_FROM_BINDING_SIDE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Justification"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "End cap types.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1650680176",
+                    "array": false,
+                    "description": "A squared end that stops at the path's endpoint.",
+                    "readonly": true,
+                    "name": "BUTT_END_CAP"
+                },
+                {
+                    "type": "number",
+                    "value": "1919115632",
+                    "array": false,
+                    "description": "A semicircular end that extends beyond the endpoint by half the stroke-width.",
+                    "readonly": true,
+                    "name": "ROUND_END_CAP"
+                },
+                {
+                    "type": "number",
+                    "value": "1886020464",
+                    "array": false,
+                    "description": "A squared end that extends beyond the endpoint by half the stroke-width.",
+                    "readonly": true,
+                    "name": "PROJECTING_END_CAP"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "EndCap"
+}

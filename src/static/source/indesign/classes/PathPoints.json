@@ -1,0 +1,169 @@
+{
+    "description": "A collection of path points.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new PathPoint.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new PathPoint (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the PathPoint.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PathPoint with the specified index or name.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PathPoints within the specified range.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "The PathPoint, index, or name at the beginning of the range. Can accept: PathPoint, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The PathPoint, index, or name at the end of the range. Can accept: PathPoint, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PathPoint with the index previous to the specified index.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "The index of the PathPoint that follows the desired PathPoint.",
+                            "type": "PathPoint",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PathPoint whose index follows the specified PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "The PathPoint whose index comes before the desired PathPoint.",
+                            "type": "PathPoint",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every PathPoint in the collection.",
+                    "type": "PathPoint",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PathPoint.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PathPoint with the specified index.",
+                    "type": "PathPoint",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PathPoints"
+}

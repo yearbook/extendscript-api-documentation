@@ -1,0 +1,31 @@
+{
+    "description": "Page range options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1886547553",
+                    "array": false,
+                    "description": "Print or export all pages in the document.",
+                    "readonly": true,
+                    "name": "ALL_PAGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1886547571",
+                    "array": false,
+                    "description": "Export selected items in the document.",
+                    "readonly": true,
+                    "name": "SELECTED_ITEMS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageRange"
+}

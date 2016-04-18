@@ -1,0 +1,71 @@
+{
+    "description": "Paragraph justification.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1886020709",
+                    "array": false,
+                    "description": "Default justification",
+                    "readonly": true,
+                    "name": "DEFAULT_JUSTIFICATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886019954",
+                    "array": false,
+                    "description": "Arabic justification",
+                    "readonly": true,
+                    "name": "ARABIC_JUSTIFICATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886023265",
+                    "array": false,
+                    "description": "Naskh justification",
+                    "readonly": true,
+                    "name": "NASKH_JUSTIFICATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886023284",
+                    "array": false,
+                    "description": "Kashidas without Stretched Connections.",
+                    "readonly": true,
+                    "name": "NASKH_TATWEEL_JUSTIFICATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886023275",
+                    "array": false,
+                    "description": "Kashidas. Use naskh justification if you want to also use Justifcation Alternates.",
+                    "readonly": true,
+                    "name": "NASKH_KASHIDA_JUSTIFICATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886021236",
+                    "array": false,
+                    "description": "Fractional Kashidas without Stretched Connections.",
+                    "readonly": true,
+                    "name": "NASKH_TATWEEL_JUSTIFICATION_FRAC"
+                },
+                {
+                    "type": "number",
+                    "value": "1886021227",
+                    "array": false,
+                    "description": "Fractional Kashidas. Use naskh justification if you want to also use Justifcation Alternates.",
+                    "readonly": true,
+                    "name": "NASKH_KASHIDA_JUSTIFICATION_FRAC"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ParagraphJustificationOptions"
+}

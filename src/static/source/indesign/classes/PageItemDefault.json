@@ -1,0 +1,419 @@
+{
+    "description": "Default page item formatting properties.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Transparency settings.",
+                    "type": "TransparencySetting",
+                    "array": false,
+                    "name": "transparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the stroke.",
+                    "type": "StrokeTransparencySetting",
+                    "array": false,
+                    "name": "strokeTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the fill applied to the PageItemDefault.",
+                    "type": "FillTransparencySetting",
+                    "array": false,
+                    "name": "fillTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the content of the PageItemDefault.",
+                    "type": "ContentTransparencySetting",
+                    "array": false,
+                    "name": "contentTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the PageItemDefault (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The shape to be applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes.Note: corner option differs from end join in which you can set a radius for a corner option, whereas the rounded or beveled effect of an end join depends on the stroke weight.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "topLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the top right corner of rectangular shapes",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "topRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom left corner of rectangular shapes.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "bottomLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom right corner of rectangular shapes.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "bottomRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "topLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top right corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "topRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom left corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bottomLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom right corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bottomRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The default graphic object style applied to the PageItemDefault. Can also accept: String.",
+                    "type": "ObjectStyle",
+                    "array": false,
+                    "name": "appliedGraphicObjectStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The default text object style applied to the PageItemDefault. Can also accept: String.",
+                    "type": "ObjectStyle",
+                    "array": false,
+                    "name": "appliedTextObjectStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The default frame grid object style applied to the PageItemDefault. Can also accept: String.",
+                    "type": "ObjectStyle",
+                    "array": false,
+                    "name": "appliedGridObjectStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the fill of the PageItemDefault. . Can also accept: String.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "fillColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in the PageItemDefault's fill color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "fillTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The weight (in points) to apply to the PageItemDefault's stroke.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "strokeWeight",
+                    "readonly": false
+                },
+                {
+                    "type": "number",
+                    "value": "4",
+                    "array": false,
+                    "description": "The limit of the ratio of stroke width to miter length before a miter (pointed) join becomes a bevel (squared-off) join.",
+                    "readonly": false,
+                    "name": "miterLimit"
+                },
+                {
+                    "description": "The end shape of an open path.",
+                    "type": "EndCap",
+                    "array": false,
+                    "name": "endCap",
+                    "readonly": false
+                },
+                {
+                    "description": "The corner join applied to the PageItemDefault.",
+                    "type": "EndJoin",
+                    "array": false,
+                    "name": "endJoin",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the stroke style to apply. Can also accept: String.",
+                    "type": "StrokeStyle",
+                    "array": false,
+                    "name": "strokeType",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the start of the path.",
+                    "type": "ArrowHead",
+                    "array": false,
+                    "name": "leftLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the end of the path.",
+                    "type": "ArrowHead",
+                    "array": false,
+                    "name": "rightLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the PageItemDefault. Can also accept: String.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "strokeColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in object's stroke color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "strokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the fill of the PageItemDefault. (Range: -180 to 180)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gradientFillAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the stroke of the PageItemDefault. (Range: -180 to 180)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gradientStrokeAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the PageItemDefault's stroke color overprints any underlying objects. If false, the stroke color knocks out the  underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the PageItemDefault's fill color overprints any underlying objects. If false, the fill color knocks out the underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the gap of a dashed, dotted, or striped stroke. For information, see stroke type.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "gapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint as a percentage of the gap color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gap color overprints any underlying colors. If false, the gap color knocks out the underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintGap",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke alignment applied to the PageItemDefault.",
+                    "type": "StrokeAlignment",
+                    "array": false,
+                    "name": "strokeAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the PageItemDefault does not print.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "nonprinting",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Applies the specified object style.",
+                    "parameters": [
+                        {
+                            "description": "The object style to apply.",
+                            "type": "ObjectStyle",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "clearingOverrides",
+                            "optional": true,
+                            "description": "If true, clears the PageItemDefault's existing attributes before applying the style. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "clearingOverridesThroughRootObjectStyle",
+                            "optional": true,
+                            "description": "If true, clears attributes and formatting applied to the PageItemDefault that are not defined in the object style. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "applyObjectStyle"
+                },
+                {
+                    "description": "Clear overrides for object style",
+                    "parameters": [],
+                    "name": "clearObjectStyleOverrides"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PageItemDefault.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "PageItemDefault",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PageItemDefault"
+}

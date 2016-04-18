@@ -1,0 +1,223 @@
+{
+    "description": "Clipping path settings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "A list of the clipping paths stored in the graphic.",
+                    "type": "string",
+                    "array": true,
+                    "name": "photoshopPathNames",
+                    "readonly": true
+                },
+                {
+                    "description": "A list of the alpha channels stored in the graphic.",
+                    "type": "string",
+                    "array": true,
+                    "name": "alphaChannelPathNames",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the ClippingPathSettings (a Image, EPS, WMF, PICT, PDF or ImportedPage).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of paths.",
+                    "type": "Paths",
+                    "array": false,
+                    "name": "paths",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The clipping path type.",
+                    "type": "ClippingPathType",
+                    "array": false,
+                    "name": "clippingType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, inverts the clipping path.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "invertPath",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, creates interior clipping paths within the surrounding clipping path. Note: Valid only when clipping type is alpha channel or detect edges.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeInsideEdges",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, truncates the clipping path at the edge of the frame containing the graphic. Note: Valid only when clipping type is alpha channel or detect edges.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "restrictToFrame",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses the high-resolution version of the graphic to create the clipping path. If false, calculates the clipping path based on screen-display resolution. Note: Valid only when clipping type is detect edges.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "useHighResolutionImage",
+                    "readonly": false
+                },
+                {
+                    "description": "The lowest value (darkest) pixel to allow in the image. All pixels in the image whose values are greater than (lighter than) the threshold value are clipped (obscured). (Range: 0 to 255) Note: Valid only when clipping type is detect edges or alpha channel.",
+                    "type": "number",
+                    "array": false,
+                    "name": "threshold",
+                    "readonly": false
+                },
+                {
+                    "description": "Specifies how similar a pixel's intensity value can be to the threshold value before the pixel is obscured by the clipping path. (Range: 0 to 10) Note: Valid only when clipping type is detect edges or alpha channel.",
+                    "type": "number",
+                    "array": false,
+                    "name": "tolerance",
+                    "readonly": false
+                },
+                {
+                    "description": "Shrinks the area enclosed by the clipping path by the specified amount. (Range depends on the unit. For points: -10000 to 10000; picas: -833p4 to 833p4; inches: -138.8889 to 138.8889; mm: -3527.778 to 3527.778; cm: -352.7778 to 352.7778; ciceros: -781c11.889 to 781c11.889)",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "insetFrame",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the Photoshop path or alpha channel to use as a clipping path.",
+                    "type": "string",
+                    "array": false,
+                    "name": "appliedPathName",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Converts the clipping path to a frame.",
+                    "type": "PageItem",
+                    "parameters": [],
+                    "name": "convertToFrame",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the ClippingPathSettings.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "ClippingPathSettings",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "ClippingPathSettings"
+}

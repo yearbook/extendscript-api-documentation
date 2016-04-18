@@ -1,0 +1,63 @@
+{
+    "description": "OpenType positional form options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "None.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1634756205",
+                    "array": false,
+                    "description": "Calculated forms.",
+                    "readonly": true,
+                    "name": "CALCULATE"
+                },
+                {
+                    "type": "number",
+                    "value": "1768843636",
+                    "array": false,
+                    "description": "Initial form.",
+                    "readonly": true,
+                    "name": "INITIAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1835361385",
+                    "array": false,
+                    "description": "Medial form.",
+                    "readonly": true,
+                    "name": "MEDIAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1718185569",
+                    "array": false,
+                    "description": "Final form.",
+                    "readonly": true,
+                    "name": "FINAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1769172844",
+                    "array": false,
+                    "description": "Isolated form.",
+                    "readonly": true,
+                    "name": "ISOLATED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PositionalForms"
+}

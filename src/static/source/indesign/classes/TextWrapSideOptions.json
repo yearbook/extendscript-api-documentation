@@ -1,0 +1,63 @@
+{
+    "description": "Text wrap side options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1953981043",
+                    "array": false,
+                    "description": "Both sides text wrap.",
+                    "readonly": true,
+                    "name": "BOTH_SIDES"
+                },
+                {
+                    "type": "number",
+                    "value": "1953983603",
+                    "array": false,
+                    "description": "Left side text wrap.",
+                    "readonly": true,
+                    "name": "LEFT_SIDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953985139",
+                    "array": false,
+                    "description": "Right side text wrap.",
+                    "readonly": true,
+                    "name": "RIGHT_SIDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953985651",
+                    "array": false,
+                    "description": "Binding side text wrap.",
+                    "readonly": true,
+                    "name": "SIDE_TOWARDS_SPINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953980787",
+                    "array": false,
+                    "description": "Away from binding side text wrap.",
+                    "readonly": true,
+                    "name": "SIDE_AWAY_FROM_SPINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953975411",
+                    "array": false,
+                    "description": "Largest side text wrap.",
+                    "readonly": true,
+                    "name": "LARGEST_AREA"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextWrapSideOptions"
+}

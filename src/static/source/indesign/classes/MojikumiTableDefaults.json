@@ -1,0 +1,151 @@
+{
+    "description": "Mojikumi table options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1851876449",
+                    "array": false,
+                    "description": "Turns off mojikumi.",
+                    "readonly": true,
+                    "name": "NOTHING"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572593",
+                    "array": false,
+                    "description": "Uses half-width spacing for all characters.",
+                    "readonly": true,
+                    "name": "LINE_END_ALL_ONE_HALF_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572594",
+                    "array": false,
+                    "description": "Indents lines one space and uses line end uke one half space.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_UKE_ONE_HALF_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572595",
+                    "array": false,
+                    "description": "Indents lines one full or half space and uses line end uke one half space.",
+                    "readonly": true,
+                    "name": "ONE_OR_ONE_HALF_EM_INDENT_LINE_END_UKE_ONE_HALF_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572596",
+                    "array": false,
+                    "description": "Uses full-witdh spacing for all characters except the last character in the line, which uses either full- or half-width spacing.",
+                    "readonly": true,
+                    "name": "ONE_OR_ONE_HALF_EM_INDENT_LINE_END_ALL_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572597",
+                    "array": false,
+                    "description": "Indents lines one full space and uses full-width spacing for all characters.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_ALL_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572598",
+                    "array": false,
+                    "description": "Indents lines one full space and uses no float for all characters.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_ALL_NO_FLOAT_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572599",
+                    "array": false,
+                    "description": "Indents lines one full space and uses line end uke no float.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_UKE_NO_FLOAT_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572600",
+                    "array": false,
+                    "description": "Indents lines one half space or one full space and uses line end uke no float.",
+                    "readonly": true,
+                    "name": "ONE_OR_ONE_HALF_EM_INDENT_LINE_END_UKE_NO_FLOAT_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572601",
+                    "array": false,
+                    "description": "Indents lines one full space and uses half-width spacing for all characters.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_ALL_ONE_HALF_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572848",
+                    "array": false,
+                    "description": "Uses full-width spacing for all characters.",
+                    "readonly": true,
+                    "name": "LINE_END_ALL_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572849",
+                    "array": false,
+                    "description": "Uses line end uke no float.",
+                    "readonly": true,
+                    "name": "LINE_END_UKE_NO_FLOAT_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572850",
+                    "array": false,
+                    "description": "Indents lines one or one-half space and uses full-width spacing for punctuation and for the last character in the line.",
+                    "readonly": true,
+                    "name": "ONE_OR_ONE_HALF_EM_INDENT_LINE_END_PERIOD_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572851",
+                    "array": false,
+                    "description": "Indents lines one full space and uses full-width spacing for punctuation and for the last character in the line.",
+                    "readonly": true,
+                    "name": "ONE_EM_INDENT_LINE_END_PERIOD_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572852",
+                    "array": false,
+                    "description": "Uses full-width spacing for punctuation.",
+                    "readonly": true,
+                    "name": "LINE_END_PERIOD_ONE_EM_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572853",
+                    "array": false,
+                    "description": "Uses mojikumi tsume and aki optimized for Traditional Chinese centered punctuation glyphs.",
+                    "readonly": true,
+                    "name": "TRAD_CHINESE_DEFAULT"
+                },
+                {
+                    "type": "number",
+                    "value": "1246572854",
+                    "array": false,
+                    "description": "Uses mojikumi tsume and aki optimized for Simplified Chinese punctuation glyphs.",
+                    "readonly": true,
+                    "name": "SIMP_CHINESE_DEFAULT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "MojikumiTableDefaults"
+}

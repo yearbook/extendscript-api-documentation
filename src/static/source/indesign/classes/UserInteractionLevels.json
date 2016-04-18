@@ -1,0 +1,39 @@
+{
+    "description": "User interaction level options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699640946",
+                    "array": false,
+                    "description": "The script does not display any dialogs or alerts.",
+                    "readonly": true,
+                    "name": "NEVER_INTERACT"
+                },
+                {
+                    "type": "number",
+                    "value": "1699311169",
+                    "array": false,
+                    "description": "The script displays all dialogs and alerts.",
+                    "readonly": true,
+                    "name": "INTERACT_WITH_ALL"
+                },
+                {
+                    "type": "number",
+                    "value": "1699311170",
+                    "array": false,
+                    "description": "Displays alerts but not dialogs.",
+                    "readonly": true,
+                    "name": "INTERACT_WITH_ALERTS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "UserInteractionLevels"
+}

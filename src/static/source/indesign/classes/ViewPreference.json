@@ -1,0 +1,237 @@
+{
+    "description": "View preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the ViewPreference (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The number of points per inch, typically 72. (Range: 60 to 80)",
+                    "type": "number",
+                    "array": false,
+                    "name": "pointsPerInch",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance (in points) between major tick marks on the horizontal ruler. (Range: 4 to 256) Valid only when horizontal measurement units is custom.",
+                    "type": "number",
+                    "array": false,
+                    "name": "horizontalCustomPoints",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance (in points) between major tick marks on the vertical ruler. (Range: 4 to 256) Valid only when vertical measurement units is custom.",
+                    "type": "number",
+                    "array": false,
+                    "name": "verticalCustomPoints",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement unit for stroke measurements.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "strokeMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "The range (in pixels) within which an object snaps to guides. (Range: 1 to 36) Note: Snapping occurs only when guides are shown.",
+                    "type": "number",
+                    "array": false,
+                    "name": "guideSnaptoZone",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance to move a specified object when an arrow key is pressed. (Range depends on the measurement unit. For points: 0.001 to 100; picas: 0p0.001 to 8p4; mm: 0 to 35.278; cm: 0 to 3.5278; inches: 0 to 1.3889; ciceros: 0c0.001 to 7c9.839)",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "cursorKeyIncrement",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement unit for the horizontal ruler and other horizontally-measured spaces such as grid columns, horizontal offsets, column gutters, or others.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "horizontalMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement unit for the vertical ruler and other vertically-measured spaces such as grid rows, vertical offsets, row heights, or others.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "verticalMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "The default zero point at the intersection of the vertical and horizontal rulers and the scope of the horizontal ruler.",
+                    "type": "RulerOrigin",
+                    "array": false,
+                    "name": "rulerOrigin",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, displays the horizontal and vertical rulers.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showRulers",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, displays borders of unselected frames and the diagonal lines in empty unselected frames.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showFrameEdges",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement units for typography.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "typographicMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement unit for text size measurements.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "textSizeMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "The measurement unit for the print dialog.",
+                    "type": "MeasurementUnits",
+                    "array": false,
+                    "name": "printDialogMeasurementUnits",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, notes are displayed.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showNotes",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the ViewPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "ViewPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "ViewPreference"
+}

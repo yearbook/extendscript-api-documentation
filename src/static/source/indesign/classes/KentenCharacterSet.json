@@ -1,0 +1,55 @@
+{
+    "description": "Kenten character set options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1248028777",
+                    "array": false,
+                    "description": "Character input.",
+                    "readonly": true,
+                    "name": "CHARACTER_INPUT"
+                },
+                {
+                    "type": "number",
+                    "value": "1249077875",
+                    "array": false,
+                    "description": "Shift JIS.",
+                    "readonly": true,
+                    "name": "SHIFT_JIS"
+                },
+                {
+                    "type": "number",
+                    "value": "1246382419",
+                    "array": false,
+                    "description": "JIS.",
+                    "readonly": true,
+                    "name": "JIS"
+                },
+                {
+                    "type": "number",
+                    "value": "1248556404",
+                    "array": false,
+                    "description": "Kuten.",
+                    "readonly": true,
+                    "name": "KUTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1249209961",
+                    "array": false,
+                    "description": "Unicode.",
+                    "readonly": true,
+                    "name": "UNICODE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "KentenCharacterSet"
+}

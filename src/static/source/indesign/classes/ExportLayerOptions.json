@@ -1,0 +1,39 @@
+{
+    "description": "Export layer options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1702388076",
+                    "array": false,
+                    "description": "Export all layers",
+                    "readonly": true,
+                    "name": "EXPORT_ALL_LAYERS"
+                },
+                {
+                    "type": "number",
+                    "value": "1702393452",
+                    "array": false,
+                    "description": "Export visible layers",
+                    "readonly": true,
+                    "name": "EXPORT_VISIBLE_LAYERS"
+                },
+                {
+                    "type": "number",
+                    "value": "1702260844",
+                    "array": false,
+                    "description": "Export visible and printable layers",
+                    "readonly": true,
+                    "name": "EXPORT_VISIBLE_PRINTABLE_LAYERS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ExportLayerOptions"
+}

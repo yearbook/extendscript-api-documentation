@@ -1,0 +1,79 @@
+{
+    "description": "Instructional text options for cross reference.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1399800172",
+                    "array": false,
+                    "description": "Inserts 'See also' in front of the referenced topic if the topic has an associated page reference; inserts 'See' if the topic does not have a page reference.",
+                    "readonly": true,
+                    "name": "SEE_OR_ALSO_BRACKET"
+                },
+                {
+                    "type": "number",
+                    "value": "1701729125",
+                    "array": false,
+                    "description": "Inserts 'See' in front of the referenced topic.",
+                    "readonly": true,
+                    "name": "SEE"
+                },
+                {
+                    "type": "number",
+                    "value": "1399144812",
+                    "array": false,
+                    "description": "Inserts 'See also' in front of the referenced topic.",
+                    "readonly": true,
+                    "name": "SEE_ALSO"
+                },
+                {
+                    "type": "number",
+                    "value": "1397256814",
+                    "array": false,
+                    "description": "Inserts 'See herein' in front of the referenced topic.",
+                    "readonly": true,
+                    "name": "SEE_HEREIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1398884466",
+                    "array": false,
+                    "description": "Inserts 'See also herein' in front of the referenced topic.",
+                    "readonly": true,
+                    "name": "SEE_ALSO_HEREIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639875",
+                    "array": false,
+                    "description": "Inserts the specified string in front of the referenced topic.",
+                    "readonly": true,
+                    "name": "CUSTOM_CROSS_REFERENCE"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639906",
+                    "array": false,
+                    "description": "Inserts the specified string and the specified before cross reference separator in front of the referenced topic. If no before cross reference separator is specified, inserts a space.",
+                    "readonly": true,
+                    "name": "CUSTOM_CROSS_REFERENCE_BEFORE"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639905",
+                    "array": false,
+                    "description": "Inserts the specified following topic separator and the specified string after the referenced topic. If no following topic separator is specified, inserts a space.",
+                    "readonly": true,
+                    "name": "CUSTOM_CROSS_REFERENCE_AFTER"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CrossReferenceType"
+}

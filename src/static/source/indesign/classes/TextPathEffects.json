@@ -1,0 +1,55 @@
+{
+    "description": "Options for the alignment and appearance of type on a path.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1601201778",
+                    "array": false,
+                    "description": "The center of each character's baseline is parallel to the path's tangent. This is the default effect.",
+                    "readonly": true,
+                    "name": "RAINBOW_PATH_EFFECT"
+                },
+                {
+                    "type": "number",
+                    "value": "1601201779",
+                    "array": false,
+                    "description": "The text characters' vertical edges are perfectly vertical regardless of the path shape.",
+                    "readonly": true,
+                    "name": "SKEW_PATH_EFFECT"
+                },
+                {
+                    "type": "number",
+                    "value": "1601201715",
+                    "array": false,
+                    "description": "The text characters' horizontal edges are perfectly horizontal regardless of the path shape.",
+                    "readonly": true,
+                    "name": "RIBBON_PATH_EFFECT"
+                },
+                {
+                    "type": "number",
+                    "value": "1601205107",
+                    "array": false,
+                    "description": "The left edge of each character's baseline is on the path and no characters are rotated.",
+                    "readonly": true,
+                    "name": "STAIR_STEP_PATH_EFFECT"
+                },
+                {
+                    "type": "number",
+                    "value": "1601201767",
+                    "array": false,
+                    "description": "The center of each character's baseline is on the path while each vertical edge is in line with the path's center point.",
+                    "readonly": true,
+                    "name": "GRAVITY_PATH_EFFECT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextPathEffects"
+}

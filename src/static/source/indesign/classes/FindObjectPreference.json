@@ -1,0 +1,889 @@
+{
+    "description": "Find object preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Transparency settings. Can return: FindChangeTransparencySetting or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "transparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the stroke. Can return: FindChangeStrokeTransparencySetting or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the fill applied to the FindObjectPreference. Can return: FindChangeFillTransparencySetting or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fillTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the content of the FindObjectPreference. Can return: FindChangeContentTransparencySetting or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "contentTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the text wrap path has been explicitly modified by the user. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "userModifiedWrap",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the FindObjectPreference (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The direction of the story. Can return: StoryDirectionOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "storyDirection",
+                    "readonly": false
+                },
+                {
+                    "description": "The point in the referenced object relative to which to position the anchored object. Notes: Valid only when anchored position is custom. Can return: AnchorPoint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "positionReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, text wraps on the master spread apply to that spread only, and not to any pages the master spread has been applied to. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "applyToMasterPageOnly",
+                    "readonly": false
+                },
+                {
+                    "description": "Text wrap side options. Can return: TextWrapSideOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textWrapSide",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum space between text and the edges of the wrapped object. Specify four values in the format [top, left, bottom, right]. . Can return: Ordered array containing top:Unit, left:Unit, bottom:Unit, right:Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textWrapOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The text wrap mode. . Can return: TextWrapModes enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textWrapMode",
+                    "readonly": false
+                },
+                {
+                    "description": "The applied object style(s). Can return: String or NothingEnum enumerator. Can also accept: ObjectStyle.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "appliedObjectStyles",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the fill of the FindObjectPreference. . Can return: Swatch or NothingEnum enumerator. Can also accept: String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fillColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in the FindObjectPreference's fill color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fillTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the FindObjectPreference's fill color overprints any underlying objects. If false, the fill color knocks out the underlying colors. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The weight (in points) to apply to the FindObjectPreference's stroke. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeWeight",
+                    "readonly": false
+                },
+                {
+                    "type": "varies=any",
+                    "value": "4",
+                    "array": false,
+                    "description": "The limit of the ratio of stroke width to miter length before a miter (pointed) join becomes a bevel (squared-off) join. Can return: Real (1 - 500) or NothingEnum enumerator.",
+                    "readonly": false,
+                    "name": "miterLimit"
+                },
+                {
+                    "description": "The end shape of an open path. Can return: EndCap enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "endCap",
+                    "readonly": false
+                },
+                {
+                    "description": "The corner join applied to the FindObjectPreference. Can return: EndJoin enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "endJoin",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the stroke style to apply. Can return: StrokeStyle or NothingEnum enumerator. Can also accept: String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeType",
+                    "readonly": false
+                },
+                {
+                    "description": "The corner adjustment applied to the FindObjectPreference. Can return: StrokeCornerAdjustment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeCornerAdjustment",
+                    "readonly": false
+                },
+                {
+                    "description": "The dash and gap measurements that define the pattern of a custom dashed line. Define up to six values (in points) in the format [dash1, gap1, dash2, gap2, dash3, gap3]. Can return: Array of Units or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeDashAndGap",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the start of the path. . Can return: ArrowHead enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leftLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the end of the path. Can return: ArrowHead enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rightLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the FindObjectPreference. Can return: Swatch or NothingEnum enumerator. Can also accept: String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in object's stroke color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the FindObjectPreference's stroke color overprints any underlying objects. If false, the stroke color knocks out the  underlying colors. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the gap of a dashed, dotted, or striped stroke. For information, see stroke type. Can return: Swatch or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint as a percentage of the gap color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gap color overprints any underlying colors. If false, the gap color knocks out the underlying colors. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overprintGap",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke alignment applied to the FindObjectPreference. Can return: StrokeAlignment enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "strokeAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the FindObjectPreference does not print. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "nonprinting",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the fill of the FindObjectPreference. (Range: -180 to 180). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientFillAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the stroke of the FindObjectPreference. (Range: -180 to 180). Can return: Real or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gradientStrokeAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of columns in the text frame. Note: Depending on the value of use fixed column width, the number of columns can change automatically when the text frame size changes. Can return: Long Integer (1 - 40) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textColumnCount",
+                    "readonly": false
+                },
+                {
+                    "description": "The space between columns in the text frame. Can return: Unit (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textColumnGutter",
+                    "readonly": false
+                },
+                {
+                    "description": "The column width of the columns in the text frame. Can return: Unit (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textColumnFixedWidth",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, maintains column width when the text frame is resized. If false, causes columns to resize when the text frame is resized. Note: When true, resizing the frame can change the number of columns in the frame. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useFixedColumnWidth",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to offset text from the edges of the text frame, specified either as a single value applied uniformly to all sides of the text frame or as an array of 4 values in the format [top inset, left inset, bottom inset, right inset]. Can return: Unit (0 - 8640 points), Array of 4 Units (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "insetSpacing",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance between the baseline of the text and the top inset of the text frame or cell. Can return: FirstBaseline enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "firstBaselineOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum distance between the baseline of the text and the top inset of the text frame or cell. Can return: Unit (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "minimumFirstBaselineOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical alignment of the text content. . Can return: VerticalJustification enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "verticalJustification",
+                    "readonly": false
+                },
+                {
+                    "description": "The maximum amount of vertical space between two paragraphs. Note: Valid only when vertical justification is justified; the specified amount is applied in addition to the space before or space after values defined for the paragraph. Can return: Unit (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "verticalThreshold",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, ignores text wrap settings for drawn or placed objects in the text frame. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ignoreWrap",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses a custom baseline frame grid. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useCustomBaselineFrameGrid",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to offset the baseline grid. Can return: Unit (0 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "startingOffsetForBaselineFrameGrid",
+                    "readonly": false
+                },
+                {
+                    "description": "The location (top of page, top margin, top of frame, or frame inset) on which to base the custom baseline grid. Can return: BaselineFrameGridRelativeOption enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "baselineFrameGridRelativeOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance between grid lines. Can return: Unit (1 - 8640 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "baselineFrameGridIncrement",
+                    "readonly": false
+                },
+                {
+                    "description": "The grid line color, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color. Can return: Array of 3 Reals (0 - 255) or UIColors enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "baselineFrameGridColor",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, inverts the text wrap. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "inverse",
+                    "readonly": false
+                },
+                {
+                    "description": "The contour type. Can return: ContourOptionsTypes enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "contourType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, creates interior clipping paths within the surrounding clipping path. Note: Valid only when clipping type is alpha channel or detect edges. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "includeInsideEdges",
+                    "readonly": false
+                },
+                {
+                    "description": "The position of the anchored object relative to the anchor. Can return: AnchorPosition enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "anchoredPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the position of the anchored object is relative to the binding spine of the page or spread. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "spineRelative",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, prevents manual positioning of the anchored object. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "lockPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, pins the position of the anchored object within the text frame top and bottom. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pinPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "The point in the anchored object to position. Can return: AnchorPoint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "anchorPoint",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal reference point on the page. Valid only when anchored position is custom. Can return: AnchoredRelativeTo enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "horizontalReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical reference point on the page. Valid when anchored position is custom. Can return: VerticallyRelativeTo enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "verticalReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal (x) offset of the anchored object. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "anchorXoffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical (y) offset of the anchored object. Corresponds to the space after property for above line positioning. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "anchorYoffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The space above an above-line anchored object. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "anchorSpaceAbove",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, adjust the position of characters at the edges of the frame to provide a better appearance. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "opticalMarginAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The point size used as the basis for calculating optical margin alignment. (Range: 0.1 to 1296). Can return: Unit (0.1 - 1296 points) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "opticalMarginSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the left edge of a graphic. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "leftCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the top edge of a graphic. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "topCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the right edge of a graphic. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "rightCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the bottom edge of a graphic. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bottomCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The frame fitting option to apply to placed or pasted content if the frame is empty. Can be applied to a frame, object style, or document or to the application. Can return: EmptyFrameFittingOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fittingOnEmptyFrame",
+                    "readonly": false
+                },
+                {
+                    "description": "The point with which to align the image empty when fitting in a frame. For information, see frame fitting options. Can return: AnchorPoint enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "fittingAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to be applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes.Note: corner option differs from end join in which you can set a radius for a corner option, whereas the rounded or beveled effect of an end join depends on the stroke weight. Can return: CornerOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "topLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the top right corner of rectangular shapes. Can return: CornerOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "topRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom left corner of rectangular shapes. Can return: CornerOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bottomLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom right corner of rectangular shapes. Can return: CornerOptions enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bottomRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "topLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top right corner of rectangular shapes. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "topRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom left corner of rectangular shapes. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bottomLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom right corner of rectangular shapes. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "bottomRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "Auto-sizing type of text frame. Based on type, reference value is automatically adjusted. For example, for height only type, top-left reference point becomes top-center. Recommended to change auto-sizing type, after setting other auto-sizing attributes. Can return: AutoSizingTypeEnum enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "autoSizingType",
+                    "readonly": false
+                },
+                {
+                    "description": "The reference point for auto sizing of text frame. Reference point is automatically adjusted to the suitable value depending on the auto-sizing type value. As an example, top left reference point becomes top center for height only dimension. Can return: AutoSizingReferenceEnum enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "autoSizingReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, minimum height value is used during the auto-sizing of text frame. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useMinimumHeightForAutoSizing",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum height for auto-sizing of the text frame. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "minimumHeightForAutoSizing",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, minimum width value is used during the auto-sizing of text frame. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useMinimumWidthForAutoSizing",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum width for auto-sizing of the text frame. Can return: Unit or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "minimumWidthForAutoSizing",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, line-breaks are not introduced after auto sizing. . Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useNoLineBreaksForAutoSizing",
+                    "readonly": false
+                },
+                {
+                    "description": "The source type of alternate text. Can return: SourceType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "altTextSourceType",
+                    "readonly": false
+                },
+                {
+                    "description": "The source type of actual text. Can return: SourceType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "actualTextSourceType",
+                    "readonly": false
+                },
+                {
+                    "description": "The custom alternate text entered by the user. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "customAltText",
+                    "readonly": false
+                },
+                {
+                    "description": "The custom actual text entered by the user. Can return: String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "customActualText",
+                    "readonly": false
+                },
+                {
+                    "description": "The metadata property to use as source of alternate text. Can return: Ordered array containing namespacePrefix:String, propertyPath:String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "altMetadataProperty",
+                    "readonly": false
+                },
+                {
+                    "description": "The metadata property to use as source of actual text. Can return: Ordered array containing namespacePrefix:String, propertyPath:String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "actualMetadataProperty",
+                    "readonly": false
+                },
+                {
+                    "description": "The tag type of page item. Can return: TagType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "applyTagType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, custom image conversion is enabled for object. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "customImageConversion",
+                    "readonly": false
+                },
+                {
+                    "description": "Allows user to select the image format for conversion. Can return: ImageFormat enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imageConversionType",
+                    "readonly": false
+                },
+                {
+                    "description": "Allows user to select the image size option for conversion. Can return: ImageSizeOption enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "customImageSizeOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The export resolution. Can return: ImageResolution enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imageExportResolution",
+                    "readonly": false
+                },
+                {
+                    "description": "The color palette for GIF conversion. Note: Not valid when image conversion is JPEG. . Can return: GIFOptionsPalette enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gifOptionsPalette",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, generates interlaced GIFs. Note: Not valid  when image conversion is JPEG. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gifOptionsInterlaced",
+                    "readonly": false
+                },
+                {
+                    "description": "The quality of converted JPEG images. Note: Not valid when image conversion is GIF. . Can return: JPEGOptionsQuality enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "jpegOptionsQuality",
+                    "readonly": false
+                },
+                {
+                    "description": "The formatting method for converted JPEG images. Note: Not valid  when image conversion is GIF. Can return: JPEGOptionsFormat enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "jpegOptionsFormat",
+                    "readonly": false
+                },
+                {
+                    "description": "Alignment applied to images. Can return: ImageAlignmentType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imageAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "Space Before applied to images. Can return: Real (0 - 8640) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imageSpaceBefore",
+                    "readonly": false
+                },
+                {
+                    "description": "Space After applied to images. Can return: Real (0 - 8640) or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imageSpaceAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, image page break settings will be used in objects. Can return: Boolean or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "useImagePageBreak",
+                    "readonly": false
+                },
+                {
+                    "description": "Image page break settings to be used with objects. Can return: ImagePageBreakType enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "imagePageBreak",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Provides the alternate text for the object",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "altText",
+                    "array": false
+                },
+                {
+                    "description": "Provides the actual text for the object",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "actualText",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the FindObjectPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "FindObjectPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "FindObjectPreference"
+}

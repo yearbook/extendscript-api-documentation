@@ -1,0 +1,198 @@
+{
+    "description": "A collection of XML elements.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the XMLElement.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Creates a new XML element.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The XML tag used to identify the element. Can accept: String or XMLTag.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "markupTag",
+                            "array": false
+                        },
+                        {
+                            "description": "The content to be marked up. Can accept: Text, Story, PageItem, Movie, Sound, Graphic, Table or Cell. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "xmlContent",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new XMLElement (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElement with the specified index or name.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElement with the specified ID.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElements within the specified range.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The XMLElement, index, or name at the beginning of the range. Can accept: XMLElement, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The XMLElement, index, or name at the end of the range. Can accept: XMLElement, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElement with the index previous to the specified index.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The index of the XMLElement that follows the desired XMLElement.",
+                            "type": "XMLElement",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElement whose index follows the specified XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The XMLElement whose index comes before the desired XMLElement.",
+                            "type": "XMLElement",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every XMLElement in the collection.",
+                    "type": "XMLElement",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the XMLElement.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the XMLElement with the specified index.",
+                    "type": "XMLElement",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "XMLElements"
+}

@@ -1,0 +1,181 @@
+{
+    "description": "Options for fitting placed or pasted content in a frame.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the FrameFittingOption (a ObjectStyle, Oval, Rectangle, Polygon, Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the last saved fitting options will be applied to the contents of a frame when it is resized.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "autoFit",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the left edge of a graphic.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "leftCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the top edge of a graphic.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "topCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the right edge of a graphic.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "rightCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount in measurement units to crop the bottom edge of a graphic.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bottomCrop",
+                    "readonly": false
+                },
+                {
+                    "description": "The frame fitting option to apply to placed or pasted content if the frame is empty. Can be applied to a frame, object style, or document or to the application.",
+                    "type": "EmptyFrameFittingOptions",
+                    "array": false,
+                    "name": "fittingOnEmptyFrame",
+                    "readonly": false
+                },
+                {
+                    "description": "The point with which to align the image empty when fitting in a frame. For information, see frame fitting options.",
+                    "type": "AnchorPoint",
+                    "array": false,
+                    "name": "fittingAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the FrameFittingOption.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "FrameFittingOption",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "FrameFittingOption"
+}

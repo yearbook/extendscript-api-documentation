@@ -1,0 +1,184 @@
+{
+    "description": "A collection of real number editboxes.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new RealEditbox.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new RealEditbox (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the RealEditbox.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditbox with the specified index or name.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditbox with the specified ID.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditboxes within the specified range.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The RealEditbox, index, or name at the beginning of the range. Can accept: RealEditbox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The RealEditbox, index, or name at the end of the range. Can accept: RealEditbox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditbox with the index previous to the specified index.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index of the RealEditbox that follows the desired RealEditbox.",
+                            "type": "RealEditbox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditbox whose index follows the specified RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The RealEditbox whose index comes before the desired RealEditbox.",
+                            "type": "RealEditbox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every RealEditbox in the collection.",
+                    "type": "RealEditbox",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the RealEditbox.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the RealEditbox with the specified index.",
+                    "type": "RealEditbox",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "RealEditboxes"
+}

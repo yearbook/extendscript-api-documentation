@@ -1,0 +1,169 @@
+{
+    "description": "A collection of nested GREP styles.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new NestedGrepStyle.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new NestedGrepStyle (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the NestedGrepStyle.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedGrepStyle with the specified index or name.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedGrepStyles within the specified range.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "The NestedGrepStyle, index, or name at the beginning of the range. Can accept: NestedGrepStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The NestedGrepStyle, index, or name at the end of the range. Can accept: NestedGrepStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedGrepStyle with the index previous to the specified index.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "The index of the NestedGrepStyle that follows the desired NestedGrepStyle.",
+                            "type": "NestedGrepStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedGrepStyle whose index follows the specified NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "The NestedGrepStyle whose index comes before the desired NestedGrepStyle.",
+                            "type": "NestedGrepStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every NestedGrepStyle in the collection.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the NestedGrepStyle.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedGrepStyle with the specified index.",
+                    "type": "NestedGrepStyle",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "NestedGrepStyles"
+}

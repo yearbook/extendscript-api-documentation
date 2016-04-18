@@ -1,0 +1,31 @@
+{
+    "description": "Note color options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700091203",
+                    "array": false,
+                    "description": "Uses the color assigned to the user.",
+                    "readonly": true,
+                    "name": "USE_USER_COLOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1700089923",
+                    "array": false,
+                    "description": "Uses the note color.",
+                    "readonly": true,
+                    "name": "USE_NOTE_PREF_COLOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "NoteColorChoices"
+}

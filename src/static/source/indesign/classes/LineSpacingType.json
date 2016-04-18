@@ -1,0 +1,47 @@
+{
+    "description": "Line spacing type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1936282480",
+                    "array": false,
+                    "description": "Single space",
+                    "readonly": true,
+                    "name": "SINGLE_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1866549363",
+                    "array": false,
+                    "description": "One and half space",
+                    "readonly": true,
+                    "name": "ONE_AND_HALF_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1682068336",
+                    "array": false,
+                    "description": "Double space",
+                    "readonly": true,
+                    "name": "DOUBLE_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1951552368",
+                    "array": false,
+                    "description": "Triple space",
+                    "readonly": true,
+                    "name": "TRIPLE_SPACE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "LineSpacingType"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "options for viewing pages in Pages Panel",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1752396907",
+                    "array": false,
+                    "description": "Pages arranged in horizontal rows.",
+                    "readonly": true,
+                    "name": "HORIZONTALLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1987211127",
+                    "array": false,
+                    "description": "Pages arranged in a vertical column.",
+                    "readonly": true,
+                    "name": "VERTICALLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1987277931",
+                    "array": false,
+                    "description": "Pages arranged in vertical columns by alternate layout.",
+                    "readonly": true,
+                    "name": "BY_ALTERNATE_LAYOUT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageViewOptions"
+}

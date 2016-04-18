@@ -1,0 +1,63 @@
+{
+    "description": "Color output mode options for composites.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1668107349",
+                    "array": false,
+                    "description": "Sends a full-color version of the specified pages to the printer, preserving all color values in the original document. Note: Cannot simulate overprint when using this option.",
+                    "readonly": true,
+                    "name": "COMPOSITE_LEAVE_UNCHANGED"
+                },
+                {
+                    "type": "number",
+                    "value": "1668116583",
+                    "array": false,
+                    "description": "Sends grayscale versions of the specified pages to the printer.",
+                    "readonly": true,
+                    "name": "COMPOSITE_GRAY"
+                },
+                {
+                    "type": "number",
+                    "value": "1668108866",
+                    "array": false,
+                    "description": "Sends full-color versions of the specified pages to the printer.",
+                    "readonly": true,
+                    "name": "COMPOSITE_RGB"
+                },
+                {
+                    "type": "number",
+                    "value": "1668105035",
+                    "array": false,
+                    "description": "Sends full-color versions of the specified pages to the printer. Note: Available only for PostScript printers.",
+                    "readonly": true,
+                    "name": "COMPOSITE_CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1936027745",
+                    "array": false,
+                    "description": "Sends PostScript information for each of the required separations to the printer. Note: Available only for PostScript printers.",
+                    "readonly": true,
+                    "name": "SEPARATIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1919512691",
+                    "array": false,
+                    "description": "Allows the printer to create color separations. Note: Valid only with a PostScript raster image processing (RIP) device.",
+                    "readonly": true,
+                    "name": "INRIP_SEPARATIONS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ColorOutputModes"
+}

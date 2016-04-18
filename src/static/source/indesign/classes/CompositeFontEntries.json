@@ -1,0 +1,199 @@
+{
+    "description": "A collection of composite font entries.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new CompositeFontEntry.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new CompositeFontEntry (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the CompositeFontEntry.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry with the specified index or name.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry with the specified name.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry with the specified ID.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntries within the specified range.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The CompositeFontEntry, index, or name at the beginning of the range. Can accept: CompositeFontEntry, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The CompositeFontEntry, index, or name at the end of the range. Can accept: CompositeFontEntry, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry with the index previous to the specified index.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The index of the CompositeFontEntry that follows the desired CompositeFontEntry.",
+                            "type": "CompositeFontEntry",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry whose index follows the specified CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The CompositeFontEntry whose index comes before the desired CompositeFontEntry.",
+                            "type": "CompositeFontEntry",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every CompositeFontEntry in the collection.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the CompositeFontEntry.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CompositeFontEntry with the specified index.",
+                    "type": "CompositeFontEntry",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "CompositeFontEntries"
+}

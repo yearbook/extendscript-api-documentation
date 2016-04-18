@@ -1,0 +1,184 @@
+{
+    "description": "A collection of border panels.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new BorderPanel.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new BorderPanel (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the BorderPanel.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanel with the specified index or name.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanel with the specified ID.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanels within the specified range.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The BorderPanel, index, or name at the beginning of the range. Can accept: BorderPanel, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The BorderPanel, index, or name at the end of the range. Can accept: BorderPanel, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanel with the index previous to the specified index.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The index of the BorderPanel that follows the desired BorderPanel.",
+                            "type": "BorderPanel",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanel whose index follows the specified BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The BorderPanel whose index comes before the desired BorderPanel.",
+                            "type": "BorderPanel",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every BorderPanel in the collection.",
+                    "type": "BorderPanel",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the BorderPanel.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the BorderPanel with the specified index.",
+                    "type": "BorderPanel",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "BorderPanels"
+}

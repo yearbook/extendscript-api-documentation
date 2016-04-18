@@ -1,0 +1,169 @@
+{
+    "description": "A collection of story windows.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the StoryWindow.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindow with the specified index or name.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindow with the specified name.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindows within the specified range.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The StoryWindow, index, or name at the beginning of the range. Can accept: StoryWindow, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The StoryWindow, index, or name at the end of the range. Can accept: StoryWindow, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindow with the index previous to the specified index.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The index of the StoryWindow that follows the desired StoryWindow.",
+                            "type": "StoryWindow",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindow whose index follows the specified StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The StoryWindow whose index comes before the desired StoryWindow.",
+                            "type": "StoryWindow",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every StoryWindow in the collection.",
+                    "type": "StoryWindow",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the StoryWindow.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the StoryWindow with the specified index.",
+                    "type": "StoryWindow",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "StoryWindows"
+}

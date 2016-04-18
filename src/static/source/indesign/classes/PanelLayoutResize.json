@@ -1,0 +1,39 @@
+{
+    "description": "Palette layout resizing options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1886417010",
+                    "array": false,
+                    "description": "Resize panel areas proportionally.",
+                    "readonly": true,
+                    "name": "PROPORTIONAL_RESIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "1886414456",
+                    "array": false,
+                    "description": "Do not resize document pages panel area when resizing panel.",
+                    "readonly": true,
+                    "name": "PAGES_FIXED"
+                },
+                {
+                    "type": "number",
+                    "value": "1886416230",
+                    "array": false,
+                    "description": "Do not resize master pages panel area when resizing panel.",
+                    "readonly": true,
+                    "name": "MASTERS_FIXED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PanelLayoutResize"
+}

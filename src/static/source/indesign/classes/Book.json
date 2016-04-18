@@ -1,0 +1,650 @@
+{
+    "description": "A book.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Print preference settings.",
+                    "type": "PrintPreference",
+                    "array": false,
+                    "name": "printPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the Book.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": true
+                },
+                {
+                    "description": "The full path to the Book, including the name of the Book.",
+                    "type": "File",
+                    "array": false,
+                    "name": "fullName",
+                    "readonly": true
+                },
+                {
+                    "description": "The full path to the file.",
+                    "type": "File",
+                    "array": false,
+                    "name": "filePath",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the Book has been modified since it was last saved.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "modified",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the Book has been saved since it was created.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "saved",
+                    "readonly": true
+                },
+                {
+                    "description": "Preflight book option settings.",
+                    "type": "PreflightBookOption",
+                    "array": false,
+                    "name": "preflightBookOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "EPub export preference settings.",
+                    "type": "EPubExportPreference",
+                    "array": false,
+                    "name": "epubExportPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the Book (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the Book within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of book content objects.",
+                    "type": "BookContents",
+                    "array": false,
+                    "name": "bookContents",
+                    "readonly": true
+                },
+                {
+                    "description": "Current style source document. Can return: Document or BookContent.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "styleSourceDocument",
+                    "readonly": false
+                },
+                {
+                    "description": "Page numbering options for book content objects within the book.",
+                    "type": "RepaginateOption",
+                    "array": false,
+                    "name": "repaginationOption",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, inserts a blank page as necessary to fill in page number gaps caused by the odd or even specification set in the repagination option.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "insertBlankPage",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, automatically updates page numbers when pages in book content files are added, deleted, or rearranged.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "automaticPagination",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, automatically converts the book content object during repagination and synchronization.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "automaticDocumentConversion",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, merges identically named layers when exporting to PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "mergeIdenticalLayers",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize table of content styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeTableOfContentStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize text variables.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeTextVariable",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize table styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeTableStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize paragraph styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeParagraphStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize character styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeCharacterStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize trap styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeTrapStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize master pages.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeMasterPage",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize object styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeObjectStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize swatches.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeSwatch",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize cell styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeCellStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize bullets and numbering.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeBulletNumberingList",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, synchronize conditional text.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "synchronizeConditionalText",
+                    "readonly": false
+                },
+                {
+                    "description": "How to match styles with same name while synchronizing a book.",
+                    "type": "SmartMatchOptions",
+                    "array": false,
+                    "name": "smartMatchStyleGroups",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Prints the Book(s).",
+                    "parameters": [
+                        {
+                            "description": "Whether to invoke the print dialog (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "printDialog",
+                            "array": false
+                        },
+                        {
+                            "description": "Printer preset to use. Can accept: PrinterPresetTypes enumerator or PrinterPreset. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        }
+                    ],
+                    "name": "print"
+                },
+                {
+                    "description": "Close the Book",
+                    "parameters": [
+                        {
+                            "type": "SaveOptions",
+                            "value": "SaveOptions.ASK",
+                            "name": "saving",
+                            "optional": true,
+                            "description": "Whether to save changes before closing the Book (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The file in which to save the Book (Optional)",
+                            "type": "File",
+                            "optional": false,
+                            "name": "savingIn",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "Forcibly save a version (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "close"
+                },
+                {
+                    "description": "Saves the book.",
+                    "parameters": [
+                        {
+                            "description": "The file path. Note: Required only if the book has not been previously saved. If the book has previously been saved, specifying a path saves a copy and closes the original book. (Optional)",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "save"
+                },
+                {
+                    "description": "Exports the book to a file.",
+                    "parameters": [
+                        {
+                            "description": "The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog. Can accept: ExportFormat enumerator or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The file to which to export the book. (Optional)",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Used to specify if the PDF Export Options Dialog needs to be shown or not (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Used to specify the presets for the export which can be the object of the preset type, enumeration for existing presets or user defined presets, or a string naming the preset to be used, but in case Showing Options is true, the preset specified in the Export Dialog will over ride this parameter (Optional)",
+                            "type": "PDFExportPreset",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "Used to specify a list of book content references, from the current book, where the list may contain duplicate entries and if the list is not specified then the entire book contents shall be exported (Optional)",
+                            "type": "BookContent",
+                            "optional": false,
+                            "name": "whichDocuments",
+                            "array": true
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "exportFile"
+                },
+                {
+                    "description": "Synchronizes the entire book to the style source document.",
+                    "parameters": [],
+                    "name": "synchronize"
+                },
+                {
+                    "description": "Repaginates the book.",
+                    "parameters": [],
+                    "name": "repaginate"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Updates chapter numbers and paragraph numbers throughout the book.",
+                    "parameters": [],
+                    "name": "updateChapterAndParagraphNumbers"
+                },
+                {
+                    "description": "Update all numbers (e.g. Page numbers, chapter numbers and paragraph numbers) throughout the book.",
+                    "parameters": [],
+                    "name": "updateAllNumbers"
+                },
+                {
+                    "description": "Updates the cross references in the entire book.",
+                    "parameters": [],
+                    "name": "updateAllCrossReferences"
+                },
+                {
+                    "description": "Packages the document.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The folder, alias, or path in which to place the packaged files.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, copies fonts used in the document to the package folder.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "copyingFonts",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, copies linked graphics files to the package folder.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "copyingLinkedGraphics",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, copies color profiles to the package folder.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "copyingProfiles",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, updates graphics links to the package folder.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "updatingGraphics",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, copies fonts and links from hidden layers to the package.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "includingHiddenLayers",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, ignores preflight errors and proceeds with the packaging. If false, cancels the packaging when errors exist.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "ignorePreflightErrors",
+                            "array": false
+                        },
+                        {
+                            "description": "If true, creates a package report that includes printing instructions, print settings, lists of fonts, links and required inks, and other information.",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "creatingReport",
+                            "array": false
+                        },
+                        {
+                            "description": "The comments for the version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "packageForPrint",
+                    "array": false
+                },
+                {
+                    "description": "Preflight a book and optionally save the resulting report.",
+                    "parameters": [
+                        {
+                            "description": "The preflight report to save to. (Optional)",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "autoOpen",
+                            "optional": true,
+                            "description": "If true, automatically open the report after creation. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "preflight"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Book.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "Book",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Book"
+}

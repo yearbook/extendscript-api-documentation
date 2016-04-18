@@ -1,0 +1,23 @@
+{
+    "description": "Selection options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1634495520",
+                    "array": false,
+                    "description": "Selects all.",
+                    "readonly": true,
+                    "name": "ALL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SelectAll"
+}

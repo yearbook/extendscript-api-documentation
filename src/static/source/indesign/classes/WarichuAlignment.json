@@ -1,0 +1,79 @@
+{
+    "description": "Warichu text alignment options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1635019116",
+                    "array": false,
+                    "description": "Automatically aligns warichu characters.",
+                    "readonly": true,
+                    "name": "AUTO"
+                },
+                {
+                    "type": "number",
+                    "value": "1818584692",
+                    "array": false,
+                    "description": "Aligns warichu on the left side of the text frame.",
+                    "readonly": true,
+                    "name": "LEFT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1667591796",
+                    "array": false,
+                    "description": "Aligns warichu in the center of the text frame.",
+                    "readonly": true,
+                    "name": "CENTER_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1919379572",
+                    "array": false,
+                    "description": "Warichu on the rigt side of the text frame.",
+                    "readonly": true,
+                    "name": "RIGHT_ALIGN"
+                },
+                {
+                    "type": "number",
+                    "value": "1718971500",
+                    "array": false,
+                    "description": "Justifies warichu lines and makes all lines of equal length.",
+                    "readonly": true,
+                    "name": "FULLY_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1818915700",
+                    "array": false,
+                    "description": "Justifies warichu lines and left aligns the last line.",
+                    "readonly": true,
+                    "name": "LEFT_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1667920756",
+                    "array": false,
+                    "description": "Justifies warichu lines and center aligns the last line.",
+                    "readonly": true,
+                    "name": "CENTER_JUSTIFIED"
+                },
+                {
+                    "type": "number",
+                    "value": "1919578996",
+                    "array": false,
+                    "description": "Justifies warichu lines and right aligns the last line.",
+                    "readonly": true,
+                    "name": "RIGHT_JUSTIFIED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "WarichuAlignment"
+}

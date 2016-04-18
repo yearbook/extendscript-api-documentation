@@ -1,0 +1,31 @@
+{
+    "description": "Kashidas.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1801544805",
+                    "array": false,
+                    "description": "Default kashidas",
+                    "readonly": true,
+                    "name": "DEFAULT_KASHIDAS"
+                },
+                {
+                    "type": "number",
+                    "value": "1801547622",
+                    "array": false,
+                    "description": "Kashidas off",
+                    "readonly": true,
+                    "name": "KASHIDAS_OFF"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "KashidasOptions"
+}

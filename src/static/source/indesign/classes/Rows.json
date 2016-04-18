@@ -1,0 +1,199 @@
+{
+    "description": "A collection of table rows.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new Row.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "type": "LocationOptions",
+                            "value": "LocationOptions.UNKNOWN",
+                            "name": "at",
+                            "optional": true,
+                            "description": "The Row's location relative to the reference object or within the table.  (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The reference object. Note: The reference object must be within the table. Required only when the at value contains before or after. Can accept: Row, Column, Cell or Table. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new Row (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the Row.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Row with the specified index or name.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Row with the specified name.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Rows within the specified range.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The Row, index, or name at the beginning of the range. Can accept: Row, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The Row, index, or name at the end of the range. Can accept: Row, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first Row in the collection.",
+                    "type": "Row",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last Row in the collection.",
+                    "type": "Row",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle Row in the collection.",
+                    "type": "Row",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Row with the index previous to the specified index.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The index of the Row that follows the desired Row.",
+                            "type": "Row",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Row whose index follows the specified Row in the collection.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The Row whose index comes before the desired Row.",
+                            "type": "Row",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any Row in the collection.",
+                    "type": "Row",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every Row in the collection.",
+                    "type": "Row",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Row.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the Row with the specified index.",
+                    "type": "Row",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Rows"
+}

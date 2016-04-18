@@ -1,0 +1,63 @@
+{
+    "description": "Options for aligning small characters to the largest character in the line.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1247896172",
+                    "array": false,
+                    "description": "Aligns small characters in a line to the large character.",
+                    "readonly": true,
+                    "name": "ALIGN_BASELINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1247900784",
+                    "array": false,
+                    "description": "Aligns small characters in horizontal text to the top of the em box of large characters. In vertical text, aligns characters to the right of the em box.",
+                    "readonly": true,
+                    "name": "ALIGN_EM_TOP"
+                },
+                {
+                    "type": "number",
+                    "value": "1247896436",
+                    "array": false,
+                    "description": "Aligns small characters to the center of the em box of large characters.",
+                    "readonly": true,
+                    "name": "ALIGN_EM_CENTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1247896173",
+                    "array": false,
+                    "description": "Aligns small characters in horizontal text to the bottom of the em box of large characters. In vertical text, aligns characters to the left of the em box.",
+                    "readonly": true,
+                    "name": "ALIGN_EM_BOTTOM"
+                },
+                {
+                    "type": "number",
+                    "value": "1248425072",
+                    "array": false,
+                    "description": "Aligns small characters in horizontal text to the top of the ICF of large characters. In vertical text, aligns characters to the right of the ICF.",
+                    "readonly": true,
+                    "name": "ALIGN_ICF_TOP"
+                },
+                {
+                    "type": "number",
+                    "value": "1248420461",
+                    "array": false,
+                    "description": "Aligns small characters in horizontal text to the bottom of the ICF of large characters. In vertical text, aligns characters to the left of the ICF.",
+                    "readonly": true,
+                    "name": "ALIGN_ICF_BOTTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "CharacterAlignment"
+}

@@ -1,0 +1,527 @@
+{
+    "description": "Special character options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1396797550",
+                    "array": false,
+                    "description": "Inserts an automatic page number.",
+                    "readonly": true,
+                    "name": "AUTO_PAGE_NUMBER"
+                },
+                {
+                    "type": "number",
+                    "value": "1397649518",
+                    "array": false,
+                    "description": "Inserts the next page number.",
+                    "readonly": true,
+                    "name": "NEXT_PAGE_NUMBER"
+                },
+                {
+                    "type": "number",
+                    "value": "1397780590",
+                    "array": false,
+                    "description": "Inserts the previous page number.",
+                    "readonly": true,
+                    "name": "PREVIOUS_PAGE_NUMBER"
+                },
+                {
+                    "type": "number",
+                    "value": "1400073805",
+                    "array": false,
+                    "description": "Inserts a section marker.",
+                    "readonly": true,
+                    "name": "SECTION_MARKER"
+                },
+                {
+                    "type": "number",
+                    "value": "1396862068",
+                    "array": false,
+                    "description": "Inserts a bullet character.",
+                    "readonly": true,
+                    "name": "BULLET_CHARACTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1396929140",
+                    "array": false,
+                    "description": "Inserts a copyright symbol.",
+                    "readonly": true,
+                    "name": "COPYRIGHT_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1396991858",
+                    "array": false,
+                    "description": "Inserts a degree symbol.",
+                    "readonly": true,
+                    "name": "DEGREE_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1397518451",
+                    "array": false,
+                    "description": "Inserts an ellipsis character.",
+                    "readonly": true,
+                    "name": "ELLIPSIS_CHARACTER"
+                },
+                {
+                    "type": "number",
+                    "value": "1397124194",
+                    "array": false,
+                    "description": "Inserts a forced line break.",
+                    "readonly": true,
+                    "name": "FORCED_LINE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397776754",
+                    "array": false,
+                    "description": "Inserts a paragraph symbol.",
+                    "readonly": true,
+                    "name": "PARAGRAPH_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1397904493",
+                    "array": false,
+                    "description": "Inserts a registered trademark.",
+                    "readonly": true,
+                    "name": "REGISTERED_TRADEMARK"
+                },
+                {
+                    "type": "number",
+                    "value": "1400073811",
+                    "array": false,
+                    "description": "Inserts a section symbol.",
+                    "readonly": true,
+                    "name": "SECTION_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1398041963",
+                    "array": false,
+                    "description": "Inserts a trademark symbol.",
+                    "readonly": true,
+                    "name": "TRADEMARK_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1397909876",
+                    "array": false,
+                    "description": "Inserts a right indent tab.",
+                    "readonly": true,
+                    "name": "RIGHT_INDENT_TAB"
+                },
+                {
+                    "type": "number",
+                    "value": "1397319796",
+                    "array": false,
+                    "description": "Inserts an indent to here character.",
+                    "readonly": true,
+                    "name": "INDENT_HERE_TAB"
+                },
+                {
+                    "type": "number",
+                    "value": "1397058884",
+                    "array": false,
+                    "description": "Inserts an em dash.",
+                    "readonly": true,
+                    "name": "EM_DASH"
+                },
+                {
+                    "type": "number",
+                    "value": "1397059140",
+                    "array": false,
+                    "description": "Inserts an en dash.",
+                    "readonly": true,
+                    "name": "EN_DASH"
+                },
+                {
+                    "type": "number",
+                    "value": "1396983920",
+                    "array": false,
+                    "description": "Inserts a discretionary hyphen.",
+                    "readonly": true,
+                    "name": "DISCRETIONARY_HYPHEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1397645928",
+                    "array": false,
+                    "description": "Inserts a nonbreaking hyphen.",
+                    "readonly": true,
+                    "name": "NONBREAKING_HYPHEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1396855379",
+                    "array": false,
+                    "description": "Inserts an end nested style here character.",
+                    "readonly": true,
+                    "name": "END_NESTED_STYLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396984945",
+                    "array": false,
+                    "description": "Inserts a double left quote.",
+                    "readonly": true,
+                    "name": "DOUBLE_LEFT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396986481",
+                    "array": false,
+                    "description": "Inserts a double right quote.",
+                    "readonly": true,
+                    "name": "DOUBLE_RIGHT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397967985",
+                    "array": false,
+                    "description": "Inserts a single left quote.",
+                    "readonly": true,
+                    "name": "SINGLE_LEFT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397969521",
+                    "array": false,
+                    "description": "Inserts a single right quote.",
+                    "readonly": true,
+                    "name": "SINGLE_RIGHT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397058899",
+                    "array": false,
+                    "description": "Inserts an em space.",
+                    "readonly": true,
+                    "name": "EM_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397059155",
+                    "array": false,
+                    "description": "Inserts an en space.",
+                    "readonly": true,
+                    "name": "EN_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397124179",
+                    "array": false,
+                    "description": "Inserts a flush space.",
+                    "readonly": true,
+                    "name": "FLUSH_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397256787",
+                    "array": false,
+                    "description": "Inserts a hair space.",
+                    "readonly": true,
+                    "name": "HAIR_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397645907",
+                    "array": false,
+                    "description": "Inserts a nonbreaking space.",
+                    "readonly": true,
+                    "name": "NONBREAKING_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1398042195",
+                    "array": false,
+                    "description": "Inserts a thin space.",
+                    "readonly": true,
+                    "name": "THIN_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397122899",
+                    "array": false,
+                    "description": "Inserts a figure space.",
+                    "readonly": true,
+                    "name": "FIGURE_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397780051",
+                    "array": false,
+                    "description": "Inserts a punctuation space.",
+                    "readonly": true,
+                    "name": "PUNCTUATION_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396927554",
+                    "array": false,
+                    "description": "Inserts a column break.",
+                    "readonly": true,
+                    "name": "COLUMN_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397125698",
+                    "array": false,
+                    "description": "Inserts a frame break.",
+                    "readonly": true,
+                    "name": "FRAME_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397778242",
+                    "array": false,
+                    "description": "Inserts a page break.",
+                    "readonly": true,
+                    "name": "PAGE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397715010",
+                    "array": false,
+                    "description": "Inserts a break to the next odd page.",
+                    "readonly": true,
+                    "name": "ODD_PAGE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397059650",
+                    "array": false,
+                    "description": "Inserts a break to the next even page.",
+                    "readonly": true,
+                    "name": "EVEN_PAGE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1399221837",
+                    "array": false,
+                    "description": "Inserts a footnote symbol.",
+                    "readonly": true,
+                    "name": "FOOTNOTE_SYMBOL"
+                },
+                {
+                    "type": "number",
+                    "value": "1399616101",
+                    "array": false,
+                    "description": "Inserts a left to right embedding mark.",
+                    "readonly": true,
+                    "name": "LEFT_TO_RIGHT_EMBEDDING"
+                },
+                {
+                    "type": "number",
+                    "value": "1400007781",
+                    "array": false,
+                    "description": "Inserts a right to left embedding mark.",
+                    "readonly": true,
+                    "name": "RIGHT_TO_LEFT_EMBEDDING"
+                },
+                {
+                    "type": "number",
+                    "value": "1399874662",
+                    "array": false,
+                    "description": "Inserts a pop directional formatting mark.",
+                    "readonly": true,
+                    "name": "POP_DIRECTIONAL_FORMATTING"
+                },
+                {
+                    "type": "number",
+                    "value": "1399616111",
+                    "array": false,
+                    "description": "Inserts a left to right override mark.",
+                    "readonly": true,
+                    "name": "LEFT_TO_RIGHT_OVERRIDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1400007791",
+                    "array": false,
+                    "description": "Inserts a right to left override mark.",
+                    "readonly": true,
+                    "name": "RIGHT_TO_LEFT_OVERRIDE"
+                },
+                {
+                    "type": "number",
+                    "value": "1399092323",
+                    "array": false,
+                    "description": "Inserts a dotted circle.",
+                    "readonly": true,
+                    "name": "DOTTED_CIRCLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1400534890",
+                    "array": false,
+                    "description": "Inserts a zero width joiner.",
+                    "readonly": true,
+                    "name": "ZERO_WIDTH_JOINER"
+                },
+                {
+                    "type": "number",
+                    "value": "1397781622",
+                    "array": false,
+                    "description": "Inserts the specified text variable.",
+                    "readonly": true,
+                    "name": "TEXT_VARIABLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397969777",
+                    "array": false,
+                    "description": "Inserts a single straight quote.",
+                    "readonly": true,
+                    "name": "SINGLE_STRAIGHT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396986737",
+                    "array": false,
+                    "description": "Inserts a double straight quote.",
+                    "readonly": true,
+                    "name": "DOUBLE_STRAIGHT_QUOTE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397777484",
+                    "array": false,
+                    "description": "Inserts a discretionary line break.",
+                    "readonly": true,
+                    "name": "DISCRETIONARY_LINE_BREAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397780074",
+                    "array": false,
+                    "description": "Inserts a zero-width non-joiner.",
+                    "readonly": true,
+                    "name": "ZERO_WIDTH_NONJOINER"
+                },
+                {
+                    "type": "number",
+                    "value": "1398040659",
+                    "array": false,
+                    "description": "Inserts a third-width space.",
+                    "readonly": true,
+                    "name": "THIRD_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397847379",
+                    "array": false,
+                    "description": "Inserts a quarter-width space.",
+                    "readonly": true,
+                    "name": "QUARTER_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397975379",
+                    "array": false,
+                    "description": "Inserts a sixth-width space.",
+                    "readonly": true,
+                    "name": "SIXTH_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1399746146",
+                    "array": false,
+                    "description": "Inserts a fixed-width nonbreaking space.",
+                    "readonly": true,
+                    "name": "FIXED_WIDTH_NONBREAKING_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1397252717",
+                    "array": false,
+                    "description": "Inserts a hebrew maqaf.",
+                    "readonly": true,
+                    "name": "HEBREW_MAQAF"
+                },
+                {
+                    "type": "number",
+                    "value": "1397253989",
+                    "array": false,
+                    "description": "Inserts a hebrew geresh.",
+                    "readonly": true,
+                    "name": "HEBREW_GERESH"
+                },
+                {
+                    "type": "number",
+                    "value": "1397254003",
+                    "array": false,
+                    "description": "Inserts a hebrew gershayim.",
+                    "readonly": true,
+                    "name": "HEBREW_GERSHAYIM"
+                },
+                {
+                    "type": "number",
+                    "value": "1396798059",
+                    "array": false,
+                    "description": "Inserts an arabic kashida.",
+                    "readonly": true,
+                    "name": "ARABIC_KASHIDA"
+                },
+                {
+                    "type": "number",
+                    "value": "1396798051",
+                    "array": false,
+                    "description": "Inserts an arabic comma.",
+                    "readonly": true,
+                    "name": "ARABIC_COMMA"
+                },
+                {
+                    "type": "number",
+                    "value": "1396798307",
+                    "array": false,
+                    "description": "Inserts an arabic semicolon.",
+                    "readonly": true,
+                    "name": "ARABIC_SEMICOLON"
+                },
+                {
+                    "type": "number",
+                    "value": "1396797805",
+                    "array": false,
+                    "description": "Inserts an arabic question mark.",
+                    "readonly": true,
+                    "name": "ARABIC_QUESTION_MARK"
+                },
+                {
+                    "type": "number",
+                    "value": "1399616109",
+                    "array": false,
+                    "description": "Inserts a left to right mark.",
+                    "readonly": true,
+                    "name": "LEFT_TO_RIGHT_MARK"
+                },
+                {
+                    "type": "number",
+                    "value": "1400007789",
+                    "array": false,
+                    "description": "Inserts a right to left mark.",
+                    "readonly": true,
+                    "name": "RIGHT_TO_LEFT_MARK"
+                },
+                {
+                    "type": "number",
+                    "value": "1397252723",
+                    "array": false,
+                    "description": "Inserts a hebrew sof pasuk.",
+                    "readonly": true,
+                    "name": "HEBREW_SOF_PASUK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SpecialCharacters"
+}

@@ -1,0 +1,47 @@
+{
+    "description": "The color profile.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1851868240",
+                    "array": false,
+                    "description": "Uses no profile.",
+                    "readonly": true,
+                    "name": "USE_NO_PROFILE"
+                },
+                {
+                    "type": "number",
+                    "value": "1836008528",
+                    "array": false,
+                    "description": "Uses the monitor's color profile.",
+                    "readonly": true,
+                    "name": "USE_MONITOR_PROFILE"
+                },
+                {
+                    "type": "number",
+                    "value": "1967419235",
+                    "array": false,
+                    "description": "Uses the document's CMYK profile.",
+                    "readonly": true,
+                    "name": "USE_DOCUMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1466921579",
+                    "array": false,
+                    "description": "Uses the working CMYK profile.",
+                    "readonly": true,
+                    "name": "WORKING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PDFProfileSelector"
+}

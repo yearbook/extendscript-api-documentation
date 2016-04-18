@@ -1,0 +1,31 @@
+{
+    "description": "Inner glow source options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "2020618593",
+                    "array": false,
+                    "description": "The glow radiates from the object's center.",
+                    "readonly": true,
+                    "name": "CENTER_SOURCED"
+                },
+                {
+                    "type": "number",
+                    "value": "2020618594",
+                    "array": false,
+                    "description": "The glow radiates from the edge of the object.",
+                    "readonly": true,
+                    "name": "EDGE_SOURCED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "InnerGlowSource"
+}

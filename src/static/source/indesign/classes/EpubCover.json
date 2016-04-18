@@ -1,0 +1,39 @@
+{
+    "description": "EPub export option for cover image.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "no cover image.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1700947536",
+                    "array": false,
+                    "description": "Rasterize first page as cover image.",
+                    "readonly": true,
+                    "name": "FIRST_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1700952169",
+                    "array": false,
+                    "description": "Use external image as cover image.",
+                    "readonly": true,
+                    "name": "EXTERNAL_IMAGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "EpubCover"
+}

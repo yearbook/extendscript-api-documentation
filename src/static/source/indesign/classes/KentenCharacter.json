@@ -1,0 +1,111 @@
+{
+    "description": "Style options for kenten characters.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Does not use kenten.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248551795",
+                    "array": false,
+                    "description": "Uses the kenten sesame dot.",
+                    "readonly": true,
+                    "name": "KENTEN_SESAME_DOT"
+                },
+                {
+                    "type": "number",
+                    "value": "1248551799",
+                    "array": false,
+                    "description": "Uses the kenten white sesame dot.",
+                    "readonly": true,
+                    "name": "KENTEN_WHITE_SESAME_DOT"
+                },
+                {
+                    "type": "number",
+                    "value": "1248551523",
+                    "array": false,
+                    "description": "Uses the kenten black circle.",
+                    "readonly": true,
+                    "name": "KENTEN_BLACK_CIRCLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248556899",
+                    "array": false,
+                    "description": "Uses the kenten white circle.",
+                    "readonly": true,
+                    "name": "KENTEN_WHITE_CIRCLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248551540",
+                    "array": false,
+                    "description": "Uses the kenten black triangle.",
+                    "readonly": true,
+                    "name": "KENTEN_BLACK_TRIANGLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248556916",
+                    "array": false,
+                    "description": "Uses the kenten white triangle.",
+                    "readonly": true,
+                    "name": "KENTEN_WHITE_TRIANGLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248551525",
+                    "array": false,
+                    "description": "Uses the kenten bullseye.",
+                    "readonly": true,
+                    "name": "KENTEN_BULLSEYE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248552549",
+                    "array": false,
+                    "description": "Uses the kenten fisheye.",
+                    "readonly": true,
+                    "name": "KENTEN_FISHEYE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248555875",
+                    "array": false,
+                    "description": "Uses the kenten small black circle.",
+                    "readonly": true,
+                    "name": "KENTEN_SMALL_BLACK_CIRCLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1248555895",
+                    "array": false,
+                    "description": "Uses the kenten small white circle.",
+                    "readonly": true,
+                    "name": "KENTEN_SMALL_WHITE_CIRCLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639917",
+                    "array": false,
+                    "description": "Uses a custom kenten style.",
+                    "readonly": true,
+                    "name": "CUSTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "KentenCharacter"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "List type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1280601711",
+                    "array": false,
+                    "description": "No list.",
+                    "readonly": true,
+                    "name": "NO_LIST"
+                },
+                {
+                    "type": "number",
+                    "value": "1280598644",
+                    "array": false,
+                    "description": "Bullet list.",
+                    "readonly": true,
+                    "name": "BULLET_LIST"
+                },
+                {
+                    "type": "number",
+                    "value": "1280601709",
+                    "array": false,
+                    "description": "Numbered list.",
+                    "readonly": true,
+                    "name": "NUMBERED_LIST"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ListType"
+}

@@ -1,0 +1,31 @@
+{
+    "description": "Options for matching names when synchronizing styles in a book.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1936549488",
+                    "array": false,
+                    "description": "Match the full path of style while finding styles in target.",
+                    "readonly": true,
+                    "name": "MATCH_STYLE_PATH"
+                },
+                {
+                    "type": "number",
+                    "value": "1936552814",
+                    "array": false,
+                    "description": "Match only the style name while finding styles in target.",
+                    "readonly": true,
+                    "name": "MATCH_STYLE_NAME"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SmartMatchOptions"
+}

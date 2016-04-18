@@ -1,0 +1,47 @@
+{
+    "description": "Undo options for executing a script.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699967573",
+                    "array": false,
+                    "description": "Undo each script request as a separate step.",
+                    "readonly": true,
+                    "name": "SCRIPT_REQUEST"
+                },
+                {
+                    "type": "number",
+                    "value": "1699963733",
+                    "array": false,
+                    "description": "Undo the entire script as a single step.",
+                    "readonly": true,
+                    "name": "ENTIRE_SCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1699963221",
+                    "array": false,
+                    "description": "Automatically undo the entire script as part of the previous step.",
+                    "readonly": true,
+                    "name": "AUTO_UNDO"
+                },
+                {
+                    "type": "number",
+                    "value": "1699964501",
+                    "array": false,
+                    "description": "Fast undo the entire script as a single step.",
+                    "readonly": true,
+                    "name": "FAST_ENTIRE_SCRIPT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "UndoModes"
+}

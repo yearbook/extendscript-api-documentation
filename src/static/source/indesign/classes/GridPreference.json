@@ -1,0 +1,230 @@
+{
+    "description": "Grid preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the GridPreference (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, displays the document grid.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "documentGridShown",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, an object snaps to the nearest grid line when the object is created, moved, or resized.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "documentGridSnapto",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space between major horizontal lines in the document grid.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "horizontalGridlineDivision",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space between major vertical lines in the document grid.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "verticalGridlineDivision",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of rows into which to subdivide the space between horizontal document grid lines.",
+                    "type": "number",
+                    "array": false,
+                    "name": "horizontalGridSubdivision",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of columns into which to subdivide the space between vertical document grid lines.",
+                    "type": "number",
+                    "array": false,
+                    "name": "verticalGridSubdivision",
+                    "readonly": false
+                },
+                {
+                    "description": "The color of the document grid, specified either as an array of three doubles, each in the range 0 to 255, representing R, G, and B values, or as a UI color. Can return: Array of 3 Reals (0 - 255) or UIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "gridColor",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, places grids behind all other objects on the spread.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "gridsInBack",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, displays the baseline grid.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "baselineGridShown",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to offset the baseline grid from the zero point.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "baselineStart",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of space between baseline grid lines.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "baselineDivision",
+                    "readonly": false
+                },
+                {
+                    "description": "The magnification (as a percentage) less than which ruler guides do not appear. (Range: 5 to 4000)",
+                    "type": "number",
+                    "array": false,
+                    "name": "baselineViewThreshold",
+                    "readonly": false
+                },
+                {
+                    "description": "The color of the baseline grid, specified either as an array of three doubles, each in the range 0 to 255, representing R, G, and B values, or as a UI color. . Can return: Array of 3 Reals (0 - 255) or UIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "baselineColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The zero point for the baseline grid offset.",
+                    "type": "BaselineGridRelativeOption",
+                    "array": false,
+                    "name": "baselineGridRelativeOption",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the GridPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "GridPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "GridPreference"
+}

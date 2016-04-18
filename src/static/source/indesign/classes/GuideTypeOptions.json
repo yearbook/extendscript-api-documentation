@@ -1,0 +1,31 @@
+{
+    "description": "Guide type options for ruler guides.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1735618160",
+                    "array": false,
+                    "description": "Ruler guide (default).",
+                    "readonly": true,
+                    "name": "RULER"
+                },
+                {
+                    "type": "number",
+                    "value": "1735617635",
+                    "array": false,
+                    "description": "Liquid guide.",
+                    "readonly": true,
+                    "name": "LIQUID"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GuideTypeOptions"
+}

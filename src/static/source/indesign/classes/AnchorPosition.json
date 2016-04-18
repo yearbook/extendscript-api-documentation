@@ -1,0 +1,39 @@
+{
+    "description": "Options for specifying the position of the anchored object relative to the its anchor.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1095716969",
+                    "array": false,
+                    "description": "Align the anchored object with the baseline of the line that contains the object.",
+                    "readonly": true,
+                    "name": "INLINE_POSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1095716961",
+                    "array": false,
+                    "description": "Place the anchored object above the line of text that contains the object.",
+                    "readonly": true,
+                    "name": "ABOVE_LINE"
+                },
+                {
+                    "type": "number",
+                    "value": "1097814113",
+                    "array": false,
+                    "description": "Custom anchor position.",
+                    "readonly": true,
+                    "name": "ANCHORED"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AnchorPosition"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "The page binding placement.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses default page binding.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920232546",
+                    "array": false,
+                    "description": "Pages are bound on the right.",
+                    "readonly": true,
+                    "name": "RIGHT_TO_LEFT"
+                },
+                {
+                    "type": "number",
+                    "value": "1819570786",
+                    "array": false,
+                    "description": "Pages are bound on the left.",
+                    "readonly": true,
+                    "name": "LEFT_TO_RIGHT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageBindingOptions"
+}

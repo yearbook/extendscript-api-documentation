@@ -1,0 +1,63 @@
+{
+    "description": "Options for specifying how to represent color information in the exported PDF.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1666336578",
+                    "array": false,
+                    "description": "Represents all color values using the RGB color space. Best suited for documents that will be viewed onscreen.",
+                    "readonly": true,
+                    "name": "RGB"
+                },
+                {
+                    "type": "number",
+                    "value": "1129142603",
+                    "array": false,
+                    "description": "Represents all color values using CYMK color space.",
+                    "readonly": true,
+                    "name": "CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1970161251",
+                    "array": false,
+                    "description": "Leaves each image in its original color space.",
+                    "readonly": true,
+                    "name": "UNCHANGED_COLOR_SPACE"
+                },
+                {
+                    "type": "number",
+                    "value": "1917994818",
+                    "array": false,
+                    "description": "Repurposes RGB colors.",
+                    "readonly": true,
+                    "name": "REPURPOSE_RGB"
+                },
+                {
+                    "type": "number",
+                    "value": "1917013337",
+                    "array": false,
+                    "description": "Repurposes CMYK colors.",
+                    "readonly": true,
+                    "name": "REPURPOSE_CMYK"
+                },
+                {
+                    "type": "number",
+                    "value": "1766290041",
+                    "array": false,
+                    "description": "Converts all color values to high-quality black-and-white images. Gray levels of the converted objects represent the luminosity of the original objects.",
+                    "readonly": true,
+                    "name": "GRAY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PDFColorSpace"
+}

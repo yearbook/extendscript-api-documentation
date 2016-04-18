@@ -1,0 +1,47 @@
+{
+    "description": "Grid view options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1783064438",
+                    "array": false,
+                    "description": "Grid view.",
+                    "readonly": true,
+                    "name": "GRID_VIEW_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1783069302",
+                    "array": false,
+                    "description": "ZN view.",
+                    "readonly": true,
+                    "name": "ZN_VIEW_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1783062902",
+                    "array": false,
+                    "description": "Align view.",
+                    "readonly": true,
+                    "name": "ALIGN_VIEW_ENUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1783064442",
+                    "array": false,
+                    "description": "Grid and ZN view.",
+                    "readonly": true,
+                    "name": "GRID_AND_ZN_VIEW_ENUM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GridViewSettings"
+}

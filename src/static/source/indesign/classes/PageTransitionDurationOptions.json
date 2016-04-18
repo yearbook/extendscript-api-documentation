@@ -1,0 +1,39 @@
+{
+    "description": "The page transition duration options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1180791668",
+                    "array": false,
+                    "description": "Fast duration.",
+                    "readonly": true,
+                    "name": "FAST"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727588",
+                    "array": false,
+                    "description": "Medium duration.",
+                    "readonly": true,
+                    "name": "MEDIUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1886671692",
+                    "array": false,
+                    "description": "Slow duration.",
+                    "readonly": true,
+                    "name": "SLOW"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageTransitionDurationOptions"
+}

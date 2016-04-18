@@ -1,0 +1,613 @@
+{
+    "description": "PDF export settings for the document object.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The full path to the PDFExportPreset, including the name of the PDFExportPreset.",
+                    "type": "File",
+                    "array": false,
+                    "name": "fullName",
+                    "readonly": true
+                },
+                {
+                    "description": "Effective destination color profile. Can return: PDFProfileSelector enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "effectivePDFDestinationProfile",
+                    "readonly": true
+                },
+                {
+                    "description": "Effective PDF/X OC Registry.",
+                    "type": "string",
+                    "array": false,
+                    "name": "effectiveOCRegistry",
+                    "readonly": true
+                },
+                {
+                    "description": "Effective PDF/X output condition.",
+                    "type": "string",
+                    "array": false,
+                    "name": "effectiveOutputCondition",
+                    "readonly": true
+                },
+                {
+                    "description": "Effective PDF X color profile. Can return: PDFProfileSelector enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "effectivePDFXProfile",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the PDFExportPreset (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the PDFExportPreset within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the PDFExportPreset.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "Sets the threshold for embedding complete fonts based on how many of the fonts' characters are used in the document. If the percentage of characters used in the document for any given font exceeds the specified value, the font is completely embedded; otherwise, the font is subsetted. (Range: 0 to 100) Notes: Embedding complete fonts increases file size. To completely embed all fonts, use 0 (zero).",
+                    "type": "number",
+                    "array": false,
+                    "name": "subsetFontsBelow",
+                    "readonly": false
+                },
+                {
+                    "description": "The color space to use to represent color information in the exported PDF document.",
+                    "type": "PDFColorSpace",
+                    "array": false,
+                    "name": "pdfColorSpace",
+                    "readonly": false
+                },
+                {
+                    "description": "The ICC Profiles to include in the exported PDF document. Can also accept: Boolean.",
+                    "type": "ICCProfiles",
+                    "array": false,
+                    "name": "includeICCProfiles",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, replaces EPS images with OPI links.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "omitEPS",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, replaces PDF images with OPI links.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "omitPDF",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, replaces bitmap images with OPI links.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "omitBitmaps",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, image data that falls outside the visible portion of an image's frame is not exported to the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "cropImagesToFrames",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, generates thumbnail images for each page or spread.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "generateThumbnails",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, optimizes the exported PDF document for faster viewing in a web browser. Note: Compresses text and line art, regardless of specified compression settings.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "optimizePDF",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, creates a tagged PDF file. Note: If acrobat compatibility is acrobat 6 or higher, tags are visible only when the PDF is opened in Acrobat 6 or higher.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeStructure",
+                    "readonly": false
+                },
+                {
+                    "description": "The exported PDF document's Acrobat compatibility.",
+                    "type": "AcrobatCompatibility",
+                    "array": false,
+                    "name": "acrobatCompatibility",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, simulates the effects of overprinting spot inks with different neutral density values by converting spot colors to process colors for printing. Note: Not valid when the color output mode is defined to leave color profiles unchanged.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "simulateOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "The gamut of the final RGB or CMYK device. Can return: PDFProfileSelector enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pdfDestinationProfile",
+                    "readonly": false
+                },
+                {
+                    "description": "The PDF X color profile to use for the PDF document. . Can return: PDFProfileSelector enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pdfXProfile",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes hyperlinks when exporting the document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeHyperlinks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, displays bookmarks and table of contents entries as links in the bookmarks pane in the PDF document. If false, no bookmarks are exported.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeBookmarks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, makes non-printing objects visible in the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportNonprintingObjects",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes visible guides and baseline grids in the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportGuidesAndGrids",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, saves each layer as an Acrobat layer within the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportLayers",
+                    "readonly": false
+                },
+                {
+                    "description": "The PDF/X standards compliance to test against.",
+                    "type": "PDFXStandards",
+                    "array": false,
+                    "name": "standardsCompliance",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the intended printing condition. Valid only when a PDF/X compliance standard has been defined for the document. Not valid when PDF/X-3 is the compliance standard or PDF export preset. For information on compliance standards, see standards compliance and PDF X standards.",
+                    "type": "string",
+                    "array": false,
+                    "name": "outputCondition",
+                    "readonly": false
+                },
+                {
+                    "description": "The sampling option to apply to color bitmap images in the PDF document.",
+                    "type": "Sampling",
+                    "array": false,
+                    "name": "colorBitmapSampling",
+                    "readonly": false
+                },
+                {
+                    "description": "The ppi of the resampled image. (Range: 9 to 2400)",
+                    "type": "number",
+                    "array": false,
+                    "name": "colorBitmapSamplingDPI",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of bitmap compression to use.",
+                    "type": "BitmapCompression",
+                    "array": false,
+                    "name": "colorBitmapCompression",
+                    "readonly": false
+                },
+                {
+                    "description": "The compression option to apply to color images.",
+                    "type": "CompressionQuality",
+                    "array": false,
+                    "name": "colorBitmapQuality",
+                    "readonly": false
+                },
+                {
+                    "description": "The sampling option to apply to grayscale bitmap images.",
+                    "type": "Sampling",
+                    "array": false,
+                    "name": "grayscaleBitmapSampling",
+                    "readonly": false
+                },
+                {
+                    "description": "The ppi of the resampled image. (Range: 9 to 2400)",
+                    "type": "number",
+                    "array": false,
+                    "name": "grayscaleBitmapSamplingDPI",
+                    "readonly": false
+                },
+                {
+                    "description": "The bitmap compression option to apply to grayscale bitmap images.",
+                    "type": "BitmapCompression",
+                    "array": false,
+                    "name": "grayscaleBitmapCompression",
+                    "readonly": false
+                },
+                {
+                    "description": "The compression option to apply to grayscale bitmap images.",
+                    "type": "CompressionQuality",
+                    "array": false,
+                    "name": "grayscaleBitmapQuality",
+                    "readonly": false
+                },
+                {
+                    "description": "The sampling option to apply to monochrome bitmap images.",
+                    "type": "Sampling",
+                    "array": false,
+                    "name": "monochromeBitmapSampling",
+                    "readonly": false
+                },
+                {
+                    "description": "The ppi of the resampled image. (Range: 9 to 2400)",
+                    "type": "number",
+                    "array": false,
+                    "name": "monochromeBitmapSamplingDPI",
+                    "readonly": false
+                },
+                {
+                    "description": "The bitmap compression option to apply to monochrome bitmap images.",
+                    "type": "MonoBitmapCompression",
+                    "array": false,
+                    "name": "monochromeBitmapCompression",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, compresses text and line art using ZIP compression.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "compressTextAndLineArt",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum dpi at which color compression is applied. (Range: 1 to 10 times the value specified for color bitmap sampling DPI.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "thresholdToCompressColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum dpi at which grayscale compression is applied. (Range: 1 to 10 times the value specified for grayscale bitmap sampling DPI.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "thresholdToCompressGray",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum dpi at which monochrome compression is applied. (Range: 1 to 10 times the value specified for monochrome bitmap sampling DPI.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "thresholdToCompressMonochrome",
+                    "readonly": false
+                },
+                {
+                    "description": "The tile size for color images. Valid only when color bitmap compression is JPEG 2000. (Range: 128 to 2048)",
+                    "type": "number",
+                    "array": false,
+                    "name": "colorTileSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The tile size for grayscale images. Valid only when grayscale bitmap compression is JPEG 2000. (Range: 128 to 2048)",
+                    "type": "number",
+                    "array": false,
+                    "name": "grayTileSize",
+                    "readonly": false
+                },
+                {
+                    "description": "The objects to compress in the PDF document.",
+                    "type": "PDFCompressionType",
+                    "array": false,
+                    "name": "compressionType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, each spread in the exported document is combined into a single page that has spread's original width.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "exportReaderSpreads",
+                    "readonly": false
+                },
+                {
+                    "description": "The offset from the edge of the page for page marks.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "pageMarksOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "Prints crop marks that define where the page should be trimmed.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "cropMarks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, prints the filename, page number, current date and time, and color separation name.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "pageInformationMarks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, print bleed marks.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "bleedMarks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, add small squares of color representing the CMYK inks and tints of gray in 10% increments.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "colorBars",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, prints small targets outside the page area for aligning color separations.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "registrationMarks",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight for printer's marks.",
+                    "type": "PDFMarkWeight",
+                    "array": false,
+                    "name": "printerMarkWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The height of the bleed area at the top of the page. Note: Valid only when use document bleed to print is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bleedTop",
+                    "readonly": false
+                },
+                {
+                    "description": "The width of the bleed area at the inside of the page. Note: Valid only when use document bleed to print is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bleedInside",
+                    "readonly": false
+                },
+                {
+                    "description": "The height of the bleed area at the bottom of the page. Note: Valid only when use document bleed to print is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bleedBottom",
+                    "readonly": false
+                },
+                {
+                    "description": "The width of the bleed area at the outside of the page. Note: Valid only when use document bleed to print is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bleedOutside",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of printer marks, either an enum value or the name of a custom marks file. Can return: MarkTypes enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pdfMarkType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, uses the document's bleed settings in the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "useDocumentBleedWithPDF",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes the document's slug area in the PDF document.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeSlugWithPDF",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, ignores flattener spread overrides.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ignoreSpreadOverrides",
+                    "readonly": false
+                },
+                {
+                    "description": "The transparency flattener preset to use.",
+                    "type": "FlattenerPreset",
+                    "array": false,
+                    "name": "appliedFlattenerPreset",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the output condition. Valid only when a PDF/X standard has been defined for the document.",
+                    "type": "string",
+                    "array": false,
+                    "name": "outputConditionName",
+                    "readonly": false
+                },
+                {
+                    "description": "The web address for the output condition registry. Not valid when PDF/X-3 is the compliance standard or PDF export preset.",
+                    "type": "string",
+                    "array": false,
+                    "name": "ocRegistry",
+                    "readonly": false
+                },
+                {
+                    "description": "How to draw interactive elements.",
+                    "type": "InteractiveElementsOptions",
+                    "array": false,
+                    "name": "interactiveElementsOption",
+                    "readonly": false
+                },
+                {
+                    "description": "Which layers to export.",
+                    "type": "ExportLayerOptions",
+                    "array": false,
+                    "name": "exportWhichLayers",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Deletes the PDFExportPreset.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Duplicates the PDFExportPreset.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "duplicate",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PDFExportPreset.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "PDFExportPreset",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PDFExportPreset"
+}

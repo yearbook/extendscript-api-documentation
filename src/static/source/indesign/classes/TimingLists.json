@@ -1,0 +1,176 @@
+{
+    "description": "A collection of timing lists.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the TimingList.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Adds a new event-triggered timing list object.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "Trigger Event",
+                            "type": "DynamicTriggerEvents",
+                            "optional": false,
+                            "name": "triggerEvent",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new TimingList (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingList with the specified index or name.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingLists within the specified range.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "The TimingList, index, or name at the beginning of the range. Can accept: TimingList, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TimingList, index, or name at the end of the range. Can accept: TimingList, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingList with the index previous to the specified index.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "The index of the TimingList that follows the desired TimingList.",
+                            "type": "TimingList",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingList whose index follows the specified TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "The TimingList whose index comes before the desired TimingList.",
+                            "type": "TimingList",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TimingList in the collection.",
+                    "type": "TimingList",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TimingList.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TimingList with the specified index.",
+                    "type": "TimingList",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TimingLists"
+}

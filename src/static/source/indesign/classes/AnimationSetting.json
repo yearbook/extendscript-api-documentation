@@ -1,0 +1,272 @@
+{
+    "description": "Animation settings.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Determines if this animated object has custom settings.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "hasCustomSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the AnimationSetting (a PageItem, HtmlItem, FormField, SignatureField, TextBox, RadioButton, ListBox, ComboBox, CheckBox, MultiStateObject, Button, MediaItem, Sound, Movie, EPSText, SplineItem, Polygon, GraphicLine, Rectangle, Oval, Graphic, ImportedPage, PICT, WMF, PDF, EPS, Image, Group or TextFrame).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The base animation preset applied. Can return: MotionPreset, String or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "preset",
+                    "readonly": false
+                },
+                {
+                    "description": "The tranform offset percentage from the target object bounding box's left-top corner.",
+                    "type": "number",
+                    "array": true,
+                    "name": "transformOffsets",
+                    "readonly": false
+                },
+                {
+                    "description": "The duration in second for this animation.",
+                    "type": "number",
+                    "array": false,
+                    "name": "duration",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of motion path points for this animation. Can return: Ordered array containing pathPointArray:Array of Ordered array containing anchor:Array of 2 Reals, leftDirection:Array of 2 Reals, rightDirection:Array of 2 Reals, pathOpen:Boolean.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "motionPathPoints",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of motion path points and key frames for this animation. Can return: Ordered array containing keyFrame:Long Integer, pathPoint:Ordered array containing anchor:Array of 2 Reals, leftDirection:Array of 2 Reals, rightDirection:Array of 2 Reals.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "motionPath",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of opacity key frames for this animation. Can return: Ordered array containing keyFrame:Long Integer, value:Real.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "opacityArray",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of rotation key frames for this animation. Can return: Ordered array containing keyFrame:Long Integer, value:Real.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "rotationArray",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of scale x key frames for this animation. Can return: Ordered array containing keyFrame:Long Integer, value:Real.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "scaleXArray",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of scale y key frames for this animation. Can return: Ordered array containing keyFrame:Long Integer, value:Real.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "scaleYArray",
+                    "readonly": false
+                },
+                {
+                    "description": "The animation design option.",
+                    "type": "DesignOptions",
+                    "array": false,
+                    "name": "designOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The ease type.",
+                    "type": "AnimationEaseOptions",
+                    "array": false,
+                    "name": "easeType",
+                    "readonly": false
+                },
+                {
+                    "description": "The number of times this animation plays.",
+                    "type": "number",
+                    "array": false,
+                    "name": "plays",
+                    "readonly": false
+                },
+                {
+                    "description": "Set to true if animation play loops.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "playsLoop",
+                    "readonly": false
+                },
+                {
+                    "description": "Determines if this object is initially hidden when displayed in an exported SWF file.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "initiallyHidden",
+                    "readonly": false
+                },
+                {
+                    "description": "Determines if this object is hidden after its animation is played in an exported SWF file.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "hiddenAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Save a copy of this motion preset to a InDesign motion preset file.",
+                    "parameters": [
+                        {
+                            "description": "The Flash motion preset file to export to.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "saveACopy"
+                },
+                {
+                    "description": "Save this motion preset as custom preset.",
+                    "type": "MotionPreset",
+                    "parameters": [
+                        {
+                            "description": "The name for the new motion preset.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "save",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the AnimationSetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "AnimationSetting",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "AnimationSetting"
+}

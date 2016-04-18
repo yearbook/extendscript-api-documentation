@@ -1,0 +1,135 @@
+{
+    "description": "Page transition to use as an override when exporting.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1718764655",
+                    "array": false,
+                    "description": "Use the page transition from the document.",
+                    "readonly": true,
+                    "name": "FROM_DOCUMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "No page transition applied.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1886667372",
+                    "array": false,
+                    "description": "The Blinds page transition.",
+                    "readonly": true,
+                    "name": "BLINDS_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886667384",
+                    "array": false,
+                    "description": "The Blinds page transition.",
+                    "readonly": true,
+                    "name": "BOX_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886667618",
+                    "array": false,
+                    "description": "The Comb page transition.",
+                    "readonly": true,
+                    "name": "COMB_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886667638",
+                    "array": false,
+                    "description": "The Cover page transition.",
+                    "readonly": true,
+                    "name": "COVER_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886667891",
+                    "array": false,
+                    "description": "The Dissolve page transition.",
+                    "readonly": true,
+                    "name": "DISSOLVE_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886668388",
+                    "array": false,
+                    "description": "The Fade page transition.",
+                    "readonly": true,
+                    "name": "FADE_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886670932",
+                    "array": false,
+                    "description": "The Page Turn page transition (SWF only).",
+                    "readonly": true,
+                    "name": "PAGE_TURN_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886670963",
+                    "array": false,
+                    "description": "The Push page transition.",
+                    "readonly": true,
+                    "name": "PUSH_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886671728",
+                    "array": false,
+                    "description": "The Split page transition.",
+                    "readonly": true,
+                    "name": "SPLIT_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886672227",
+                    "array": false,
+                    "description": "The Uncover page transition.",
+                    "readonly": true,
+                    "name": "UNCOVER_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886672752",
+                    "array": false,
+                    "description": "The Wipe page transition.",
+                    "readonly": true,
+                    "name": "WIPE_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886673481",
+                    "array": false,
+                    "description": "The Zoom In page transition.",
+                    "readonly": true,
+                    "name": "ZOOM_IN_TRANSITION"
+                },
+                {
+                    "type": "number",
+                    "value": "1886673487",
+                    "array": false,
+                    "description": "The Zoom Out page transition.",
+                    "readonly": true,
+                    "name": "ZOOM_OUT_TRANSITION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PageTransitionOverrideOptions"
+}

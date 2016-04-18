@@ -1,0 +1,55 @@
+{
+    "description": "Flip direction options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "The printed image is not flipped.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1752134266",
+                    "array": false,
+                    "description": "Flips the printed image horizontally.",
+                    "readonly": true,
+                    "name": "HORIZONTAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1986359924",
+                    "array": false,
+                    "description": "Flips the printed image vertically.",
+                    "readonly": true,
+                    "name": "VERTICAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1215977068",
+                    "array": false,
+                    "description": "Flips the printed image horizontally and vertically (same as rotate 180).",
+                    "readonly": true,
+                    "name": "HORIZONTAL_AND_VERTICAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1651471464",
+                    "array": false,
+                    "description": "Horizontal and vertical flip (same as rotate 180)",
+                    "readonly": true,
+                    "name": "BOTH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Flip"
+}

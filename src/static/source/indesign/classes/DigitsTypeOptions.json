@@ -1,0 +1,175 @@
+{
+    "description": "Digits type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1684628581",
+                    "array": false,
+                    "description": "Default digits",
+                    "readonly": true,
+                    "name": "DEFAULT_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684627826",
+                    "array": false,
+                    "description": "Arabic digits",
+                    "readonly": true,
+                    "name": "ARABIC_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629609",
+                    "array": false,
+                    "description": "Hindi digits",
+                    "readonly": true,
+                    "name": "HINDI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629089",
+                    "array": false,
+                    "description": "Farsi digits",
+                    "readonly": true,
+                    "name": "FARSI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684631137",
+                    "array": false,
+                    "description": "native digits",
+                    "readonly": true,
+                    "name": "NATIVE_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629094",
+                    "array": false,
+                    "description": "Full Farsi digits",
+                    "readonly": true,
+                    "name": "FULL_FARSI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684632680",
+                    "array": false,
+                    "description": "Thai digits",
+                    "readonly": true,
+                    "name": "THAI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684630625",
+                    "array": false,
+                    "description": "Lao digits",
+                    "readonly": true,
+                    "name": "LAO_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684628598",
+                    "array": false,
+                    "description": "Devanagari digits",
+                    "readonly": true,
+                    "name": "DEVANAGARI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684628069",
+                    "array": false,
+                    "description": "Bengali digits",
+                    "readonly": true,
+                    "name": "BENGALI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629357",
+                    "array": false,
+                    "description": "Gurmukhi digits",
+                    "readonly": true,
+                    "name": "GURMUKHI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684629354",
+                    "array": false,
+                    "description": "Gujarati digits",
+                    "readonly": true,
+                    "name": "GUJARATI_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684631410",
+                    "array": false,
+                    "description": "Oriya digits",
+                    "readonly": true,
+                    "name": "ORIYA_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684632673",
+                    "array": false,
+                    "description": "Tamil digits",
+                    "readonly": true,
+                    "name": "TAMIL_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684632677",
+                    "array": false,
+                    "description": "Telugu digits",
+                    "readonly": true,
+                    "name": "TELUGU_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684630369",
+                    "array": false,
+                    "description": "Kannada digits",
+                    "readonly": true,
+                    "name": "KANNADA_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684630881",
+                    "array": false,
+                    "description": "Malayalam digits",
+                    "readonly": true,
+                    "name": "MALAYALAM_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684632681",
+                    "array": false,
+                    "description": "Tibetan digits",
+                    "readonly": true,
+                    "name": "TIBETAN_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684630376",
+                    "array": false,
+                    "description": "Khmer digits",
+                    "readonly": true,
+                    "name": "KHMER_DIGITS"
+                },
+                {
+                    "type": "number",
+                    "value": "1684628085",
+                    "array": false,
+                    "description": "Burmese digits",
+                    "readonly": true,
+                    "name": "BURMESE_DIGITS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "DigitsTypeOptions"
+}

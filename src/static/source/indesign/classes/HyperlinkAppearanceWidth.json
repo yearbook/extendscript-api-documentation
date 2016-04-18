@@ -1,0 +1,39 @@
+{
+    "description": "Hyperlink border weight options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1952999790",
+                    "array": false,
+                    "description": "Uses a thin border.",
+                    "readonly": true,
+                    "name": "THIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727588",
+                    "array": false,
+                    "description": "Uses a medium border.",
+                    "readonly": true,
+                    "name": "MEDIUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1952999787",
+                    "array": false,
+                    "description": "Uses a thick border.",
+                    "readonly": true,
+                    "name": "THICK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HyperlinkAppearanceWidth"
+}

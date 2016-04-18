@@ -1,0 +1,31 @@
+{
+    "description": "Path type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1869639280",
+                    "array": false,
+                    "description": "The path is an open path.",
+                    "readonly": true,
+                    "name": "OPEN_PATH"
+                },
+                {
+                    "type": "number",
+                    "value": "1668051812",
+                    "array": false,
+                    "description": "The path is a closed path.",
+                    "readonly": true,
+                    "name": "CLOSED_PATH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PathType"
+}

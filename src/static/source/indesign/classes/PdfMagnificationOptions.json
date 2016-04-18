@@ -1,0 +1,95 @@
+{
+    "description": "PDF export magnification options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses default magnification.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "2053206906",
+                    "array": false,
+                    "description": "Uses the actual size.",
+                    "readonly": true,
+                    "name": "ACTUAL_SIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534832",
+                    "array": false,
+                    "description": "Uses the fit page magnification option.",
+                    "readonly": true,
+                    "name": "FIT_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437335",
+                    "array": false,
+                    "description": "Uses the fit width magnification option.",
+                    "readonly": true,
+                    "name": "FIT_WIDTH"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437352",
+                    "array": false,
+                    "description": "Uses the fit height magnification option.",
+                    "readonly": true,
+                    "name": "FIT_HEIGHT"
+                },
+                {
+                    "type": "number",
+                    "value": "1212437334",
+                    "array": false,
+                    "description": "Uses the fit visible magnification option.",
+                    "readonly": true,
+                    "name": "FIT_VISIBLE"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534822",
+                    "array": false,
+                    "description": "Uses 25 percent magnification option.",
+                    "readonly": true,
+                    "name": "TWENTY_FIVE_PERCENT"
+                },
+                {
+                    "type": "number",
+                    "value": "2053531248",
+                    "array": false,
+                    "description": "Uses 50 percent magnification option.",
+                    "readonly": true,
+                    "name": "FIFTY_PERCENT"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534566",
+                    "array": false,
+                    "description": "Uses 75 percent magnification option.",
+                    "readonly": true,
+                    "name": "SEVENTY_FIVE_PERCENT"
+                },
+                {
+                    "type": "number",
+                    "value": "2053533544",
+                    "array": false,
+                    "description": "Uses 100 percent magnification option.",
+                    "readonly": true,
+                    "name": "ONE_HUNDRED_PERCENT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PdfMagnificationOptions"
+}

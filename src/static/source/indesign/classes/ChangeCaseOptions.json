@@ -1,0 +1,55 @@
+{
+    "description": "Change case options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "No conversion.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1667462499",
+                    "array": false,
+                    "description": "Converts all letters to uppercase.",
+                    "readonly": true,
+                    "name": "UPPERCASE"
+                },
+                {
+                    "type": "number",
+                    "value": "1667460195",
+                    "array": false,
+                    "description": "Converts all letters to lowercase.",
+                    "readonly": true,
+                    "name": "LOWERCASE"
+                },
+                {
+                    "type": "number",
+                    "value": "1667462243",
+                    "array": false,
+                    "description": "Converts the first letter of each word to uppercase.",
+                    "readonly": true,
+                    "name": "TITLECASE"
+                },
+                {
+                    "type": "number",
+                    "value": "1667461987",
+                    "array": false,
+                    "description": "Converts the first letter of the first word of each sentence to uppercase.",
+                    "readonly": true,
+                    "name": "SENTENCECASE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ChangeCaseOptions"
+}

@@ -1,0 +1,63 @@
+{
+    "description": "Display size options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "2053990766",
+                    "array": false,
+                    "description": "Magnifies the view to the next preset percentage.",
+                    "readonly": true,
+                    "name": "ZOOM_IN"
+                },
+                {
+                    "type": "number",
+                    "value": "2054124916",
+                    "array": false,
+                    "description": "Reduces the view to the next preset percentage.",
+                    "readonly": true,
+                    "name": "ZOOM_OUT"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534835",
+                    "array": false,
+                    "description": "Centers the active spread in the window.",
+                    "readonly": true,
+                    "name": "FIT_SPREAD"
+                },
+                {
+                    "type": "number",
+                    "value": "2053534832",
+                    "array": false,
+                    "description": "Centers the active page in the window.",
+                    "readonly": true,
+                    "name": "FIT_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "2054385762",
+                    "array": false,
+                    "description": "Fits the entire pasteboard in the window.",
+                    "readonly": true,
+                    "name": "SHOW_PASTEBOARD"
+                },
+                {
+                    "type": "number",
+                    "value": "2053206906",
+                    "array": false,
+                    "description": "Zooms to 100%.",
+                    "readonly": true,
+                    "name": "ACTUAL_SIZE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ZoomOptions"
+}

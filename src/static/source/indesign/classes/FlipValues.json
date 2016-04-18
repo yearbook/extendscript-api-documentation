@@ -1,0 +1,39 @@
+{
+    "description": "Options for flipping or unflipping text relative to the path.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852206192",
+                    "array": false,
+                    "description": "No flip effect applied.",
+                    "readonly": true,
+                    "name": "NOT_FLIPPED"
+                },
+                {
+                    "type": "number",
+                    "value": "2036755568",
+                    "array": false,
+                    "description": "Flips the text across the path.",
+                    "readonly": true,
+                    "name": "FLIPPED"
+                },
+                {
+                    "type": "number",
+                    "value": "1969646704",
+                    "array": false,
+                    "description": "Undefined flip effect.",
+                    "readonly": true,
+                    "name": "UNDEFINED_FLIP_VALUE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FlipValues"
+}

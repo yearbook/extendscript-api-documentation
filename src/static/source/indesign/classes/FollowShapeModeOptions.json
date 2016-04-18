@@ -1,0 +1,39 @@
+{
+    "description": "Follow-shape options for directional feathering.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Disables shape following and uses the rectangular bounds of the object.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1701721441",
+                    "array": false,
+                    "description": "Feathers only the leading edge facing the specified angle.",
+                    "readonly": true,
+                    "name": "LEADING_EDGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1701721442",
+                    "array": false,
+                    "description": "Feathers all edges that face the specified angle.",
+                    "readonly": true,
+                    "name": "ALL_EDGES"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FollowShapeModeOptions"
+}

@@ -1,0 +1,39 @@
+{
+    "description": "The anti-aliasing type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1732527186",
+                    "array": false,
+                    "description": "Gray anti-aliasing.",
+                    "readonly": true,
+                    "name": "GRAY_ANTIALIASING"
+                },
+                {
+                    "type": "number",
+                    "value": "1665418322",
+                    "array": false,
+                    "description": "Color anti-aliasing.",
+                    "readonly": true,
+                    "name": "COLOR_ANTIALIASING"
+                },
+                {
+                    "type": "number",
+                    "value": "1950444659",
+                    "array": false,
+                    "description": "Thicker anti-aliasing.",
+                    "readonly": true,
+                    "name": "THICKER_ANTIALIASING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AntiAliasType"
+}

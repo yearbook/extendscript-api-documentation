@@ -1,0 +1,39 @@
+{
+    "description": "Transparency blending space options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Defaults to the current color profile.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1666336578",
+                    "array": false,
+                    "description": "Uses the RGB color profile.",
+                    "readonly": true,
+                    "name": "RGB"
+                },
+                {
+                    "type": "number",
+                    "value": "1129142603",
+                    "array": false,
+                    "description": "Uses the CMYK profile.",
+                    "readonly": true,
+                    "name": "CMYK"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BlendingSpace"
+}

@@ -1,0 +1,55 @@
+{
+    "description": "The type of clipping path to create.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "No clipping path applied.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "1685349735",
+                    "array": false,
+                    "description": "The clipping path is based on pixel value threshold and tolerance.",
+                    "readonly": true,
+                    "name": "DETECT_EDGES"
+                },
+                {
+                    "type": "number",
+                    "value": "1634756707",
+                    "array": false,
+                    "description": "The clipping path is based on an alpha channel defined for the graphic in a graphics application.",
+                    "readonly": true,
+                    "name": "ALPHA_CHANNEL"
+                },
+                {
+                    "type": "number",
+                    "value": "1886613620",
+                    "array": false,
+                    "description": "The clipping path is defined for the graphic in Photoshop.",
+                    "readonly": true,
+                    "name": "PHOTOSHOP_PATH"
+                },
+                {
+                    "type": "number",
+                    "value": "1970106484",
+                    "array": false,
+                    "description": "(Read-only) The clipping path has been manually edited.",
+                    "readonly": true,
+                    "name": "USER_MODIFIED_PATH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ClippingPathType"
+}

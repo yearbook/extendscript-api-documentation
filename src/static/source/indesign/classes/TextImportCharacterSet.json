@@ -1,0 +1,327 @@
+{
+    "description": "Character set options for importing text files.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1095652169",
+                    "array": false,
+                    "description": "The ANSI character set.",
+                    "readonly": true,
+                    "name": "ANSI"
+                },
+                {
+                    "type": "number",
+                    "value": "1412969328",
+                    "array": false,
+                    "description": "The Recommend:Shift_JIS 83pv character set.",
+                    "readonly": true,
+                    "name": "RECOMMENDSHIFTJIS83PV"
+                },
+                {
+                    "type": "number",
+                    "value": "1413034096",
+                    "array": false,
+                    "description": "The Shift_JIS 90pv character set.",
+                    "readonly": true,
+                    "name": "SHIFTJIS90PV"
+                },
+                {
+                    "type": "number",
+                    "value": "1413034093",
+                    "array": false,
+                    "description": "The Shift_JIS 90ms character set.",
+                    "readonly": true,
+                    "name": "SHIFTJIS90MS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416061535",
+                    "array": false,
+                    "description": "The GB2312 character set.",
+                    "readonly": true,
+                    "name": "GB2312"
+                },
+                {
+                    "type": "number",
+                    "value": "1415799349",
+                    "array": false,
+                    "description": "The Chinese Big 5 character set.",
+                    "readonly": true,
+                    "name": "CHINESE_BIG_5"
+                },
+                {
+                    "type": "number",
+                    "value": "1416446789",
+                    "array": false,
+                    "description": "The Macintosh CE (Cantral European) character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_CE"
+                },
+                {
+                    "type": "number",
+                    "value": "1416446841",
+                    "array": false,
+                    "description": "The Macintosh Cyrillic character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_CYRILLIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1416447858",
+                    "array": false,
+                    "description": "The Macintosh Greek character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_GREEK"
+                },
+                {
+                    "type": "number",
+                    "value": "1416451186",
+                    "array": false,
+                    "description": "The Macintosh Turkish character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_TURKISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1417102201",
+                    "array": false,
+                    "description": "The Windows Cyrillic character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_CYRILLIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1417102661",
+                    "array": false,
+                    "description": "The Windows EE (Eastern European) character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_EE"
+                },
+                {
+                    "type": "number",
+                    "value": "1417103218",
+                    "array": false,
+                    "description": "The Windows Greek character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_GREEK"
+                },
+                {
+                    "type": "number",
+                    "value": "1417106549",
+                    "array": false,
+                    "description": "The Windows Turkish character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_TURKISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1416061491",
+                    "array": false,
+                    "description": "The GB18030 character set.",
+                    "readonly": true,
+                    "name": "GB18030"
+                },
+                {
+                    "type": "number",
+                    "value": "1414230883",
+                    "array": false,
+                    "description": "The KSC5601 character set.",
+                    "readonly": true,
+                    "name": "KSC5601"
+                },
+                {
+                    "type": "number",
+                    "value": "1417101940",
+                    "array": false,
+                    "description": "Tthe Windows Baltic character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_BALTIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1417102149",
+                    "array": false,
+                    "description": "The Windows CE (Central European) character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_CE"
+                },
+                {
+                    "type": "number",
+                    "value": "1416450669",
+                    "array": false,
+                    "description": "The Macintosh Roman character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_ROMAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1416446834",
+                    "array": false,
+                    "description": "The Macintosh Croatian character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_CROATIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1416448355",
+                    "array": false,
+                    "description": "The Macintosh Icelandic character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_ICELANDIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1416450671",
+                    "array": false,
+                    "description": "The Macintosh Romanian character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_ROMANIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1416312946",
+                    "array": false,
+                    "description": "The Cyrillic (KOI8R) character set.",
+                    "readonly": true,
+                    "name": "CYRILLIC_KOI8R"
+                },
+                {
+                    "type": "number",
+                    "value": "1416312949",
+                    "array": false,
+                    "description": "The Cyrillic (KOI8U) character set.",
+                    "readonly": true,
+                    "name": "CYRILLIC_KOI8U"
+                },
+                {
+                    "type": "number",
+                    "value": "1415788597",
+                    "array": false,
+                    "description": "The Cyrillic (CP855) character set.",
+                    "readonly": true,
+                    "name": "CYRILLIC_CP855"
+                },
+                {
+                    "type": "number",
+                    "value": "1415867442",
+                    "array": false,
+                    "description": "The DOS Latin 2 character set.",
+                    "readonly": true,
+                    "name": "DOS_LATIN_2"
+                },
+                {
+                    "type": "number",
+                    "value": "1416184697",
+                    "array": false,
+                    "description": "The Cyrillic (ISO) character set.",
+                    "readonly": true,
+                    "name": "CYRILLIC_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416185707",
+                    "array": false,
+                    "description": "The Greek (ISO) character set.",
+                    "readonly": true,
+                    "name": "GREEK_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416184645",
+                    "array": false,
+                    "description": "The Central European (ISO) character set.",
+                    "readonly": true,
+                    "name": "CENTRALEUROPEAN_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416189045",
+                    "array": false,
+                    "description": "The Turkish (ISO) character set.",
+                    "readonly": true,
+                    "name": "TURKISH_ISO"
+                },
+                {
+                    "type": "number",
+                    "value": "1416447794",
+                    "array": false,
+                    "description": "The Macintosh Greek (Shared caps) character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_GREEK_SHARED_CAPS"
+                },
+                {
+                    "type": "number",
+                    "value": "1416446322",
+                    "array": false,
+                    "description": "The Macintosh Arabic character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_ARABIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1416448098",
+                    "array": false,
+                    "description": "The Macintosh Hebrew character set.",
+                    "readonly": true,
+                    "name": "MACINTOSH_HEBREW"
+                },
+                {
+                    "type": "number",
+                    "value": "1417101682",
+                    "array": false,
+                    "description": "The Windows Arabic character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_ARABIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1417103458",
+                    "array": false,
+                    "description": "The Windows Hebrew character set.",
+                    "readonly": true,
+                    "name": "WINDOWS_HEBREW"
+                },
+                {
+                    "type": "number",
+                    "value": "1415672685",
+                    "array": false,
+                    "description": "The Arabic ASMO character set.",
+                    "readonly": true,
+                    "name": "ARABIC_ASMO"
+                },
+                {
+                    "type": "number",
+                    "value": "1415672692",
+                    "array": false,
+                    "description": "The Arabic ASMO transparent character set.",
+                    "readonly": true,
+                    "name": "ARABIC_ASMO_TRANSPARENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1937125686",
+                    "array": false,
+                    "description": "The Unicode UTF16 character set.",
+                    "readonly": true,
+                    "name": "UTF16"
+                },
+                {
+                    "type": "number",
+                    "value": "1937134904",
+                    "array": false,
+                    "description": "The Unicode UTF8 character set.",
+                    "readonly": true,
+                    "name": "UTF8"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "TextImportCharacterSet"
+}

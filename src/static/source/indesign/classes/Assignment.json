@@ -1,0 +1,326 @@
+{
+    "description": "An assignment.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The path to the document that the hyperlink destination points to.",
+                    "type": "File",
+                    "array": false,
+                    "name": "documentPath",
+                    "readonly": true
+                },
+                {
+                    "description": "The status of the assignment file.",
+                    "type": "AssignmentStatus",
+                    "array": false,
+                    "name": "assignmentFileStatus",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the assignment is packaged.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "packaged",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the assignment package is up to date.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "packageUpToDate",
+                    "readonly": true
+                },
+                {
+                    "description": "The file path (colon delimited on the Mac OS). Can also accept: File.",
+                    "type": "string",
+                    "array": false,
+                    "name": "filePath",
+                    "readonly": true
+                },
+                {
+                    "description": "The unique ID of the Assignment.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the Assignment (a Document).",
+                    "type": "Document",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the Assignment within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of assigned stories.",
+                    "type": "AssignedStories",
+                    "array": false,
+                    "name": "assignedStories",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the Assignment.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "The user name to assign to tracked changes and notes.",
+                    "type": "string",
+                    "array": false,
+                    "name": "userName",
+                    "readonly": false
+                },
+                {
+                    "description": "The content to export in the assignment.",
+                    "type": "AssignmentExportOptions",
+                    "array": false,
+                    "name": "exportOptions",
+                    "readonly": false
+                },
+                {
+                    "description": "The color of the assignment's frames. Can return: Array of 3 Reals (0 - 255) or UIColors enumerator or NothingEnum enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "frameColor",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, includes linked files when packaging the assignment.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "includeLinksWhenPackage",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Updates the assignment file.",
+                    "parameters": [
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "update"
+                },
+                {
+                    "description": "Deletes the assignment and its file.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Creates an assignment package.",
+                    "type": "File",
+                    "parameters": [
+                        {
+                            "description": "The full path name of the assignment package file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "filePath",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "submit",
+                            "optional": true,
+                            "description": "If true, submits assigned stories before packaging the assignment. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new Assignment (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "createPackage",
+                    "array": false
+                },
+                {
+                    "description": "Cancels the package for an assignment.",
+                    "parameters": [],
+                    "name": "cancelPackage"
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Assignment.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "Assignment",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Assignment"
+}

@@ -1,0 +1,174 @@
+{
+    "description": "The preferences for a running header/footer (match character style) variable.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the MatchCharacterStylePreference (a TextVariable).",
+                    "type": "TextVariable",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The text that precedes the value of the variable. (Limit: 128 characters)",
+                    "type": "string",
+                    "array": false,
+                    "name": "textBefore",
+                    "readonly": false
+                },
+                {
+                    "description": "The text that follows the value of the variable. (Limit: 128 characters)",
+                    "type": "string",
+                    "array": false,
+                    "name": "textAfter",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style applied to the text. Can also accept: String.",
+                    "type": "CharacterStyle",
+                    "array": false,
+                    "name": "appliedCharacterStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The starting point and direction in which the search will be conducted.",
+                    "type": "SearchStrategies",
+                    "array": false,
+                    "name": "searchStrategy",
+                    "readonly": false
+                },
+                {
+                    "description": "The case of the matched text.",
+                    "type": "ChangeCaseOptions",
+                    "array": false,
+                    "name": "changeCase",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, deletes end punctuation from the matched text.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "deleteEndPunctuation",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the MatchCharacterStylePreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "MatchCharacterStylePreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "MatchCharacterStylePreference"
+}

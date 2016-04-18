@@ -1,0 +1,47 @@
+{
+    "description": "Quality options for converted JPEG images.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1701727351",
+                    "array": false,
+                    "description": "Low quality.",
+                    "readonly": true,
+                    "name": "LOW"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727588",
+                    "array": false,
+                    "description": "Medium quality.",
+                    "readonly": true,
+                    "name": "MEDIUM"
+                },
+                {
+                    "type": "number",
+                    "value": "1701726313",
+                    "array": false,
+                    "description": "High quality.",
+                    "readonly": true,
+                    "name": "HIGH"
+                },
+                {
+                    "type": "number",
+                    "value": "1701727608",
+                    "array": false,
+                    "description": "Maximum quality.",
+                    "readonly": true,
+                    "name": "MAXIMUM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "JPEGOptionsQuality"
+}

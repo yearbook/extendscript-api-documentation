@@ -1,0 +1,39 @@
+{
+    "description": "The container type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1298424423",
+                    "array": false,
+                    "description": "The container contains unordered items.",
+                    "readonly": true,
+                    "name": "BAG"
+                },
+                {
+                    "type": "number",
+                    "value": "1298428785",
+                    "array": false,
+                    "description": "The container contains ordered or sequential items.",
+                    "readonly": true,
+                    "name": "SEQ"
+                },
+                {
+                    "type": "number",
+                    "value": "1298424180",
+                    "array": false,
+                    "description": "The container contains alternative values of which only one can be used.",
+                    "readonly": true,
+                    "name": "ALT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ContainerType"
+}

@@ -1,0 +1,412 @@
+{
+    "description": "Options for specifying default footnote formatting.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the FootnoteOption (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The footnote numbering style. Can return: FootnoteNumberingStyle enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "footnoteNumberingStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The number at which to start footnote numbering.",
+                    "type": "number",
+                    "array": false,
+                    "name": "startAt",
+                    "readonly": false
+                },
+                {
+                    "description": "The point at which to restart footnote numbering. Can return: FootnoteRestarting enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "restartNumbering",
+                    "readonly": false
+                },
+                {
+                    "description": "The position of the footnote prefix and/or suffix. Can return: FootnotePrefixSuffix enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "showPrefixSuffix",
+                    "readonly": false
+                },
+                {
+                    "description": "The prefix text of the footnote. (Limit: 0 to 100 characters)",
+                    "type": "string",
+                    "array": false,
+                    "name": "prefix",
+                    "readonly": false
+                },
+                {
+                    "description": "The suffix text of the footnote. (Limit: 0 to 100 characters)",
+                    "type": "string",
+                    "array": false,
+                    "name": "suffix",
+                    "readonly": false
+                },
+                {
+                    "description": "The paragraph style to apply to footnotes. Note: The space before and after the paragraph defined in the paragraph style is ignored for footnotes. To define space above and between footnotes, see spacer and space between.",
+                    "type": "ParagraphStyle",
+                    "array": false,
+                    "name": "footnoteTextStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The character style to apply to footnote reference numbers in the main text.",
+                    "type": "CharacterStyle",
+                    "array": false,
+                    "name": "footnoteMarkerStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The position of footnote reference numbers in the main text. Can return: FootnoteMarkerPositioning enumerator or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "markerPositioning",
+                    "readonly": false
+                },
+                {
+                    "description": "The text to insert between the footnote marker number and the footnote text. (Range: 0 to 100 characters)",
+                    "type": "string",
+                    "array": false,
+                    "name": "separatorText",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount of vertical space between footnotes. Note: The space before and space after defined for the paragraph style applied to the footnote is ignored.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "spaceBetween",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum amount of vertical space between the bottom of the text column and the first footnote. Note: The space before amount defined in the paragraph style applied to the footnote is ignored for the first footnote.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "spacer",
+                    "readonly": false
+                },
+                {
+                    "description": "The distance between the top of the footnote container and the footnote text.",
+                    "type": "FootnoteFirstBaseline",
+                    "array": false,
+                    "name": "footnoteFirstBaselineOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The minimum distance between the baseline of the text and the top of the footnote container.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "footnoteMinimumFirstBaselineOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, footnotes at the end of the story are placed just below the text. If false, footnotes at the end of the story are placed at the bottom of the column.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "eosPlacement",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, footnotes cannot split across columns. If false, footnotes flow into succeeding columns when the footnote text causes the footnote area to expand upward to reach the footnote reference number in the main text.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "noSplitting",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, draws a rule between the text and the first footnote in the column.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ruleOn",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke type of the rule above the first footnote in a column. Note: Valid when rule on is true. Can return: StrokeStyle or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ruleType",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight of the rule above the first footnote in the column. (Range: 0 to 1000) Note: Valid when rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "ruleLineWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the rule above the first footnote in the column. Note: Valid when rule on is true. Can return: Swatch or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ruleColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the rule above the first footnote in the column. Note: Valid when rule type is not solid. Can return: Swatch or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "ruleGapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the rule above the first footnote in the column. (Range: 0 to 100) Note: Valid when rule on is true.",
+                    "type": "number",
+                    "array": false,
+                    "name": "ruleTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the gap color of the rule above the first footnote in the column. (Range: 0 to 100) Note: Valid when rule type is not solid.",
+                    "type": "number",
+                    "array": false,
+                    "name": "ruleGapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, overprints the gap color of the rule above the first footnote in the column. Note: Valid when rule type is not solid.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ruleGapOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, overprints the rule above the first footnote in the column. Note: Valid when rule on is true.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "ruleOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to left indent the rule above the first footnote in the column. Note: Valid when rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "ruleLeftIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "The length of the rule above the first footnote in the column. Note: Valid when rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "ruleWidth",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical offset of the rule above the first footnote in the column. Note: Valid when rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "ruleOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, draws a rule above footnote text that continues from a previous column. Note: Valid when no splitting is false or undefined.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "continuingRuleOn",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke type of the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: StrokeStyle or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "continuingRuleType",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke weight of the rule above continued footnote text. (Range: 0 to 1000) Note: Valid when continuing rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "continuingRuleLineWeight",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the rule above continued footnote text. Note: Valid when continuing rule on is true. Can return: Swatch or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "continuingRuleColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke gap of the rule above continued footnote text. Note: Valid when continuing rule type is not solid. Can return: Swatch or String.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "continuingRuleGapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the rule above continued footnote text. (Range: 0 to 100) Note: Valid when continuing rule type is not solid.",
+                    "type": "number",
+                    "array": false,
+                    "name": "continuingRuleTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint (as a percentage) of the gap color of the rule above continued footnote text. (Range: 0 to 100) Note: Valid when continuing rule type is not solid.",
+                    "type": "number",
+                    "array": false,
+                    "name": "continuingRuleGapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, overprints the rule above continued footnote text. Note: Valid when continuing rule on is true.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "continuingRuleOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, overprints the gap color of the rule above continued footnote text. Note: Valid when continuing rule type is not solid.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "continuingRuleGapOverprint",
+                    "readonly": false
+                },
+                {
+                    "description": "The amount to left indent the rule above continued footnote text. Note: Valid when continuing rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "continuingRuleLeftIndent",
+                    "readonly": false
+                },
+                {
+                    "description": "The length of the rule above continued footnote text. Note: Valid when continuing rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "continuingRuleWidth",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical offset of the rule above continued footnote text. Note: Valid when continuing rule on is true.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "continuingRuleOffset",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the FootnoteOption.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "FootnoteOption",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "FootnoteOption"
+}

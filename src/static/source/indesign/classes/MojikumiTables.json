@@ -1,0 +1,206 @@
+{
+    "description": "A collection of mojikumi tables.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new mojikumi table.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The name of the new mojikumi table.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new MojikumiTable (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the MojikumiTable.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable with the specified index or name.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable with the specified name.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable with the specified ID.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTables within the specified range.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The MojikumiTable, index, or name at the beginning of the range. Can accept: MojikumiTable, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The MojikumiTable, index, or name at the end of the range. Can accept: MojikumiTable, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable with the index previous to the specified index.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The index of the MojikumiTable that follows the desired MojikumiTable.",
+                            "type": "MojikumiTable",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable whose index follows the specified MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The MojikumiTable whose index comes before the desired MojikumiTable.",
+                            "type": "MojikumiTable",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every MojikumiTable in the collection.",
+                    "type": "MojikumiTable",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the MojikumiTable.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the MojikumiTable with the specified index.",
+                    "type": "MojikumiTable",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "MojikumiTables"
+}

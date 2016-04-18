@@ -1,0 +1,39 @@
+{
+    "description": "File encoding options for exported XML content.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1937134904",
+                    "array": false,
+                    "description": "UTF-8 encoding.",
+                    "readonly": true,
+                    "name": "UTF8"
+                },
+                {
+                    "type": "number",
+                    "value": "1937125686",
+                    "array": false,
+                    "description": "UTF-16 encoding.",
+                    "readonly": true,
+                    "name": "UTF16"
+                },
+                {
+                    "type": "number",
+                    "value": "1249077875",
+                    "array": false,
+                    "description": "Shift-JIS encoding.",
+                    "readonly": true,
+                    "name": "SHIFT_JIS"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "XMLFileEncoding"
+}

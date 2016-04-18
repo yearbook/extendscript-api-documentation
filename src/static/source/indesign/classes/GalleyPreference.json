@@ -1,0 +1,230 @@
+{
+    "description": "Galley preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the GalleyPreference (a Application or Document).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The background color, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as an InCopy UI color. . Can return: Array of 3 Reals (0 - 255) or InCopyUIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "backgroundColor",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the cursor blinks.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "blinkCursor",
+                    "readonly": false
+                },
+                {
+                    "description": "The cursor type for galley and story views.",
+                    "type": "CursorTypes",
+                    "array": false,
+                    "name": "cursorType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, galley text is anti-aliased.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "smoothText",
+                    "readonly": false
+                },
+                {
+                    "description": "The text color, specified either as an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as an InCopy UI color. Can return: Array of 3 Reals (0 - 255) or InCopyUIColors enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "textColor",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, displays the depth ruler.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showDepthRuler",
+                    "readonly": false
+                },
+                {
+                    "description": "The type of text anti-aliasing to use in story and galley views.",
+                    "type": "AntiAliasType",
+                    "array": false,
+                    "name": "antiAliasType",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, show paragraph style names.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showParagraphStyleNames",
+                    "readonly": false
+                },
+                {
+                    "description": "Amount of spacing between lines.",
+                    "type": "LineSpacingType",
+                    "array": false,
+                    "name": "lineSpacingValue",
+                    "readonly": false
+                },
+                {
+                    "description": "Font family name to use for text display.",
+                    "type": "string",
+                    "array": false,
+                    "name": "displayFont",
+                    "readonly": false
+                },
+                {
+                    "description": "Size to use for text display.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "displayFontSize",
+                    "readonly": false
+                },
+                {
+                    "description": "Info column width.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "infoColumnWidth",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, display the Info column.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showInfoColumn",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, show paragraph break marks.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "showParagraphBreakMarks",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the GalleyPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "GalleyPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "GalleyPreference"
+}

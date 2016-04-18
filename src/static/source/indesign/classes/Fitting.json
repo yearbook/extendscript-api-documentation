@@ -1,0 +1,55 @@
+{
+    "description": "Options for fitting content to a frame.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1684885618",
+                    "array": false,
+                    "description": "Resizes content to fit the frame while preserving content proportions. If the content and frame have different proportions, some empty space occurs in the frame.",
+                    "readonly": true,
+                    "name": "PROPORTIONAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1684883043",
+                    "array": false,
+                    "description": "Resizes content to fit the frame. Note: Content that is a different size than the frame appears stretched or squeezed.",
+                    "readonly": true,
+                    "name": "FIT_CONTENT_TO_FRAME"
+                },
+                {
+                    "type": "number",
+                    "value": "1684883046",
+                    "array": false,
+                    "description": "Resizes the frame to fit the content.",
+                    "readonly": true,
+                    "name": "FIT_FRAME_TO_CONTENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1684885619",
+                    "array": false,
+                    "description": "Preserves the original sizes of the frame and the content. Note: Content that is larger than the frame is obscured around the edges.",
+                    "readonly": true,
+                    "name": "PRESERVE_SIZES"
+                },
+                {
+                    "type": "number",
+                    "value": "1684883056",
+                    "array": false,
+                    "description": "Resizes content to fill the frame while preserving content proportions. If the content and frame have different proportions, some content is obscured by the bounding box of the frame.",
+                    "readonly": true,
+                    "name": "FILL_PROPORTIONAL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Fitting"
+}

@@ -1,0 +1,47 @@
+{
+    "description": "The folio orientation option.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1751738216",
+                    "array": false,
+                    "description": "portrait orientation only.",
+                    "readonly": true,
+                    "name": "PORTRAIT"
+                },
+                {
+                    "type": "number",
+                    "value": "2003395685",
+                    "array": false,
+                    "description": "landscape orientation only.",
+                    "readonly": true,
+                    "name": "LANDSCAPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1699303266",
+                    "array": false,
+                    "description": "both portrait and landscape orientations.",
+                    "readonly": true,
+                    "name": "PORTRAIT_AND_LANDSCAPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1635019116",
+                    "array": false,
+                    "description": "automatic - determine orientation based on the orientation of the mini folios.",
+                    "readonly": true,
+                    "name": "AUTO"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FolioOrientationOptions"
+}

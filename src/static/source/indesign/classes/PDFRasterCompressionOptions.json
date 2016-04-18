@@ -1,0 +1,39 @@
+{
+    "description": "PDF raster compression options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1936878179",
+                    "array": false,
+                    "description": "Uses JPEG compression.",
+                    "readonly": true,
+                    "name": "JPEG_COMPRESSION"
+                },
+                {
+                    "type": "number",
+                    "value": "1936878691",
+                    "array": false,
+                    "description": "Uses the best quality type.",
+                    "readonly": true,
+                    "name": "LOSSLESS_COMPRESSION"
+                },
+                {
+                    "type": "number",
+                    "value": "1936875875",
+                    "array": false,
+                    "description": "Uses JPEG compression and automatically determines the best quality type.",
+                    "readonly": true,
+                    "name": "AUTOMATIC_COMPRESSION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PDFRasterCompressionOptions"
+}

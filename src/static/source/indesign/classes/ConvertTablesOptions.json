@@ -1,0 +1,31 @@
+{
+    "description": "Options for converting tables.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1396921684",
+                    "array": false,
+                    "description": "Converts tables to basic, unformatted tables.",
+                    "readonly": true,
+                    "name": "UNFORMATTED_TABLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1398101076",
+                    "array": false,
+                    "description": "Convert tables to unformatted, tab-delimited text.",
+                    "readonly": true,
+                    "name": "UNFORMATTED_TABBED_TEXT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ConvertTablesOptions"
+}

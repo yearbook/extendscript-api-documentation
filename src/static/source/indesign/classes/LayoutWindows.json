@@ -1,0 +1,169 @@
+{
+    "description": "A collection of layout windows.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the LayoutWindow.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindow with the specified index or name.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindow with the specified name.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindows within the specified range.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The LayoutWindow, index, or name at the beginning of the range. Can accept: LayoutWindow, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The LayoutWindow, index, or name at the end of the range. Can accept: LayoutWindow, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindow with the index previous to the specified index.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The index of the LayoutWindow that follows the desired LayoutWindow.",
+                            "type": "LayoutWindow",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindow whose index follows the specified LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The LayoutWindow whose index comes before the desired LayoutWindow.",
+                            "type": "LayoutWindow",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every LayoutWindow in the collection.",
+                    "type": "LayoutWindow",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the LayoutWindow.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the LayoutWindow with the specified index.",
+                    "type": "LayoutWindow",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "LayoutWindows"
+}

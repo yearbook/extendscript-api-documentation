@@ -1,0 +1,31 @@
+{
+    "description": "Options for the active stroke/fill proxy.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1400140395",
+                    "array": false,
+                    "description": "Stroke proxy is active.",
+                    "readonly": true,
+                    "name": "STROKE"
+                },
+                {
+                    "type": "number",
+                    "value": "1181314156",
+                    "array": false,
+                    "description": "Fill proxy is active.",
+                    "readonly": true,
+                    "name": "FILL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "StrokeFillProxyOptions"
+}

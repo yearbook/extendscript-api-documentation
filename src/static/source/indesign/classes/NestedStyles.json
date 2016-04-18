@@ -1,0 +1,169 @@
+{
+    "description": "A collection of nested styles.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new NestedStyle.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new NestedStyle (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the NestedStyle.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedStyle with the specified index or name.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedStyles within the specified range.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "The NestedStyle, index, or name at the beginning of the range. Can accept: NestedStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The NestedStyle, index, or name at the end of the range. Can accept: NestedStyle, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedStyle with the index previous to the specified index.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "The index of the NestedStyle that follows the desired NestedStyle.",
+                            "type": "NestedStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedStyle whose index follows the specified NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "The NestedStyle whose index comes before the desired NestedStyle.",
+                            "type": "NestedStyle",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every NestedStyle in the collection.",
+                    "type": "NestedStyle",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the NestedStyle.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the NestedStyle with the specified index.",
+                    "type": "NestedStyle",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "NestedStyles"
+}

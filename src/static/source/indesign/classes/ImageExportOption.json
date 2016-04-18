@@ -1,0 +1,39 @@
+{
+    "description": "Choices for export image.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700949874",
+                    "array": false,
+                    "description": "original image.",
+                    "readonly": true,
+                    "name": "ORIGINAL_IMAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1700949872",
+                    "array": false,
+                    "description": "optimized image.",
+                    "readonly": true,
+                    "name": "OPTIMIZED_IMAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1700949107",
+                    "array": false,
+                    "description": "link to server.",
+                    "readonly": true,
+                    "name": "LINK_TO_SERVER"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImageExportOption"
+}

@@ -1,0 +1,237 @@
+{
+    "description": "Word RTF import preferences.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the WordRTFImportPreference (a Application).",
+                    "type": "Application",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, maintains character formatting in text whose formatting has been removed. Note: Valid when remove formatting is true.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveLocalOverrides",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, imports unused styles.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "importUnusedStyles",
+                    "readonly": false
+                },
+                {
+                    "description": "The option for handling style name conflicts.",
+                    "type": "ResolveStyleClash",
+                    "array": false,
+                    "name": "resolveCharacterStyleClash",
+                    "readonly": false
+                },
+                {
+                    "description": "The option for resolving conflicts that arise when paragraph styles have matching names.",
+                    "type": "ResolveStyleClash",
+                    "array": false,
+                    "name": "resolveParagraphStyleClash",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, preserves inline graphics.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveGraphics",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, preserves comments and edits in the imported file.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "preserveTrackChanges",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, imports footnotes.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "importFootnotes",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, imports endnotes.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "importEndnotes",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, convert straight quotes and apostrophes in the imported text to typographic quotation marks and apostrophes.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "useTypographersQuotes",
+                    "readonly": false
+                },
+                {
+                    "description": "The option for handling manual page breaks.",
+                    "type": "ConvertPageBreaks",
+                    "array": false,
+                    "name": "convertPageBreaks",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, imports the index.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "importIndex",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, imports the table of contents.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "importTOC",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, removes text and table formatting.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "removeFormatting",
+                    "readonly": false
+                },
+                {
+                    "description": "The policy for converting tables whose formatting has been removed. Note: Valid when remove formatting is true.",
+                    "type": "ConvertTablesOptions",
+                    "array": false,
+                    "name": "convertTablesTo",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, bullets and numbers will be converted to embedded characters during import. If false, bullets and numbers will be rendered by InDesign.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "convertBulletsAndNumbersToText",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Generates a string which, if executed, will return the WordRTFImportPreference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "WordRTFImportPreference",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "WordRTFImportPreference"
+}

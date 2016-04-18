@@ -1,0 +1,71 @@
+{
+    "description": "Text position options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852797549",
+                    "array": false,
+                    "description": "Normal position",
+                    "readonly": true,
+                    "name": "NORMAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1936749411",
+                    "array": false,
+                    "description": "Superscripts the text.",
+                    "readonly": true,
+                    "name": "SUPERSCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1935831907",
+                    "array": false,
+                    "description": "Subscripts the text.",
+                    "readonly": true,
+                    "name": "SUBSCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1884247155",
+                    "array": false,
+                    "description": "For OpenType fonts, uses--if available--raised glyphs that are sized correctly relative to the surrounding characters.",
+                    "readonly": true,
+                    "name": "OT_SUPERSCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1884247138",
+                    "array": false,
+                    "description": "For OpenType fonts, uses--if available--lowered glyphs that are sized correctly relative to the surrounding characters.",
+                    "readonly": true,
+                    "name": "OT_SUBSCRIPT"
+                },
+                {
+                    "type": "number",
+                    "value": "1884247150",
+                    "array": false,
+                    "description": "For OpenType fonts, shrinks the text but keeps the top of the characters aligned with the top of the main text. Note: Valid only for numeric characters.",
+                    "readonly": true,
+                    "name": "OT_NUMERATOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1884247140",
+                    "array": false,
+                    "description": "For OpenType fonts, shrinks the text but keeps text on the main text baseline. Note: Valid only for numeric characters.",
+                    "readonly": true,
+                    "name": "OT_DENOMINATOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "Position"
+}

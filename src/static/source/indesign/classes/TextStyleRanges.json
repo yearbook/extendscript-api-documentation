@@ -1,0 +1,154 @@
+{
+    "description": "A collection of text style ranges.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the TextStyleRange.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextStyleRange with the specified index or name.",
+                    "type": "TextStyleRange",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextStyleRanges within the specified range.",
+                    "type": "TextStyleRange",
+                    "parameters": [
+                        {
+                            "description": "The TextStyleRange, index, or name at the beginning of the range. Can accept: TextStyleRange, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The TextStyleRange, index, or name at the end of the range. Can accept: TextStyleRange, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextStyleRange with the index previous to the specified index.",
+                    "type": "TextStyleRange",
+                    "parameters": [
+                        {
+                            "description": "The index of the TextStyleRange that follows the desired TextStyleRange.",
+                            "type": "TextStyleRange",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextStyleRange whose index follows the specified TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [
+                        {
+                            "description": "The TextStyleRange whose index comes before the desired TextStyleRange.",
+                            "type": "TextStyleRange",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every TextStyleRange in the collection.",
+                    "type": "TextStyleRange",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the TextStyleRange.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the TextStyleRange with the specified index.",
+                    "type": "TextStyleRange",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "TextStyleRanges"
+}

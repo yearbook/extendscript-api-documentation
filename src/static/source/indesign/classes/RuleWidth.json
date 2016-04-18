@@ -1,0 +1,31 @@
+{
+    "description": "Options for specifying an object on which to base the width of the paragraph rule above.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1886681207",
+                    "array": false,
+                    "description": "Makes the paragraph rule above the width of the first line of text in the paragraph.",
+                    "readonly": true,
+                    "name": "TEXT_WIDTH"
+                },
+                {
+                    "type": "number",
+                    "value": "1265399652",
+                    "array": false,
+                    "description": "Makes the rule the width of the column.",
+                    "readonly": true,
+                    "name": "COLUMN_WIDTH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RuleWidth"
+}

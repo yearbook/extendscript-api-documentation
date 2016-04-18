@@ -1,0 +1,31 @@
+{
+    "description": "Gradient type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1635282023",
+                    "array": false,
+                    "description": "A linear gradient.",
+                    "readonly": true,
+                    "name": "LINEAR"
+                },
+                {
+                    "type": "number",
+                    "value": "1918985319",
+                    "array": false,
+                    "description": "A radial gradient.",
+                    "readonly": true,
+                    "name": "RADIAL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GradientType"
+}

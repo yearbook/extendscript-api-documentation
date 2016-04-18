@@ -1,0 +1,63 @@
+{
+    "description": "The version state of the file in Version Cue.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1986221653",
+                    "array": false,
+                    "description": "The version is not known.",
+                    "readonly": true,
+                    "name": "VERSION_UNKNOWN"
+                },
+                {
+                    "type": "number",
+                    "value": "1986221648",
+                    "array": false,
+                    "description": "The project has a newer file.",
+                    "readonly": true,
+                    "name": "PROJECT_FILE_NEWER"
+                },
+                {
+                    "type": "number",
+                    "value": "1986221645",
+                    "array": false,
+                    "description": "The version is identical to the project.",
+                    "readonly": true,
+                    "name": "LOCAL_PROJECT_MATCH"
+                },
+                {
+                    "type": "number",
+                    "value": "1986221644",
+                    "array": false,
+                    "description": "The version has modifications that make it newer than the project.",
+                    "readonly": true,
+                    "name": "LOCAL_NEWER"
+                },
+                {
+                    "type": "number",
+                    "value": "1986221635",
+                    "array": false,
+                    "description": "The version contains local edits but the project file is newer.",
+                    "readonly": true,
+                    "name": "VERSION_CONFLICT"
+                },
+                {
+                    "type": "number",
+                    "value": "1986221646",
+                    "array": false,
+                    "description": "No resource and no local file.",
+                    "readonly": true,
+                    "name": "NO_RESOURCE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "VersionState"
+}

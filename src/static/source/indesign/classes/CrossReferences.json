@@ -1,0 +1,220 @@
+{
+    "description": "A collection of index cross references. (For cross references in text, use the 'cross reference source' and 'hyperlink' objects.)",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new cross reference.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The topic that the cross reference points to.",
+                            "type": "Topic",
+                            "optional": false,
+                            "name": "referencedTopic",
+                            "array": false
+                        },
+                        {
+                            "description": "The cross reference type.",
+                            "type": "CrossReferenceType",
+                            "optional": false,
+                            "name": "crossReferenceType",
+                            "array": false
+                        },
+                        {
+                            "description": "The custom string to use in the cross reference. Valid only for custom cross reference types. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "customTypeString",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new CrossReference (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the CrossReference.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference with the specified index or name.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference with the specified name.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference with the specified ID.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReferences within the specified range.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The CrossReference, index, or name at the beginning of the range. Can accept: CrossReference, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The CrossReference, index, or name at the end of the range. Can accept: CrossReference, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference with the index previous to the specified index.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The index of the CrossReference that follows the desired CrossReference.",
+                            "type": "CrossReference",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference whose index follows the specified CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The CrossReference whose index comes before the desired CrossReference.",
+                            "type": "CrossReference",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every CrossReference in the collection.",
+                    "type": "CrossReference",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the CrossReference.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the CrossReference with the specified index.",
+                    "type": "CrossReference",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "CrossReferences"
+}

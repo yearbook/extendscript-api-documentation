@@ -1,0 +1,184 @@
+{
+    "description": "A collection of percent comboboxes.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new PercentCombobox.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "Initial values for properties of the new PercentCombobox (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the PercentCombobox.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentCombobox with the specified index or name.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentCombobox with the specified ID.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentComboboxes within the specified range.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The PercentCombobox, index, or name at the beginning of the range. Can accept: PercentCombobox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The PercentCombobox, index, or name at the end of the range. Can accept: PercentCombobox, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentCombobox with the index previous to the specified index.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The index of the PercentCombobox that follows the desired PercentCombobox.",
+                            "type": "PercentCombobox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentCombobox whose index follows the specified PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The PercentCombobox whose index comes before the desired PercentCombobox.",
+                            "type": "PercentCombobox",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every PercentCombobox in the collection.",
+                    "type": "PercentCombobox",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the PercentCombobox.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the PercentCombobox with the specified index.",
+                    "type": "PercentCombobox",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "PercentComboboxes"
+}

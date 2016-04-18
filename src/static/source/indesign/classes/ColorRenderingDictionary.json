@@ -1,0 +1,39 @@
+{
+    "description": "The color-rendering dictionary (CRD) to use.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1147563124",
+                    "array": false,
+                    "description": "Uses the default CRD.",
+                    "readonly": true,
+                    "name": "DEFAULT_VALUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1967419235",
+                    "array": false,
+                    "description": "Uses the document's CRD.",
+                    "readonly": true,
+                    "name": "USE_DOCUMENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1466921579",
+                    "array": false,
+                    "description": "Uses the working CRD.",
+                    "readonly": true,
+                    "name": "WORKING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ColorRenderingDictionary"
+}

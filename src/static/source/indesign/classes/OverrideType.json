@@ -1,0 +1,39 @@
+{
+    "description": "Override clearing options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1634495520",
+                    "array": false,
+                    "description": "Clears all types of override.",
+                    "readonly": true,
+                    "name": "ALL"
+                },
+                {
+                    "type": "number",
+                    "value": "1667789423",
+                    "array": false,
+                    "description": "Clears only character style overrides.",
+                    "readonly": true,
+                    "name": "CHARACTER_ONLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1885434479",
+                    "array": false,
+                    "description": "Clears only paragraph style overrides.",
+                    "readonly": true,
+                    "name": "PARAGRAPH_ONLY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "OverrideType"
+}

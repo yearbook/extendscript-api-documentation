@@ -1,0 +1,31 @@
+{
+    "description": "Format options for image data.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1095975753",
+                    "array": false,
+                    "description": "Uses ASCII format.",
+                    "readonly": true,
+                    "name": "ASCII"
+                },
+                {
+                    "type": "number",
+                    "value": "1114534521",
+                    "array": false,
+                    "description": "Uses binary format.",
+                    "readonly": true,
+                    "name": "BINARY"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "DataFormat"
+}

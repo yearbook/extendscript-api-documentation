@@ -1,0 +1,55 @@
+{
+    "description": "The synchronization status of the file in Version Cue.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1986220868",
+                    "array": false,
+                    "description": "The project version of the file was downloaded to the local workspace.",
+                    "readonly": true,
+                    "name": "FILE_DOWNLOADED"
+                },
+                {
+                    "type": "number",
+                    "value": "1986220885",
+                    "array": false,
+                    "description": "The local version of the file was uploaded to the project.",
+                    "readonly": true,
+                    "name": "FILE_UPLOADED"
+                },
+                {
+                    "type": "number",
+                    "value": "1986220876",
+                    "array": false,
+                    "description": "The file was unlocked locally.",
+                    "readonly": true,
+                    "name": "FILE_UNLOCKED"
+                },
+                {
+                    "type": "number",
+                    "value": "1986220875",
+                    "array": false,
+                    "description": "The file was not synchronized.",
+                    "readonly": true,
+                    "name": "FILE_SKIPPED"
+                },
+                {
+                    "type": "number",
+                    "value": "1986220878",
+                    "array": false,
+                    "description": "The synchronization resulted in no change because the local and project versions were identical.",
+                    "readonly": true,
+                    "name": "FILE_NO_CHANGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "VersionCueSyncStatus"
+}

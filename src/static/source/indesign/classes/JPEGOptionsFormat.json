@@ -1,0 +1,31 @@
+{
+    "description": "Formatting options for converted JPEG images.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1785751394",
+                    "array": false,
+                    "description": "Uses baseline encoding to download the image in one pass.",
+                    "readonly": true,
+                    "name": "BASELINE_ENCODING"
+                },
+                {
+                    "type": "number",
+                    "value": "1785751408",
+                    "array": false,
+                    "description": "Uses progressive encoding to download the image in a series of passes, with the first pass at low resolution and each successive pass adding resolution to the image.",
+                    "readonly": true,
+                    "name": "PROGRESSIVE_ENCODING"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "JPEGOptionsFormat"
+}

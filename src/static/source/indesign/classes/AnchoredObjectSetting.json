@@ -1,0 +1,241 @@
+{
+    "description": "The settings for an anchored object.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the AnchoredObjectSetting (a Application, Document, EPSText, SplineItem, Polygon, GraphicLine, Rectangle, Oval, Group, TextFrame, Button, FormField, SignatureField, TextBox, RadioButton, ListBox, ComboBox, CheckBox, MultiStateObject or ObjectStyle).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "The position of the anchored object relative to the anchor.",
+                    "type": "AnchorPosition",
+                    "array": false,
+                    "name": "anchoredPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the position of the anchored object is relative to the binding spine of the page or spread.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "spineRelative",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, prevents manual positioning of the anchored object.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "lockPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, pins the position of the anchored object within the text frame top and bottom.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "pinPosition",
+                    "readonly": false
+                },
+                {
+                    "description": "The point in the anchored object to position.",
+                    "type": "AnchorPoint",
+                    "array": false,
+                    "name": "anchorPoint",
+                    "readonly": false
+                },
+                {
+                    "description": "When anchored position is above line, the position of the anchored object is relative to the text area. When anchored position is custom, the horizontal alignment of the anchored object is set by the horizontal reference point. Note: Not valid when anchored position is inline.",
+                    "type": "HorizontalAlignment",
+                    "array": false,
+                    "name": "horizontalAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal reference point on the page. Valid only when anchored position is custom.",
+                    "type": "AnchoredRelativeTo",
+                    "array": false,
+                    "name": "horizontalReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical alignment of the anchored object reference point with the vertical reference point on the page. Notes: Valid only when anchored position is custom.",
+                    "type": "VerticalAlignment",
+                    "array": false,
+                    "name": "verticalAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical reference point on the page. Valid when anchored position is custom.",
+                    "type": "VerticallyRelativeTo",
+                    "array": false,
+                    "name": "verticalReferencePoint",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal (x) offset of the anchored object.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "anchorXoffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical (y) offset of the anchored object. Corresponds to the space after property for above line positioning.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "anchorYoffset",
+                    "readonly": false
+                },
+                {
+                    "description": "The space above an above-line anchored object.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "anchorSpaceAbove",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Inserts the anchored object into specified story.",
+                    "parameters": [
+                        {
+                            "description": "The location within the story, specified as an insertion point.",
+                            "type": "InsertionPoint",
+                            "optional": false,
+                            "name": "storyOffset",
+                            "array": false
+                        },
+                        {
+                            "description": "The position of the anchored object relative to the anchor. (Optional)",
+                            "type": "AnchorPosition",
+                            "optional": false,
+                            "name": "anchoredPosition",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertAnchoredObject"
+                },
+                {
+                    "description": "Releases the anchored object from its associated text.",
+                    "parameters": [],
+                    "name": "releaseAnchoredObject"
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the AnchoredObjectSetting.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "AnchoredObjectSetting",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "AnchoredObjectSetting"
+}

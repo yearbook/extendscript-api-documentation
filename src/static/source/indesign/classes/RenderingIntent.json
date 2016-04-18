@@ -1,0 +1,55 @@
+{
+    "description": "Rendering intent options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1380541299",
+                    "array": false,
+                    "description": "Uses the current color settings.",
+                    "readonly": true,
+                    "name": "USE_COLOR_SETTINGS"
+                },
+                {
+                    "type": "number",
+                    "value": "1380544611",
+                    "array": false,
+                    "description": "Preserves the visual relationship between colors at the expense of actual color values; most suitable for photographic images with high percentages of out-of-gamut colors.",
+                    "readonly": true,
+                    "name": "PERCEPTUAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1380545377",
+                    "array": false,
+                    "description": "Produces vivid colors at the expense of color accuracy; most suitable for business graphics such as graphs or charts.",
+                    "readonly": true,
+                    "name": "SATURATION"
+                },
+                {
+                    "type": "number",
+                    "value": "1380545123",
+                    "array": false,
+                    "description": "Compares the extreme highlight of the source color space to that of the desination color space and shifts all colors accordingly; out-of-gamut colors are shifted to the closest reproducible color in the destination color space.",
+                    "readonly": true,
+                    "name": "RELATIVE_COLORIMETRIC"
+                },
+                {
+                    "type": "number",
+                    "value": "1380540771",
+                    "array": false,
+                    "description": "Maintains color accuracy at the expense of preserving relationships between colors; most suitable for previewing how paper color affects printed colors.",
+                    "readonly": true,
+                    "name": "ABSOLUTE_COLORIMETRIC"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RenderingIntent"
+}

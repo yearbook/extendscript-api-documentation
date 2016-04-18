@@ -1,0 +1,47 @@
+{
+    "description": "The row type.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1161982583",
+                    "array": false,
+                    "description": "Makes the row a body row.",
+                    "readonly": true,
+                    "name": "BODY_ROW"
+                },
+                {
+                    "type": "number",
+                    "value": "1162375799",
+                    "array": false,
+                    "description": "Makes the row a header row. Note: When setting row type as header row, the row must be either the top row in the table or adjacent to an existing header row.",
+                    "readonly": true,
+                    "name": "HEADER_ROW"
+                },
+                {
+                    "type": "number",
+                    "value": "1162244727",
+                    "array": false,
+                    "description": "Makes the row a footer row. Note: When setting row type as footer row, the row must be either the bottom row in the table or adjacent to an existing footer row.",
+                    "readonly": true,
+                    "name": "FOOTER_ROW"
+                },
+                {
+                    "type": "number",
+                    "value": "1162703479",
+                    "array": false,
+                    "description": "(Read-only) The column's rows are of multiple types.",
+                    "readonly": true,
+                    "name": "MIXED_STATE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RowTypes"
+}

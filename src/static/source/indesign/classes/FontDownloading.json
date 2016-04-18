@@ -1,0 +1,47 @@
+{
+    "description": "Options for downloading fonts to the printer.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852796517",
+                    "array": false,
+                    "description": "Downloads only references to fonts. Note: Use when fonts reside in the printer.",
+                    "readonly": true,
+                    "name": "NONE"
+                },
+                {
+                    "type": "number",
+                    "value": "2003332197",
+                    "array": false,
+                    "description": "Downloads all fonts once per page.",
+                    "readonly": true,
+                    "name": "COMPLETE"
+                },
+                {
+                    "type": "number",
+                    "value": "1768842098",
+                    "array": false,
+                    "description": "Downloads only the characters (glyphs) used in the document. Glyphs are downloaded once per page.",
+                    "readonly": true,
+                    "name": "SUBSET"
+                },
+                {
+                    "type": "number",
+                    "value": "1818325607",
+                    "array": false,
+                    "description": "Downloads only the characters (glyphs) used in the document. Glyphs are downloaded once per page. Note: Use when the number of glyphs exceeds 350.",
+                    "readonly": true,
+                    "name": "SUBSET_LARGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FontDownloading"
+}

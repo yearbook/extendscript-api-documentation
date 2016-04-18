@@ -1,0 +1,87 @@
+{
+    "description": "The reference point on the object's bounding box that does not move during transformation operations. Note: Transformations include rotation, scaling, flipping, and shearing.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1095660652",
+                    "array": false,
+                    "description": "The top left corner.",
+                    "readonly": true,
+                    "name": "TOP_LEFT_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095660643",
+                    "array": false,
+                    "description": "The center point on the top of the bounding box.",
+                    "readonly": true,
+                    "name": "TOP_CENTER_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095660658",
+                    "array": false,
+                    "description": "The top right corner.",
+                    "readonly": true,
+                    "name": "TOP_RIGHT_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095658595",
+                    "array": false,
+                    "description": "The center point on the left side of the bounding box.",
+                    "readonly": true,
+                    "name": "LEFT_CENTER_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095656308",
+                    "array": false,
+                    "description": "The center point in the bounding box.",
+                    "readonly": true,
+                    "name": "CENTER_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095660131",
+                    "array": false,
+                    "description": "The center point on the right side of the bounding box.",
+                    "readonly": true,
+                    "name": "RIGHT_CENTER_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095656044",
+                    "array": false,
+                    "description": "The bottom left corner.",
+                    "readonly": true,
+                    "name": "BOTTOM_LEFT_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095656035",
+                    "array": false,
+                    "description": "The center point on the bottom of the bounding box.",
+                    "readonly": true,
+                    "name": "BOTTOM_CENTER_ANCHOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1095656050",
+                    "array": false,
+                    "description": "The bottom right corner.",
+                    "readonly": true,
+                    "name": "BOTTOM_RIGHT_ANCHOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AnchorPoint"
+}

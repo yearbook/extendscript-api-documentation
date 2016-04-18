@@ -1,0 +1,31 @@
+{
+    "description": "Dimension constraints for the object-based layout rule",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1145267817",
+                    "array": false,
+                    "description": "The dimension remains fixed relative to the parent.",
+                    "readonly": true,
+                    "name": "FIXED_DIMENSION"
+                },
+                {
+                    "type": "number",
+                    "value": "1145267820",
+                    "array": false,
+                    "description": "The dimension can vary relative to the parent.",
+                    "readonly": true,
+                    "name": "FLEXIBLE_DIMENSION"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "DimensionsConstraints"
+}

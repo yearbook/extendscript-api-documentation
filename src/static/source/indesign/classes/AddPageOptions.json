@@ -1,0 +1,39 @@
+{
+    "description": "Options for auto page insertion in response to overset text.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1634037619",
+                    "array": false,
+                    "description": "Insert pages at end of story.",
+                    "readonly": true,
+                    "name": "END_OF_STORY"
+                },
+                {
+                    "type": "number",
+                    "value": "1634037624",
+                    "array": false,
+                    "description": "Insert pages at end of section.",
+                    "readonly": true,
+                    "name": "END_OF_SECTION"
+                },
+                {
+                    "type": "number",
+                    "value": "1634037604",
+                    "array": false,
+                    "description": "Insert pages at end of document.",
+                    "readonly": true,
+                    "name": "END_OF_DOCUMENT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "AddPageOptions"
+}

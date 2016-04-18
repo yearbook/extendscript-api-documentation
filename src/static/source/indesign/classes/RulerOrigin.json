@@ -1,0 +1,39 @@
+{
+    "description": "Zero point placement options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1380143983",
+                    "array": false,
+                    "description": "The zero point is at the top-left corner of the spread and the ruler increments continuously across all pages of the spread.",
+                    "readonly": true,
+                    "name": "SPREAD_ORIGIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1380143215",
+                    "array": false,
+                    "description": "The top-left corner of each page is a new zero point on the horizontal ruler.",
+                    "readonly": true,
+                    "name": "PAGE_ORIGIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1380143984",
+                    "array": false,
+                    "description": "The zero point is at the top-left corner of the left-most page and at the top of the binding spine. The horizontal ruler measures from the leftmost page to the binding edge, and from the binding spine through the right edge of the right-most page. Also locks the zero point and prevents manual overrides.",
+                    "readonly": true,
+                    "name": "SPINE_ORIGIN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RulerOrigin"
+}

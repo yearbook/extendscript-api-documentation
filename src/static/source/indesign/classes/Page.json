@@ -1,0 +1,918 @@
+{
+    "description": "A page.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The alternate layout section to which the page belongs.",
+                    "type": "Section",
+                    "array": false,
+                    "name": "appliedAlternateLayout",
+                    "readonly": true
+                },
+                {
+                    "description": "Margin preference settings.",
+                    "type": "MarginPreference",
+                    "array": false,
+                    "name": "marginPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The side of the binding spine on which to place the page within the spread.",
+                    "type": "PageSideOptions",
+                    "array": false,
+                    "name": "side",
+                    "readonly": true
+                },
+                {
+                    "description": "The name of the Page.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": true
+                },
+                {
+                    "description": "The section to which the page belongs.",
+                    "type": "Section",
+                    "array": false,
+                    "name": "appliedSection",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the Page within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "The sequential number of the page within the document.",
+                    "type": "number",
+                    "array": false,
+                    "name": "documentOffset",
+                    "readonly": true
+                },
+                {
+                    "description": "The bounds of the Page, in the format [y1, x1, y2, x2].",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "bounds",
+                    "readonly": true
+                },
+                {
+                    "description": "The items on a specified document page that originated on the applied master page and have not been overridden or detached. Can return: Array of PageItems, Guides, Graphics, Movies or Sounds.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "masterPageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all page items contained by the Page.",
+                    "type": "PageItem",
+                    "array": true,
+                    "name": "allPageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all graphics contained by the Page.",
+                    "type": "Graphic",
+                    "array": true,
+                    "name": "allGraphics",
+                    "readonly": true
+                },
+                {
+                    "description": "Default grid properties. Note: Applies to named, layout, and frame (story) grids.",
+                    "type": "GridDataInformation",
+                    "array": false,
+                    "name": "gridData",
+                    "readonly": true
+                },
+                {
+                    "description": "The unique ID of the Page.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the Page (a Spread or MasterSpread).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of ellipses.",
+                    "type": "Ovals",
+                    "array": false,
+                    "name": "ovals",
+                    "readonly": true
+                },
+                {
+                    "description": "The spline items collection.",
+                    "type": "SplineItems",
+                    "array": false,
+                    "name": "splineItems",
+                    "readonly": true
+                },
+                {
+                    "description": "The page items collection, which can be used to process all page items in a container (such as a document, page, or group), regardless of type.",
+                    "type": "PageItems",
+                    "array": false,
+                    "name": "pageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of rectangles.",
+                    "type": "Rectangles",
+                    "array": false,
+                    "name": "rectangles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of graphic lines.",
+                    "type": "GraphicLines",
+                    "array": false,
+                    "name": "graphicLines",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text frames.",
+                    "type": "TextFrames",
+                    "array": false,
+                    "name": "textFrames",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of polygons.",
+                    "type": "Polygons",
+                    "array": false,
+                    "name": "polygons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of guides.",
+                    "type": "Guides",
+                    "array": false,
+                    "name": "guides",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of groups.",
+                    "type": "Groups",
+                    "array": false,
+                    "name": "groups",
+                    "readonly": true
+                },
+                {
+                    "description": "EPSTexts",
+                    "type": "EPSTexts",
+                    "array": false,
+                    "name": "epstexts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of form fields.",
+                    "type": "FormFields",
+                    "array": false,
+                    "name": "formFields",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of buttons.",
+                    "type": "Buttons",
+                    "array": false,
+                    "name": "buttons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of multi-state objects.",
+                    "type": "MultiStateObjects",
+                    "array": false,
+                    "name": "multiStateObjects",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of checkboxes.",
+                    "type": "CheckBoxes",
+                    "array": false,
+                    "name": "checkBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of comboboxes.",
+                    "type": "ComboBoxes",
+                    "array": false,
+                    "name": "comboBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of listboxes.",
+                    "type": "ListBoxes",
+                    "array": false,
+                    "name": "listBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of radio buttons.",
+                    "type": "RadioButtons",
+                    "array": false,
+                    "name": "radioButtons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text boxes.",
+                    "type": "TextBoxes",
+                    "array": false,
+                    "name": "textBoxes",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of signature fields.",
+                    "type": "SignatureFields",
+                    "array": false,
+                    "name": "signatureFields",
+                    "readonly": true
+                },
+                {
+                    "description": "layout rule",
+                    "type": "LayoutRuleOptions",
+                    "array": false,
+                    "name": "layoutRule",
+                    "readonly": false
+                },
+                {
+                    "description": "snapshot blending mode",
+                    "type": "SnapshotBlendingModes",
+                    "array": false,
+                    "name": "snapshotBlendingMode",
+                    "readonly": false
+                },
+                {
+                    "description": "optional page for HTML5 pagination. Obsolete after CS6",
+                    "type": "bool",
+                    "array": false,
+                    "name": "optionalPage",
+                    "readonly": false
+                },
+                {
+                    "description": "The trap preset applied to the page. Can also accept: String.",
+                    "type": "TrapPreset",
+                    "array": false,
+                    "name": "appliedTrapPreset",
+                    "readonly": false
+                },
+                {
+                    "description": "The color label of the Page, specified either as  an array of three doubles, each in the range 0 to 255 and representing R, G, and B values, or as a UI color. Can return: Array of 3 Reals (0 - 255) or UIColors enumerator or PageColorOptions enumerator.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "pageColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The master spread applied to the Page. Can also accept: NothingEnum enumerator.",
+                    "type": "MasterSpread",
+                    "array": false,
+                    "name": "appliedMaster",
+                    "readonly": false
+                },
+                {
+                    "description": "The transform applied to the master page before it is applied to Page.",
+                    "type": "TransformationMatrix",
+                    "array": false,
+                    "name": "masterPageTransform",
+                    "readonly": false
+                },
+                {
+                    "description": "The order in which the focus moves to different form fields in the PDF when the tab key is pressed. Can return: Array of Buttons, CheckBoxes, ComboBoxes, ListBoxes, RadioButtons, TextBoxes or SignatureFields.",
+                    "type": "varies=any",
+                    "array": true,
+                    "name": "tabOrder",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Places the XML element onto a page. If the place point is above an existing page item, place the XML element into the page item.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "The XML element to place.",
+                            "type": "XMLElement",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "The point at which to place the object, specified in the format [x, y].",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "placePoint",
+                            "array": true
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "autoflowing",
+                            "optional": true,
+                            "description": "If true, autoflows placed text. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "placeXML",
+                    "array": false
+                },
+                {
+                    "description": "Replaces the content of XML element with content imported from a file.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "The file path to the import file.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "Base path used to resolve relative paths. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "relativeBasePath",
+                            "array": false
+                        }
+                    ],
+                    "name": "setContent",
+                    "array": false
+                },
+                {
+                    "description": "Create a snapshot of the layout for the current Page size and shape.",
+                    "parameters": [],
+                    "name": "snapshotCurrentLayout"
+                },
+                {
+                    "description": "Delete the snapshot of the layout for the current Page size and shape.",
+                    "parameters": [],
+                    "name": "deleteLayoutSnapshot"
+                },
+                {
+                    "description": "Delete all layout snapshots for this Page.",
+                    "parameters": [],
+                    "name": "deleteAllLayoutSnapshots"
+                },
+                {
+                    "description": "Moves the page.",
+                    "type": "Page",
+                    "parameters": [
+                        {
+                            "type": "LocationOptions",
+                            "value": "LocationOptions.AT_END",
+                            "name": "to",
+                            "optional": true,
+                            "description": "The new location of the page relative to the reference object or within the document or spread.  (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The reference object. Note: Required when the to parameter value specifies before or after. Can accept: Page or Spread. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        },
+                        {
+                            "type": "BindingOptions",
+                            "value": "BindingOptions.DEFAULT_VALUE",
+                            "name": "binding",
+                            "optional": true,
+                            "description": "The location of the binding spine in spreads. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "move",
+                    "array": false
+                },
+                {
+                    "description": "Deletes the Page.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Duplicates the page.",
+                    "type": "Page",
+                    "parameters": [
+                        {
+                            "type": "LocationOptions",
+                            "value": "LocationOptions.AT_END",
+                            "name": "to",
+                            "optional": true,
+                            "description": "The location at which to place the duplicate page relative to the reference object or within the document or spread.  (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The reference object. Note: Required when the to value specifies before or after. Can accept: Page or Spread. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        }
+                    ],
+                    "name": "duplicate",
+                    "array": false
+                },
+                {
+                    "description": "Deprecated: Use contentPlace method. Original Description: Create a linked story and place it into the target.",
+                    "type": "Story",
+                    "parameters": [
+                        {
+                            "description": "The story to place and link from.",
+                            "type": "Story",
+                            "optional": false,
+                            "name": "parentStory",
+                            "array": false
+                        },
+                        {
+                            "description": "The point at which to place (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "placePoint",
+                            "array": true
+                        },
+                        {
+                            "description": "The layer on which to place (Optional)",
+                            "type": "Layer",
+                            "optional": false,
+                            "name": "destinationLayer",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the link options dialog (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "placeAndLink",
+                    "array": false
+                },
+                {
+                    "description": "Places the file.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The file to place",
+                            "type": "File",
+                            "optional": false,
+                            "name": "fileName",
+                            "array": false
+                        },
+                        {
+                            "description": "The point at which to place (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "placePoint",
+                            "array": true
+                        },
+                        {
+                            "description": "The layer on which to place (Optional)",
+                            "type": "Layer",
+                            "optional": false,
+                            "name": "destinationLayer",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the import options dialog (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "autoflowing",
+                            "optional": true,
+                            "description": "Whether to autoflow placed text (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the placed object(s) (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "place",
+                    "array": true
+                },
+                {
+                    "description": "Removes the override from a previously overridden master page item.",
+                    "parameters": [],
+                    "name": "removeOverride"
+                },
+                {
+                    "description": "Detaches an overridden master page item from the master page.",
+                    "parameters": [],
+                    "name": "detach"
+                },
+                {
+                    "description": "Selects the object.",
+                    "parameters": [
+                        {
+                            "type": "SelectionOptions",
+                            "value": "SelectionOptions.REPLACE_WITH",
+                            "name": "existingSelection",
+                            "optional": true,
+                            "description": "The selection status of the Page in relation to previously selected objects. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "select"
+                },
+                {
+                    "description": "Transform the page item.",
+                    "parameters": [
+                        {
+                            "description": "The coordinate space to use",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "Transform matrix. Can accept: Array of 6 Reals or TransformationMatrix.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "withMatrix",
+                            "array": false
+                        },
+                        {
+                            "description": "Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.  Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two. Can accept: MatrixContent enumerator, Array of MatrixContent enumerators or Long Integer. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "replacingCurrent",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "transform"
+                },
+                {
+                    "description": "Move the bounding box of the page item",
+                    "parameters": [
+                        {
+                            "description": "The bounding box to resize. Can accept: CoordinateSpaces enumerator or Ordered array containing coordinateSpace:CoordinateSpaces enumerator, boundsKind:BoundingBoxLimits enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "Opposing corners of new bounding box in the given coordinate space",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "opposingCorners",
+                            "array": true
+                        }
+                    ],
+                    "name": "reframe"
+                },
+                {
+                    "description": "Resize the page item.",
+                    "parameters": [
+                        {
+                            "description": "The bounding box to resize. Can accept: CoordinateSpaces enumerator, BoundingBoxLimits enumerator or Ordered array containing coordinateSpace:CoordinateSpaces enumerator, boundsKind:BoundingBoxLimits enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "The transform origin. Legal specifications: relative to bounding box: anchor | {anchor | {x,y}, bounds kind [, coordinate space]}; relative to coordinate space: {x,y} | {{x,y}[, coordinate space]}; relative to layout window ruler: {{x,y}, page index | bounds kind}. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "How the current dimensions are affected by the given values",
+                            "type": "ResizeMethods",
+                            "optional": false,
+                            "name": "by",
+                            "array": false
+                        },
+                        {
+                            "description": "The width and height values. Legal dimensions specifications: {x, y [, coordinate space]}, {x, resize constraint [, coordinate space]}, or {resize constraint, y [, coordinate space]}; where x and y are real numbers and coordinate space is used to determine _only_ the unit of length for x and y; coordinate space is ignored for the 'current dimensions times' resize method). Can accept: Array of Reals, ResizeConstraints enumerators or CoordinateSpaces enumerators.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "values",
+                            "array": true
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "resizeIndividually",
+                            "optional": true,
+                            "description": "If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "resize"
+                },
+                {
+                    "description": "Get the transformation values of the page item.",
+                    "type": "TransformationMatrix",
+                    "parameters": [
+                        {
+                            "description": "The coordinate space to use",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        }
+                    ],
+                    "name": "transformValuesOf",
+                    "array": true
+                },
+                {
+                    "description": "Get the coordinates of the given location in the specified coordinate system.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "location",
+                            "array": false
+                        },
+                        {
+                            "description": "The coordinate space to use.",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "resolve",
+                    "array": false
+                },
+                {
+                    "description": "Duplicate an object and place it into the target.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "One or more page items to place or load",
+                            "type": "PageItem",
+                            "optional": false,
+                            "name": "pageItems",
+                            "array": true
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "linkPageItems",
+                            "optional": true,
+                            "description": "Whether to link pageItems in content placer (if true it will override link stories value) (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "linkStories",
+                            "optional": true,
+                            "description": "Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "mapStyles",
+                            "optional": true,
+                            "description": "Whether to map styles in content placer (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The point at which to place (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "placePoint",
+                            "array": true
+                        },
+                        {
+                            "description": "The layer on which to place (Optional)",
+                            "type": "Layer",
+                            "optional": false,
+                            "name": "destinationLayer",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the link options dialog (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "contentPlace",
+                    "array": true
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the Page.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "Page",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "Page"
+}

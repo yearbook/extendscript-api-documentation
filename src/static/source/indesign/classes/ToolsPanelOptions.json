@@ -1,0 +1,39 @@
+{
+    "description": "Options for Tools panel.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1163092844",
+                    "array": false,
+                    "description": "Single column",
+                    "readonly": true,
+                    "name": "SINGLE_COLUMN"
+                },
+                {
+                    "type": "number",
+                    "value": "1162109804",
+                    "array": false,
+                    "description": "Double column",
+                    "readonly": true,
+                    "name": "DOUBLE_COLUMN"
+                },
+                {
+                    "type": "number",
+                    "value": "1163096695",
+                    "array": false,
+                    "description": "Single row",
+                    "readonly": true,
+                    "name": "SINGLE_ROW"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ToolsPanelOptions"
+}

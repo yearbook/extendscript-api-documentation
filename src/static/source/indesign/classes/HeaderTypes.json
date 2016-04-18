@@ -1,0 +1,231 @@
+{
+    "description": "Indexing sort option header types",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1213481548",
+                    "array": false,
+                    "description": "Basic Latin",
+                    "readonly": true,
+                    "name": "BASIC_LATIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485894",
+                    "array": false,
+                    "description": "Finnish/Swedish",
+                    "readonly": true,
+                    "name": "FINNISH_SWEDISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1213482062",
+                    "array": false,
+                    "description": "Danish/Norwegian",
+                    "readonly": true,
+                    "name": "DANISH_NORWEGIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485936",
+                    "array": false,
+                    "description": "Spanish",
+                    "readonly": true,
+                    "name": "SPANISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481842",
+                    "array": false,
+                    "description": "Croatian",
+                    "readonly": true,
+                    "name": "CROATIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481850",
+                    "array": false,
+                    "description": "Czech",
+                    "readonly": true,
+                    "name": "CZECH"
+                },
+                {
+                    "type": "number",
+                    "value": "1213482355",
+                    "array": false,
+                    "description": "Estonian",
+                    "readonly": true,
+                    "name": "ESTONIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483125",
+                    "array": false,
+                    "description": "Hungarian",
+                    "readonly": true,
+                    "name": "HUNGARIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213484129",
+                    "array": false,
+                    "description": "Latvian",
+                    "readonly": true,
+                    "name": "LATVIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213484137",
+                    "array": false,
+                    "description": "Lithuanian",
+                    "readonly": true,
+                    "name": "LITHUANIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485167",
+                    "array": false,
+                    "description": "Polish",
+                    "readonly": true,
+                    "name": "POLISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485679",
+                    "array": false,
+                    "description": "Romanian",
+                    "readonly": true,
+                    "name": "ROMANIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485931",
+                    "array": false,
+                    "description": "Slovak",
+                    "readonly": true,
+                    "name": "SLOVAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485934",
+                    "array": false,
+                    "description": "Slovenian",
+                    "readonly": true,
+                    "name": "SLOVENIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213486197",
+                    "array": false,
+                    "description": "Turkish",
+                    "readonly": true,
+                    "name": "TURKISH"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481573",
+                    "array": false,
+                    "description": "Belarusian",
+                    "readonly": true,
+                    "name": "BELARUSIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481589",
+                    "array": false,
+                    "description": "Bulgarian",
+                    "readonly": true,
+                    "name": "BULGARIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213485685",
+                    "array": false,
+                    "description": "Russian",
+                    "readonly": true,
+                    "name": "RUSSIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213486443",
+                    "array": false,
+                    "description": "Ukrainian",
+                    "readonly": true,
+                    "name": "UKRAINIAN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483887",
+                    "array": false,
+                    "description": "Korean Consonant",
+                    "readonly": true,
+                    "name": "KOREAN_CONSONANT"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483862",
+                    "array": false,
+                    "description": "Korean Consonant Plus Vowel",
+                    "readonly": true,
+                    "name": "KOREAN_CONSONANT_PLUS_VOWEL"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483073",
+                    "array": false,
+                    "description": "Hiragana: A, I, U, E, O...",
+                    "readonly": true,
+                    "name": "HIRAGANA_ALL"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483075",
+                    "array": false,
+                    "description": "Hiragana: A, Ka, Sa, Ta, Na...",
+                    "readonly": true,
+                    "name": "HIRAGANA_CONSONANTS_ONLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483841",
+                    "array": false,
+                    "description": "Katakana: A, I, U, E, O...",
+                    "readonly": true,
+                    "name": "KATAKANA_ALL"
+                },
+                {
+                    "type": "number",
+                    "value": "1213483843",
+                    "array": false,
+                    "description": "Katakana: A, Ka, Sa, Ta, Na...",
+                    "readonly": true,
+                    "name": "KATAKANA_CONSONANTS_ONLY"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481808",
+                    "array": false,
+                    "description": "Chinese Pinyin",
+                    "readonly": true,
+                    "name": "CHINESE_PINYIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1213481811",
+                    "array": false,
+                    "description": "Chinese Stroke Count",
+                    "readonly": true,
+                    "name": "CHINESE_STROKE_COUNT"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "HeaderTypes"
+}

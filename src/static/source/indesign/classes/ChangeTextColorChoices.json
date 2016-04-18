@@ -1,0 +1,31 @@
+{
+    "description": "Changed text color options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1700095843",
+                    "array": false,
+                    "description": "The text color for changed text is the same as the galley text color.",
+                    "readonly": true,
+                    "name": "CHANGE_USES_GALLEY_TEXT_COLOR"
+                },
+                {
+                    "type": "number",
+                    "value": "1700098147",
+                    "array": false,
+                    "description": "The text color for changed text is the same as the text color defined in track changes preferences. For information, see text color for added text, text color for deleted text, or text color for moved text.",
+                    "readonly": true,
+                    "name": "CHANGE_USES_CHANGE_PREF_COLOR"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ChangeTextColorChoices"
+}

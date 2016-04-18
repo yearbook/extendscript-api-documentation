@@ -1,0 +1,31 @@
+{
+    "description": "Paper size optons.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1347634290",
+                    "array": false,
+                    "description": "Allows the printer driver to define the paper size.",
+                    "readonly": true,
+                    "name": "DEFINED_BY_DRIVER"
+                },
+                {
+                    "type": "number",
+                    "value": "1131639917",
+                    "array": false,
+                    "description": "Allows definition of a custom paper size. Note: Not all printers allow custom paper sizes.",
+                    "readonly": true,
+                    "name": "CUSTOM"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PaperSizes"
+}

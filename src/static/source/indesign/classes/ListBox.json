@@ -1,0 +1,1907 @@
+{
+    "description": "A listbox.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "string",
+                    "value": "beforePlace",
+                    "array": false,
+                    "description": "Dispatched before a ListBox is placed. This event bubbles. This event is cancelable.",
+                    "readonly": true,
+                    "name": "BEFORE_PLACE"
+                },
+                {
+                    "type": "string",
+                    "value": "afterPlace",
+                    "array": false,
+                    "description": "Dispatched after a ListBox is placed. This event bubbles. This event is not cancelable.",
+                    "readonly": true,
+                    "name": "AFTER_PLACE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "Anchored object settings.",
+                    "type": "AnchoredObjectSetting",
+                    "array": false,
+                    "name": "anchoredObjectSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "The text wrap preference properties that define the default formatting for wrapping text around objects.",
+                    "type": "TextWrapPreference",
+                    "array": false,
+                    "name": "textWrapPreferences",
+                    "readonly": true
+                },
+                {
+                    "description": "The XML element associated with the ListBox.",
+                    "type": "XMLItem",
+                    "array": false,
+                    "name": "associatedXMLElement",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings.",
+                    "type": "TransparencySetting",
+                    "array": false,
+                    "name": "transparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the stroke.",
+                    "type": "StrokeTransparencySetting",
+                    "array": false,
+                    "name": "strokeTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the fill applied to the ListBox.",
+                    "type": "FillTransparencySetting",
+                    "array": false,
+                    "name": "fillTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Transparency settings for the content of the ListBox.",
+                    "type": "ContentTransparencySetting",
+                    "array": false,
+                    "name": "contentTransparencySettings",
+                    "readonly": true
+                },
+                {
+                    "description": "Linked Page Item options",
+                    "type": "LinkedPageItemOption",
+                    "array": false,
+                    "name": "linkedPageItemOptions",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the object originated on a master spread and was overridden. If false, the object either originated on a master spread and was not overridden, or the object did not originate on a master page.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overridden",
+                    "readonly": true
+                },
+                {
+                    "description": "An object that originated on a master page and has been overridden. Can return: PageItem, Guide, Graphic, Movie or Sound.",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "overriddenMasterPageItem",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all page items contained by the ListBox.",
+                    "type": "PageItem",
+                    "array": true,
+                    "name": "allPageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "Lists all graphics contained by the ListBox.",
+                    "type": "Graphic",
+                    "array": true,
+                    "name": "allGraphics",
+                    "readonly": true
+                },
+                {
+                    "description": "The page on which this page item appears.",
+                    "type": "Page",
+                    "array": false,
+                    "name": "parentPage",
+                    "readonly": true
+                },
+                {
+                    "description": "The page item animation settings.",
+                    "type": "AnimationSetting",
+                    "array": false,
+                    "name": "animationSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "The object timing settings.",
+                    "type": "TimingSetting",
+                    "array": false,
+                    "name": "timingSettings",
+                    "readonly": true
+                },
+                {
+                    "description": "The list of all articles this page item is part of",
+                    "type": "Article",
+                    "array": true,
+                    "name": "allArticles",
+                    "readonly": true
+                },
+                {
+                    "description": "The unique ID of the ListBox.",
+                    "type": "number",
+                    "array": false,
+                    "name": "id",
+                    "readonly": true
+                },
+                {
+                    "description": "Returns true if the object specifier resolves to valid objects.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "isValid",
+                    "readonly": true
+                },
+                {
+                    "description": "The parent of the ListBox (a PlaceGun, Character, Spread, MasterSpread, SplineItem, Polygon, GraphicLine, Rectangle, Oval, Group or Snippet).",
+                    "type": "varies=any",
+                    "array": false,
+                    "name": "parent",
+                    "readonly": true
+                },
+                {
+                    "description": "The index of the ListBox within its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "index",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of preferences objects.",
+                    "type": "Preferences",
+                    "array": false,
+                    "name": "preferences",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of ellipses.",
+                    "type": "Ovals",
+                    "array": false,
+                    "name": "ovals",
+                    "readonly": true
+                },
+                {
+                    "description": "The spline items collection.",
+                    "type": "SplineItems",
+                    "array": false,
+                    "name": "splineItems",
+                    "readonly": true
+                },
+                {
+                    "description": "The page items collection, which can be used to process all page items in a container (such as a document, page, or group), regardless of type.",
+                    "type": "PageItems",
+                    "array": false,
+                    "name": "pageItems",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of rectangles.",
+                    "type": "Rectangles",
+                    "array": false,
+                    "name": "rectangles",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of graphic lines.",
+                    "type": "GraphicLines",
+                    "array": false,
+                    "name": "graphicLines",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of text frames.",
+                    "type": "TextFrames",
+                    "array": false,
+                    "name": "textFrames",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of polygons.",
+                    "type": "Polygons",
+                    "array": false,
+                    "name": "polygons",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of events.",
+                    "type": "Events",
+                    "array": false,
+                    "name": "events",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of event listeners.",
+                    "type": "EventListeners",
+                    "array": false,
+                    "name": "eventListeners",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of bitmap images in any bitmap file format (including TIFF, JPEG, or GIF).",
+                    "type": "Images",
+                    "array": false,
+                    "name": "images",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of imported graphics in any graphic file format (vector, metafile, or bitmap).",
+                    "type": "Graphics",
+                    "array": false,
+                    "name": "graphics",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of EPS files.",
+                    "type": "EPSs",
+                    "array": false,
+                    "name": "epss",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of WMF graphics.",
+                    "type": "WMFs",
+                    "array": false,
+                    "name": "wmfs",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PICT graphics.",
+                    "type": "PICTs",
+                    "array": false,
+                    "name": "picts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of PDF files.",
+                    "type": "PDFs",
+                    "array": false,
+                    "name": "pdfs",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of groups.",
+                    "type": "Groups",
+                    "array": false,
+                    "name": "groups",
+                    "readonly": true
+                },
+                {
+                    "description": "EPSTexts",
+                    "type": "EPSTexts",
+                    "array": false,
+                    "name": "epstexts",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of submit form behavior objects.",
+                    "type": "SubmitFormBehaviors",
+                    "array": false,
+                    "name": "submitFormBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of behavior objects.",
+                    "type": "Behaviors",
+                    "array": false,
+                    "name": "behaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of clear form behavior objects.",
+                    "type": "ClearFormBehaviors",
+                    "array": false,
+                    "name": "clearFormBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of print form behavior objects.",
+                    "type": "PrintFormBehaviors",
+                    "array": false,
+                    "name": "printFormBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of view zoom behavior objects.",
+                    "type": "ViewZoomBehaviors",
+                    "array": false,
+                    "name": "viewZoomBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of sound behavior objects.",
+                    "type": "SoundBehaviors",
+                    "array": false,
+                    "name": "soundBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of show/hide fields behavior objects.",
+                    "type": "ShowHideFieldsBehaviors",
+                    "array": false,
+                    "name": "showHideFieldsBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of movie behavior objects.",
+                    "type": "MovieBehaviors",
+                    "array": false,
+                    "name": "movieBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto anchor behavior objects.",
+                    "type": "GotoAnchorBehaviors",
+                    "array": false,
+                    "name": "gotoAnchorBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto first page behavior objects.",
+                    "type": "GotoFirstPageBehaviors",
+                    "array": false,
+                    "name": "gotoFirstPageBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto last page behavior objects.",
+                    "type": "GotoLastPageBehaviors",
+                    "array": false,
+                    "name": "gotoLastPageBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto next page behavior objects.",
+                    "type": "GotoNextPageBehaviors",
+                    "array": false,
+                    "name": "gotoNextPageBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto previous page behavior objects.",
+                    "type": "GotoPreviousPageBehaviors",
+                    "array": false,
+                    "name": "gotoPreviousPageBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto next view behavior objects.",
+                    "type": "GotoNextViewBehaviors",
+                    "array": false,
+                    "name": "gotoNextViewBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto previous view behavior objects.",
+                    "type": "GotoPreviousViewBehaviors",
+                    "array": false,
+                    "name": "gotoPreviousViewBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of goto URL behavior objects.",
+                    "type": "GotoURLBehaviors",
+                    "array": false,
+                    "name": "gotoURLBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "A collection of open file behavior objects.",
+                    "type": "OpenFileBehaviors",
+                    "array": false,
+                    "name": "openFileBehaviors",
+                    "readonly": true
+                },
+                {
+                    "description": "If true, the form field is read only in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "readOnly",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the form field is required in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "required",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the form field/push button is printable in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "printableInPdf",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the form field/push button is hidden until triggered in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "hiddenUntilTriggered",
+                    "readonly": false
+                },
+                {
+                    "description": "The font size for the form field in the exported PDF.",
+                    "type": "number",
+                    "array": false,
+                    "name": "fontSize",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the choices would be sorted in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "sortChoices",
+                    "readonly": false
+                },
+                {
+                    "description": "The list of choices for combo and list boxes in the exported PDF.",
+                    "type": "string",
+                    "array": true,
+                    "name": "choiceList",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the form field has right to left text enabled in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "rightToLeftField",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the list box can have multiple items selected simultaneously in the exported PDF.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "multipleSelection",
+                    "readonly": false
+                },
+                {
+                    "description": "The index of the active state in the object's states collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "activeStateIndex",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the ListBox.",
+                    "type": "string",
+                    "array": false,
+                    "name": "name",
+                    "readonly": false
+                },
+                {
+                    "description": "The description of the ListBox.",
+                    "type": "string",
+                    "array": false,
+                    "name": "description",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the master page item can be overridden.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "allowOverrides",
+                    "readonly": false
+                },
+                {
+                    "description": "The left margin, width, and right margin constraints this item is subject to when using the object-based layout rule.",
+                    "type": "DimensionsConstraints",
+                    "array": true,
+                    "name": "horizontalLayoutConstraints",
+                    "readonly": false
+                },
+                {
+                    "description": "The top margin, height, and bottom margin constraints this item is subject to when using the object-based layout rule.",
+                    "type": "DimensionsConstraints",
+                    "array": true,
+                    "name": "verticalLayoutConstraints",
+                    "readonly": false
+                },
+                {
+                    "description": "The bounds of the ListBox excluding the stroke width, in the format [y1, x1, y2, x2], which give the coordinates of the top-left and bottom-right corners of the bounding box.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "geometricBounds",
+                    "readonly": false
+                },
+                {
+                    "description": "The bounds of the ListBox including the stroke width, in the format [y1, x1, y2, x2], which give the coordinates of the top-left and bottom-right corners of the bounding box.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "visibleBounds",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the fill of the ListBox. . Can also accept: String.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "fillColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in the ListBox's fill color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "fillTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the ListBox's fill color overprints any underlying objects. If false, the fill color knocks out the underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintFill",
+                    "readonly": false
+                },
+                {
+                    "description": "The weight (in points) to apply to the ListBox's stroke.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "strokeWeight",
+                    "readonly": false
+                },
+                {
+                    "type": "number",
+                    "value": "4",
+                    "array": false,
+                    "description": "The limit of the ratio of stroke width to miter length before a miter (pointed) join becomes a bevel (squared-off) join.",
+                    "readonly": false,
+                    "name": "miterLimit"
+                },
+                {
+                    "description": "The end shape of an open path.",
+                    "type": "EndCap",
+                    "array": false,
+                    "name": "endCap",
+                    "readonly": false
+                },
+                {
+                    "description": "The corner join applied to the ListBox.",
+                    "type": "EndJoin",
+                    "array": false,
+                    "name": "endJoin",
+                    "readonly": false
+                },
+                {
+                    "description": "The name of the stroke style to apply. Can also accept: String.",
+                    "type": "StrokeStyle",
+                    "array": false,
+                    "name": "strokeType",
+                    "readonly": false
+                },
+                {
+                    "description": "The corner adjustment applied to the ListBox.",
+                    "type": "StrokeCornerAdjustment",
+                    "array": false,
+                    "name": "strokeCornerAdjustment",
+                    "readonly": false
+                },
+                {
+                    "description": "The dash and gap measurements that define the pattern of a custom dashed line. Define up to six values (in points) in the format [dash1, gap1, dash2, gap2, dash3, gap3].",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "strokeDashAndGap",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the start of the path.",
+                    "type": "ArrowHead",
+                    "array": false,
+                    "name": "leftLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The arrowhead applied to the end of the path.",
+                    "type": "ArrowHead",
+                    "array": false,
+                    "name": "rightLineEnd",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the stroke of the ListBox. Can also accept: String.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "strokeColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The percent of tint to use in object's stroke color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "strokeTint",
+                    "readonly": false
+                },
+                {
+                    "description": "The starting point (in page coordinates) of a gradient applied to the fill of the ListBox, in the format [x, y].",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "gradientFillStart",
+                    "readonly": false
+                },
+                {
+                    "description": "The length (for a linear gradient) or radius (for a radial gradient) applied to the fill of the ListBox.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "gradientFillLength",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the fill of the ListBox. (Range: -180 to 180)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gradientFillAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The starting point (in page coordinates) of a gradient applied to the stroke of the ListBox, in the format [x, y].",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": true,
+                    "name": "gradientStrokeStart",
+                    "readonly": false
+                },
+                {
+                    "description": "The length (for a linear gradient) or radius (for a radial gradient) applied to the stroke of the ListBox.",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "gradientStrokeLength",
+                    "readonly": false
+                },
+                {
+                    "description": "The angle of a linear gradient applied to the stroke of the ListBox. (Range: -180 to 180)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gradientStrokeAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the ListBox's stroke color overprints any underlying objects. If false, the stroke color knocks out the  underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintStroke",
+                    "readonly": false
+                },
+                {
+                    "description": "The swatch (color, gradient, tint, or mixed ink) applied to the gap of a dashed, dotted, or striped stroke. For information, see stroke type.",
+                    "type": "Swatch",
+                    "array": false,
+                    "name": "gapColor",
+                    "readonly": false
+                },
+                {
+                    "description": "The tint as a percentage of the gap color. (To specify a tint percent, use a number in the range of 0 to 100; to use the inherited or overridden value, use -1.)",
+                    "type": "number",
+                    "array": false,
+                    "name": "gapTint",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the gap color overprints any underlying colors. If false, the gap color knocks out the underlying colors.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "overprintGap",
+                    "readonly": false
+                },
+                {
+                    "description": "The stroke alignment applied to the ListBox.",
+                    "type": "StrokeAlignment",
+                    "array": false,
+                    "name": "strokeAlignment",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the ListBox does not print.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "nonprinting",
+                    "readonly": false
+                },
+                {
+                    "description": "The layer that the ListBox is on.",
+                    "type": "Layer",
+                    "array": false,
+                    "name": "itemLayer",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the ListBox is locked.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "locked",
+                    "readonly": false
+                },
+                {
+                    "description": "Display performance options for the ListBox.",
+                    "type": "DisplaySettingOptions",
+                    "array": false,
+                    "name": "localDisplaySetting",
+                    "readonly": false
+                },
+                {
+                    "description": "The rotatation angle of the ListBox. (Range: -360 to 360)",
+                    "type": "number",
+                    "array": false,
+                    "name": "rotationAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The skewing angle applied to the ListBox. (Range: -360 to 360)",
+                    "type": "number",
+                    "array": false,
+                    "name": "shearAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal scaling applied to the ListBox.",
+                    "type": "number",
+                    "array": false,
+                    "name": "horizontalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical scaling applied to the ListBox.",
+                    "type": "number",
+                    "array": false,
+                    "name": "verticalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The rotation angle of the ListBox relative to its containing object. (Range: -360 to 360)",
+                    "type": "number",
+                    "array": false,
+                    "name": "absoluteRotationAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The skewing angle of the ListBox relative to its containing object. (Range: -360 to 360)",
+                    "type": "number",
+                    "array": false,
+                    "name": "absoluteShearAngle",
+                    "readonly": false
+                },
+                {
+                    "description": "The horizontal scale of the ListBox relative to its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "absoluteHorizontalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The vertical scale of the ListBox relative to its containing object.",
+                    "type": "number",
+                    "array": false,
+                    "name": "absoluteVerticalScale",
+                    "readonly": false
+                },
+                {
+                    "description": "The object style applied to the ListBox.",
+                    "type": "ObjectStyle",
+                    "array": false,
+                    "name": "appliedObjectStyle",
+                    "readonly": false
+                },
+                {
+                    "description": "The direction in which to flip the printed image.",
+                    "type": "Flip",
+                    "array": false,
+                    "name": "flip",
+                    "readonly": false
+                },
+                {
+                    "description": "Indicates whether the ListBox has been flipped independently of its parent object and, if yes, the direction in which the ListBox was flipped.",
+                    "type": "Flip",
+                    "array": false,
+                    "name": "absoluteFlip",
+                    "readonly": false
+                },
+                {
+                    "description": "If true, the ListBox is visible.",
+                    "type": "bool",
+                    "array": false,
+                    "name": "visible",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to be applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes.Note: corner option differs from end join in which you can set a radius for a corner option, whereas the rounded or beveled effect of an end join depends on the stroke weight.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "topLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the top right corner of rectangular shapes",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "topRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom left corner of rectangular shapes.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "bottomLeftCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The shape to apply to the bottom right corner of rectangular shapes.",
+                    "type": "CornerOptions",
+                    "array": false,
+                    "name": "bottomRightCornerOption",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top left corner of rectangular shapes and all corners of non-rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "topLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the top right corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "topRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom left corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bottomLeftCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "The radius in measurement units of the corner effect applied to the bottom right corner of rectangular shapes",
+                    "type": "Measurement Unit (Number or String)=any",
+                    "array": false,
+                    "name": "bottomRightCornerRadius",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that can be set to any string.",
+                    "type": "string",
+                    "array": false,
+                    "name": "label",
+                    "readonly": false
+                },
+                {
+                    "description": "A property that allows setting of several properties at the same time.",
+                    "type": "Object",
+                    "array": false,
+                    "name": "properties",
+                    "readonly": false
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Brings the ListBox to the front of its layer or in front of a particular item.",
+                    "parameters": [
+                        {
+                            "description": "The reference object to bring the object in front of (must have same parent) (Optional)",
+                            "type": "PageItem",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        }
+                    ],
+                    "name": "bringToFront"
+                },
+                {
+                    "description": "Sends the ListBox to the back of its layer or behind a particular item (must have same parent).",
+                    "parameters": [
+                        {
+                            "description": "The reference object to send the object behind (Optional)",
+                            "type": "PageItem",
+                            "optional": false,
+                            "name": "reference",
+                            "array": false
+                        }
+                    ],
+                    "name": "sendToBack"
+                },
+                {
+                    "description": "Brings the ListBox forward one level in its layer.",
+                    "parameters": [],
+                    "name": "bringForward"
+                },
+                {
+                    "description": "Sends the ListBox back one level in its layer.",
+                    "parameters": [],
+                    "name": "sendBackward"
+                },
+                {
+                    "description": "Converts the ListBox to a different shape.",
+                    "parameters": [
+                        {
+                            "description": "The ListBox's new shape.",
+                            "type": "ConvertShapeOptions",
+                            "optional": false,
+                            "name": "given",
+                            "array": false
+                        },
+                        {
+                            "description": "The number of sides for the resulting polygon. (Range: 3 to 100) (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "numberOfSides",
+                            "array": false
+                        },
+                        {
+                            "description": "The star inset percentage for the resulting polygon. (Range: 0.0 to 100.0)  (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "insetPercentage",
+                            "array": false
+                        },
+                        {
+                            "description": "The corner radius of the resulting rectangle. (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "cornerRadius",
+                            "array": false
+                        }
+                    ],
+                    "name": "convertShape"
+                },
+                {
+                    "description": "Converts the button object to the page item currently in the active state. Page items from other states will be lost.",
+                    "parameters": [],
+                    "name": "convertToObject"
+                },
+                {
+                    "description": "Places XML content into the specified object. Note: Replaces any existing content.",
+                    "parameters": [
+                        {
+                            "description": "The XML element whose content you want to place.",
+                            "type": "XMLElement",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        }
+                    ],
+                    "name": "placeXML"
+                },
+                {
+                    "description": "Tag the object or the parent story using default tags defined in XML preference.",
+                    "parameters": [],
+                    "name": "autoTag"
+                },
+                {
+                    "description": "Associates the page item with the specified XML element while preserving existing content.",
+                    "parameters": [
+                        {
+                            "description": "The XML element.",
+                            "type": "XMLElement",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        }
+                    ],
+                    "name": "markup"
+                },
+                {
+                    "description": "Finds objects that match the find what value.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "findObject",
+                    "array": true
+                },
+                {
+                    "description": "Finds objects that match the find what value and replace the objects with the change to value.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "If true, returns the results in reverse order. (Optional)",
+                            "type": "bool",
+                            "optional": false,
+                            "name": "reverseOrder",
+                            "array": false
+                        }
+                    ],
+                    "name": "changeObject",
+                    "array": true
+                },
+                {
+                    "description": "Overrides a master page item and places the item on the document page as a new object.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The document page that contains the master page item to override.",
+                            "type": "Page",
+                            "optional": false,
+                            "name": "destinationPage",
+                            "array": false
+                        }
+                    ],
+                    "name": "override",
+                    "array": false
+                },
+                {
+                    "description": "Removes the override from a previously overridden master page item.",
+                    "parameters": [],
+                    "name": "removeOverride"
+                },
+                {
+                    "description": "Detaches an overridden master page item from the master page.",
+                    "parameters": [],
+                    "name": "detach"
+                },
+                {
+                    "description": "Deletes the ListBox.",
+                    "parameters": [],
+                    "name": "remove"
+                },
+                {
+                    "description": "Applies the specified fit option to content in a frame.",
+                    "parameters": [
+                        {
+                            "description": "The fit option to use.",
+                            "type": "FitOptions",
+                            "optional": false,
+                            "name": "given",
+                            "array": false
+                        }
+                    ],
+                    "name": "fit"
+                },
+                {
+                    "description": "Flips the ListBox.",
+                    "parameters": [
+                        {
+                            "description": "The axis around which to flip the ListBox.",
+                            "type": "Flip",
+                            "optional": false,
+                            "name": "given",
+                            "array": false
+                        },
+                        {
+                            "description": "The point around which to flip the ListBox. Can accept: Array of 2 Units or AnchorPoint enumerator. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "around",
+                            "array": false
+                        }
+                    ],
+                    "name": "flipItem"
+                },
+                {
+                    "description": "Duplicates the ListBox at the specified location or offset.",
+                    "type": "PageItem",
+                    "parameters": [
+                        {
+                            "description": "The location of the new ListBox, specified in coordinates in the format [x, y]. Can accept: Array of 2 Units, Spread, Page or Layer. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "Amount by which to offset the new ListBox from the original ListBox's position. (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "by",
+                            "array": true
+                        }
+                    ],
+                    "name": "duplicate",
+                    "array": false
+                },
+                {
+                    "description": "Moves the ListBox to a new location. Note: Either the 'to' or 'by' parameter is required; if both parameters are defined, only the to value is used.",
+                    "parameters": [
+                        {
+                            "description": "The new location of the ListBox,in the format (x, y). Can accept: Array of 2 Units, Spread, Page or Layer. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "description": "The amount (in measurement units) to move the ListBox relative to its current position, in the format (x, y). (Optional)",
+                            "type": "Measurement Unit (Number or String)=any",
+                            "optional": false,
+                            "name": "by",
+                            "array": true
+                        }
+                    ],
+                    "name": "move"
+                },
+                {
+                    "description": "Applies the specified object style.",
+                    "parameters": [
+                        {
+                            "description": "The object style to apply.",
+                            "type": "ObjectStyle",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "clearingOverrides",
+                            "optional": true,
+                            "description": "If true, clears the ListBox's existing attributes before applying the style. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "clearingOverridesThroughRootObjectStyle",
+                            "optional": true,
+                            "description": "If true, clears attributes and formatting applied to the ListBox that are not defined in the object style. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "applyObjectStyle"
+                },
+                {
+                    "description": "Clear overrides for object style",
+                    "parameters": [],
+                    "name": "clearObjectStyleOverrides"
+                },
+                {
+                    "description": "Clears transformations from the ListBox. Transformations include rotation, scaling, flipping, fitting, and shearing.",
+                    "parameters": [],
+                    "name": "clearTransformations"
+                },
+                {
+                    "description": "Transform the page item.",
+                    "parameters": [
+                        {
+                            "description": "The coordinate space to use",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "The temporary origin during the transformation. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "Transform matrix. Can accept: Array of 6 Reals or TransformationMatrix.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "withMatrix",
+                            "array": false
+                        },
+                        {
+                            "description": "Transform components to consider; providing this optional parameter causes the target's existing transform components to be replaced with new values.  Without this parameter, the given matrix is concatenated onto the target's existing transform combining the effect of the two. Can accept: MatrixContent enumerator, Array of MatrixContent enumerators or Long Integer. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "replacingCurrent",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler based origin is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "transform"
+                },
+                {
+                    "description": "Get the transformation values of the page item.",
+                    "type": "TransformationMatrix",
+                    "parameters": [
+                        {
+                            "description": "The coordinate space to use",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        }
+                    ],
+                    "name": "transformValuesOf",
+                    "array": true
+                },
+                {
+                    "description": "Get the coordinates of the given location in the specified coordinate system.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "The location requested. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "location",
+                            "array": false
+                        },
+                        {
+                            "description": "The coordinate space to use.",
+                            "type": "CoordinateSpaces",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "resolve",
+                    "array": false
+                },
+                {
+                    "description": "Apply an item's scaling to its content if possible.",
+                    "parameters": [
+                        {
+                            "description": "The scale factors to be left on the item.  The default is {1.0, 1.0}. (Optional)",
+                            "type": "number",
+                            "optional": false,
+                            "name": "to",
+                            "array": true
+                        }
+                    ],
+                    "name": "redefineScaling"
+                },
+                {
+                    "description": "Resize the page item.",
+                    "parameters": [
+                        {
+                            "description": "The bounding box to resize. Can accept: CoordinateSpaces enumerator, BoundingBoxLimits enumerator or Ordered array containing coordinateSpace:CoordinateSpaces enumerator, boundsKind:BoundingBoxLimits enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "The transform origin. Legal specifications: relative to bounding box: anchor | {anchor | {x,y}, bounds kind [, coordinate space]}; relative to coordinate space: {x,y} | {{x,y}[, coordinate space]}; relative to layout window ruler: {{x,y}, page index | bounds kind}. Can accept: Array of 2 Reals, AnchorPoint enumerator or Array of Arrays of 2 Reals, CoordinateSpaces enumerators, AnchorPoint enumerators, BoundingBoxLimits enumerators or Long Integers.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "How the current dimensions are affected by the given values",
+                            "type": "ResizeMethods",
+                            "optional": false,
+                            "name": "by",
+                            "array": false
+                        },
+                        {
+                            "description": "The width and height values. Legal dimensions specifications: {x, y [, coordinate space]}, {x, resize constraint [, coordinate space]}, or {resize constraint, y [, coordinate space]}; where x and y are real numbers and coordinate space is used to determine _only_ the unit of length for x and y; coordinate space is ignored for the 'current dimensions times' resize method). Can accept: Array of Reals, ResizeConstraints enumerators or CoordinateSpaces enumerators.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "values",
+                            "array": true
+                        },
+                        {
+                            "type": "bool",
+                            "value": "true",
+                            "name": "resizeIndividually",
+                            "optional": true,
+                            "description": "If false and multiple page items are targeted, the new dimensions are attained only by moving the individual items rather than resizing them. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "consideringRulerUnits",
+                            "optional": true,
+                            "description": "If true then a ruler location is interpreted using ruler units rather than points. The default value is false. This parameter has no effect unless the reference point is specified relative to a page. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "resize"
+                },
+                {
+                    "description": "Move the bounding box of the page item",
+                    "parameters": [
+                        {
+                            "description": "The bounding box to resize. Can accept: CoordinateSpaces enumerator or Ordered array containing coordinateSpace:CoordinateSpaces enumerator, boundsKind:BoundingBoxLimits enumerator.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "in",
+                            "array": false
+                        },
+                        {
+                            "description": "Opposing corners of new bounding box in the given coordinate space",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "opposingCorners",
+                            "array": true
+                        }
+                    ],
+                    "name": "reframe"
+                },
+                {
+                    "description": "Transforms the ListBox using the last transformation performed on any object. Transformations include moving, rotating, shearing, scaling, and flipping.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "transformAgain",
+                    "array": true
+                },
+                {
+                    "description": "Transforms the ListBox using the last sequence of transform operations performed on any single object or performed at the same time on any group of objects. Transformations include moving, rotating, shearing, scaling, and flipping.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "transformSequenceAgain",
+                    "array": true
+                },
+                {
+                    "description": "Transforms the ListBox using the last transformation performed on any ListBox. Transformations include moving, rotating, shearing, scaling, and flipping.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "transformAgainIndividually",
+                    "array": true
+                },
+                {
+                    "description": "Transforms the ListBox using the last sequence of transformations performed on any single object or performed at the same time on any group of objects. Transformations include moving, rotating, shearing, scaling, and flipping.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "transformSequenceAgainIndividually",
+                    "array": true
+                },
+                {
+                    "description": "Create Plain Text QR Code on the page item",
+                    "parameters": [
+                        {
+                            "description": "QR code Plain Text  (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "plainText",
+                            "array": false
+                        },
+                        {
+                            "description": "Swatch to be applied on generated QR Code Graphic . Can accept: Swatch or String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "qrCodeSwatch",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox. Above parameters can also be passed as properties (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": true
+                        }
+                    ],
+                    "name": "createPlainTextQRCode"
+                },
+                {
+                    "description": "Create Hyperlink QR Code on the page item or document",
+                    "parameters": [
+                        {
+                            "description": "QR code Hyperlink URL  (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "urlLink",
+                            "array": false
+                        },
+                        {
+                            "description": "Swatch to be applied on generated QR Code Graphic . Can accept: Swatch or String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "qrCodeSwatch",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox. Above parameters can also be passed as properties (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": true
+                        }
+                    ],
+                    "name": "createHyperlinkQRCode"
+                },
+                {
+                    "description": "Create Text Msg QR Code on the page item or document",
+                    "parameters": [
+                        {
+                            "description": "QR code Text Phone Number (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "cellNumber",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Text Message (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "textMessage",
+                            "array": false
+                        },
+                        {
+                            "description": "Swatch to be applied on generated QR Code Graphic . Can accept: Swatch or String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "qrCodeSwatch",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox. Above parameters can also be passed as properties (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": true
+                        }
+                    ],
+                    "name": "createTextMsgQRCode"
+                },
+                {
+                    "description": "Create Email QR Code on the page item or document",
+                    "parameters": [
+                        {
+                            "description": "QR code Email Address (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "emailAddress",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Email Subject (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "subject",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Email Body Message (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "body",
+                            "array": false
+                        },
+                        {
+                            "description": "Swatch to be applied on generated QR Code Graphic . Can accept: Swatch or String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "qrCodeSwatch",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox. Above parameters can also be passed as properties (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": true
+                        }
+                    ],
+                    "name": "createEmailQRCode"
+                },
+                {
+                    "description": "Create Business Card QR Code on the page item or load on document's placegun",
+                    "parameters": [
+                        {
+                            "description": "QR code Business Card First Name (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "firstName",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Last Name (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "lastName",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Title (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "jobTitle",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Cell Phone Number (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "cellPhone",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Phone Number (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "phone",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Email Address (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "email",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Organisation (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "organisation",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Street Address (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "streetAddress",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card City (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "city",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Country (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "country",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card Postal Code (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "postalCode",
+                            "array": false
+                        },
+                        {
+                            "description": "QR code Business Card URL (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "website",
+                            "array": false
+                        },
+                        {
+                            "description": "Swatch to be applied on generated QR Code Graphic . Can accept: Swatch or String. (Optional)",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "qrCodeSwatch",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox. Above parameters can also be passed as properties (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": true
+                        }
+                    ],
+                    "name": "createVCardQRCode"
+                },
+                {
+                    "description": "Exports the object(s) to a file.",
+                    "parameters": [
+                        {
+                            "description": "The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog. Can accept: ExportFormat enumerator or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The path to the export file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "If true, displays the export options dialog. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The export style. (Optional)",
+                            "type": "PDFExportPreset",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "exportFile"
+                },
+                {
+                    "description": "asynchronously exports the object(s) to a file.",
+                    "type": "BackgroundTask",
+                    "parameters": [
+                        {
+                            "description": "The export format, specified as an enumeration value or as an extension that appears in the Save as type or Format menu in the Export dialog. Can accept: ExportFormat enumerator or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "format",
+                            "array": false
+                        },
+                        {
+                            "description": "The path to the export file.",
+                            "type": "File",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "If true, displays the export options dialog. (Optional)",
+                            "array": false
+                        },
+                        {
+                            "description": "The export style. (Optional)",
+                            "type": "PDFExportPreset",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "The comment for this version. (Optional)",
+                            "type": "string",
+                            "optional": false,
+                            "name": "versionComments",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "forceSave",
+                            "optional": true,
+                            "description": "If true, forcibly saves a version. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "asynchronousExportFile",
+                    "array": false
+                },
+                {
+                    "description": "Duplicate an object and place it into the target page item.",
+                    "type": "varies=any",
+                    "parameters": [
+                        {
+                            "description": "One or more page items to place or load",
+                            "type": "PageItem",
+                            "optional": false,
+                            "name": "pageItems",
+                            "array": true
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "linkPageItems",
+                            "optional": true,
+                            "description": "Whether to link pageItems in content placer (if true it will override link stories value) (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "linkStories",
+                            "optional": true,
+                            "description": "Whether to link stories in content placer (only applicable for single story, pageItem links will also be created in case of more than one item) (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "mapStyles",
+                            "optional": true,
+                            "description": "Whether to map styles in content placer (Optional)",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "showingOptions",
+                            "optional": true,
+                            "description": "Whether to display the link options dialog (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "contentPlace",
+                    "array": true
+                },
+                {
+                    "description": "Selects the object.",
+                    "parameters": [
+                        {
+                            "type": "SelectionOptions",
+                            "value": "SelectionOptions.REPLACE_WITH",
+                            "name": "existingSelection",
+                            "optional": true,
+                            "description": "The selection status of the ListBox in relation to previously selected objects. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "select"
+                },
+                {
+                    "description": "Stores the object in the specified library.",
+                    "type": "Asset",
+                    "parameters": [
+                        {
+                            "description": "The library in which to store the object.",
+                            "type": "Library",
+                            "optional": false,
+                            "name": "using",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new ListBox (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "store",
+                    "array": false
+                },
+                {
+                    "description": "Sets the label to the value associated with the specified key.",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        },
+                        {
+                            "description": "The value.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "value",
+                            "array": false
+                        }
+                    ],
+                    "name": "insertLabel"
+                },
+                {
+                    "description": "Gets the label value associated with the specified key.",
+                    "type": "string",
+                    "parameters": [
+                        {
+                            "description": "The key.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "key",
+                            "array": false
+                        }
+                    ],
+                    "name": "extractLabel",
+                    "array": false
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the ListBox.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Resolves the object specifier, creating an array of object references.",
+                    "type": "ListBox",
+                    "parameters": [],
+                    "name": "getElements",
+                    "array": true
+                },
+                {
+                    "description": "Retrieves the object specifier.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSpecifier",
+                    "array": false
+                },
+                {
+                    "description": "Adds an event listener.",
+                    "type": "EventListener",
+                    "parameters": [
+                        {
+                            "description": "The event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "addEventListener",
+                    "array": false
+                },
+                {
+                    "description": "Removes the event listener.",
+                    "type": "bool",
+                    "parameters": [
+                        {
+                            "description": "The registered event type.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "eventType",
+                            "array": false
+                        },
+                        {
+                            "description": "The registered event handler. Can accept: File or JavaScript Function.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "handler",
+                            "array": false
+                        },
+                        {
+                            "type": "bool",
+                            "value": "false",
+                            "name": "captures",
+                            "optional": true,
+                            "description": "This parameter is obsolete. (Optional)",
+                            "array": false
+                        }
+                    ],
+                    "name": "removeEventListener",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "ListBox"
+}

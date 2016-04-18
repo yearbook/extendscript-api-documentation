@@ -1,0 +1,169 @@
+{
+    "description": "A collection of hyphenation exceptions lists.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Displays the number of elements in the HyphenationException.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationException with the specified index or name.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationException with the specified name.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationExceptions within the specified range.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The HyphenationException, index, or name at the beginning of the range. Can accept: HyphenationException, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The HyphenationException, index, or name at the end of the range. Can accept: HyphenationException, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationException with the index previous to the specified index.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The index of the HyphenationException that follows the desired HyphenationException.",
+                            "type": "HyphenationException",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationException whose index follows the specified HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The HyphenationException whose index comes before the desired HyphenationException.",
+                            "type": "HyphenationException",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every HyphenationException in the collection.",
+                    "type": "HyphenationException",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the HyphenationException.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyphenationException with the specified index.",
+                    "type": "HyphenationException",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HyphenationExceptions"
+}

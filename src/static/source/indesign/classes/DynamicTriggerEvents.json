@@ -1,0 +1,87 @@
+{
+    "description": "The event that triggers a list of dynamic target objects to play.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1953321036",
+                    "array": false,
+                    "description": "target is triggered on loading of the page.",
+                    "readonly": true,
+                    "name": "ON_PAGE_LOAD"
+                },
+                {
+                    "type": "number",
+                    "value": "1953321027",
+                    "array": false,
+                    "description": "target is triggered on clicking on the page.",
+                    "readonly": true,
+                    "name": "ON_PAGE_CLICK"
+                },
+                {
+                    "type": "number",
+                    "value": "1953321804",
+                    "array": false,
+                    "description": "target is triggered on loading of the state in a multi-state object.",
+                    "readonly": true,
+                    "name": "ON_STATE_LOAD"
+                },
+                {
+                    "type": "number",
+                    "value": "1953317740",
+                    "array": false,
+                    "description": "target is triggered on a button or self click.",
+                    "readonly": true,
+                    "name": "ON_CLICK"
+                },
+                {
+                    "type": "number",
+                    "value": "1953321590",
+                    "array": false,
+                    "description": "target is triggered on a button or self rollover.",
+                    "readonly": true,
+                    "name": "ON_ROLLOVER"
+                },
+                {
+                    "type": "number",
+                    "value": "1953321580",
+                    "array": false,
+                    "description": "target is triggered on a button release.",
+                    "readonly": true,
+                    "name": "ON_RELEASE"
+                },
+                {
+                    "type": "number",
+                    "value": "1953321574",
+                    "array": false,
+                    "description": "target is triggered on a button rolloff.",
+                    "readonly": true,
+                    "name": "ON_ROLLOFF"
+                },
+                {
+                    "type": "number",
+                    "value": "1951613804",
+                    "array": false,
+                    "description": "target is triggered on self click.",
+                    "readonly": true,
+                    "name": "ON_SELF_CLICK"
+                },
+                {
+                    "type": "number",
+                    "value": "1951617638",
+                    "array": false,
+                    "description": "target is triggered on self rollover.",
+                    "readonly": true,
+                    "name": "ON_SELF_ROLLOVER"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "DynamicTriggerEvents"
+}

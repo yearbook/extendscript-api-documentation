@@ -1,0 +1,31 @@
+{
+    "description": "Resolution options when loaded master pages have the same name as existing masterpages.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1279350607",
+                    "array": false,
+                    "description": "Overwrites the existing master page.",
+                    "readonly": true,
+                    "name": "LOAD_ALL_WITH_OVERWRITE"
+                },
+                {
+                    "type": "number",
+                    "value": "1279350610",
+                    "array": false,
+                    "description": "Renames the new master page.",
+                    "readonly": true,
+                    "name": "LOAD_ALL_WITH_RENAME"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "GlobalClashResolutionStrategyForMasterPage"
+}

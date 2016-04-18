@@ -1,0 +1,55 @@
+{
+    "description": "Font status options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1718831470",
+                    "array": false,
+                    "description": "The font is installed.",
+                    "readonly": true,
+                    "name": "INSTALLED"
+                },
+                {
+                    "type": "number",
+                    "value": "1718832705",
+                    "array": false,
+                    "description": "The font is not available.",
+                    "readonly": true,
+                    "name": "NOT_AVAILABLE"
+                },
+                {
+                    "type": "number",
+                    "value": "1718830689",
+                    "array": false,
+                    "description": "The font has been fauxed.",
+                    "readonly": true,
+                    "name": "FAUXED"
+                },
+                {
+                    "type": "number",
+                    "value": "1718834037",
+                    "array": false,
+                    "description": "The font is a substitute.",
+                    "readonly": true,
+                    "name": "SUBSTITUTED"
+                },
+                {
+                    "type": "number",
+                    "value": "1433299822",
+                    "array": false,
+                    "description": "The font's status is unknown.",
+                    "readonly": true,
+                    "name": "UNKNOWN"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FontStatus"
+}

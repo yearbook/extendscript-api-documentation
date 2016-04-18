@@ -1,0 +1,47 @@
+{
+    "description": "Ink trapping type options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1852797549",
+                    "array": false,
+                    "description": "Uses traditional process inks and most spot inks.",
+                    "readonly": true,
+                    "name": "NORMAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1769230192",
+                    "array": false,
+                    "description": "Uses heavy, nontransparent inks to prevent trapping of underlying colors but allow for trapping along the edges of the ink. Best for metallic inks.",
+                    "readonly": true,
+                    "name": "OPAQUE"
+                },
+                {
+                    "type": "number",
+                    "value": "1769231474",
+                    "array": false,
+                    "description": "Uses clear inks to ensure that underlying items trap. Best for varnishes and dieline inks.",
+                    "readonly": true,
+                    "name": "TRANSPARENT"
+                },
+                {
+                    "type": "number",
+                    "value": "1769228647",
+                    "array": false,
+                    "description": "Uses heavy, nontransparent inks to prevent trapping of underlying colors but allow for trapping along the edges of the ink. Best for inks that have undesirable interactions with other inks.",
+                    "readonly": true,
+                    "name": "OPAQUE_IGNORE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "InkTypes"
+}

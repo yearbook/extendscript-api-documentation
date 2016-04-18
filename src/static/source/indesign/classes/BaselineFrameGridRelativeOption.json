@@ -1,0 +1,47 @@
+{
+    "description": "The starting point used to calculate the baseline frame grid offset.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1163161458",
+                    "array": false,
+                    "description": "Offsets the grid from the top of the page.",
+                    "readonly": true,
+                    "name": "TOP_OF_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1163161453",
+                    "array": false,
+                    "description": "Offsets the grid from the top margin of the page.",
+                    "readonly": true,
+                    "name": "TOP_OF_MARGIN"
+                },
+                {
+                    "type": "number",
+                    "value": "1163161446",
+                    "array": false,
+                    "description": "Offsets the grid from the top of the text frame.",
+                    "readonly": true,
+                    "name": "TOP_OF_FRAME"
+                },
+                {
+                    "type": "number",
+                    "value": "1163161449",
+                    "array": false,
+                    "description": "Offsets the grid from the top inset of the text frame.",
+                    "readonly": true,
+                    "name": "TOP_OF_INSET"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "BaselineFrameGridRelativeOption"
+}

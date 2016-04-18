@@ -1,0 +1,583 @@
+{
+    "description": "Performance metric options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1668314484",
+                    "array": false,
+                    "description": "The CPU time.",
+                    "readonly": true,
+                    "name": "CPU_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1853122674",
+                    "array": false,
+                    "description": "The number of threads.",
+                    "readonly": true,
+                    "name": "NUMBER_OF_THREADS"
+                },
+                {
+                    "type": "number",
+                    "value": "1399025781",
+                    "array": false,
+                    "description": "The overall system CPU.",
+                    "readonly": true,
+                    "name": "OVERALL_SYSTEM_CPU"
+                },
+                {
+                    "type": "number",
+                    "value": "1432580213",
+                    "array": false,
+                    "description": "The overall user CPU.",
+                    "readonly": true,
+                    "name": "OVERALL_USER_CPU"
+                },
+                {
+                    "type": "number",
+                    "value": "1128361059",
+                    "array": false,
+                    "description": "The core allocation count.",
+                    "readonly": true,
+                    "name": "CORE_ALLOCATION_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1129539962",
+                    "array": false,
+                    "description": "The core memory size.",
+                    "readonly": true,
+                    "name": "CORE_MEMORY_SIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "1381198202",
+                    "array": false,
+                    "description": "The resident memory size.",
+                    "readonly": true,
+                    "name": "RESIDENT_MEMORY_SIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "1448307066",
+                    "array": false,
+                    "description": "The virtual memory size.",
+                    "readonly": true,
+                    "name": "VIRTUAL_MEMORY_SIZE"
+                },
+                {
+                    "type": "number",
+                    "value": "1296921195",
+                    "array": false,
+                    "description": "The current memory mark.",
+                    "readonly": true,
+                    "name": "CURRENT_MEMORY_MARK"
+                },
+                {
+                    "type": "number",
+                    "value": "1212378740",
+                    "array": false,
+                    "description": "The handle count.",
+                    "readonly": true,
+                    "name": "HANDLE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1195657582",
+                    "array": false,
+                    "description": "The GDI object count.",
+                    "readonly": true,
+                    "name": "GDI_OBJECT_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1212247148",
+                    "array": false,
+                    "description": "heap allocations",
+                    "readonly": true,
+                    "name": "HEAP_ALLOCATIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1212239979",
+                    "array": false,
+                    "description": "heap allocations peak",
+                    "readonly": true,
+                    "name": "HEAP_ALLOCATIONS_PEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1297105780",
+                    "array": false,
+                    "description": "memory purge count",
+                    "readonly": true,
+                    "name": "MEMORY_PURGE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1297110125",
+                    "array": false,
+                    "description": "memory purge time",
+                    "readonly": true,
+                    "name": "MEMORY_PURGE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1112097345",
+                    "array": false,
+                    "description": "BIB Allocations",
+                    "readonly": true,
+                    "name": "BIB_ALLOCATIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1111576683",
+                    "array": false,
+                    "description": "BIB Allocations peak",
+                    "readonly": true,
+                    "name": "BIB_ALLOCATIONS_PEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1112097379",
+                    "array": false,
+                    "description": "BIB cache",
+                    "readonly": true,
+                    "name": "BIB_CACHE"
+                },
+                {
+                    "type": "number",
+                    "value": "1111707755",
+                    "array": false,
+                    "description": "BIB cache peak",
+                    "readonly": true,
+                    "name": "BIB_CACHE_PEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1346651713",
+                    "array": false,
+                    "description": "PDF allocactions",
+                    "readonly": true,
+                    "name": "PDF_ALLOCACTIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1346650475",
+                    "array": false,
+                    "description": "PDF allocactions peak",
+                    "readonly": true,
+                    "name": "PDF_ALLOCACTIONS_PEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1231897409",
+                    "array": false,
+                    "description": "image cache allocations",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_ALLOCATIONS"
+                },
+                {
+                    "type": "number",
+                    "value": "1229144427",
+                    "array": false,
+                    "description": "image cache allocations peak",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_ALLOCATIONS_PEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1231901284",
+                    "array": false,
+                    "description": "image cache file bytes read",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_FILE_BYTES_READ"
+                },
+                {
+                    "type": "number",
+                    "value": "1231902578",
+                    "array": false,
+                    "description": "image cache file bytes written",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_FILE_BYTES_WRITTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1229148772",
+                    "array": false,
+                    "description": "image cache file read time",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_FILE_READ_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1229150066",
+                    "array": false,
+                    "description": "image cache file write time",
+                    "readonly": true,
+                    "name": "IMAGE_CACHE_FILE_WRITE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1448633921",
+                    "array": false,
+                    "description": "VXferAlloc",
+                    "readonly": true,
+                    "name": "VXFERALLOC"
+                },
+                {
+                    "type": "number",
+                    "value": "1448624491",
+                    "array": false,
+                    "description": "VXferAllocPeak",
+                    "readonly": true,
+                    "name": "VXFERALLOCPEAK"
+                },
+                {
+                    "type": "number",
+                    "value": "1448633938",
+                    "array": false,
+                    "description": "VXferBytesRead",
+                    "readonly": true,
+                    "name": "VXFERBYTESREAD"
+                },
+                {
+                    "type": "number",
+                    "value": "1448633943",
+                    "array": false,
+                    "description": "VXferBytesWritten",
+                    "readonly": true,
+                    "name": "VXFERBYTESWRITTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1448628852",
+                    "array": false,
+                    "description": "VXferReadTime",
+                    "readonly": true,
+                    "name": "VXFERREADTIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1448630132",
+                    "array": false,
+                    "description": "VXferWriteTime",
+                    "readonly": true,
+                    "name": "VXFERWRITETIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1447445106",
+                    "array": false,
+                    "description": "VXferFileBytesRead",
+                    "readonly": true,
+                    "name": "VXFERFILEBYTESREAD"
+                },
+                {
+                    "type": "number",
+                    "value": "1447445111",
+                    "array": false,
+                    "description": "VXFerFileBytesWritten",
+                    "readonly": true,
+                    "name": "VXFERFILEBYTESWRITTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1229935204",
+                    "array": false,
+                    "description": "process IO bytes read",
+                    "readonly": true,
+                    "name": "PROCESS_IO_BYTES_READ"
+                },
+                {
+                    "type": "number",
+                    "value": "1229936498",
+                    "array": false,
+                    "description": "process IO bytes written",
+                    "readonly": true,
+                    "name": "PROCESS_IO_BYTES_WRITTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1095191924",
+                    "array": false,
+                    "description": "AGMXShowTime",
+                    "readonly": true,
+                    "name": "AGMXSHOWTIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145197156",
+                    "array": false,
+                    "description": "database file bytes read",
+                    "readonly": true,
+                    "name": "DATABASE_FILE_BYTES_READ"
+                },
+                {
+                    "type": "number",
+                    "value": "1145198450",
+                    "array": false,
+                    "description": "database file bytes written",
+                    "readonly": true,
+                    "name": "DATABASE_FILE_BYTES_WRITTEN"
+                },
+                {
+                    "type": "number",
+                    "value": "1145197172",
+                    "array": false,
+                    "description": "database file read time",
+                    "readonly": true,
+                    "name": "DATABASE_FILE_READ_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145198452",
+                    "array": false,
+                    "description": "database file write time",
+                    "readonly": true,
+                    "name": "DATABASE_FILE_WRITE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1146311284",
+                    "array": false,
+                    "description": "drop shadow memory read time",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_MEMORY_READ_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1146311266",
+                    "array": false,
+                    "description": "drop shadow memory read bytes",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_MEMORY_READ_BYTES"
+                },
+                {
+                    "type": "number",
+                    "value": "1146312564",
+                    "array": false,
+                    "description": "drop shadow memory write time",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_MEMORY_WRITE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1146312546",
+                    "array": false,
+                    "description": "drop shadow memory write bytes",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_MEMORY_WRITE_BYTES"
+                },
+                {
+                    "type": "number",
+                    "value": "1145459316",
+                    "array": false,
+                    "description": "drop shadow file read time",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_FILE_READ_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145459298",
+                    "array": false,
+                    "description": "drop shadow file read bytes",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_FILE_READ_BYTES"
+                },
+                {
+                    "type": "number",
+                    "value": "1145460596",
+                    "array": false,
+                    "description": "drop shadow file write time",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_FILE_WRITE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145460578",
+                    "array": false,
+                    "description": "drop shadow file write bytes",
+                    "readonly": true,
+                    "name": "DROP_SHADOW_FILE_WRITE_BYTES"
+                },
+                {
+                    "type": "number",
+                    "value": "1129137012",
+                    "array": false,
+                    "description": "change manager update call count",
+                    "readonly": true,
+                    "name": "CHANGE_MANAGER_UPDATE_CALL_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1129141357",
+                    "array": false,
+                    "description": "change manager update call time",
+                    "readonly": true,
+                    "name": "CHANGE_MANAGER_UPDATE_CALL_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1397965684",
+                    "array": false,
+                    "description": "snapshot count",
+                    "readonly": true,
+                    "name": "SNAPSHOT_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1195594861",
+                    "array": false,
+                    "description": "galley composition time",
+                    "readonly": true,
+                    "name": "GALLEY_COMPOSITION_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1279480941",
+                    "array": false,
+                    "description": "layout composition time",
+                    "readonly": true,
+                    "name": "LAYOUT_COMPOSITION_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1195590516",
+                    "array": false,
+                    "description": "galley composition count",
+                    "readonly": true,
+                    "name": "GALLEY_COMPOSITION_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1279476596",
+                    "array": false,
+                    "description": "layout composition count",
+                    "readonly": true,
+                    "name": "LAYOUT_COMPOSITION_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1145918573",
+                    "array": false,
+                    "description": "draw manager draw time",
+                    "readonly": true,
+                    "name": "DRAW_MANAGER_DRAW_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145915758",
+                    "array": false,
+                    "description": "draw manager number of interrupts",
+                    "readonly": true,
+                    "name": "DRAW_MANAGER_NUMBER_OF_INTERRUPTS"
+                },
+                {
+                    "type": "number",
+                    "value": "1397905268",
+                    "array": false,
+                    "description": "snapshot read write time",
+                    "readonly": true,
+                    "name": "SNAPSHOT_READ_WRITE_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1397651284",
+                    "array": false,
+                    "description": "new snapshot time",
+                    "readonly": true,
+                    "name": "NEW_SNAPSHOT_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1145197929",
+                    "array": false,
+                    "description": "database new UID count",
+                    "readonly": true,
+                    "name": "DATABASE_NEW_UID_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1145194862",
+                    "array": false,
+                    "description": "database instantiate count",
+                    "readonly": true,
+                    "name": "DATABASE_INSTANTIATE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1229148259",
+                    "array": false,
+                    "description": "instance cache purge count",
+                    "readonly": true,
+                    "name": "INSTANCE_CACHE_PURGE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1297302388",
+                    "array": false,
+                    "description": "minisave count",
+                    "readonly": true,
+                    "name": "MINISAVE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1481461876",
+                    "array": false,
+                    "description": "XMP filter time",
+                    "readonly": true,
+                    "name": "XMP_FILTER_TIME"
+                },
+                {
+                    "type": "number",
+                    "value": "1397905251",
+                    "array": false,
+                    "description": "snapshot read write byte count",
+                    "readonly": true,
+                    "name": "SNAPSHOT_READ_WRITE_BYTE_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1145194098",
+                    "array": false,
+                    "description": "database file page reads",
+                    "readonly": true,
+                    "name": "DATABASE_FILE_PAGE_READS"
+                },
+                {
+                    "type": "number",
+                    "value": "1095058292",
+                    "array": false,
+                    "description": "Number of attachable events that have been dispatched.",
+                    "readonly": true,
+                    "name": "ATTACHABLE_EVENT_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1095975796",
+                    "array": false,
+                    "description": "Number of attached scripts that have been executed.",
+                    "readonly": true,
+                    "name": "ATTACHED_SCRIPTS_COUNT"
+                },
+                {
+                    "type": "number",
+                    "value": "1145394285",
+                    "array": false,
+                    "description": "Total amount of time spent dispatching attachable events.",
+                    "readonly": true,
+                    "name": "DISPATCH_EVENT_TIME"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "PerformanceMetricOptions"
+}

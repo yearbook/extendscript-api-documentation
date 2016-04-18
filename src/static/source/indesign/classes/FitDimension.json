@@ -1,0 +1,79 @@
+{
+    "description": "Options for fitting to dimension.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1718906725",
+                    "array": false,
+                    "description": "Fit to 1280x800 dimension.",
+                    "readonly": true,
+                    "name": "FIT1280X800"
+                },
+                {
+                    "type": "number",
+                    "value": "1718908023",
+                    "array": false,
+                    "description": "Fit to 1240x620 dimension.",
+                    "readonly": true,
+                    "name": "FIT1240X620"
+                },
+                {
+                    "type": "number",
+                    "value": "1718906726",
+                    "array": false,
+                    "description": "Fit to 1024x768 dimension.",
+                    "readonly": true,
+                    "name": "FIT1024X768"
+                },
+                {
+                    "type": "number",
+                    "value": "1718906470",
+                    "array": false,
+                    "description": "Fit to 984x588 dimension.",
+                    "readonly": true,
+                    "name": "FIT984X588"
+                },
+                {
+                    "type": "number",
+                    "value": "1718904179",
+                    "array": false,
+                    "description": "Fit to 800x600 dimension.",
+                    "readonly": true,
+                    "name": "FIT800X600"
+                },
+                {
+                    "type": "number",
+                    "value": "1718907750",
+                    "array": false,
+                    "description": "Fit to 760x420 dimension.",
+                    "readonly": true,
+                    "name": "FIT760X420"
+                },
+                {
+                    "type": "number",
+                    "value": "1718907753",
+                    "array": false,
+                    "description": "Fit to 640x480 dimension.",
+                    "readonly": true,
+                    "name": "FIT640X480"
+                },
+                {
+                    "type": "number",
+                    "value": "1718907764",
+                    "array": false,
+                    "description": "Fit to 600x300 dimension.",
+                    "readonly": true,
+                    "name": "FIT600X300"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "FitDimension"
+}

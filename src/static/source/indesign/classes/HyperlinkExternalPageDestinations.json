@@ -1,0 +1,206 @@
+{
+    "description": "A collection of hyperlink external page destinations.",
+    "elements": {
+        "class": {
+            "properties": []
+        },
+        "instance": {
+            "properties": [
+                {
+                    "description": "The number of objects in the collection.",
+                    "type": "number",
+                    "array": false,
+                    "name": "length",
+                    "readonly": true
+                }
+            ],
+            "methods": [
+                {
+                    "description": "Creates a new hyperlink external page destination.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The destination page. (Optional)",
+                            "type": "Page",
+                            "optional": false,
+                            "name": "destination",
+                            "array": false
+                        },
+                        {
+                            "description": "Initial values for properties of the new HyperlinkExternalPageDestination (Optional)",
+                            "type": "Object",
+                            "optional": false,
+                            "name": "withProperties",
+                            "array": false
+                        }
+                    ],
+                    "name": "add",
+                    "array": false
+                },
+                {
+                    "description": "Displays the number of elements in the HyperlinkExternalPageDestination.",
+                    "type": "number",
+                    "parameters": [],
+                    "name": "count",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination with the specified index or name.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The index or name. Can accept: Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "item",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination with the specified name.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The name.",
+                            "type": "string",
+                            "optional": false,
+                            "name": "name",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByName",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination with the specified ID.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The ID.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "id",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByID",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestinations within the specified range.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The HyperlinkExternalPageDestination, index, or name at the beginning of the range. Can accept: HyperlinkExternalPageDestination, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "from",
+                            "array": false
+                        },
+                        {
+                            "description": "The HyperlinkExternalPageDestination, index, or name at the end of the range. Can accept: HyperlinkExternalPageDestination, Long Integer or String.",
+                            "type": "varies=any",
+                            "optional": false,
+                            "name": "to",
+                            "array": false
+                        }
+                    ],
+                    "name": "itemByRange",
+                    "array": true
+                },
+                {
+                    "description": "Returns the first HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [],
+                    "name": "firstItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the last HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [],
+                    "name": "lastItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the middle HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [],
+                    "name": "middleItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination with the index previous to the specified index.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The index of the HyperlinkExternalPageDestination that follows the desired HyperlinkExternalPageDestination.",
+                            "type": "HyperlinkExternalPageDestination",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "previousItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination whose index follows the specified HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The HyperlinkExternalPageDestination whose index comes before the desired HyperlinkExternalPageDestination.",
+                            "type": "HyperlinkExternalPageDestination",
+                            "optional": false,
+                            "name": "obj",
+                            "array": false
+                        }
+                    ],
+                    "name": "nextItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns any HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [],
+                    "name": "anyItem",
+                    "array": false
+                },
+                {
+                    "description": "Returns every HyperlinkExternalPageDestination in the collection.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [],
+                    "name": "everyItem",
+                    "array": true
+                },
+                {
+                    "description": "Generates a string which, if executed, will return the HyperlinkExternalPageDestination.",
+                    "type": "string",
+                    "parameters": [],
+                    "name": "toSource",
+                    "array": false
+                },
+                {
+                    "description": "Returns the HyperlinkExternalPageDestination with the specified index.",
+                    "type": "HyperlinkExternalPageDestination",
+                    "parameters": [
+                        {
+                            "description": "The index.",
+                            "type": "number",
+                            "optional": false,
+                            "name": "index",
+                            "array": false
+                        }
+                    ],
+                    "name": "[]",
+                    "array": false
+                }
+            ]
+        }
+    },
+    "dynamic": true,
+    "name": "HyperlinkExternalPageDestinations"
+}

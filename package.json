@@ -8,10 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/yearbookmachine/indesign-api-documentation.git"
+    "url": "git://github.com/yearbook/indesign-api-documentation.git"
   },
   "keywords": [
+    "adobe",
     "indesign",
+    "photoshop",
+    "illustrator",
+    "estk",
     "extendscript",
     "xml",
     "docs",
@@ -21,12 +25,16 @@
   "author": "Yearbook Machine",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yearbookmachine/indesign-api-documentation/issues"
+    "url": "https://github.com/yearbook/indesign-api-documentation/issues"
   },
   "dependencies": {
-    "libxmljs": "~0.8.1",
-    "xml2json": "~0.3.2",
-    "progress": "~1.1.0",
-    "ent": "~0.1.0"
+    "bower": "^1.6.8",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-less": "^3.0.5",
+    "gulp-plumber": "^1.0.1",
+    "markdown": "^0.5.0"
   }
 }

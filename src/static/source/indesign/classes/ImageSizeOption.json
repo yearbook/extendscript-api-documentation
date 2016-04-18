@@ -1,0 +1,31 @@
+{
+    "description": "Image size option for converted object",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1182295162",
+                    "array": false,
+                    "description": "Image size to be used is absolute.",
+                    "readonly": true,
+                    "name": "SIZE_FIXED"
+                },
+                {
+                    "type": "number",
+                    "value": "1383485559",
+                    "array": false,
+                    "description": "Image size to be used is relative to page width.",
+                    "readonly": true,
+                    "name": "SIZE_RELATIVE_TO_PAGE_WIDTH"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "ImageSizeOption"
+}

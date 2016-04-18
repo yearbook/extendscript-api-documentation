@@ -1,0 +1,31 @@
+{
+    "description": "Search strategy options.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1396794992",
+                    "array": false,
+                    "description": "Searches forward from the start of the current page.",
+                    "readonly": true,
+                    "name": "FIRST_ON_PAGE"
+                },
+                {
+                    "type": "number",
+                    "value": "1396796528",
+                    "array": false,
+                    "description": "Search backward from the end of the current page.",
+                    "readonly": true,
+                    "name": "LAST_ON_PAGE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SearchStrategies"
+}

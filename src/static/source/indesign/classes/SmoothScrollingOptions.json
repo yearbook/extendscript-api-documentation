@@ -1,0 +1,47 @@
+{
+    "description": "The smooth scrolling option.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1699959662",
+                    "array": false,
+                    "description": "no smooth scrolling.",
+                    "readonly": true,
+                    "name": "NO_SMOOTH_SCROLL"
+                },
+                {
+                    "type": "number",
+                    "value": "1986359924",
+                    "array": false,
+                    "description": "vertical smooth scrolling.",
+                    "readonly": true,
+                    "name": "VERTICAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1752134266",
+                    "array": false,
+                    "description": "horizontal smooth scrolling.",
+                    "readonly": true,
+                    "name": "HORIZONTAL"
+                },
+                {
+                    "type": "number",
+                    "value": "1699959650",
+                    "array": false,
+                    "description": "vertical and horizontal smooth scrolling.",
+                    "readonly": true,
+                    "name": "VERTICAL_AND_HORIZONTAL"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "SmoothScrollingOptions"
+}

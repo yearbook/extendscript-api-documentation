@@ -1,0 +1,71 @@
+{
+    "description": "The type of data for this data object.",
+    "elements": {
+        "class": {
+            "properties": [
+                {
+                    "type": "number",
+                    "value": "1920223598",
+                    "array": false,
+                    "description": "The data type is an int32.",
+                    "readonly": true,
+                    "name": "INTEGER_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920226153",
+                    "array": false,
+                    "description": "The data type is an int16.",
+                    "readonly": true,
+                    "name": "SHORT_INTEGER_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920225900",
+                    "array": false,
+                    "description": "The data type is a real.",
+                    "readonly": true,
+                    "name": "REAL_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920226162",
+                    "array": false,
+                    "description": "The data type is a string.",
+                    "readonly": true,
+                    "name": "STRING_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920221804",
+                    "array": false,
+                    "description": "The data type is a boolean.",
+                    "readonly": true,
+                    "name": "BOOLEAN_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920225122",
+                    "array": false,
+                    "description": "The data type is an object.",
+                    "readonly": true,
+                    "name": "OBJECT_DATA_TYPE"
+                },
+                {
+                    "type": "number",
+                    "value": "1920224372",
+                    "array": false,
+                    "description": "The data type is a list.",
+                    "readonly": true,
+                    "name": "LIST_DATA_TYPE"
+                }
+            ]
+        },
+        "instance": {
+            "properties": [],
+            "methods": []
+        }
+    },
+    "dynamic": false,
+    "name": "RuleDataType"
+}
