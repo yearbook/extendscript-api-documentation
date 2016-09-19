@@ -8,10 +8,12 @@ def _decode_property(property_xml):
   data = {
     'name': property_xml.attrib['name'],
     'readonly': 'rwaccess' in property_xml.attrib and property_xml.attrib['rwaccess'] == 'readonly',
-    'description': property_xml.find('./shortdesc').text,
     'type': property_xml.find('./datatype/type').text,
     'array': property_xml.find('./datatype/array') is not None,
   }
+
+  if property_xml.find('./shortdesc') is not None:
+    data['description'] = property_xml.find('./shortdesc').text
 
   if property_xml.find('./datatype/value') is not None:
     data['value'] = property_xml.find('./datatype/value').text
@@ -21,11 +23,13 @@ def _decode_property(property_xml):
 def _decode_parameter(parameter_xml):
   data = {
     'name': parameter_xml.attrib['name'],
-    'description': parameter_xml.find('./shortdesc').text,
     'type': parameter_xml.find('./datatype/type').text,
     'array': parameter_xml.find('./datatype/array') is not None,
     'optional': ('optional' in parameter_xml.attrib and parameter_xml.attrib['optional'] == 'true')
   }
+
+  if parameter_xml.find('./shortdesc') is not None:
+    data['description'] = parameter_xml.find('./shortdesc').text
 
   if parameter_xml.find('./datatype/value') is not None:
     data['value'] = parameter_xml.find('./datatype/value').text
@@ -35,9 +39,11 @@ def _decode_parameter(parameter_xml):
 def _decode_method(method_xml):
   data = {
     'name': method_xml.attrib['name'],
-    'description': method_xml.find('./shortdesc').text,
     'parameters': [_decode_parameter(x) for x in method_xml.findall('./parameters/parameter')],
   }
+
+  if method_xml.find('./shortdesc') is not None:
+    data['description'] = method_xml.find('./shortdesc').text
 
   if method_xml.find('./datatype') is not None:
     data['type'] = method_xml.find('./datatype/type').text
@@ -77,7 +83,6 @@ def convert_xml(xml_path, output):
     class_info = {
       'name': classdef.attrib['name'],
       'dynamic': ('dynamic' in classdef.attrib and classdef.attrib['dynamic'] == 'true'),
-      'description': classdef.find('./shortdesc').text,
       'elements': {
         'class': {
           'properties': [_decode_property(x) for x in classdef.findall('./elements[@type="class"]/property')],
@@ -89,6 +94,9 @@ def convert_xml(xml_path, output):
       },
     }
 
+    if classdef.find('./shortdesc') is not None:
+      class_info['description'] = classdef.find('./shortdesc').text
+
     class_json_path = os.path.join(output, 'classes/{}.json'.format(classdef.attrib['name']))
 
     os.makedirs(os.path.dirname(class_json_path), exist_ok=True)
@@ -96,22 +104,21 @@ def convert_xml(xml_path, output):
     with open(class_json_path, 'w') as outfile:
       json.dump(class_info, outfile, indent=4)
 
+if __name__ == '__main__':
+  script_directory = os.path.dirname(__file__)
+  root_directory = os.path.abspath(os.path.join(script_directory, '..'))
 
+  source_location = os.path.join(root_directory, 'xml/source')
+  output_location = os.path.join(root_directory, 'xml/json')
 
-script_directory = os.path.dirname(__file__)
-root_directory = os.path.abspath(os.path.join(script_directory, '..'))
+  for source_file in os.listdir(source_location):
+    if source_file.endswith('.xml'):
 
-source_location = os.path.join(root_directory, 'xml/source')
-output_location = os.path.join(root_directory, 'xml/json')
+      output_directory = source_file.replace('.xml', '').replace('omv$', '')
 
-for source_file in os.listdir(source_location):
-  if source_file.endswith('.xml'):
+      source_path = os.path.join(source_location, source_file)
+      output_path = os.path.join(output_location, output_directory)
 
-    output_directory = source_file.replace('.xml', '').replace('omv$', '')
-
-    source_path = os.path.join(source_location, source_file)
-    output_path = os.path.join(output_location, output_directory)
-
-    print('{} -> {}'.format(source_path, output_path))
-    convert_xml(source_path, output_path)
+      print('{} -> {}'.format(source_path, output_path))
+      convert_xml(source_path, output_path)
 
