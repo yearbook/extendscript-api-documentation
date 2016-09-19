@@ -1,8 +1,6 @@
 # Documentation for ExtendScript API #
 
-This repo contains the source code for building the documentation system. If
-you're only interested in viewing the documentation then please look
-[here](http://yearbook.github.com).
+This repo contains the source code for building the documentation system. If you're only interested in viewing the documentation then please look [here](http://yearbook.github.com).
 
 ## Prerequisites ##
 
@@ -12,25 +10,40 @@ you're only interested in viewing the documentation then please look
 
 ## Generating the documentation ##
 
-Install node packages
+Install node packages:
 
     $ npm install
 
-Build
+Build automatically (only works on OSX):
 
     $ npm run build
 
-The docs will be compiled to `public/`.
+The docs will be compiled to `public/`. OMV XML files will automatically be found, if you're building on Windows you will need to locate these yourself.
 
-### Developing the HTML docs locally ###
+## Development guide ##
 
-Run the watcher
+Building the documentation requires the following steps:
+
+  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX.
+  2. Parse the XML files, output as JSON with `./src/xml2json.py`.
+  3. Map the output JSON files to the `public` directory with `./src/json2public.py`. The file `./xml/map.json` defines what files to copy.
+  4. Build the web interface.
+
+gulp and npm are setup to run these for you.
+
+To build all the documentation from scratch:
+
+    $ npm run build
+    
+To watch `src/` and compile automatically to `public/`:
 
     $ npm run watch
 
-`src/` will be watched and compiled automatically to `public/`.
+To clean the dist files:
 
-The easiest way to view the docs is to use [zapp](https://www.github.com/wridgers/zapp).
+    $ npm run clean
+
+The easiest way to view the docs locally is to use [zapp](https://www.github.com/wridgers/zapp).
 
     $ npm install -g zapp
     $ zapp public/
@@ -39,15 +52,13 @@ Now open your browser [here](http://localhost:8080).
 
 ### XML file locations ###
 
-The XML source files can be found in the following locations on Mac OS X. Other
-OSs are unknown, although the files are likely to be in similar locations.
+The XML source files can be found in the following locations on Mac OS X:
 
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Illustrator`
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0/`
-
+  
 # License #
 
-All source code for generating the documentation is under the MIT license. The
-XML source files (not included) remain property of Adobe.
+All source code for generating the documentation is under the MIT license. The XML source files (not included) remain property of Adobe.
