@@ -40,7 +40,7 @@ html(lang='en', ng-app='esDocApp')
           hr
 
           section(ng-repeat='category in classes')
-            div(ng-show='(category.category | filter:classFilter).length')
+            div(ng-show='(category.objects | filter:classFilter).length')
               h4 {{ category.category }}
               ul.list-unstyled
                 li(ng-repeat='class in category.objects | orderBy:\'toString()\' | filter:classFilter')
