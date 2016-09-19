@@ -47,7 +47,7 @@ OSs are unknown, although the files are likely to be in similar locations.
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0/`
 
-# License
+# License #
 
 All source code for generating the documentation is under the MIT license. The
 XML source files (not included) remain property of Adobe.
