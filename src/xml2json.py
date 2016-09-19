@@ -54,8 +54,12 @@ def _decode_method(method_xml):
 def convert_xml(xml_path, output):
   name = os.path.basename(xml_path)
 
-  tree = etree.parse(xml_path)
-  root = tree.getroot()
+  it = etree.iterparse(xml_path)
+  for _, el in it:
+    if '}' in el.tag:
+      el.tag = el.tag.split('}', 1)[1]  # strip all namespaces
+
+  root = it.root
 
   contents = []
 
