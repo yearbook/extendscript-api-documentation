@@ -5,6 +5,8 @@
 *.swp
 *.swo
 
+/npm-debug.log
+
 /node_modules/
 /public/
 /xml/json/
