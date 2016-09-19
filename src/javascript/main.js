@@ -1,3 +1,4 @@
+
 //= require vendor/angular.js
 //= require vendor/angular-route.js
 //= require vendor/angular-resource.js
@@ -7,7 +8,7 @@
 //= require controllers/ClassCtrl.js
 //= require controllers/ElementCtrl.js
 
-var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
+var esDocApp = angular.module('esDocApp', ['ngRoute']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {templateUrl: './templates/index.html'})
@@ -24,8 +25,12 @@ var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
       $locationProvider.html5Mode(false);
 }]);
 
-ybmDocApp.filter('titleCase', function () {
+esDocApp.filter('titleCase', function () {
   return function (input) {
+    if (! input) {
+      return '';
+    }
+
     var words = input.split(' ');
 
     for (var i = 0; i < words.length; i++) {

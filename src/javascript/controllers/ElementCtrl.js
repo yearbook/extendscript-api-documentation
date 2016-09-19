@@ -6,24 +6,25 @@ function ElementCtrl($scope, $routeParams, $http) {
     $scope.class = data;
 
     // search data for the element we need
-    data.elements.forEach(function(element) {
+    for (var type in data.elements) {
+      var element = data.elements[type];
 
-      if (element.property) {
-        element.property.forEach(function(property) {
+      if (element.properties) {
+        element.properties.forEach(function(property) {
           if (property.name == $routeParams.elementName) {
             $scope.property = property;
           }
         });
       }
 
-      if (element.method) {
-        element.method.forEach(function(method) {
+      if (element.methods) {
+        element.methods.forEach(function(method) {
           if (method.name == $routeParams.elementName) {
             $scope.method = method;
           }
         });
       }
-
-    });
+    }
   });
 }
+

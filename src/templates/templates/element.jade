@@ -6,38 +6,38 @@ header
     span(class='left label label-primary', ng-show='class.dynamic') Dynamic
     span.right(ng-show='class.superclass')
       span Superclass:
-      a(href='#/{{ namespace }}/{{ class.superclass.$t }}')
-        code {{ class.superclass.$t }}
+      a(href='#/{{ namespace }}/{{ class.superclass }}')
+        code {{ class.superclass }}
 
 section
 
     div(class='panel panel-default', ng-show='property')
       a(name='{{ property.name }}')
       div.panel-heading
-        span(ng-show='property.datatype.array')
+        span(ng-show='property.array')
           code Array
 
-        a(href='#/{{ namespace }}/{{ property.datatype.type }}', ng-show='property.datatype.type')
-          code {{ property.datatype.type }}
+        a(href='#/{{ namespace }}/{{ property.type }}', ng-show='property.type')
+          code {{ property.type }}
         b {{ property.name }}
 
-        span(class='label label-danger', ng-show='property.rwaccess == "readonly"') Read only
+        span(class='label label-danger', ng-show='property.readonly') Read only
         span(class='label label-primary') Property
 
       div.panel-body
-        {{ property.shortdesc }}
+        {{ property.description }}
 
     div(class='panel panel-default', ng-show='method')
       a(name='{{ method.name }}')
       div.panel-heading
-        a(href='#/{{ namespace }}/{{ method.datatype.type }}', ng-show='method.datatype.type')
-          code {{ method.datatype.type }}
+        a(href='#/{{ namespace }}/{{ method.type }}', ng-show='method.type')
+          code {{ method.type }}
         b {{ method.name }}
 
         span &#40;
         span(ng-repeat='param in method.parameters')
-          a(href='#/{{ namespace }}/{{ param.datatype.type }}')
-            code {{ param.datatype.type }}
+          a(href='#/{{ namespace }}/{{ param.type }}')
+            code {{ param.type }}
           b {{ param.name }}
           span(ng-show='$first && !$last || $middle') &#44;
         span &#41;
@@ -45,7 +45,7 @@ section
         span(class='label label-success') Method
 
       div.panel-body
-        {{ method.shortdesc }}
+        {{ method.description }}
 
         div(ng-show='(method.parameters).length')
           hr
@@ -61,12 +61,12 @@ section
             tbody
               tr(ng-repeat='param in method.parameters')
                 td
-                  a(href='#/{{ namespace }}/{{ param.datatype.type }}')
-                    code {{ param.datatype.type }}
+                  a(href='#/{{ namespace }}/{{ param.type }}')
+                    code {{ param.type }}
                 td {{ param.name }}
                 td
                   span(class='label label-info', ng-show='param.optional') Optional
-                  {{ param.shortdesc }}
+                  {{ param.description }}
 
   hr
 

@@ -40,14 +40,14 @@ gulp.task('static', function() {
     .pipe(gulp.dest('public'));
 });
 
-gulp.task('watch', ['all'], function () {
+gulp.task('watch', ['web'], function () {
     gulp.watch('src/templates/**/*', ['web']);
     gulp.watch('src/less/**/*', ['web']);
     gulp.watch('src/javascript/**/*', ['web']);
     gulp.watch('src/static/**/*', ['web']);
 });
 
-gulp.task('all', ['web']);
+gulp.task('build', ['web']);
 gulp.task('web', ['javascript', 'less', 'templates', 'static']);
-gulp.task('default', ['all']);
+gulp.task('default', ['build']);
 
