@@ -8,7 +8,7 @@ def _decode_property(property_xml):
   data = {
     'name': property_xml.attrib['name'],
     'readonly': 'rwaccess' in property_xml.attrib and property_xml.attrib['rwaccess'] == 'readonly',
-    'type': property_xml.find('./datatype/type').text,
+    'type': _fix_type(property_xml.find('./datatype/type').text),
     'array': property_xml.find('./datatype/array') is not None,
   }
 
@@ -23,7 +23,7 @@ def _decode_property(property_xml):
 def _decode_parameter(parameter_xml):
   data = {
     'name': parameter_xml.attrib['name'],
-    'type': parameter_xml.find('./datatype/type').text,
+    'type': _fix_type(parameter_xml.find('./datatype/type').text),
     'array': parameter_xml.find('./datatype/array') is not None,
     'optional': ('optional' in parameter_xml.attrib and parameter_xml.attrib['optional'] == 'true')
   }
@@ -46,10 +46,31 @@ def _decode_method(method_xml):
     data['description'] = method_xml.find('./shortdesc').text
 
   if method_xml.find('./datatype') is not None:
-    data['type'] = method_xml.find('./datatype/type').text
+    data['type'] = _fix_type(method_xml.find('./datatype/type').text)
     data['array'] = method_xml.find('./datatype/array') is not None
 
   return data
+
+def _fix_type(t):
+    if t == 'varies=any':
+      return 'Mixed'
+
+    if t == 'Any':
+      return 'Mixed'
+
+    if t == 'bool':
+      return 'Boolean'
+
+    if t == 'string':
+      return 'String'
+
+    if t == 'number':
+      return 'Number'
+
+    if t == 'Rect':
+      return 'Rectangle'
+
+    return t
 
 def convert_xml(xml_path, output):
   name = os.path.basename(xml_path)
