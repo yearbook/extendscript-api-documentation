@@ -6,6 +6,8 @@ set -o nounset
 
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+mkdir -p ${__dir}/../xml/source/
+
 cp /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
 cp /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator/omv.xml ${__dir}/../xml/source/illustrator.xml
 cp /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ${__dir}/../xml/source/photoshop.xml
