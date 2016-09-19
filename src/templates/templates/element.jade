@@ -25,7 +25,7 @@ section
         span(class='label label-primary') Property
 
       div.panel-body
-        {{ property.description }}
+        | {{ property.description }}
 
     div(class='panel panel-default', ng-show='method')
       a(name='{{ method.name }}')
@@ -45,7 +45,7 @@ section
         span(class='label label-success') Method
 
       div.panel-body
-        {{ method.description }}
+        | {{ method.description }}
 
         div(ng-show='(method.parameters).length')
           hr
@@ -66,7 +66,7 @@ section
                 td {{ param.name }}
                 td
                   span(class='label label-info', ng-show='param.optional') Optional
-                  {{ param.description }}
+                  | {{ param.description }}
 
   hr
 
