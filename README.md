@@ -7,7 +7,7 @@ you're only interested in viewing the documentation then please look
 ## Prerequisites ##
 
   - Python3
-  - Node + NPM
+  - Node.js and npm
   - Adobe InDesign/Illustrator/Photoshop and ExtendScript Toolkit for XML source files
 
 ## Generating the documentation ##

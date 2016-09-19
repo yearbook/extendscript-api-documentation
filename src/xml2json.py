@@ -62,6 +62,7 @@ def convert_xml(xml_path, output):
   root = it.root
 
   contents = []
+  search = {}
 
   object_map = root.find('./map')
   object_categories = object_map.findall('./topicref')
@@ -84,16 +85,20 @@ def convert_xml(xml_path, output):
   classdefs = root.findall('./package/classdef')
 
   for classdef in classdefs:
+    class_properties = classdef.findall('./elements[@type="class"]/property')
+    instance_properties = classdef.findall('./elements[@type="instance"]/property')
+    instance_methods = classdef.findall('./elements[@type="instance"]/method')
+
     class_info = {
       'name': classdef.attrib['name'],
       'dynamic': ('dynamic' in classdef.attrib and classdef.attrib['dynamic'] == 'true'),
       'elements': {
         'class': {
-          'properties': [_decode_property(x) for x in classdef.findall('./elements[@type="class"]/property')],
+          'properties': [_decode_property(x) for x in class_properties],
         },
         'instance': {
-          'properties': [_decode_property(x) for x in classdef.findall('./elements[@type="instance"]/property')],
-          'methods': [_decode_method(x) for x in classdef.findall('./elements[@type="instance"]/method')],
+          'properties': [_decode_property(x) for x in instance_properties],
+          'methods': [_decode_method(x) for x in instance_methods],
         },
       },
     }
@@ -101,12 +106,21 @@ def convert_xml(xml_path, output):
     if classdef.find('./shortdesc') is not None:
       class_info['description'] = classdef.find('./shortdesc').text
 
+    search[classdef.attrib['name']]  = [x.attrib['name'] for x in class_properties]
+    search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_properties]
+    search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_methods]
+
     class_json_path = os.path.join(output, 'classes/{}.json'.format(classdef.attrib['name']))
 
     os.makedirs(os.path.dirname(class_json_path), exist_ok=True)
 
     with open(class_json_path, 'w') as outfile:
       json.dump(class_info, outfile, indent=4)
+
+  search_json_path = os.path.join(output, 'search.json')
+  with open(search_json_path, 'w') as outfile:
+    json.dump(search, outfile, indent=4)
+
 
 if __name__ == '__main__':
   script_directory = os.path.dirname(__file__)
