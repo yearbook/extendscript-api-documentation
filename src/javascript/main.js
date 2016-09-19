@@ -1,3 +1,4 @@
+
 //= require vendor/angular.js
 //= require vendor/angular-route.js
 //= require vendor/angular-resource.js
@@ -7,14 +8,14 @@
 //= require controllers/ClassCtrl.js
 //= require controllers/ElementCtrl.js
 
-var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
+var esDocApp = angular.module('esDocApp', ['ngRoute']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
-      .when('/', {templateUrl: './templates/index.jade'})
-      .when('/search', {templateUrl: './templates/search.jade', controller: SearchCtrl})
+      .when('/', {templateUrl: './templates/index.html'})
+      .when('/search', {templateUrl: './templates/search.html', controller: SearchCtrl})
 
-      .when('/:namespace/:className', {templateUrl: './templates/class.jade', controller: ClassCtrl})
-      .when('/:namespace/:className/:elementName', {templateUrl: './templates/element.jade', controller: ElementCtrl})
+      .when('/:namespace/:className', {templateUrl: './templates/class.html', controller: ClassCtrl})
+      .when('/:namespace/:className/:elementName', {templateUrl: './templates/element.html', controller: ElementCtrl})
 
       .otherwise({
         redirectTo: '/'
@@ -24,8 +25,12 @@ var ybmDocApp = angular.module('ybmDocApp', ['ngRoute']).
       $locationProvider.html5Mode(false);
 }]);
 
-ybmDocApp.filter('titleCase', function () {
+esDocApp.filter('titleCase', function () {
   return function (input) {
+    if (! input) {
+      return '';
+    }
+
     var words = input.split(' ');
 
     for (var i = 0; i < words.length; i++) {

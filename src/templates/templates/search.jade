@@ -17,9 +17,9 @@ section
       div(ng-show='(elements | filter:elementFilter).length')
         h6
           a(href='#/{{ namespace }}/{{ class }}')
-            {{ namespace }} :: {{ class }}
+            | {{ namespace }} :: {{ class }}
 
         a.tag(href='#/{{ namespace }}/{{ class }}/{{ element }}', ng-repeat='element in (filteredElements = (elements | filter:elementFilter | limitTo: 5))')
           code
-            {{ element }}
+            | {{ element }}
 

@@ -1,102 +1,64 @@
-# Documentation builder for ExtendScript API
+# Documentation for ExtendScript API #
 
-Documentation for the InDesign API in more pleasant formats than the Object
-Model Viewer. This repo contains the source code for building the documentation
-system. If you're only interested in viewing the documentation then please look
-[here](http://yearbook.github.com).
+This repo contains the source code for building the documentation system. If you're only interested in viewing the documentation then please look [here](http://yearbook.github.com).
 
-## Prerequisites
+## Prerequisites ##
 
-  - Node.JS
-  - Adobe InDesign and ExtendScript Toolkit for XML source files
+  - Python3
+  - Node.js and npm
+  - Adobe InDesign/Illustrator/Photoshop and ExtendScript Toolkit for XML source files
 
-### XML file locations
+## Generating the documentation ##
 
-The XML source files can be found in the following locations on Mac OS X. Other
-OSs are unknown, although the files are likely to have similar names.
+Install node packages:
 
-  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
-  - `~/Library/Preferences/ExtendScript Toolkit/4.0/omv$indesign-9.064$9.0.xml`
+    $ npm install
 
-### XML caveats
+Build automatically (only works on OSX):
 
-The XML files are not consistent. Currently two lines of manual pruning are
-required. Both `javascript.xml` and `scriptui.xml` must be changed from:
+    $ npm run build
 
-    <?xml version="1.0" encoding="utf-8"?>
-    <dictionary xsi:schemaLocation="" xmlns="" xmlns:xsi="">
+The docs will be compiled to `public/`. OMV XML files will automatically be found, if you're building on Windows you will need to locate these yourself.
 
-to
+## Development guide ##
 
-    <dictionary engine="">
+Building the documentation requires the following steps:
 
-(as per indesign.xml)
+  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX.
+  2. Parse the XML files, output as JSON with `./src/xml2json.py`.
+  3. Map the output JSON files to the `public` directory with `./src/json2public.py`. The file `./xml/map.json` defines what files to copy.
+  4. Build the web interface.
 
-## Generating the docs
+gulp and npm are setup to run these for you.
 
-Install Node.JS
+To build all the documentation from scratch:
 
-    $ brew install node
+    $ npm run build
+    
+To watch `src/` and compile automatically to `public/`:
 
-Copy the source XML files into ./xml
+    $ npm run watch
 
-    $ cp omv$indesign-9.064$9.0.xml ./xml/indesign.xml
-    $ cp javascript.xml ./xml/javascript.xml
-    $ cp scriptui.xml ./xml/scriptui.xml
+To clean the dist files:
 
-Bake
+    $ npm run clean
 
-    $ ./generate
-
-The docs will be compiled to the `html` directory, and the development
-build will be located in the `docs` directory.
-
-## Developing the HTML docs locally
-
-The docs are built using various templating and stylesheet languages. The easiest way
-to view the docs is to use [zapp](https://www.github.com/wridgers/zapp).
+The easiest way to view the docs locally is to use [zapp](https://www.github.com/wridgers/zapp).
 
     $ npm install -g zapp
-    $ ./generate
-    $ cd docs
-    $ zapp
+    $ zapp public/
 
 Now open your browser [here](http://localhost:8080).
 
-## Documentation and autocomplete in IDEs
+### XML file locations ###
 
-The `./generate` script will automatically build some jsdoc style annotated jsx files
-which you can use with many editors for autocompletion and inline documentation. It
-is known to work well with vim, Sublime Text, and WebStorm.
+The XML source files can be found in the following locations on Mac OS X:
 
-You can download precompiled libraries [here](http://yearbook.github.io/esdocs/ybm-estk-lib.zip).
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Illustrator`
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
+  - `~/Library/Preferences/ExtendScript Toolkit/4.0/`
+  
+# License #
 
-### WebStorm
-
-  - First, add `*.jsx` to the registered patterns of JavaScript files.
-    * WebStorm -> Preferences -> IDE Settings -> File Types
-  - Add the ./libs/ folder to your project as an external library.
-    * WebStorm -> Preferences -> Project Settings -> JavaScript -> Libraries
-    * Add...
-
-You should now have autocompletion and inline documentation available in the
-normal WebStorm fashion.
-
-### Sublime Text
-
-Using [SublimeCodeIntel](https://github.com/SublimeCodeIntel/SublimeCodeIntel).
-
-### vim
-
-Using [YCM](https://github.com/Valloric/YouCompleteMe).
-
-# Tools
-
-See [here](https://github.com/yearbook/extendscript-api-documentation/blob/master/tools/TOOLS.md) for
-some useful tools to help you develop ExtendScript.
-
-# License
-
-All source code for generating the documentation is under the MIT license. The
-XML source files (not included) remain property of Adobe.
-
+All source code for generating the documentation is under the MIT license. The XML source files (not included) remain property of Adobe.
