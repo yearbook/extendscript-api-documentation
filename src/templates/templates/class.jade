@@ -17,7 +17,8 @@ section
   p {{ class.description }}
 
   div(ng-repeat='(type, data) in class.elements')
-    h2 {{ type | titleCase }}
+    h2(ng-show='(data.properties | filter:elementFilter).length + (data.methods | filter:elementFilter).length > 0')
+      | {{ type | titleCase }}
 
     div(ng-show='(data.properties | filter:elementFilter).length')
       div(class='panel panel-default', ng-repeat='property in data.properties | orderBy:"name" | filter:elementFilter')
