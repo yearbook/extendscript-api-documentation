@@ -3,6 +3,7 @@
   "version": "0.2.0",
   "description": "Generates Adobe API docs in various formats.",
   "scripts": {
+    "clean": "gulp clean",
     "build": "gulp build",
     "watch": "gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,7 +22,8 @@
     "xml",
     "docs",
     "documentation",
-    "api"
+    "api",
+    "esdocs"
   ],
   "author": "Yearbook Machine",
   "license": "MIT",
@@ -29,6 +31,7 @@
     "url": "https://github.com/yearbook/extendscript-api-documentation/issues"
   },
   "dependencies": {
+    "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-babel": "^6.1.2",
