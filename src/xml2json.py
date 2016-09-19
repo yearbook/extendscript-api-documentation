@@ -127,6 +127,9 @@ def convert_xml(xml_path, output):
     if classdef.find('./shortdesc') is not None:
       class_info['description'] = classdef.find('./shortdesc').text
 
+    if classdef.find('./superclass') is not None:
+      class_info['superclass'] = classdef.find('./superclass').text
+
     search[classdef.attrib['name']]  = [x.attrib['name'] for x in class_properties]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_properties]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_methods]
