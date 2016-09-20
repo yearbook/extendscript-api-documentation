@@ -1,13 +1,4 @@
 
-//= require vendor/angular.js
-//= require vendor/angular-route.js
-//= require vendor/angular-resource.js
-
-//= require controllers/ContentsListCtrl.js
-//= require controllers/SearchCtrl.js
-//= require controllers/ClassCtrl.js
-//= require controllers/ElementCtrl.js
-
 var esDocApp = angular.module('esDocApp', ['ngRoute']).
   config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
