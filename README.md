@@ -59,6 +59,15 @@ The XML source files can be found in the following locations on Mac OS X:
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0/`
   
+On Windows:
+
+  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/CommonFiles`
+  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/illustrator`
+  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/photoshop`
+  - `C:\Users\<YourUserName>\AppData\Roaming\Adobe\ExtendScript Toolkit\4.0`
+  
+If you have a 64-Bit version of the Adobe program installed, go to `C:\Program Files\` instead of `C:\Program Files (x86)\`.
+
 # License #
 
 All source code for generating the documentation is under the MIT license. The XML source files (not included) remain property of Adobe.
