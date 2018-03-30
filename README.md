@@ -6,7 +6,7 @@ This repo contains the source code for building the documentation system. If you
 
   - Python3
   - Node.js and npm
-  - Adobe InDesign/Illustrator/Photoshop and ExtendScript Toolkit for XML source files
+  - Adobe InDesign/Illustrator/Photoshop/Bridge and ExtendScript Toolkit for XML source files
 
 ## Generating the documentation ##
 
@@ -57,6 +57,7 @@ The XML source files can be found in the following locations on Mac OS X:
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Illustrator 2018`
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Adobe Bridge CC 2018`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0/`
   
 On Windows:
@@ -64,6 +65,7 @@ On Windows:
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/CommonFiles`
   - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC/illustrator 2018`
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/photoshop`
+  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\Adobe Bridge CC 2018`
   - `C:\Users\<YourUserName>\AppData\Roaming\Adobe\ExtendScript Toolkit\4.0`
 
 # License #
