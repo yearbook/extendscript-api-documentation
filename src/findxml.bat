@@ -7,7 +7,7 @@ set __xmlsource=%__dir:~0,-4%xml\source\
 
 mkdir %__xmlsource% 2> nul
 
-copy /y "%CommonProgramFiles(x86)%\Adobe\Scripting Dictionaries CC\CommonFiles\*" %__xmlsource%
+copy /y "%CommonProgramFiles(x86)%\Adobe\Scripting Dictionaries CC\CommonFiles\*.xml" %__xmlsource%
 if ERRORLEVEL 1 goto copy
 copy /y "%CommonProgramFiles%\Adobe\Scripting Dictionaries CC\illustrator 2018\omv.xml" %__xmlsource%illustrator.xml
 if ERRORLEVEL 1 goto copy
