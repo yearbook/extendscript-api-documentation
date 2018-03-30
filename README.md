@@ -18,7 +18,7 @@ Build automatically (only works on OSX):
 
     $ npm run build
 
-The docs will be compiled to `public/`. OMV XML files will automatically be found, if you're building on Windows you will need to locate these yourself.
+The docs will be compiled to `public/`. OMV XML files will automatically be found.
 
 ## Development guide ##
 
