@@ -46,9 +46,19 @@ gulp.task('static', function() {
 gulp.task('web', ['javascript', 'less', 'templates', 'static']);
 
 gulp.task('xml', function(cb) {
-  execSync('./src/findxml')
-  execSync('./src/xml2json.py')
-  execSync('./src/json2public.py')
+  switch (process.platform) {
+    case 'win32':
+      execSync('.\\src\\findxml.bat')
+      execSync('.\\src\\xml2json.py')
+      execSync('.\\src\\json2public.py')
+      break;
+
+    default:
+      execSync('./src/findxml')
+      execSync('./src/xml2json.py')
+      execSync('./src/json2public.py')
+      break;
+  }
 
   cb();
 });
