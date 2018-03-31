@@ -61,9 +61,9 @@ The XML source files can be found in the following locations on Mac OS X:
   
 On Windows:
 
-  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/CommonFiles`
-  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC/illustrator 2018`
-  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC/photoshop`
+  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\CommonFiles`
+  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\illustrator 2018`
+  - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\photoshop`
   - `C:\Users\<YourUserName>\AppData\Roaming\Adobe\ExtendScript Toolkit\4.0`
 
 # License #
