@@ -3,6 +3,17 @@
 import json
 import os
 import xml.etree.ElementTree as etree
+from collections import deque
+
+def _subtree_text(element):
+  if element is None: return ''
+  parts = deque()
+  if element.text is not None: parts.append(element.text)
+  for child in element:
+    parts.append(_subtree_text(child))
+    if child.tail is not None: parts.append(child.tail)
+
+  return "".join(parts)
 
 def _decode_property(property_xml):
   data = {
@@ -13,7 +24,10 @@ def _decode_property(property_xml):
   }
 
   if property_xml.find('./shortdesc') is not None:
-    data['description'] = property_xml.find('./shortdesc').text
+    data['description'] = _subtree_text(property_xml.find('./shortdesc'))
+
+  if property_xml.find('./description') is not None:
+     data['longdesc'] = _subtree_text(property_xml.find('./description'))
 
   if property_xml.find('./datatype/value') is not None:
     data['value'] = property_xml.find('./datatype/value').text
@@ -29,7 +43,10 @@ def _decode_parameter(parameter_xml):
   }
 
   if parameter_xml.find('./shortdesc') is not None:
-    data['description'] = parameter_xml.find('./shortdesc').text
+    data['description'] = _subtree_text(parameter_xml.find('./shortdesc'))
+
+  if parameter_xml.find('./description') is not None:
+     data['longdesc'] = _subtree_text(parameter_xml.find('./description'))
 
   if parameter_xml.find('./datatype/value') is not None:
     data['value'] = parameter_xml.find('./datatype/value').text
@@ -43,7 +60,10 @@ def _decode_method(method_xml):
   }
 
   if method_xml.find('./shortdesc') is not None:
-    data['description'] = method_xml.find('./shortdesc').text
+    data['description'] = _subtree_text(method_xml.find('./shortdesc'))
+
+  if method_xml.find('./description') is not None:
+     data['longdesc'] = _subtree_text(method_xml.find('./description'))
 
   if method_xml.find('./datatype') is not None:
     data['type'] = _fix_type(method_xml.find('./datatype/type'))
@@ -111,6 +131,7 @@ def convert_xml(xml_path, output):
 
   for classdef in classdefs:
     class_properties = classdef.findall('./elements[@type="class"]/property')
+    class_methods = classdef.findall('./elements[@type="class"]/method')
     instance_properties = classdef.findall('./elements[@type="instance"]/property')
     instance_methods = classdef.findall('./elements[@type="instance"]/method')
 
@@ -120,6 +141,7 @@ def convert_xml(xml_path, output):
       'elements': {
         'class': {
           'properties': [_decode_property(x) for x in class_properties],
+          'methods': [_decode_method(x) for x in class_methods],
         },
         'instance': {
           'properties': [_decode_property(x) for x in instance_properties],
@@ -129,12 +151,16 @@ def convert_xml(xml_path, output):
     }
 
     if classdef.find('./shortdesc') is not None:
-      class_info['description'] = classdef.find('./shortdesc').text
+      class_info['description'] = _subtree_text(classdef.find('./shortdesc'))
 
     if classdef.find('./superclass') is not None:
       class_info['superclass'] = classdef.find('./superclass').text
 
+    if classdef.find('./description') is not None:
+      class_info['longdesc'] = _subtree_text(classdef.find('./description'))
+
     search[classdef.attrib['name']]  = [x.attrib['name'] for x in class_properties]
+    search[classdef.attrib['name']] += [x.attrib['name'] for x in class_methods]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_properties]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_methods]
 

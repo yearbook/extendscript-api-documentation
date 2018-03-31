@@ -16,6 +16,10 @@ header
 section
   p {{ class.description }}
 
+  div(ng-show='class.longdesc !== undefined')
+    hr
+    | {{ class.longdesc }}
+
   div(ng-repeat='(type, data) in class.elements')
     h2(ng-show='(data.properties | filter:elementFilter).length + (data.methods | filter:elementFilter).length > 0')
       | {{ type | titleCase }}
@@ -34,11 +38,18 @@ section
           a(href='#/{{ namespace }}/{{ class.name }}/{{ property.name }}')
             b {{ property.name }}
 
+          span(ng-show='property.value !== undefined')
+            | &#160;&#61; {{ property.value }}
+
           span(class='label label-danger', ng-show='property.readonly') Read only
           span(class='label label-primary') Property
 
         div.panel-body
           | {{ property.description }}
+
+          div(ng-show='property.longdesc !== undefined')
+            hr
+            | {{ property.longdesc }}
 
     div(ng-show='(data.methods | filter:elementFilter).length')
       h3 Methods
@@ -64,6 +75,10 @@ section
         div.panel-body
           | {{ method.description }}
 
+          div(ng-show='method.longdesc !== undefined')
+            hr
+            | {{ method.longdesc }}
+
           div(ng-show='(method.parameters).length')
             hr
 
@@ -80,9 +95,14 @@ section
                   td
                     a(href='#/{{ namespace }}/{{ param.type }}')
                       code {{ param.type }}
-                  td {{ param.name }}
+                  td
+                    | {{ param.name }}
+                    span(ng-show='param.value !== undefined')
+                      | &#160;&#61; {{ param.value }}
                   td
                     span(class='label label-info', ng-show='param.optional') Optional
                     | {{ param.description }}
+                    div(ng-show='param.longdesc !== undefined')
+                      | {{ param.longdesc }}
 
     hr
