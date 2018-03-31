@@ -132,6 +132,7 @@ def convert_xml(xml_path, output):
   for classdef in classdefs:
     class_properties = classdef.findall('./elements[@type="class"]/property')
     class_methods = classdef.findall('./elements[@type="class"]/method')
+    constructors = classdef.findall('./elements[@type="constructor"]/method')
     instance_properties = classdef.findall('./elements[@type="instance"]/property')
     instance_methods = classdef.findall('./elements[@type="instance"]/method')
 
@@ -142,6 +143,9 @@ def convert_xml(xml_path, output):
         'class': {
           'properties': [_decode_property(x) for x in class_properties],
           'methods': [_decode_method(x) for x in class_methods],
+        },
+        'constructors': {
+          'methods': [_decode_method(x) for x in constructors],
         },
         'instance': {
           'properties': [_decode_property(x) for x in instance_properties],
@@ -161,6 +165,7 @@ def convert_xml(xml_path, output):
 
     search[classdef.attrib['name']]  = [x.attrib['name'] for x in class_properties]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in class_methods]
+    search[classdef.attrib['name']] += [x.attrib['name'] for x in constructors]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_properties]
     search[classdef.attrib['name']] += [x.attrib['name'] for x in instance_methods]
 
