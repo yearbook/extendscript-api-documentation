@@ -11,6 +11,7 @@ mkdir -p ${__dir}/../xml/source/
 cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
 cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2018/omv.xml ${__dir}/../xml/source/illustrator.xml
 cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ${__dir}/../xml/source/photoshop.xml
+cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ CC\ 2018/omv.xml ${__dir}/../xml/source/bridge.xml
 cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ${__dir}/../xml/source/
 
 exit 0
