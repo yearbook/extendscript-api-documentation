@@ -9,7 +9,7 @@ var babel = require('gulp-babel');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var del = require('del');
-var markdown = require('jstransformer')(require('jstransformer-markdown'))
+var markdown = require('jstransformer-markdown');
 
 gulp.task('less', function () {
   return gulp.src('src/less/style.less')
@@ -49,15 +49,15 @@ gulp.task('web', gulp.parallel('javascript', 'less', 'templates', 'static'));
 gulp.task('xml', function(cb) {
   switch (process.platform) {
     case 'win32':
-      execSync('.\\src\\findxml.bat')
-      execSync('.\\src\\xml2json.py')
-      execSync('.\\src\\json2public.py')
+      execSync('.\\src\\findxml.bat');
+      execSync('.\\src\\xml2json.py');
+      execSync('.\\src\\json2public.py');
       break;
 
     default:
-      execSync('./src/findxml')
-      execSync('./src/xml2json.py')
-      execSync('./src/json2public.py')
+      execSync('./src/findxml');
+      execSync('./src/xml2json.py');
+      execSync('./src/json2public.py');
       break;
   }
 
@@ -74,11 +74,9 @@ gulp.task('clean', function() {
 
 gulp.task('build', gulp.parallel('xml', 'web'));
 
-gulp.task('default', gulp.parallel('build'));
-
 gulp.task('watch', gulp.series('web', function () {
-  gulp.watch('src/templates/**/*', ['web']);
-  gulp.watch('src/less/**/*', ['web']);
-  gulp.watch('src/javascript/**/*', ['web']);
-  gulp.watch('src/static/**/*', ['web']);
+  gulp.watch('src/templates/**/*', gulp.series('web'));
+  gulp.watch('src/less/**/*', gulp.series('web'));
+  gulp.watch('src/javascript/**/*', gulp.series('web'));
+  gulp.watch('src/static/**/*', gulp.series('web'));
 }));
