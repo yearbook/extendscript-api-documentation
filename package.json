@@ -31,13 +31,19 @@
     "url": "https://github.com/yearbook/extendscript-api-documentation/issues"
   },
   "dependencies": {
-    "del": "^2.2.2",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-jade": "^1.1.0",
-    "gulp-less": "^3.1.0",
-    "gulp-plumber": "^1.1.0",
+    "del": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^7.0.1",
+    "babel-core": "^6.26.3",
+    "gulp-pug": "^4.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-plumber": "^1.2.0",
+    "jstransformer": "^1.0.0",
     "markdown": "^0.5.0"
+  },
+  "devDependencies": {
+    "jstransformer-markdown": "^1.2.1",
+    "pug": "^2.0.3"
   }
 }
