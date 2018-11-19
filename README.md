@@ -14,7 +14,7 @@ Install node packages:
 
     $ npm install
 
-Build automatically (only works on OSX):
+Build automatically (only works on OS X and Windows 64):
 
     $ npm run build
 
