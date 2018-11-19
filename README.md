@@ -6,7 +6,7 @@ This repo contains the source code for building the documentation system. If you
 
   - Python3
   - Node.js and npm
-  - Adobe InDesign/Illustrator/Photoshop/Bridge/Audacity and ExtendScript Toolkit for XML source files
+  - Adobe InDesign/Illustrator/Photoshop/Bridge/Audition and ExtendScript Toolkit for XML source files
 
 ## Generating the documentation ##
 
