@@ -14,7 +14,7 @@ Install node packages:
 
     $ npm install
 
-Build automatically (only works on OS X and Windows 64):
+Build automatically (only works on OS X and Windows 10, 64bit):
 
     $ npm run build
 
@@ -60,7 +60,7 @@ The XML source files can be found in the following locations on Mac OS X:
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Adobe Bridge CC 2019`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0`
   
-On Windows:
+On Windows 10, 64bit:
 
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\CommonFiles`
   - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\illustrator 2019`
