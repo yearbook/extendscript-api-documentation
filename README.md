@@ -24,7 +24,7 @@ The docs will be compiled to `public/`. OMV XML files will automatically be foun
 
 Building the documentation requires the following steps:
 
-  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX, `/src/findxml.bat`on Windows
+  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX, `./src/findxml.bat`on Windows
   2. Parse the XML files, output as JSON with `./src/xml2json.py`.
   3. Map the output JSON files to the `public` directory with `./src/json2public.py`. The file `./xml/map.json` defines what files to copy.
   4. Build the web interface.
