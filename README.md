@@ -55,17 +55,17 @@ Now open your browser [here](http://localhost:8080).
 The XML source files can be found in the following locations on Mac OS X:
 
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/CommonFiles`
-  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Illustrator 2019`
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/photoshop`
-  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Adobe Bridge CC 2019`
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Illustrator 2020`
+  - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Adobe Bridge 2020`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0`
   
 On Windows 10, 64bit:
 
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\CommonFiles`
-  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\illustrator 2019`
+  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\illustrator 2020`
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\photoshop`
-  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\Adobe Bridge CC 2019`
+  - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\Adobe Bridge 2020`
   - `C:\Users\<YourUserName>\AppData\Roaming\Adobe\ExtendScript Toolkit\4.0`
 
 # License #
