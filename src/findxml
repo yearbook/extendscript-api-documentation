@@ -8,11 +8,20 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p ${__dir}/../xml/source/
 
-cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
-cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ${__dir}/../xml/source/illustrator.xml
-cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ${__dir}/../xml/source/photoshop.xml
-cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ${__dir}/../xml/source/bridge.xml
-cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ${__dir}/../xml/source/
-rm -f ${__dir}/../xml/source/omv$indesign-15.064$10.0.xml
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ]; then
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
+fi
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ]; then
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ${__dir}/../xml/source/illustrator.xml
+fi
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ]; then
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ${__dir}/../xml/source/photoshop.xml
+fi
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ]; then	
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ${__dir}/../xml/source/bridge.xml
+fi
+if [ -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ]; then
+  cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ${__dir}/../xml/source/
+fi
 
 exit 0
