@@ -1,7 +1,10 @@
 {
+  "audition-13.0$13.0.5": "Audition",
+  "bridge": "Bridge",
   "illustrator": "Illustrator",
-  "indesign-10.064$10.0": "InDesign",
+  "indesign-15.064$15.0": "InDesign",
   "javascript": "Javascript",
   "photoshop": "Photoshop",
-  "scriptui": "ScriptUI"
+  "scriptui": "ScriptUI",
+  "premierepro-14.0$14.0": "Premiere"
 }

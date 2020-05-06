@@ -20,12 +20,18 @@ section
         a(href='#/{{ namespace }}/{{ property.type }}', ng-show='property.type')
           code {{ property.type }}
         b {{ property.name }}
+        span(ng-show='property.value !== undefined')
+          | &#160;&#61; {{ property.value }}
 
         span(class='label label-danger', ng-show='property.readonly') Read only
         span(class='label label-primary') Property
 
       div.panel-body
         | {{ property.description }}
+
+        div(ng-show='property.longdesc !== undefined')
+          hr
+          | {{ property.longdesc }}
 
     div(class='panel panel-default', ng-show='method')
       a(name='{{ method.name }}')
@@ -40,12 +46,17 @@ section
             code {{ param.type }}
           b {{ param.name }}
           span(ng-show='$first && !$last || $middle') &#44;
+            | &#32;
         span &#41;
 
         span(class='label label-success') Method
 
       div.panel-body
         | {{ method.description }}
+
+        div(ng-show='method.longdesc !== undefined')
+          hr
+          | {{ method.longdesc }}
 
         div(ng-show='(method.parameters).length')
           hr
@@ -63,10 +74,13 @@ section
                 td
                   a(href='#/{{ namespace }}/{{ param.type }}')
                     code {{ param.type }}
-                td {{ param.name }}
+                td
+                  | {{ param.name }}
+                  span(ng-show='param.value !== undefined')
+                    | &#160;&#61; {{ param.value }}
                 td
                   span(class='label label-info', ng-show='param.optional') Optional
                   | {{ param.description }}
 
-  hr
+    hr
 

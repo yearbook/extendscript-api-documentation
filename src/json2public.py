@@ -21,6 +21,8 @@ if __name__ == '__main__':
     map_value = map_data[map_key]
 
     source_location = os.path.join(json_location, map_key)
+    if not os.path.exists(source_location):
+      continue
     source_destination = os.path.join(output_location, map_value)
 
     print('{} -> {}'.format(source_location, source_destination))
