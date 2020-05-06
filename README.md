@@ -16,7 +16,7 @@ Install node packages:
 
     $ npm install
 
-Build automatically (only works on OSX):
+Build automatically (only works on OS X and Windows 10, 64bit):
 
     $ npm run build
 
@@ -26,7 +26,7 @@ The docs will be compiled to `public/`. OMV XML files will automatically be foun
 
 Building the documentation requires the following steps:
 
-  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX, `/src/findxml.bat`on Windows
+  1. Locate the source OMV XML files, copy them to `./xml/source`. The script `./src/findxml` will do this for you on OSX, `./src/findxml.bat`on Windows
   2. Parse the XML files, output as JSON with `./src/xml2json.py`.
   3. Map the output JSON files to the `public` directory with `./src/json2public.py`. The file `./xml/map.json` defines what files to copy.
   4. Build the web interface.
@@ -62,7 +62,7 @@ The XML source files can be found in the following locations on Mac OS X:
   - `/Library/Application Support/Adobe/Scripting Dictionaries CC/Adobe Bridge 2020`
   - `~/Library/Preferences/ExtendScript Toolkit/4.0`
   
-On Windows:
+On Windows 10, 64bit:
 
   - `C:\Program Files (x86)\Common Files\Adobe\Scripting Dictionaries CC\CommonFiles`
   - `C:\Program Files\Common Files\Adobe\Scripting Dictionaries CC\illustrator 2020`
