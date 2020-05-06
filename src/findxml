@@ -8,20 +8,30 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p ${__dir}/../xml/source/
 
-if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ]; then
+if ls /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml 1> /dev/null 2>&1; then
   cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
+else
+  echo 'Could not find Javascript / ScriptUI Object Model XML files' >&2;
 fi
 if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ]; then
   cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ${__dir}/../xml/source/illustrator.xml
+else
+  echo 'Could not find Illustrator 2020 Object Model XML file' >&2;
 fi
 if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ]; then
   cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/photoshop/omv.xml ${__dir}/../xml/source/photoshop.xml
+else
+  echo 'Could not find Photoshop Object Model XML file' >&2;
 fi
-if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ]; then	
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ]; then
   cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ Bridge\ 2020/omv.xml ${__dir}/../xml/source/bridge.xml
+else
+  echo 'Could not find Bridge 2020 Object Model XML files' >&2;
 fi
-if [ -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ]; then
+if ls ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml 1> /dev/null 2>&1; then
   cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ${__dir}/../xml/source/
+else
+  echo 'Could not find InDesign Object Model XML files' >&2;
 fi
 
 exit 0
