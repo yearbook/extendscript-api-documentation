@@ -8,10 +8,15 @@ __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 mkdir -p ${__dir}/../xml/source/
 
-if ls /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml 1> /dev/null 2>&1; then
-  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/*.xml ${__dir}/../xml/source/
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/javascript.xml ]; then
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/javascript.xml ${__dir}/../xml/source/javascript.xml
 else
-  echo 'Could not find Javascript / ScriptUI Object Model XML files' >&2;
+  echo 'Could not find Javascript Object Model XML file' >&2;
+fi
+if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/scriptui.xml ]; then
+  cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/CommonFiles/scriptui.xml ${__dir}/../xml/source/scriptui.xml
+else
+  echo 'Could not find ScriptUI Object Model XML file' >&2;
 fi
 if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ]; then
   cp -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Illustrator\ 2020/omv.xml ${__dir}/../xml/source/illustrator.xml
@@ -28,10 +33,20 @@ if [ -f /Library/Application\ Support/Adobe/Scripting\ Dictionaries\ CC/Adobe\ B
 else
   echo 'Could not find Bridge 2020 Object Model XML files' >&2;
 fi
-if ls ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml 1> /dev/null 2>&1; then
-  cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv*.xml ${__dir}/../xml/source/
+if ls ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$indesign*.xml 1> /dev/null 2>&1; then
+  cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$indesign*.xml ${__dir}/../xml/source/
 else
   echo 'Could not find InDesign Object Model XML files' >&2;
+fi
+if ls ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$audition*.xml 1> /dev/null 2>&1; then
+  cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$audition*.xml ${__dir}/../xml/source/
+else
+  echo 'Could not find Audition Object Model XML files' >&2;
+fi
+if ls ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$premierepro*.xml 1> /dev/null 2>&1; then
+  cp -f ~/Library/Preferences/ExtendScript\ Toolkit/4.0/omv\$premierepro*.xml ${__dir}/../xml/source/
+else
+  echo 'Could not find Premire Pro Object Model XML files' >&2;
 fi
 
 exit 0

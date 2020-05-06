@@ -7,7 +7,7 @@ This repo contains the source code for building the documentation system. To see
   - Python3
   - Node.js and npm
   - Adobe InDesign/Illustrator/Photoshop/Bridge/Audition and ExtendScript Toolkit for XML source files
-  - (for Mac users, if you want the InDesign OM) Mac OS Mojave or lower - ESTK is not available for Catalina and the OMV 
+  - (for Mac users, if you want the InDesign/Audition/Premiere Pro OMs) Mac OS Mojave or lower - ESTK is not available for Catalina and the OMV 
   has not been brought in to the VSCode solution yet. 
 
 ## Generating the documentation ##
@@ -72,8 +72,9 @@ On Windows 10, 64bit:
   
 ### Troubleshooting
 
-- If one of the dictionaries doesn't generate, it may be that the major/minor version number has increased. Compare what 
-is searched for in xml/map.json and the XML files found in xml/source.
+- If there is no warning about missing XML files for InDesign / Audition / Premiere Pro but the json/HTML is not generated, 
+it may be that the major/minor version number has increased. Compare what is searched for in xml/map.json and the XML 
+files found in xml/source.
 
 # License #
 
